@@ -1,0 +1,110 @@
+@-webkit-keyframes articleanim
+{
+	0%{
+	-webkit-transform:translateY(-150px);
+	}
+}
+@-webkit-keyframes divanim
+{
+	100%{
+		-webkit-transform:translateY(200px);
+	}
+}
+@-webkit-keyframes divanim2
+{
+	100%{
+		-webkit-transform:translateY(200px);
+		opacity: 0.3;
+	}
+}
+#fig1{
+	background-image: url("images/planche.jpg");
+	width: 300px;
+	height: 200px;
+	color: white;
+	font-weight: bold;
+	font-size: 12em;
+	text-align: center;
+	z-index: 100;
+}
+#fig2{
+	background-image: url("images/planche.jpg");
+	width: 300px;
+	height: 200px;
+	color: white;
+	font-weight: bold;
+	font-size: 12em;
+	text-align: center;
+	z-index: 100;
+}
+#fig3{
+	background-image: url("images/planche.jpg");
+	width: 300px;
+	height: 200px;
+	color: white;
+	font-weight: bold;
+	font-size: 12em;
+	text-align: center;
+	z-index: 100;
+}
+#fig4{
+	background-image: url("images/planche.jpg");
+	width: 300px;
+	height: 200px;
+	color: white;
+	font-weight: bold;
+	font-size: 12em;
+	text-align: center;
+	z-index: 100;
+}
+article a
+{
+	text-decoration: none;
+	color: white;
+}
+section
+{
+	position: relative;
+}
+#chat
+{
+	position: absolute;
+	top: 0px;
+	right: 400px;
+	transform: scale(0.4);
+	z-index: 50;
+	
+}
+article
+{
+	display: flex;
+	-webkit-animation:articleanim 3s;
+	-webkit-animation-delay:500ms;
+
+}
+#fig1:hover,#fig2:hover,#fig3:hover,#fig4:hover
+{
+	-webkit-animation:divanim 3s;
+	animation-fill-mode: forwards;
+}
+#fig1:visited,#fig2:visited,#fig3:visited,#fig4:visited
+{
+	-webkit-animation:divanim2 infinite;
+	animation-fill-mode: forwards;
+
+}
+body
+{
+	background:url("images/gris.jpg")no-repeat;
+	background-size: cover;
+}
+h1
+{
+	color: white;
+	background-image: linear-gradient(to right,grey,white);
+	font-size: 3em;
+}
+p
+{
+	font-size: 2em;
+}
