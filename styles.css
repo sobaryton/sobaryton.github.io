@@ -103,6 +103,7 @@ h1
 	color: white;
 	background-image: linear-gradient(to right,grey,white);
 	font-size: 3em;
+	box-shadow: 1px 1px 20px grey;
 }
 p
 {
