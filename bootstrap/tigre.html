@@ -55,7 +55,7 @@
     </nav>
 
     <div class="container">
-      <header class="col-lg-12">
+    <header class="page-header">
         <h1>Mon amour pour les tigres</h1>
       </header>
       <section class="row">
@@ -91,7 +91,98 @@
         <div class="col-md-2 col-sm-3 col-xs-4"><img src="images/t12.jpg" alt="Tigre"></div>
       </section>
       <section class="row">
-        <div class="col-xs-4">
+        <div class="col-sm-4">
+          <h5>Voici les sous-especes de tigres :</h5>
+          <ul>
+            <li>Tigre de Sibérie</li>
+            <li>Tigre de Chine meridionale</li>
+            <li>Tigre de Bali</li>
+            <li>Tigre d'Indochine</li>
+            <li>Tigre de Malaisie</li>
+            <li>Tigre de Java</li>
+            <li>Tigre de Sumatra</li>
+            <li>Tigre de Bengale</li>
+            <li>Tigre de la Caspienne</li>
+          </ul>
+        </div>
+        <div class="col-sm-8"><img src="images/t12.jpg"alt="Tigre"> </div>
+      </section>
+      <section class="row">
+        <div class="col-sm-12">
+          <table class="table table-condensed table-bordered table-striped">
+          <caption> <h5>Les menaces pour les tigres</h5></caption> 
+            <thead>
+              <th>Lieu</th>
+              <th>Menace</th>
+            </thead>
+            <tr>
+              <td>Grand Mekong</td>
+              <td>Demande croissante de certaines parties de l’animal pour la médecine chinoise traditionnelle et fragmentation des habitats du fait du développement non durable d’infrastructures</td>
+            </tr>  
+            <tr>
+              <td>Île de Sumatra</td>
+              <td>Production d’huile de palme et de pâtes à papiers</td>
+            </tr>
+            <tr>
+              <td>Indonésie et Malaisie</td>
+              <td>Pâte à papier, l’huile de palme et le caoutchouc</td>
+            </tr>
+            <tr>
+              <td>États-Unis</td>
+              <td>Les tigres captifs représentent un danger pour les tigres sauvages</td>
+            </tr>
+            <tr>
+              <td>Europe</td>
+              <td>Gros appétit pour l’huile de palme</td>
+            </tr>
+            <tr>
+              <td>Népal</td>
+              <td>Commerce illégal de produits dérivés de tigres</td>
+            </tr>
+          </table>
+        </div>
+        
+      </section>
+      <section class="col-sm-12">
+        <dl class="dl-horizontal">
+          <dt>Tigre</dt>
+          <dd>Animal d'Asie, grand et puissant, au pelage jaune rayé de noir, de la famille des félins</dd>
+          <dt>Panthère</dt>
+          <dd>Félidé d'Afrique et d'Asie au pelage jaune tâcheté de noir</dd>
+          <dt>Guépard</dt>
+          <dd>Félin carnassier rapide d'Asie et d'Afrique au pelage tâcheté de noir</dd>
+          <dt>Chat</dt>
+          <dd>Petit félin, au pelage soyeux, en général domestique</dd>
+        </dl>
+      </section>
+      <div class="row">
+        <form class="col-sm-8 well" method="post">
+          <legend>Si vous voulez me laisser un message</legend>
+          <h5>Comment m'avez-vous trouvé?</h5>
+          <fieldset>
+            <div class="radio">
+              <label for="ami" class="radio">
+              <input type="radio" name="trouve" id="ami" value="ami">Par un ami</label>
+            </div>
+            <div class="radio">
+              <label for="web">
+              <input type="radio" name="trouve" id="web" value="web">Sur le web</label>
+              </div>
+              <div class="radio">
+              <label for="hasard">
+              <input type="radio" name="trouve" id="hasard" value="hasard">Par hasard</label>
+              </div>
+              <div class="radio">
+              <label for="autre">
+              <input type="radio" name="trouve" id="autre" value="autre">Autre...</label>            
+            </div>
+            <label for="textarea">Votre message:</label>
+            <textarea class="form-control" id="textarea" rows="5"></textarea>
+            <p class="help-block">Vous pouvez agrandir la fenetre </p>
+            <input class="btn btn-primary" type="button" name="envoyer" value="Envoyer">
+          </fieldset>        
+        </form>      
+        <div class="col-sm-4">
           <address>
             <p>Vous pouvez me contacter à cette adresse :</p>
             <strong>Tigrou Alfred</strong><br>
@@ -99,8 +190,65 @@
             28645 Félins-sur-Loire<br>
           </address>
         </div>
-        <div class="col-xs-8"><img src="images/t12.jpg"alt="Tigre"> </div>
-      </section>
+      </div>
+        <form class="form-horizontal col-sm-6" method="post">
+          <div class="form-group">
+            <legend>Legende</legend>
+          </div>
+          <div class="row">
+            <div class="form-group-xs">
+              <label for="text" class="col-sm-2 control-label">Text:</label>
+              <div class="col-sm-10">
+                <input type="text" name="text" class="form-control">
+              </div>
+            </div>
+          <div class="row">
+            <div class="form-group-lg">
+              <label for="textarea" class="col-sm-2 control-label">Text area</label>
+              <div class="col-sm-10">
+                <textarea id="textarea" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="select" class="col-sm-2 control-label">Select:</label>
+              <div class="col-sm-10">
+                <select id="select" class="form-control">
+                  <option>Option1</option>
+                  <option>Option2</option>
+                  <option>Option3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="button" name="envoyer" class="pull-right btn btn-default" value="Envoyer">
+          </div>              
+        </form> 
+
+        <form class="form-inline">
+          <div class="form-group has-error has-feedback">
+            <label class="sr-only" for="text">Texte</label>
+            <input type="text"name="text" placeholder="un texte ici" id="text" class="form-control">
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            <span class="help-block">Corrigez l'erreur hein</span>
+         </div>
+        <div class="form-group">
+            <div class="checkbox-inline">
+              <label>
+                <input type="checkbox"> Se rapeller de moi
+              </label>
+            </div>
+         </div> 
+          <input type="submit" value="Envoyer" class="btn btn-default">
+          <button type="button" class="btn btn-info btn-lg">Info</button>
+          <button type="button" class="btn btn-link">Link</button>
+          <button type="button" class="btn btn-warning btn-sm">warning</button>
+          <button type="button" class="btn btn-success btn-xs">Succes</button>
+          <button type="button" class="btn btn-danger btn-block" disabled="disabled">Danger</button>
+          <a href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-heart"></span> Cat button</a>
+        </form>
 
     </div><!-- /.container -->
 

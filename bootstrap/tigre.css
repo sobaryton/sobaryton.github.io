@@ -1,6 +1,7 @@
 body {
   padding-top: 50px;
   margin-top: 10px;
+  background-color: #ddd;
 }
 .starter-template {
   padding: 40px 15px;
@@ -26,4 +27,17 @@ header
 	padding-bottom: 9px;
 	margin: 40px 0 20px;
 	border-bottom: 1px solid #eee;
+}
+.well
+{
+	background-color: #CCCCCC;
+}
+.form-control:focus
+{
+	box-shadow: 1px 1px 1px blue;
+}
+.form-inline .form-group
+{
+	margin-left: 35px;
+	margin-right: 35px;
 }

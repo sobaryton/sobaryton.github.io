@@ -55,3 +55,15 @@ aside
 {
 	line-height: 80px;
 }
+.clearfix:after
+{
+	clear:both;
+}
+.col-lg-5
+{
+	line-height: 200px;
+}
+.col-lg-2
+{
+	line-height: 100px;
+}
