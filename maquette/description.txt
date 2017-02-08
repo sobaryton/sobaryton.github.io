@@ -1,0 +1,7 @@
+Client: une petite agence de voyage a Londres, qui propose des excursions dans des pays touristiques.
+
+Que cherche-t-il?: il aimerait un site dynamique pour présenter ses projets de voyage a ses clients. Il veut beaucoup d'images qui vont illustrer ses propositions et charmer les visiteurs. 
+Le style du site est assez épuré et contemporain. 
+
+Attentes: Le client nous a donné une maquette Photoshop pour un écran de 1920px de large a intégrer le plus fidelement possible. Cela lui permettra d'afficher son site web sur ses grands écrans a l'entreprise.
+Il nous a également demandé une version large, medium et small, pour que ses clients puissent acceder également au site depuis leur ordinateur ou tablette.

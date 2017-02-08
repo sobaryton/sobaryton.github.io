@@ -1,0 +1,403 @@
+/*mise en forme generale*/
+.container-fluid
+{
+	font-family: 'Roboto', sans-serif;
+}
+h2
+	{
+		color: #4a4a4a;
+		text-align: center;
+	}
+/*Travail sur l'entete*/
+header
+{
+	background: url("images/marina-bay.png")top no-repeat;
+	background-size: cover;
+	
+}
+.navig
+{
+	color: white;
+	background: url("images/Shape 3.png") bottom no-repeat;
+	
+}
+.navbar
+{
+	margin: 0 0 !important;
+	
+}
+.form-group
+{
+	margin-bottom:0px;
+	margin-top:20px;
+	
+}
+/*Travail sur l'entete - et les liens de la navigation: ecrit en blanc, survol en orange.*/
+.navbar-nav a
+{
+	text-decoration: none;
+	color: white;
+	
+}
+.navbar-nav a:visited, .navbar-nav a:focus
+{
+	text-decoration: none !important;
+	color: white;
+	background-color: transparent !important;
+}
+.navbar-nav a:hover
+{
+	text-decoration: none;
+	color: #fbad27;
+	background-color: transparent !important;
+}
+#titre
+{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.bouton-orange
+{
+	border-radius: 25px;
+	background-color: #fbad27;
+	border: none;
+	color: white;
+	
+}
+#video
+{
+	color: white;
+	display: flex;
+	align-items: center;
+}
+#video a
+{
+	color: white;
+}
+.fa-play-circle-o
+{
+	font-size: 2.5em;
+}
+/*Travail sur la premiere section du site: welcome*/
+#welcome
+{
+	max-height: 1100px;
+}
+#welcome_fusion
+{
+	text-align: center;
+	
+}
+.fa-plane,.fa-star-o,.fa-heart
+{
+	color:#fbad27;
+}
+#welcome p
+{
+	color: #757575;
+	
+}
+#welcome h3
+{
+	font-weight: bold;
+}
+
+.planestar, #shadow
+{
+	padding-left: 45px;
+	padding-right: 45px;
+	
+}
+.shadow
+{
+	box-shadow: 15px 15px 10px #faf8f5;
+}
+#ronds
+{
+	text-align: center;
+	padding-top: 80px;
+}
+/*Travail sur la section 2 du site: destinations*/
+
+#destination a
+{
+	color: #757575;
+}
+#destination a:hover
+{
+	text-decoration: none;
+}
+#places
+{
+	text-align: center;
+	background: url("images/Shape3.png") no-repeat top;
+}
+#search
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#pays-list
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.pays p
+{
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#pays1
+{
+	background: url("images/thailand.png") no-repeat;
+	
+}
+#pays2
+{
+	background: url("images/australia.png") no-repeat;
+	
+}
+#pays3
+{
+	background: url("images/indonesia.png") no-repeat;
+	
+}
+#pays4
+{
+	background: url("images/paris.png") no-repeat;
+	
+}
+#pays5
+{
+	background: url("images/malaysia.png") no-repeat;
+	
+}
+#pays6
+{
+	background: url("images/uae.jpg") no-repeat;
+	
+}
+#fleche2, #fleche1
+{
+	text-align: center;
+	vertical-align: middle;
+}
+/*Travail sur la section 3 du site: blog*/
+
+.blogtext
+{
+	
+	background: url("images/Shape3.png") no-repeat top;
+}
+.para
+{
+	text-align: center;
+	color: #616161;
+}
+.bali1 p,.bali2 p, .istambul_text p
+{
+	color: #7e7e7e;
+}
+#read
+{
+	border-radius: 25px;
+	background-color: #fbad27;
+	border: none;
+	font-size: 1.8em;
+	color: white;
+	height: 50px;
+	width: 240px;
+}
+.istambul
+{
+	
+	margin-top: 45px;
+	box-shadow: 15px 15px 10px #faf8f5;
+}
+
+.china p
+{
+	text-align: center;
+}
+.bali1, .bali2
+{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	box-shadow: 15px 15px 10px #faf8f5;
+}
+.bali1
+{
+	margin-right: -40px;
+}
+.villes
+{
+	margin-left: 25px;
+}
+.bali2
+{
+	margin-top: 65px;
+}
+.bouton-centre
+{
+	text-align: center;
+		
+}
+/*Travail sur la section 4 du site: temoignage*/
+
+.temoignage-para
+{
+	background: url("images/Shape3.png") no-repeat top;
+	
+}
+
+
+.fa-quote-left, .fa-quote-right
+{
+	color: #f5f5f5;
+	font-size: 7em;
+}
+
+.dimi
+{
+	color: #fbad27;
+}
+.temoignage-text
+{
+	box-shadow: 15px 15px 10px #faf8f5;
+	border-radius: 25px;
+	font-size: 1em;
+
+}
+.temoignage-text p
+{
+	color: #616161;
+}
+.temoignage-text img
+{
+	border-radius: 25px;
+}
+
+/*Travail sur la section 5 du site: discount*/
+
+#discount .container-fluid
+{
+	background-color: #fbad27;
+	color: white;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#discountrow
+{
+	width: 100%;
+}
+#offer
+{
+	border-radius: 25px;
+	background-color: #fbad27;
+	border: 2px solid white;
+	
+}
+
+/*Travail sur le pied de page*/
+footer
+{
+	height: 335px;
+}
+footer h3
+{
+	font-weight: bold;
+}
+
+footer ul
+{
+	list-style-type: none;
+	margin-left:0;
+	padding-left:0;
+}
+#info a:visited, #info a:focus
+{
+	text-decoration: none !important;
+	color: #969696;
+	background-color: transparent !important;
+}
+#info a:hover
+{
+	text-decoration: none;
+	color: #fbad27;
+	background-color: transparent !important;
+}
+.adresse
+{
+	padding-left: 45px;
+}
+address
+{
+	color: #969696;
+}
+.contacter
+{
+	padding-left: 80px;
+}
+.contacter p
+{
+	color: #969696;
+}
+.copyright
+{
+	margin-top: 55px;
+	text-align: center;
+	background: url("images/Shape3.png") no-repeat top;
+}
+.copyright p
+{
+	padding-top: 55px;
+	color: #969696;
+}
+/*Travail dans le pied de page sur les icones*/
+.follow a
+{
+	text-decoration: none;
+	color: #a0a0a0;
+	padding-left: 0;
+	padding-right: 0;
+}
+.fa-instagram
+{
+	background-color: #fbad27;
+	color: white;
+	font-size: 1.25em;
+}
+
+.fa-twitter, .fa-facebook
+{
+	background-color: #616161;
+	color: white;
+	font-size: 1.2em;
+}
+.follow .boutongris
+{
+	border-radius: 25px;
+	width: 30px;
+	height: 30px;
+	background-color: #616161;
+}
+.follow .btnorange
+{
+	border-radius: 25px;
+	width: 30px;
+	height: 30px;
+	background-color: #fbad27;
+}
+
