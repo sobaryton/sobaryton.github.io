@@ -1,0 +1,213 @@
+@media (min-width: 768px)
+{/**Pour écrans petits type smartphone**/
+	.container-fluid
+	{
+		width: 750px;
+	}
+	h1
+	{
+		font-size: 3em;
+	}
+	h2
+	{
+		font-size: 1.8em;
+	}
+	h3
+	{
+		font-size: 1.1em;
+	}
+	header
+	{
+		height: 400px;
+	}
+	.navbar
+	{
+		font-size: 0.98em;
+	}
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-nav a
+	{
+		font-size: 0.98em;
+	}
+	#titre
+	{
+		height: 280px;
+	}
+	#titre p
+	{
+		font-size: 1.2em;
+	}
+	#video
+	{
+		font-size: 1em;
+	}
+	.intro-video
+	{
+		font-size: 1.2em;
+	}
+	.bouton-orange
+	{
+		font-size: 1.2em;
+		height: 40px;
+		width: 150px;
+		color: white;
+		
+	}
+	/**Partie 1 Welcome**/
+	#welcome_fusion
+	{
+		height: 200px;
+		padding-top: 30px;
+	}
+	#welcome p
+	{
+		font-size: 1em;
+	}
+	#welcome h3
+	{
+		font-size: 1.2em;
+	}
+
+	#colonnes
+	{
+		padding-top: 40px;
+
+	}
+	/**Partie 2 Destination**/
+	.pays
+	{
+		width: 175px;
+		height: 175px;
+	}
+	.pays p
+	{
+		padding-top: 20px;
+	}
+	#fleche2, #fleche1
+	{
+		line-height: 350px;
+	}
+	#pays-list
+	{
+		height: 400px;
+		margin-bottom: 30px;
+	}
+	
+	/**Partie 3 Blog**/
+	#blog h2
+	{
+		padding-top: 40px;
+		
+	}
+	#blog h3
+	{
+		margin:10px;
+	}
+	
+	.blogtext
+	{
+		margin-bottom: 50px;
+		background: url("images/Shape3.png") no-repeat top;
+	}
+	.para
+	{
+		font-size: 1.1em;
+		
+	}
+	#grossephoto
+	{
+		width: 90%;
+	}
+	.istambul
+	{
+		margin-top: 35px;
+		height: 170px;
+		padding: 0;
+		width: 300px;
+	}
+	.photo
+	{
+		width: 150px;
+	}
+	.bali1 p,.bali2 p, .istambul_text p
+	{
+		font-size: 0.75em;
+		margin-left: 10px;
+	}
+	.china
+	{
+		margin-top: 35px;	
+	}
+	
+	.bali1, .bali2
+	{
+		height: 220px;
+	}
+	.bali1
+	{
+		margin-right: -40px;
+	}
+
+	.villes
+	{
+		margin-left: 20px;
+	}
+	.bouton-centre
+	{
+		
+		margin-top: 60px;
+	}
+	/*Travail sur la 4eme section: temoignage*/
+	.temoignage-para
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.temoignage-text img
+	{
+		width: 135px;
+	}
+	.temoignage-text 
+	{
+		margin-left: 30px;
+		width: 560px;
+	}
+	/*Travail sur la derniere section: discount*/
+	#discountrow h3
+	{
+		font-size: 1.8em;
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+	#discount
+	{
+		margin-top: 50px;
+	}
+	#discount .container-fluid
+	{
+		height: 100px;
+	}
+	#offer
+	{
+		font-size: 1.5em;
+		height: 50px;
+		width: 200px;
+		
+	}
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 0.9em
+	}
+
+	
+}
+}

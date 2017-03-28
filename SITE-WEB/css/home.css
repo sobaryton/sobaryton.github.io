@@ -1,0 +1,195 @@
+body {
+	background: url("../images/plan-de-travail-2.png") top no-repeat;
+
+
+}
+/*mise en forme generale*/
+.container-fluid
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*******************Mise en forme de la barre de navigation***********************/
+#logo
+{
+	height: 95px;
+	background: url("../images/foxlogo.png") no-repeat;
+
+}
+.navbar-nav a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 2.2em;
+	font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+	height: 100%;
+
+	
+}
+.navbar
+{
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+
+.navbar-nav a:hover
+{
+	background-color: transparent !important;
+	background: url("../images/Ellipse4.png") top no-repeat !important;
+}
+
+/*******************Mise en forme des paragraphes***********************/
+#presentation
+{
+	background: url("../images/presentation.png") top no-repeat;
+	height: 300px;
+}
+#competences
+{
+	background: url("../images/ardoise.png") top no-repeat;
+	height: 700px;
+	margin-top: 40px;
+}
+#portfolio
+{
+	background: url("../images/ardoise.png") top no-repeat;
+	height: 700px;
+	margin-top: 40px;
+}
+#services
+{
+	background: url("../images/ardoise.png") top no-repeat;
+	height: 700px;
+	margin-top: 40px;
+}
+#contact
+{
+	background: url("../images/ardoise.png") top no-repeat;
+	height: 700px;
+	margin-top: 40px;
+}
+/*******************Mise en forme de la section portrait***********************/
+
+/*******************Mise en forme des post it dans la section portfolio***********************/
+.postit
+{	
+	margin-top: 20px;
+	height: 250px;
+	width: 200px;
+	margin: auto;
+}
+.postit p
+{
+	margin-top: 20px;
+	text-align: center;
+	word-wrap: break-word;
+
+
+}
+.postit a 
+{
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+	vertical-align: middle;
+}
+.postit a:hover
+{
+	text-decoration: none;
+	color: black;
+	font-size: 1.1em;
+}
+#banane
+{
+	background: url("../images/pi-jaune.png") top no-repeat;
+}
+
+#fusion
+{
+	background: url("../images/pi-vert.png") top no-repeat;
+}
+#fleur
+{
+	background: url("../images/pi-rose.png") top no-repeat;
+
+}
+#cv
+{
+	background: url("../images/pi-bleu.png") top no-repeat;
+}
+
+/*******************Mise en forme de la section contact***********************/
+#contact input, #contact textarea
+{
+	margin-bottom: 20px;
+	border-radius: 10px 10px 10px 10px;
+}
+#contact textarea
+{
+	width: 400px;
+	height: 150px;
+}
+#contact input:focus,  #contact textarea:focus
+{
+	box-shadow: 6px 10px 7px #F6F6AC inset;
+	outline-color: transparent;
+}
+#envoi
+{
+	background-color: black;
+	color: white;
+	width: 75px;
+	height:40px;
+}
+#envoi:hover
+{
+	background-color: #F6F6AC;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px)
+{/**Pour écrans petits type smartphone**/
+	.container-fluid
+	{
+		width: 750px;
+	}
+	header 
+	{
+		height: 400px;
+	}
+}
+@media (min-width: 992px)
+{/**Pour écrans moyens type tablette**/
+	.container-fluid
+	{
+		width: 970px;
+		
+	}
+	header 
+	{
+		height: 500px;
+	}
+}
+@media (min-width: 1200px) 
+{	/**Pour écrans larges**/
+	.container-fluid
+	{
+		width: 1170px;
+	}
+	header 
+	{
+		height: 210px;
+	}
+}

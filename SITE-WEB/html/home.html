@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>So Dev !</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+
+	<!-- Place this data between the <head> tags of your website -->
+	<meta name="Sodev" content="Site de freelance website" />
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" value="fusion travel">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="So Dev"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://www.example.com/"/>
+	<meta property="og:image" content="http://example.com/image.jpg"/>
+	<meta property="og:description" content="Site de freelance website"/>
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar" role="navigation">
+					<div class="col-sm-4 col-md-3 col-lg-2" id="logo">
+					</div>
+					<div class="col-sm-8 col-md-9 col-lg-10" id="barre">
+						<ul class="nav navbar-nav">
+							<li><a href="#presentation">Présentation</a>
+							<li><a href="#competences">Compétences</a>
+							<li><a href="#portfolio">Portfolio</a>
+							<li><a href="#services">Services</a>
+							<li><a href="#contact">Contact</a>
+						</ul>
+						
+					</div>
+
+				</nav>
+				
+			</div>
+			
+		</div>
+	</header>
+	<div class="container-fluid">
+		<div class="row" id="presentation">
+		<div class="row">
+					<div class="col-lg-offset-1 col-lg-2" id="portrait">
+						<img src="../images/moi.png">
+					</div>
+					<div class="col-lg-9" id="description">
+						<p>Solene Bary, 25 ans</p>
+						<p>Webdesigner, junior - Région de Londres</p>
+						<p>Ancienne ingenieure en agro-alimentaire, je me suis reconvertie dans le webdesign au début de l'année 2017.</p>
+						<p>J'ai découvert le monde de la programmation front-end, et ca m'a tout de suite plu. Allez voir mon <a href="#portfolio">portfolio</a> pour avoir une idée de mes travaux.</p>
+						<p>Je suis ouverte a de nouveaux projets, alors n'hésitez pas a me <a href="#contact">contacter</a> pour en parler !</p>
+					</div>
+					
+				</div>
+			
+			
+		</div>
+		
+	</div>
+	<div class="container-fluid">
+		<div class="row" id="competences">
+			<div class="col-lg-offset-4 col-lg-8">
+				<h1>COMPETENCES</h1>
+				<div class="row">
+					<div class="col-lg-6" id="portrait">
+						
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="container-fluid">
+		<div class="row" id="portfolio">
+			<div class="col-lg-offset-2 col-lg-10">
+				<h1 class="col-lg-offset-3">PORTFOLIO</h1>
+				<div class="row">
+					<article class="postit col-lg-6" id="banane" >
+						<a href="../ananas/ananas-loading.html" target="_blank">
+						<p>Ma barre de loading <br/>ananas</p>
+						</a>
+					</article>
+					<article class="postit col-lg-6" id="fusion">
+						<a href="../maquette/index-travel.html" target="_blank">
+						<p>Mon site de voyages</p>
+						</a>
+					</article>
+				</div>
+				<div>
+					<article class="postit col-lg-6" id="fleur">
+						<a href="fleur.html" target="_blank">
+						<p>Ma fleur animée en CSS</p>
+						</a>
+					</article>
+					<article class="postit col-lg-6" id="cv">
+						<a href="../anniversaire/index.html" target="_blank">
+						<p>Ma carte d'anniversaire</p>
+						</a>
+					</article>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="container-fluid">
+		<div class="row" id="services">
+			<div class="col-lg-offset-2 col-lg-10">
+				<h1 class="col-lg-offset-3">SERVICES</h1>				
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="container-fluid">
+		<div class="row" id="contact">
+			<div class="col-lg-offset-2 col-lg-10">
+				<h1 class="col-lg-offset-3">CONTACT</h1>
+				<p><img src="../images/ampoule.png"> Je suis ouverte a tout projet, alors n'hésitez pas a me contacter pour en parler!</p>
+				<form>
+					<label for="nom">Nom *</label>
+					<input type="text" name="nom" id="nom" placeholder="Nom" required> <br/>
+					<label for="mail">Email *</label>
+					<input type="email" name="mail" id="mail" placeholder="Email" required> <br/>
+					<label for="entreprise">Entreprise </label>
+					<input type="text" name="entreprise" id="entreprise" placeholder="Entreprise"> <br/>
+					<label for="message">Laissez moi un commentaire </label><br/>
+					<textarea maxlength="500" id="message" placeholder="Votre message"></textarea><br/>
+					<input type="submit" name="envoi" value="Envoyer" id="envoi">
+				</form>
+			</div>
+			
+		</div>
+		
+	</div>
+<script src="../js/home.js"></script>
+</body>
+</html>
