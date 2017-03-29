@@ -64,7 +64,7 @@ body {
 
 }
 #n04:hover {
-	animation: transfohover4 4s ease-out;
+	animation: transfohover4 ease-out;
 	animation-fill-mode: forwards;
 }
 #n05 {
@@ -74,7 +74,7 @@ body {
 	animation-delay: 0.2s;
 }
 #n05:hover {
-	animation: transfohover5 4s ease-out;
+	animation: transfohover5 ease-out;
 	animation-fill-mode: forwards;
 }
 
