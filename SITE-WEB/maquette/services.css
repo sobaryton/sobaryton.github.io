@@ -1,0 +1,316 @@
+@media (max-width: 767px)
+{/**Pour écrans petits type petits smartphone**/
+	.container-fluid
+	{
+		width: auto;
+	}
+	h1
+	{
+		font-size: 5em;
+	}
+	h2
+	{
+		font-size: 2.5em;
+	}
+	h3
+	{
+		font-size: 1.5em;
+	}
+	header
+	{
+		height: 65px;
+	}
+	.navbar
+	{
+		font-size: 1em;
+	}
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-nav a
+	{
+		font-size: 1em;
+	}
+	
+	/**Partie 1 Welcome**/
+	#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		color: #757575;
+		font-size: 1.2em;
+
+	}
+	/**Partie 2 Destination**/
+	
+	
+	/**Partie 3 Blog**/
+	
+
+	/*Travail sur la 4eme section: temoignage*/
+	
+	/*Travail sur la derniere section: discount*/
+	
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 0.9em
+	}
+	.contacter, .about, .adresse, .follow
+	{
+		padding: 5px;
+	}
+
+	
+}
+/*******************************************************ECRAN SMARTPHONE************************************************/
+
+@media (min-width: 768px)
+{/**Pour écrans petits type smartphone**/
+	.container-fluid
+	{
+		width: 750px;
+	}
+	h1
+	{
+		font-size: 3em;
+	}
+	h2
+	{
+		font-size: 1.8em;
+	}
+	h3
+	{
+		font-size: 1.1em;
+	}
+	header
+	{
+		height: 65px;
+	}
+	.navbar
+	{
+		font-size: 0.98em;
+	}
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-nav a
+	{
+		font-size: 0.98em;
+	}
+
+	/**Partie 1 Welcome**/
+#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		color: #757575;
+		font-size: 1.2em;
+
+	}
+	/**Partie 2 Destination**/
+	
+	
+	/**Partie 3 Blog**/
+	
+	
+	/*Travail sur la 4eme section: temoignage*/
+	
+	/*Travail sur la derniere section: discount*/
+	
+
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 0.9em
+	}
+
+	
+}
+}
+
+/***********************************************************ECRAN TABLETTES*********************************************/
+
+
+@media (min-width: 992px)
+{/**Pour écrans moyens type tablettes**/
+	.container-fluid
+	{
+		width: 970px;
+		
+	}
+	h1
+	{
+		font-size: 3.5em;
+	}
+	h2
+	{
+		font-size: 2em;
+	}
+	h3
+	{
+		font-size: 0.9em;
+	}
+	/**Header**/
+	header
+	{
+		height: 65px;
+	}
+	.navbar
+	{
+		font-size: 1em;
+	}
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-nav a
+	{
+		text-decoration: none;
+		color: white;
+		font-size: 1em;
+	}
+
+
+	/**Partie 1 Welcome**/
+	#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		color: #757575;
+		font-size: 1.2em;
+
+	}
+	/**Partie 2 Destination**/
+
+	/**Partie 3 Blog**/
+
+	/*Travail sur la 4eme section: temoignage*/
+	
+	/*Travail sur la derniere section: discount*/
+	
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 0.9em
+	}
+
+	
+}
+
+/******************************************************Ecrans ORDI***************************************/
+
+@media (min-width: 1200px) 
+{	/**Pour écrans larges**/
+	.container-fluid
+	{
+		width: 1170px;
+	}
+	h1
+	{
+		font-size: 5em;
+	}
+	h2
+	{
+		font-size: 3em;
+	}
+	h3
+	{
+		font-size: 1.5em;
+	}
+	/**Header**/
+	header
+	{
+		height: 61px;
+	}
+	.navbar
+	{
+		font-size: 1.1em;
+	}
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-nav a
+	{
+		text-decoration: none;
+		color: white;
+		font-size: 1.1em;
+	}
+	/*Premiere section*/
+	#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		color: #757575;
+		font-size: 1.2em;
+
+	}
+	#titreS
+	{
+		margin-top: 100px;
+	}
+	#avion, #coeur, #etoile
+	{
+		width: 100%;
+		height: 300px;
+	}
+	#coeur
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	#coeurSection, #etoileSection, #avionSection
+	{
+		background-color: #FBAD27;
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+		;
+	}
+	#coeurSection .fa, #avion .fa, #etoile .fa
+	{
+		color: white;
+		margin-top: 100px;
+		vertical-align: middle;
+	}
+	#avionTxt, #etoileTxt, #coeurTxt
+	{
+		text-align: center;
+		height: 100%;
+
+	}
+	.txt h3
+	{
+		font-size: 2.5em;
+
+	}
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 80px;
+		height: 335px;
+}
+	
+}

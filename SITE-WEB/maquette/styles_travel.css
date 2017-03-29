@@ -24,6 +24,7 @@ header
 .navbar
 {
 	margin: 0 0 !important;
+
 	
 }
 .form-group
@@ -31,6 +32,18 @@ header
 	margin-bottom:0px;
 	margin-top:20px;
 	
+}
+#btntop 
+{
+   position: fixed;
+   top: 85%;
+   left: 95%;
+   color: #4a4a4a;
+   opacity: 0.5;
+}
+#btntop:hover
+{
+   opacity: 1;
 }
 /*Travail sur l'entete - et les liens de la navigation: ecrit en blanc, survol en orange.*/
 .navbar-nav a
@@ -105,6 +118,7 @@ header
 .fa-plane,.fa-star-o,.fa-heart
 {
 	color:#fbad27;
+	
 }
 #welcome p
 {
@@ -125,6 +139,10 @@ header
 .shadow
 {
 	box-shadow: 15px 15px 10px #faf8f5;
+}
+#shadow, #plane, .planestar
+{
+	text-align: center;
 }
 #ronds
 {
@@ -163,10 +181,16 @@ header
 .fleche i
 {
 	color:#B8B8B8;
+	
+}
+.fleche, .fleche button, .fleche .fa
+{
+	outline: none; 
 }
 .fleche .fa:hover
 {
-	color:#FBAD27 !important; 
+	color:#FBAD27 !important;
+
 }
 .pays p
 {
