@@ -267,39 +267,79 @@
 		font-size: 1.2em;
 
 	}
+	#parts
+	{
+		text-align: center;
+		width: 100%;
+	}
 	#titreS
 	{
 		margin-top: 100px;
 	}
 	#avion, #coeur, #etoile
 	{
-		width: 100%;
+		width: 70%;
 		height: 300px;
+		margin: auto;
 	}
-	#coeur
+	
+	#etoileVisible, #coeurVisible, #avionVisible
 	{
-		margin-top: 50px;
-		margin-bottom: 50px;
+		background-color: #FBAD27;
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
 	}
+	#etoileHover, #coeurHover, #avionHover
+	{
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+
 	#coeurSection, #etoileSection, #avionSection
 	{
 		background-color: #FBAD27;
 		height: 100%;
 		text-align: center;
 		border-radius: 10px 10px 10px 10px;
-		;
 	}
-	#coeurSection .fa, #avion .fa, #etoile .fa
+	#coeur .fa, #avion .fa, #etoile .fa
 	{
 		color: white;
 		margin-top: 100px;
-		vertical-align: middle;
 	}
 	#avionTxt, #etoileTxt, #coeurTxt
 	{
 		text-align: center;
 		height: 100%;
-
+		margin-top: 90px;
+	}
+	#avionSection, #coeurSection, #etoileSection
+	{
+		opacity: 0.75;
+	}
+	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
+	{
+		color: #FBAD27;
+	}
+	#avionSection
+	{
+		background: url('images/plane.jpg')no-repeat;
+	}
+	#coeurSection
+	{
+		background: url('images/coeur.jpg')no-repeat;
+	}
+	#etoileSection
+	{
+		background: url('images/etoile.jpg')no-repeat;
+	}
+	
+	#coeur
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 	.txt h3
 	{
@@ -311,6 +351,6 @@
 	{
 		margin-top: 80px;
 		height: 335px;
-}
+	}
 	
 }
