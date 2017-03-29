@@ -66,7 +66,6 @@ body {
 #n04:hover {
 	animation: transfohover4 4s ease-out;
 	animation-fill-mode: forwards;
-	animation-delay: 4.15s;
 }
 #n05 {
 	background: #4C004C;
@@ -77,7 +76,6 @@ body {
 #n05:hover {
 	animation: transfohover5 4s ease-out;
 	animation-fill-mode: forwards;
-	animation-delay: 4.2s;
 }
 
 @keyframes spin {
