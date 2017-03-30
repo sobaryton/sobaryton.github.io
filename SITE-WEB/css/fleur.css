@@ -27,7 +27,6 @@ body {
 	background: purple;
 	animation: spin 4s ease-out;
 	animation-fill-mode: forwards;
-	animation-delay: 0.05s;
 }
 #n01:hover {
 	animation: transfohover 4s ease-out;
@@ -77,121 +76,121 @@ body {
 
 @keyframes spin {
 	0%{
-		opacity :0;
-		-webkit-transform: rotate(0deg) scale(0.01);
-		transform: rotate(0deg) scale(0.01);
+		opacity:0;
+		-webkit-transform:rotate(0deg) scale(0.01);
+		transform:rotate(0deg) scale(0.01);
 	}
 	100% {
-		opacity :100;
-		-webkit-transform : rotate(360deg) scale(1);
-		transform: rotate(360deg) scale(1);
+		opacity:1;
+		-webkit-transform:rotate(360deg) scale(1);
+		transform:rotate(360deg) scale(1);
 	}
 
 }
 @keyframes transfohover {
 	0%{
-		-webkit-transform: scale(1);
-		transform: scale(1);
+		-webkit-transform:scale(1);
+		transform:scale(1);
 	}
 	100% {
-		-webkit-transform : scale(1.2);
-		transform:  scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
 	}
 
 }
 @keyframes spin2 {
 	0%{
-		opacity :0;
-		-webkit-transform: rotate(0deg) scale(0.01);
-		transform: rotate(0deg) scale(0.01);
+		opacity:0;
+		-webkit-transform:rotate(0deg) scale(0.01);
+		transform:rotate(0deg) scale(0.01);
 	}
 	100% {
-		opacity :100;
-		-webkit-transform : rotate(72deg) scale(1);
-		transform: rotate(72deg) scale(1);
+		opacity:1;
+		-webkit-transform:rotate(72deg) scale(1);
+		transform:rotate(72deg) scale(1);
 	}
 
 }
 @keyframes transfohover2 {
 	0%{
-		-webkit-transform:  scale(1);
-		transform: scale(1);
+		-webkit-transform:scale(1);
+		transform:scale(1);
 	}
 	100% {
-		-webkit-transform : scale(1.2);
-		transform: scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
 	}
 
 }
 @keyframes spin3 {
 	0%{
-		opacity :0;
-		-webkit-transform: rotate(0deg) scale(0.01);
+		opacity:0;
+		-webkit-transform:rotate(0deg) scale(0.01);
 		transform: rotate(0deg) scale(0.01);
 	}
 	100% {
-		opacity :100;
-		-webkit-transform : rotate(144deg) scale(1);
-		transform: rotate(144deg) scale(1);
+		opacity:1;
+		-webkit-transform:rotate(144deg) scale(1);
+		transform:rotate(144deg) scale(1);
 	}
 
 }
 @keyframes transfohover3 {
 	0%{
-		-webkit-transform: scale(1);
-		transform: scale(1);
+		-webkit-transform:scale(1);
+		transform:scale(1);
 	}
 	100% {
-		-webkit-transform : scale(1.2);
-		transform: scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
 	}
 
 }
 @keyframes spin4 {
 	0%{
-		opacity :0;
-		-webkit-transform: rotate(0deg) scale(0.01);
-		transform: rotate(0deg) scale(0.01);
+		opacity:0;
+		-webkit-transform:rotate(0deg) scale(0.01);
+		transform:rotate(0deg) scale(0.01);
 	}
 	100% {
-		opacity :100;
-		-webkit-transform : rotate(216deg) scale(1);
-		transform: rotate(216deg) scale(1);
+		opacity:1;
+		-webkit-transform:rotate(216deg) scale(1);
+		transform:rotate(216deg) scale(1);
 	}
 
 }
 @keyframes transfohover4 {
 	0%{
-		-webkit-transform: scale(1);
-		transform: scale(1);
+		-webkit-transform:scale(1);
+		transform:scale(1);
 	}
 	100% {
-		-webkit-transform : scale(1.2);
-		transform: scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
 	}
 
 }
 @keyframes spin5 {
 	0%{
-		opacity :0;
-		-webkit-transform: rotate(0deg) scale(0.01);
-		transform: rotate(0deg) scale(0.01);
+		opacity:0;
+		-webkit-transform:rotate(0deg) scale(0.01);
+		transform:rotate(0deg) scale(0.01);
 	}
 	100% {
-		opacity :100;
-		-webkit-transform : rotate(288deg) scale(1);
-		transform: rotate(288deg) scale(1);
+		opacity:1;
+		-webkit-transform:rotate(288deg) scale(1);
+		transform:rotate(288deg) scale(1);
 	}
 
 }
 @keyframes transfohover5 {
 	0%{
-		-webkit-transform:  scale(1);
-		transform: scale(1);
+		-webkit-transform:scale(1);
+		transform:scale(1);
 	}
 	100% {
-		-webkit-transform : scale(1.2);
-		transform: scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
 	}
 
 }
@@ -202,7 +201,3 @@ a {
 	color: black;
 }
 
-
-h1 {
-	color: white;
-}
