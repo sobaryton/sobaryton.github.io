@@ -20,10 +20,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* top: 50%;
-    right: 50%;*/
   transform-origin: left top;
-  text-align: center;
 }
 
 #n01 {
