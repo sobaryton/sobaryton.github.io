@@ -25,10 +25,29 @@
 </head>
 <body>
 	<header><!-- En tete avec navigation -->
-		<div class="container-fluid">
-			<div class="row"  id="hautdepage">
+		<nav>
+			<div class="container-fluid" id="hautdepage">
+				<div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="boutonBarres" aria-expanded="false" aria-controls="myNavbar">
+			        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>             
+			      </button>
+			      <a class="navbar-brand" href="index-travel.html">Fusion Travel</a>
+			    </div>
+			    <div class="collapse" id="myNavbar">
+	      			<ul class="nav navbar-nav">
+	        			<li class="active"><a href="index-travel.html">Home</a></li>
+	        			<li><a href="services.html">Services</a></li>
+	        			<li><a href="#">About us</a></li>
+	        			<li><a href="#">Our clients</a></li>
+	        			<li><a href="#">Blog</a></li>
+	        			<li><a href="#">Contact us</a></li>
+	      			</ul>
+	    		</div>
+	  		</div>
+		</nav>
+			<!--<div class="row"  id="hautdepage">
 				<nav class="navbar" role="navigation">
-					<div class="col-fhd-offset-2 col-fhd-8 col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10  col-sm-12 col-xs-12 navig">
+					<div class="col-fhd-offset-2 col-fhd-8 col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10  col-sm-12 hidden-xs navig" id="myNavbar">
 						<ul class="nav navbar-nav">
             				<li><a href="index-travel.html">Home</a></li>
             				<li><a href="services.html">Services</a></li>
@@ -43,7 +62,7 @@
 					</div>
 				</nav>
 			</div>
-		</div>
+		</div>-->
 	</header>
 	<div>
 	<a href="#hautdepage" class="top"><i class="fa fa-arrow-circle-up fa-3x" id="btntop"></i></a>
@@ -70,10 +89,10 @@
 	            		<i class="fa fa-plane fa-5x"></i>
 	            	</div>
 	            	<div id="avionHover">
-		            	<div class="col-fhd-5 col-lg-5 col-md-5 col-sm-4 col-xs-4" id="avionSection">
+		            	<div class="col-fhd-5 col-lg-5 col-md-5 col-sm-5 hidden-xs" id="avionSection">
 		            		<i class="fa fa-plane fa-5x"></i>
 		            	</div>
-		            	<div class="col-fhd-7 col-lg-7 col-md-7 col-sm-8 col-xs-8 txt" id="avionTxt">
+		            	<div class="col-fhd-7 col-lg-7 col-md-7 col-sm-7 col-xs-12 txt" id="avionTxt">
 		            		<h3>Best Price Guarantee</h3>
 		            		<p>SpaceTeam bootstrapping user centered design sticky note convergence fund</p>
 		            	</div>
@@ -84,11 +103,11 @@
 	            		<i class="fa fa-heart fa-5x"></i>
 	            	</div>
 	            	<div id="coeurHover">
-	            		<div class="col-fhd-7 col-lg-7 col-md-7 col-sm-8 col-xs-8 txt" id="coeurTxt">
+	            		<div class="col-fhd-7 col-lg-7 col-md-7 col-sm-7 col-xs-12 txt" id="coeurTxt">
 	            			<h3>Best Travel Agency</h3>
 	            			<p>User story Steve Jobs Stev Jobs iterate human-centered design iterate pair programing 360 campaign.</p>
 	            		</div>
-	            		<div class="col-fhd-5 col-lg-5 col-md-5 col-sm-4 col-xs-4" id="coeurSection">
+	            		<div class="col-fhd-5 col-lg-5 col-md-5 col-sm-5 hidden-xs" id="coeurSection">
 	            			<i class="fa fa-heart fa-5x"></i>
 	            		</div>
 	            	</div>
@@ -98,10 +117,10 @@
 	            		<i class="fa fa-star fa-5x"></i>
 	            	</div>
 	            	<div id="etoileHover">
-		            	<div class="col-fhd-5 col-lg-5 col-md-5 col-sm-4 col-xs-4" id="etoileSection">
+		            	<div class="col-fhd-5 col-lg-5 col-md-5 col-sm-5 hidden-xs" id="etoileSection">
 		            		<i class="fa fa-star fa-5x"></i>
 		            	</div>
-		            	<div class="col-fhd-7 col-lg-7 col-md-7 col-sm-8 col-xs-8 txt" id="etoileTxt">
+		            	<div class="col-fhd-7 col-lg-7 col-md-7 col-sm-7 col-xs-12 txt" id="etoileTxt">
 	            			<h3>Trust & Safety</h3>
 	            			<p>Thought leader cortado viral viral earned media long shadow actionable insight</p> 
 	            		</div>
@@ -148,7 +167,7 @@
 				</div>
 			</div>
 			<div class="row ">
-				<div class="col-fhd-12 col-lg-12 col-md-12 col-sm-6 col-xs-12 copyright">
+				<div class="col-fhd-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 copyright">
 					<p>Copyright@Parag 2016, All Rights Reserved</p>
 				</div>
 				
@@ -156,6 +175,7 @@
 		</div>
 	</footer><!-- Pied de page -->
 	<script src="jquery-3.2.0.min.js"></script>
+	<script src="bootstrap.min.js"></script>
 	<script src="travel.js"></script>
 </body>
 </html>

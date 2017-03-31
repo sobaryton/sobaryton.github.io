@@ -1,3 +1,21 @@
+//gestion de la navbar en petit format avec le bouton
+/*var $menuDeroulant = $('#myNavbar');
+var $boutonMenu = $('#boutonBarres');
+var $headerSection = $('header');
+$menuDeroulant.hide();
+$menuDeroulant.height("300px");
+$(function ($){
+  $boutonMenu.on("click", function(){
+    $menuDeroulant.slideToggle("slow");
+    
+
+  });
+});*/
+var $boutonMenu = $('#boutonBarres');
+var $menuDeroulant = $('#myNavbar');
+$menuDeroulant.collapse()
+
+
 //création du caroussel pour les photos de voyage
 var $carou1 = $('#carou1');
 var $carou2 = $('#carou2');
@@ -14,7 +32,7 @@ $(function($) {
 
 //Page services, gestion du hover pour coeur
 
-$(function ($) {
+$(function () {
   var $avionInit = $('#avionVisible');
   var $avion = $('#avion');
   var $avionHover = $('#avionHover');
@@ -33,7 +51,7 @@ $(function ($) {
   
 });
 
-$(function ($) {
+$(function () {
   var $coeurInit = $('#coeurVisible');
   var $coeur = $('#coeur');
   var $coeurHover = $('#coeurHover');
@@ -52,7 +70,7 @@ $(function ($) {
   });
   
 });
-$(function ($) {
+$(function () {
   var $etoileInit = $('#etoileVisible');
   var $etoile = $('#etoile');
   var $etoileBis = $('#etoileHover');
