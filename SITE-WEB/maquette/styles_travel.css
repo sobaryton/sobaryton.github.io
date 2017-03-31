@@ -21,11 +21,32 @@ header
 	background: url("images/Shape 3.png") bottom no-repeat;
 	
 }
+nav, #hautdepage
+{
+	height: 100%;
+}
+
+.navbar-nav a
+{
+	font-size: 2em;
+}
 .navbar
 {
 	margin: 0 0 !important;
+}
+.navbar-nav
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: auto;
 
-	
+}
+.navbar-nav li
+{
+	width: 30%;
+	margin-bottom: 12px;
+	text-align: center;
 }
 .form-group
 {
@@ -169,12 +190,13 @@ header
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+
 #carou1, #carou2
 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	list-style: none;
 
 }
@@ -200,12 +222,14 @@ header
 }
 .pays
 {
-	background-size: cover;
 	overflow: hidden;
+	width: 30%;
+	background-size: cover !important;
 }
 #pays1
 {
-	background: url("images/thailand.png") no-repeat;	
+	background: url("images/thailand.png") no-repeat;
+
 }
 #pays2
 {
@@ -419,10 +443,10 @@ footer ul
 	color: #fbad27;
 	background-color: transparent !important;
 }
-/*.contacter, .about, .adresse, .follow
+.bloc1, .bloc2
 {
-	padding: 15px;
-}*/
+	text-align: center;
+}
 address
 {
 	color: #969696;

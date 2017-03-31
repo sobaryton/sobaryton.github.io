@@ -18,7 +18,7 @@
 	}
 	header
 	{
-		height: 800px;
+		height: 500px;
 	}
 	.navbar
 	{
@@ -30,11 +30,23 @@
 	}
 	.navbar-nav a
 	{
-		font-size: 1em;
+		font-size: 1.1em;
+	}
+	.navbar-nav 
+	{
+		flex-wrap: wrap;
+	}
+	nav button
+	{
+		color: #FBAD27;
 	}
 	#titre
 	{
 		height: 350px;
+	}
+	#titre h1
+	{
+		text-align: center;
 	}
 	#titre p
 	{
@@ -56,6 +68,10 @@
 		color: white;
 		
 	}
+	#btntop 
+	{
+	  display: none;
+	}
 	/**Partie 1 Welcome**/
 	#welcome_fusion
 	{
@@ -74,9 +90,8 @@
 	/**Partie 2 Destination**/
 	.pays
 	{
-		width: 80px;
-		height: 80px;
-		margin-top: 10px;
+		height: 150px;
+		margin: auto;
 	}
 	#lespays, #pays-list
 	{
@@ -86,13 +101,16 @@
 	{
 		padding-top: 20px;
 	}
+	#pays-list
+	{
+		width: 100%;
+	}
 	#fleche1, #fleche3
 	{
 		line-height: 50px;
 	}
 	#places
 	{
-		
 		background: none;
 	}
 	
@@ -252,7 +270,11 @@
 	}
 	header
 	{
-		height: 400px;
+		height: 450px;
+	}
+	#hautdepage
+	{
+		padding-left: 0 !important;
 	}
 	.navbar
 	{
@@ -266,6 +288,18 @@
 	{
 		font-size: 0.98em;
 	}
+	.navbar-nav li
+	{
+		width: 30%;
+		margin-bottom: 12px;
+		text-align: center;
+	}
+	.navbar-nav
+{
+	width: 100%;
+
+}
+	
 	#titre
 	{
 		height: 280px;
@@ -290,6 +324,10 @@
 		color: white;
 		
 	}
+	#btntop 
+	{
+	  display: none;
+	}
 	/**Partie 1 Welcome**/
 	#welcome_fusion
 	{
@@ -313,21 +351,28 @@
 	/**Partie 2 Destination**/
 	.pays
 	{
-		width: 175px;
-		height: 175px;
+		height: 200px;
+		margin: auto;
+	}
+	#lespays, #pays-list
+	{
+		text-align: center;
 	}
 	.pays p
 	{
 		padding-top: 20px;
 	}
-	#fleche2, #fleche1
-	{
-		line-height: 380px;
-	}
 	#pays-list
 	{
-		height: 400px;
-		margin-bottom: 30px;
+		width: 100%;
+	}
+	#fleche1, #fleche3
+	{
+		line-height: 50px;
+	}
+	#places
+	{
+		background: none;
 	}
 	
 	/**Partie 3 Blog**/
@@ -538,8 +583,8 @@
 	/**Partie 2 Destination**/
 	.pays
 	{
-		width: 230px;
-		height: 230px;
+		width: 220px;
+		height: 220px;
 	}
 	.pays p
 	{
@@ -553,6 +598,7 @@
 	{
 		height: 500px;
 		margin-bottom: 30px;
+		width: 80%;
 	}
 	
 	/**Partie 3 Blog**/
@@ -579,10 +625,10 @@
 	}
 	.istambul
 	{
-		margin-top: 25px;
-		height: 170px;
+		margin-top: 35px;
+		height: 180px;
 		padding: 0;
-		width: 320px;
+		width: 300px;
 	}
 	.photo
 	{
@@ -601,7 +647,7 @@
 	
 	.bali1, .bali2
 	{
-		height: 230px;
+		height: 280px;
 	}
 	.bali1
 	{
@@ -772,6 +818,7 @@
 	{
 		height: 700px;
 		margin-bottom: 30px;
+		width: 80%;
 	}
 	
 	/**Partie 3 Blog**/
