@@ -1,16 +1,4 @@
 //gestion de la navbar en petit format avec le bouton
-/*var $menuDeroulant = $('#myNavbar');
-var $boutonMenu = $('#boutonBarres');
-var $headerSection = $('header');
-$menuDeroulant.hide();
-$menuDeroulant.height("300px");
-$(function ($){
-  $boutonMenu.on("click", function(){
-    $menuDeroulant.slideToggle("slow");
-    
-
-  });
-});*/
 var $boutonMenu = $('#boutonBarres');
 var $menuDeroulant = $('#myNavbar');
 $menuDeroulant.collapse()
@@ -91,4 +79,26 @@ $(function () {
   
 });
 
+//Page About us, gestion des images en dessous d'une width de 500px
+var $trust = $('#trust');
+var $quality = $('#quality');
+var $safety = $('#safety');
+var $trustimg = $('#trustimg');
+var $qualityimg = $('#qualityimg');
+var $safetyimg = $('#safetyimg');
+var larg = (window.innerWidth);
+
+if ( larg <500) {
+  $trustimg.hide();
+  $qualityimg.hide();
+  $safetyimg.hide();
+
+  $trust.height (300 +'px');
+  $safety.height (300 +'px');
+  $quality.height (300 +'px');
+
+  $trust.css("margin-bottom:70px");
+  $safety.css("margin-bottom:70px");
+  $quality.css("margin-bottom:70px");
+};
 

@@ -61,12 +61,13 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+
 	#btntop 
 	{
 	  display: none;
 	}
 	/**Partie texte**/
-	#paraS p
+	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
 		margin-top: 50px;
@@ -75,90 +76,68 @@
 		font-size: 1.2em;
 
 	}
-	#parts
-	{
-		text-align: center;
-		width: 100%;
-	}
 	#titreS
 	{
 		margin-top: 135px;
 	}
-	#avion, #coeur, #etoile
-	{
-		width: 70%;
-		height: 200px;
-		margin: auto;
-	}
 	
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
-	{
-		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-	#etoileHover, #coeurHover, #avionHover
-	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#coeur .fa, #avion .fa, #etoile .fa
-	{
-		color: white;
-		margin-top: 75px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
-		text-align: center;
-		height: 100%;
-		
-	}
-	#avionSection, #coeurSection, #etoileSection
-	{
-		opacity: 0.75;
-	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
-	{
-		color: #FBAD27;
-	}
-	#avionTxt p, #etoileTxt p, #coeurTxt p
-	{
-		font-size: 20px;
-
-	}
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
-	
-	#coeur
-	{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
 	.txt h3
 	{
 		font-size: 2.5em;
 
 	}
-	
+	#trust, #safety, #quality
+	{
+		width: 90%;
+		height: 520px;
+		margin: auto;
+		text-align: center;
+
+	}
+	#trusttxt, #safetytxt, #qualitytxt
+	{
+		font-size: 1.1em;
+		margin-top: 10px;
+		text-align: center;
+		color: #757575;
+	}
+	#trustimg, #safetyimg, #qualityimg
+	{
+		width: 100%;
+		text-align: center;
+		height: 320px;
+	}
+	#trust h3, #safety h3, #quality h3
+	{
+		color: #FBAD27;
+		font-size: 2em;
+		font-weight: bold;
+	}
+	#trustimg
+	{
+		background: url("images/trust.jpg") no-repeat;
+		background-size: cover;
+	}
+	#safetyimg
+	{
+		background: url("images/safety.jpg") no-repeat;
+		background-size: cover;
+	}
+	#qualityimg
+	{
+		background: url("images/diamant.jpg") no-repeat;
+		background-size: cover;
+	}
+	#mission, #values
+	{
+		border-top: 2px #FBAD27 solid;
+	}
 	/*Travail sur le pied de page*/
 	footer
 	{
 		margin-top: 50px;
 		height: 200px;
+		border-top: 1px #FBAD27 solid;
 	}
 	footer ul, footer address, .contacter p
 	{
@@ -236,7 +215,7 @@
 	  display: none;
 	}
 	/**Partie 1 Welcome**/
-	#paraS p
+	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
 		margin-top: 50px;
@@ -254,78 +233,61 @@
 	{
 		margin-top: 100px;
 	}
-	#avion, #coeur, #etoile
-	{
-		width: 80%;
-		height: 300px;
-		margin: auto;
-	}
 	
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
-	{
-		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#etoileHover, #coeurHover, #avionHover
-	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#coeur .fa, #avion .fa, #etoile .fa
-	{
-		color: white;
-		margin-top: 100px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
-		text-align: center;
-		height: 100%;
-		margin-top: 70px;
-	}
-	#avionSection, #coeurSection, #etoileSection
-	{
-		opacity: 0.75;
-	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
-	{
-		color: #FBAD27;
-		font-size: 30px;
-	}
-	#avionTxt p, #etoileTxt p, #coeurTxt p
-	{
-		font-size: 20px;
-	}
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
-	
-	#coeur
-	{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
 	.txt h3
 	{
 		font-size: 2.5em;
 
+	}
+	#trust, #safety, #quality
+	{
+		width: 85%;
+		height: 200px;
+		margin-bottom: 100px;
+	}
+	#trustimg, #safetyimg, #qualityimg
+	{
+		width: 85%;
+		height: 200px;
+	}
+	#trust h3, #safety h3, #quality h3
+	{
+		color: #FBAD27;
+		font-size: 3.4em;
+		font-weight: bold;
+	}
+	#trusttxt, #safetytxt, #qualitytxt
+	{
+		font-size: 1.1em;
+		margin-top: 10px;
+		text-align: justify;
+		color: #757575;
+	}
+	#trustimg
+	{
+		background: url("images/trust.jpg") no-repeat;
+		background-size: cover;
+	}
+	#safetyimg
+	{
+		background: url("images/safety.jpg") no-repeat;
+		background-size: cover;
+	}
+	#qualityimg
+	{
+		background: url("images/diamant.jpg") no-repeat;
+		background-size: cover;
+	}
+	#mission, #values
+	{
+		border-top: 2px #FBAD27 solid;
 	}
 	/*Travail sur le pied de page*/
 	footer
 	{
 		margin-top: 50px;
 		height: 200px;
+		border-top: 1px #FBAD27 solid;
 	}
 	footer ul, footer address, .contacter p
 	{
@@ -395,9 +357,8 @@
 	  display: none;
 	}
 
-
 	/**Partie 1 Welcome**/
-	#paraS p
+	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
 		margin-top: 50px;
@@ -406,83 +367,65 @@
 		font-size: 1.2em;
 
 	}
-	#parts
-	{
-		text-align: center;
-		width: 100%;
-	}
 	#titreS
 	{
 		margin-top: 100px;
 	}
-	#avion, #coeur, #etoile
-	{
-		width: 70%;
-		height: 300px;
-		margin: auto;
-	}
 	
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
-	{
-		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#etoileHover, #coeurHover, #avionHover
-	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#coeur .fa, #avion .fa, #etoile .fa
-	{
-		color: white;
-		margin-top: 100px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
-		text-align: center;
-		height: 100%;
-		margin-top: 90px;
-	}
-	#avionSection, #coeurSection, #etoileSection
-	{
-		opacity: 0.75;
-	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
-	{
-		color: #FBAD27;
-	}
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
-	
-	#coeur
-	{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
 	.txt h3
 	{
 		font-size: 2.5em;
 
 	}
-	
+	#trust, #safety, #quality
+	{
+		width: 90%;
+		height: 300px;
+		margin-bottom: 120px;
+	}
+	#trustimg, #safetyimg, #qualityimg
+	{
+		width: 90%;
+		height: 300px;
+	}
+	#trust h3, #safety h3, #quality h3
+	{
+		color: #FBAD27;
+		font-size: 3.4em;
+		font-weight: bold;
+	}
+	#trusttxt, #safetytxt, #qualitytxt
+	{
+		font-size: 1.1em;
+		margin-top: 70px;
+		text-align: justify;
+		color: #757575;
+	}
+	#trustimg
+	{
+		background: url("images/trust.jpg") no-repeat;
+		background-size: cover;
+	}
+	#safetyimg
+	{
+		background: url("images/safety.jpg") no-repeat;
+		background-size: cover;
+	}
+	#qualityimg
+	{
+		background: url("images/diamant.jpg") no-repeat;
+		background-size: cover;
+	}
+	#mission, #values
+	{
+		border-top: 2px #FBAD27 solid;
+	}
 	/*Travail sur le pied de page*/
 	footer
 	{
 		margin-top: 50px;
 		height: 200px;
+		border-top: 1px #FBAD27 solid;
 	}
 	footer ul, footer address, .contacter p
 	{
@@ -545,7 +488,7 @@
 	  display: block;
 	}
 	/*Premiere section*/
-	#paraS p
+	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
 		margin-top: 50px;
@@ -554,82 +497,65 @@
 		font-size: 1.2em;
 
 	}
-	#parts
-	{
-		text-align: center;
-		width: 100%;
-	}
 	#titreS
 	{
 		margin-top: 100px;
 	}
-	#avion, #coeur, #etoile
-	{
-		width: 70%;
-		height: 300px;
-		margin: auto;
-	}
 	
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
-	{
-		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#etoileHover, #coeurHover, #avionHover
-	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#coeur .fa, #avion .fa, #etoile .fa
-	{
-		color: white;
-		margin-top: 100px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
-		text-align: center;
-		height: 100%;
-		margin-top: 90px;
-	}
-	#avionSection, #coeurSection, #etoileSection
-	{
-		opacity: 0.75;
-	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
-	{
-		color: #FBAD27;
-	}
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
-	
-	#coeur
-	{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
 	.txt h3
 	{
 		font-size: 2.5em;
 
+	}
+	#trust, #safety, #quality
+	{
+		width: 90%;
+		height: 300px;
+		margin-bottom: 150px;
+	}
+	#trustimg, #safetyimg, #qualityimg
+	{
+		width: 90%;
+		height: 300px;
+	}
+	#trust h3, #safety h3, #quality h3
+	{
+		color: #FBAD27;
+		font-size: 3.4em;
+		font-weight: bold;
+	}
+	#trusttxt, #safetytxt, #qualitytxt
+	{
+		font-size: 1.3em;
+		margin-top: 90px;
+		text-align: justify;
+		color: #757575;
+	}
+	#trustimg
+	{
+		background: url("images/trust.jpg") no-repeat;
+		background-size: cover;
+	}
+	#safetyimg
+	{
+		background: url("images/safety.jpg") no-repeat;
+		background-size: cover;
+	}
+	#qualityimg
+	{
+		background: url("images/diamant.jpg") no-repeat;
+		background-size: cover;
+	}
+	#mission, #values
+	{
+		border-top: 2px #FBAD27 solid;
 	}
 	/*Travail sur le pied de page*/
 	footer
 	{
 		margin-top: 80px;
 		height: 335px;
+		border-top: 1px #FBAD27 solid;
 	}
 	.contacter, .about, .adresse, .follow
 	{
@@ -694,85 +620,65 @@
 	}
 	
 	/*Premiere section*/
-	#paraS p
+	#paraS p, #valuestxt, #mission p
 	{
-		text-align: center;
+		text-align: justify;
 		margin-top: 50px;
 		margin-bottom: 100px;
 		color: #757575;
 		font-size: 2em;
-
 	}
-	#parts
-	{
-		text-align: center;
-		width: 100%;
-	}
-	#titreS
+	#titreA
 	{
 		margin-top: 100px;
 	}
-	#avion, #coeur, #etoile
-	{
-		width: 80%;
-		height: 350px;
-		margin: auto;
-		margin-bottom: 150px;
-	}
 	
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
-	{
-		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#etoileHover, #coeurHover, #avionHover
-	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#coeur .fa, #avion .fa, #etoile .fa
-	{
-		color: white;
-		margin-top: 100px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
-		text-align: center;
-		height: 100%;
-		margin-top: 80px;
-	}
-	#avionSection, #coeurSection, #etoileSection
-	{
-		opacity: 0.75;
-	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
-	{
-		color: #FBAD27;
-		font-size: 3em;
-	}
-	#avionTxt p, #etoileTxt p, #coeurTxt p
-	{
-		font-size: 2em;
-	}
-	
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
 	.txt h3
 	{
 		font-size: 3em;
+	}
+	#trust, #safety, #quality
+	{
+		width: 90%;
+		height: 500px;
+		margin-bottom: 150px;
+	}
+	#trustimg, #safetyimg, #qualityimg
+	{
+		width: 90%;
+		height: 500px;
+	}
+	#trust h3, #safety h3, #quality h3
+	{
+		color: #FBAD27;
+		font-size: 3.4em;
+		font-weight: bold;
+	}
+	#trusttxt, #safetytxt, #qualitytxt
+	{
+		font-size: 1.8em;
+		margin-top: 180px;
+		text-align: justify;
+		color: #757575;
+	}
+	#trustimg
+	{
+		background: url("images/trust.jpg") no-repeat;
+		background-size: cover;
+	}
+	#safetyimg
+	{
+		background: url("images/safety.jpg") no-repeat;
+		background-size: cover;
+	}
+	#qualityimg
+	{
+		background: url("images/diamant.jpg") no-repeat;
+		background-size: cover;
+	}
+	#mission, #values
+	{
+		border-top: 2px #FBAD27 solid;
 	}
 	
 	/*Travail sur le pied de page*/
@@ -780,6 +686,7 @@
 	{
 		margin-top: 200px;
 		height: 335px;
+		border-top: 1px #FBAD27 solid;
 	}
 	footer h3
 	{
