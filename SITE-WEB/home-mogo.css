@@ -86,6 +86,12 @@ h1
 	color: #647277;
 }
 /********************************Work on the section numbers****************************************/
+#container-numbers
+{
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
 #numbers
 {
 	background-color: #bad1d1;
@@ -104,7 +110,12 @@ h1
 }
 
 /********************************Work on the section skills****************************************/
-
+.cercle
+{
+	margin: 20px;
+	width: 20px;
+	height: 20px;
+}
 /********************************Work on the section work****************************************/
 
 .work-thumb-container
@@ -160,7 +171,6 @@ article.project-thumb h2
 {
   text-align: center;
   position: absolute;
-  height: 60px;
   top: 200px;
   opacity: 0;
   transition: bottom 0.5s, opacity 0.7s;
@@ -176,3 +186,11 @@ article.project-thumb:hover h2
 
 
 /********************************Work on the section contact****************************************/
+#footer-social .fa
+{
+	color: black;
+}
+#footer-social a :hover
+{
+	color: #FCB3B3;
+}

@@ -36,7 +36,7 @@
 		    	<nav role='navigation' class="navbar-collapse " id="navigation">
 		    		<a class="navbar-brand" href="home-mogo.html">SoDev</a>
 		  			<ul class="nav navbar-nav ">
-		    			<li class="active"><a href="home-mogo.html">Intro</a></li>
+		    			<li class="active"><a href="#intro">Intro</a></li>
 		    			<li><a href="#skills">Skills</a></li>
 		    			<li><a href="#work">Work</a></li>
 		    			<li><a href="#contact">Contact</a></li>
@@ -76,12 +76,14 @@
 				
 			</div>
 		</section>
-		<section>
+	</div>
+	<div class="container" id="container-numbers">
+		<section >
 			<div class="row" id="numbers">
 				<div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
-					<h2>330  <i class="fa fa-clock-o" aria-hidden="true"></i> </h2>
+					<h2><span id="hours"></span>  <i class="fa fa-clock-o" aria-hidden="true"></i> </h2>
 					<h3>hours of learning</h3>
-					<p>11 weeks</p>
+					<p><span id="weeks"></span> weeks</p>
 					
 				</div>
 				<div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
@@ -96,18 +98,23 @@
 					
 				</div>
 				<div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
-					<h2>55  <i class="fa fa-coffee" aria-hidden="true"></i> </h2>
+					<h2><span id="coffee"></span>  <i class="fa fa-coffee" aria-hidden="true"></i> </h2>
 					<h3>cups of coffee</h3>
 					
 				</div>
 				
 			</div>
 		</section>
+	</div>
+	<div class="container-fluid">
 		<section>
 			<div class="row" id="skills">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<h2>Skills</h2>
 					
+				</div>
+				<div class="row">
+				<div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">	<div class="cercle"></div>
 				</div>
 				
 			</div>
@@ -192,23 +199,30 @@
 			<div class="row" id="contact">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<h2>Contact</h2>
-			<div class="row" id="contact">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p>If you have any question about my profile or about a poject, don't hesitate to write me a message !</p>
-					<form>
-						<label for="nom">Name *</label>
-						<input type="text" name="nom" id="nom" placeholder="Name" required> <br/>
-						<label for="mail">Email *</label>
-						<input type="email" name="mail" id="mail" placeholder="Email" required> <br/>
-						<label for="company">Company </label>
-						<input type="text" name="company" id="company" placeholder="Company"> <br/>
-						<label for="message">Leave me a comment </label><br/>
-						<textarea maxlength="500" id="message" placeholder="Your comment"></textarea><br/>
-						<input type="submit" name="envoi" value="Send" id="envoi">
-					</form>
-				</div>
-			
-		</div>
+					<div class="row" id="footer-social">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<a href="https://www.linkedin.com/in/solenebary" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
+						<a href="http://gb.viadeo.com/fr/profile/sol%C3%A8ne.bary" target="_blank"><i class="fa fa-viadeo fa-2x" aria-hidden="true" ></i></a>
+						<a href="http://sobaryton.github.io" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true" ></i></a>
+						<a href="facebook.com/solene.bary" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="row" id="contact">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p>If you have any question about my profile or about a poject, don't hesitate to write me a message !</p>
+							<form>
+								<label for="nom">Name *</label>
+								<input type="text" name="nom" id="nom" placeholder="Name" required> <br/>
+								<label for="mail">Email *</label>
+								<input type="email" name="mail" id="mail" placeholder="Email" required> <br/>
+								<label for="company">Company </label>
+								<input type="text" name="company" id="company" placeholder="Company"> <br/>
+								<label for="message">Leave me a comment </label><br/>
+								<textarea maxlength="500" id="message" placeholder="Your comment"></textarea><br/>
+								<input type="submit" name="envoi" value="Send" id="envoi">
+							</form>
+						</div>
+					</div>
 				</div>
 				
 			</div>
@@ -218,5 +232,6 @@
 	<script src="jquery-3.2.0.min.js"></script>
 	<script src="bootstrap.min.js"></script>
 	<script src="home-mogo.js"></script>
+	<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
 </body>
 </html>

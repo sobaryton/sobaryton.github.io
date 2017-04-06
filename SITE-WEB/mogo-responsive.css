@@ -162,10 +162,14 @@
 	{
 		font-size: 1.5em;
 	}
+	section
+	{
+		margin-bottom: 100px; 
+	}
 	/******************Header and nav**************/
 	.container
 	{
-		height: 60px;
+		height: 50px;
 		width: 750px;
 	}
 	#navigation
@@ -174,6 +178,7 @@
 		flex-direction: row;
 		align-items: stretch;
 		width: 100%;
+		height: 100%;
 	
 	}
 	.navbar-brand
@@ -188,7 +193,6 @@
 	.navbar-nav li
 	{
 		font-size: 1.5em;
-		margin-bottom: 10px;
 		margin-left: 5px;
 	
 	}
@@ -225,6 +229,17 @@
 	}
 
 	/********************************Work on the section numbers****************************************/
+	#container-numbers
+	{
+		margin-bottom: 150px;
+		height: 150px;
+	}
+	#container-numbers section
+	{
+		margin: 0;
+	}
+
+	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
 	{
 		height: 180px;
@@ -244,6 +259,19 @@
 		overflow: hidden;
 		background-image: repeating-linear-gradient(#647277, #bad1d1,#FCB3B3);
 	}
+	
+	article.project-thumb:hover h2
+	{
+		top: 100px;
+	}
+	.work-thumb-content h2
+	{
+		font-size: 1.5em;
+	}  
+	article.project-thumb h2
+	{
+		height: 60px;
+	}
 
 }
 
@@ -262,6 +290,10 @@
 		width: 970px;
 		
 	}
+	section
+	{
+		margin-bottom: 150px; 
+	}
 	.btn-navbar
 	{
 		display: none;
@@ -269,7 +301,7 @@
 	/******************Header and nav**************/
 	.container
 	{
-		height: 100px;
+		height: 50px;
 		width: 970px;
 	}
 	#navigation
@@ -278,6 +310,7 @@
 		flex-direction: row;
 		align-items: stretch;
 		width: 100%;
+		height: 100%;
 	
 	}
 	.navbar-brand
@@ -292,7 +325,7 @@
 	.navbar-nav li
 	{
 		font-size: 1.5em;
-		margin-bottom: 10px;
+		height: 100%;
 	
 	}
 	#learn
@@ -328,13 +361,30 @@
 	}
 
 	/********************************Work on the section numbers****************************************/
-
+	#container-numbers
+	{
+		margin-bottom: 150px;
+		height: 150px;
+	}
+	#container-numbers section
+	{
+		margin: 0;
+	}
 	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
 	{
-		height: 235px;
+		height: 300px;
 	}
-	
+	.work-thumb-content h2
+	{
+		font-size: 1.5em;
+	}  
+	#footer-social
+	{
+		text-align: center;
+		width: 100%;
+	}
+
 
 }
 
@@ -356,6 +406,10 @@
 	.container-fluid
 	{
 		width: 1170px;
+	}
+	section
+	{
+		margin-bottom: 150px; 
 	}
 	
 /*************************************Work on the header********************************/
@@ -391,6 +445,7 @@
 		flex-direction: row;
 		align-items: stretch;
 		width: 100%;
+		height: 100%;
 	
 	}
 	.navbar-brand
@@ -404,8 +459,8 @@
 	.navbar-nav li
 	{
 		font-size: 1.5em;
-		margin-bottom: 10px;
 		margin-right: 60px;
+		height: 100%;
 	}
 	#titre
 	{
@@ -439,16 +494,32 @@
 	}
 
 /********************************Work on the section numbers****************************************/
-
+	#container-numbers
+	{
+		margin-bottom: 150px;
+		height: 150px;
+	}
+	#container-numbers section
+	{
+		margin: 0;
+	}
 /********************************Work on the section skills****************************************/
 
 /********************************Work on the section work****************************************/
 
-.bloc1, .bloc2
-{
-	height: 300px;
-}
-
+	.bloc1, .bloc2
+	{
+		height: 300px;
+	}
+	.work-thumb-content h2
+	{
+		font-size: 1.5em;
+	}  
+	#footer-social
+	{
+		text-align: center;
+		width: 100%;
+	}
 
 
 }
