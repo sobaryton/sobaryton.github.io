@@ -260,10 +260,7 @@
 		background-image: repeating-linear-gradient(#647277, #bad1d1,#FCB3B3);
 	}
 	
-	article.project-thumb:hover h2
-	{
-		top: 100px;
-	}
+	
 	.work-thumb-content h2
 	{
 		font-size: 1.5em;

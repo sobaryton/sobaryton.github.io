@@ -22,6 +22,9 @@
 	<meta property="og:url" content="http://www.example.com/"/>
 	<meta property="og:image" content="http://example.com/image.jpg"/>
 	<meta property="og:description" content="Site front end developer"/>
+
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	
 </head>
 <body>
 	<header role="banner" >
@@ -114,9 +117,15 @@
 					
 				</div>
 				<div class="row">
-				<div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">	<div class="cercle"></div>
+				<div class="col-xs-6 col-sm-12 col-md-12 col-lg-12"><div class="cercle"></div>
+				Front End Development
 				</div>
-				
+				<div class="col-xs-6 col-sm-12 col-md-12 col-lg-12"><div class="cercle"></div>
+				Design
+				</div>
+				<div class="col-xs-6 col-sm-12 col-md-12 col-lg-12"><div class="cercle"></div>
+				Human
+				</div>
 			</div>
 		</section>
 		<section>
@@ -199,34 +208,44 @@
 			<div class="row" id="contact">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<h2>Contact</h2>
-					<div class="row" id="footer-social">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<a href="https://www.linkedin.com/in/solenebary" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
-						<a href="http://gb.viadeo.com/fr/profile/sol%C3%A8ne.bary" target="_blank"><i class="fa fa-viadeo fa-2x" aria-hidden="true" ></i></a>
-						<a href="http://sobaryton.github.io" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true" ></i></a>
-						<a href="facebook.com/solene.bary" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-						</div>
-					</div>
-					<div class="row" id="contact">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<p>If you have any question about my profile or about a poject, don't hesitate to write me a message !</p>
-							<form>
-								<label for="nom">Name *</label>
-								<input type="text" name="nom" id="nom" placeholder="Name" required> <br/>
-								<label for="mail">Email *</label>
-								<input type="email" name="mail" id="mail" placeholder="Email" required> <br/>
-								<label for="company">Company </label>
-								<input type="text" name="company" id="company" placeholder="Company"> <br/>
-								<label for="message">Leave me a comment </label><br/>
-								<textarea maxlength="500" id="message" placeholder="Your comment"></textarea><br/>
-								<input type="submit" name="envoi" value="Send" id="envoi">
-							</form>
-						</div>
+				</div>
+				<div class="row" id="contact">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p>If you have any question about my profile or about a project, don't hesitate to write me a message !</p>
+						<form id="form">
+							<label for="nom">Name *</label>
+							<input type="text" name="nom" id="nom" placeholder="Name" required> <br/>
+							<label for="mail">Email *</label>
+							<input type="email" name="mail" id="mail" placeholder="Email" required> <br/>
+							<label for="company">Company </label>
+							<input type="text" name="company" id="company" placeholder="Company"> <br/>
+							<label for="message">Leave me a comment </label><br/>
+							<textarea maxlength="500" id="message" placeholder="Your comment"></textarea><br/>
+							<input type="submit" name="envoi" value="Send" id="envoi">
+						</form>
 					</div>
 				</div>
-				
 			</div>
 		</section>
+		<footer>
+			<div class="row" >
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="footer-social">
+					<a href="https://www.linkedin.com/in/solenebary" target="_blank">
+						<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+					</a>  
+					<a href="http://gb.viadeo.com/fr/profile/sol%C3%A8ne.bary" target="_blank">
+						<i class="fa fa-viadeo fa-3x" aria-hidden="true" ></i>
+					</a>  
+					<a href="http://sobaryton.github.io" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true" ></i>
+					</a>  
+					<a href="facebook.com/solene.bary" target="_blank">
+						<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+
+		</footer>
 		
 	</div>
 	<script src="jquery-3.2.0.min.js"></script>
