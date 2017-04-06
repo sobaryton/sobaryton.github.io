@@ -7,8 +7,8 @@ $(window).scroll(function(){
   var $navEltHover = $('.navbar-nav a:hover');
   var heightClient = win_height-scroll;
  if (heightClient<=0){
-  	$myNavBar.css({ "background-color": "#F3ECD9" });
-  	$navElt.css({ "color": "#647277" });
+  	$myNavBar.css({ "background-color": "#FCB3B3" });
+  	$navElt.css({ "color": "white" });
   }
   if (heightClient>0){
   	$myNavBar.css({ "background-color": "transparent" });

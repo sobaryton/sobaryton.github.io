@@ -208,18 +208,20 @@ form label, form input, form textarea
 
 #envoi
 {
-	color: white;
-	border: 2px solid white;
-	background-color: #FCB3B3;
+	
 	text-align: center;
 	font-family: courier;
 	width: 70px;
 	height: 40px;
+	background-color: white;
+	color: #FCB3B3;
+	border: 2px dotted #FCB3B3;
 }
 #envoi:hover
 {
-	background-color: white;
-	color: #FCB3B3;
+	color: white;
+	border: 2px solid white;
+	background-color: #FCB3B3;
 }
 textarea
 {
