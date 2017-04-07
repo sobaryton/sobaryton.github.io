@@ -30,7 +30,7 @@ h1
 }
 .navbar-brand:hover
 {
-	color: #FCB3B3;
+	color: white;
 }
 .navbar-nav a
 {
@@ -219,7 +219,8 @@ form label, form input, form textarea
 }
 form input:focus, form textarea:focus
 {
-	box-shadow: 3px 3px 3px 3px #FCB3B3;
+	box-shadow: 1px 1px 1px 1px #FCB3B3;
+	outline-color: transparent;
 }
 #envoi
 {
