@@ -102,7 +102,7 @@
 /********************************Work on the section work****************************************/
 	.bloc11, .bloc22, .bloc1, .bloc2
 	{
-		height: 300px;
+		height: 250px;
 	}
 	#sectionWork
 	{
@@ -130,6 +130,10 @@
 	{
 		overflow: hidden;
 		background-image: repeating-linear-gradient(#647277, #bad1d1,#FCB3B3);
+	}
+	.work-thumb-content h2
+	{
+		height: 30px;
 	}
 
 }
@@ -260,10 +264,10 @@
 		background-image: repeating-linear-gradient(#647277, #bad1d1,#FCB3B3);
 	}
 	
-	
 	.work-thumb-content h2
 	{
 		font-size: 1.5em;
+		height: 60px;
 	}  
 	article.project-thumb h2
 	{
@@ -361,7 +365,7 @@
 	#container-numbers
 	{
 		margin-bottom: 150px;
-		height: 150px;
+		height: 250px;
 	}
 	#container-numbers section
 	{
@@ -494,11 +498,21 @@
 	#container-numbers
 	{
 		margin-bottom: 150px;
-		height: 150px;
+		height: 250px;
 	}
 	#container-numbers section
 	{
 		margin: 0;
+		height: 100%;
+	}
+	#numbers
+	{
+		height: 100%;
+
+	}
+	#numbers .col-lg-3
+	{
+		margin-top: 60px;
 	}
 /********************************Work on the section skills****************************************/
 

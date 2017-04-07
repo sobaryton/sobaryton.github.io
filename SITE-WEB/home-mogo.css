@@ -116,6 +116,18 @@ h1
 	width: 20px;
 	height: 20px;
 }
+.skillssquare
+{
+	height: 400px;
+	text-align: center;
+	border: 2px solid #bad1d1;
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
+.skillssquare: first-child
+{
+	background-color: #F3ECD9;
+}
 /********************************Work on the section work****************************************/
 
 .work-thumb-container
@@ -205,7 +217,10 @@ form label, form input, form textarea
 	font-size: 1.2em;
 	font-family: courier;
 }
-
+form input:focus, form textarea:focus
+{
+	box-shadow: 3px 3px 3px 3px #FCB3B3;
+}
 #envoi
 {
 	
