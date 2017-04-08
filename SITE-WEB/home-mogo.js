@@ -65,22 +65,39 @@ var x = setInterval(function() {
 
 
 //animation des cercles dans la section skills
-window.onload = function onLoad() {
-    var circle = new ProgressBar.Circle('.cercle', {
+
+function onLoad() { 
+  var circle = new ProgressBar.Circle('.cercle', {
         color: '#FCB3B3',
         duration: 2000,
         easing: 'bounce',
         strokeWidth: 6,
         trailWidth: 1,
     });
-
-    circle.animate(3);
+       circle.animate(1);
 };
+
+/*
+$(window).scroll(function(){
+  var scroll = $( window ).scrollTop();
+  var height = $( "header" ).height() + $("#intro").height() + $('#container-numbers').height() + $('#skills').height();
+  var heightClient = height-scroll;
+  var skillsquare = $("#skillssquare h2");
+  for (var i = 0; i <)
+  onLoad();
+  if (heightClient>0){
+    
+  }
+});
+*/
+
+
+
 
 
 (function(){
         emailjs.init("user_OsNgtYwXQv1DWsI0vRCnf");
-     })();
+     });
 emailjs.sendForm("gmail","email_form_sodev","#form");
 
 

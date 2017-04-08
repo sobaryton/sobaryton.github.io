@@ -128,6 +128,39 @@ h1
 {
 	background-color: #F3ECD9;
 }
+#devskills, #designskills, #humanskills
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.skillslist
+{
+	width: 50%;
+}
+.squares
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: baseline;
+
+}
+.colour1, .colour2
+{
+	width: 20px;
+	height: 20px;
+	margin: 15px;
+
+}
+.colour1
+{
+	background-color: #647277;
+}
+.colour2
+{
+	background-color: #bad1d1;
+}
 /********************************Work on the section work****************************************/
 
 .work-thumb-container
