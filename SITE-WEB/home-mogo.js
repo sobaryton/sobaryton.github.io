@@ -93,7 +93,10 @@ $(window).scroll(function(){
 
 
 
-
+var $nom = $('#nom');
+var $mail = $('#mail');
+var $company = $('#company');
+var $message = $('#message');
 
 $(document).ready(function(){
   emailjs.init("user_OsNgtYwXQv1DWsI0vRCnf");
@@ -108,15 +111,20 @@ $(document).ready(function(){
     var service_id = "default_service";
     var template_id = "email_form_sodev";
 
-    myform.find("button").text("Sending...");
+    myform.find("#envoi").text("Sending...");
     emailjs.sendForm(service_id,template_id,"form")
       .then(function(){ 
-         alert("Sent!");
+         alert("Your comment is sent. Thank you for that I will answer you as soon as possible.");
          myform.find("button").text("Send");
       }, function(err) {
-         alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+         alert("Send email failed!\r\n Please contact me directly at solene.bary@gmail.com \n Thank you\n Error:\n " + JSON.stringify(err));
          myform.find("button").text("Send");
-      });
+      }
+      $nom.value = "";
+      $mail.value = "";
+      $company.value = "";
+      $message.value = "";
+      );
     return false;
   })
 });
