@@ -43,7 +43,7 @@ $(document).ready(function() {
 var startDate = new Date("Jan 13 15:15:15 2017");
 
 // Update the count down every 1 day
-var x = setInterval(function() {
+
 
 	// Get todays date and time
 	var now = new Date();
@@ -61,7 +61,7 @@ var x = setInterval(function() {
 	document.getElementById("coffee").innerHTML = days;
 	document.getElementById("hours").innerHTML = hours;
 
-}, 1000 * 60 * 60);
+
 
 
 
