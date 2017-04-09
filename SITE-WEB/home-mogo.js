@@ -95,11 +95,31 @@ $(window).scroll(function(){
 
 
 
-(function(){
-        emailjs.init("user_OsNgtYwXQv1DWsI0vRCnf");
-     });
-emailjs.sendForm("gmail","email_form_sodev","#form");
+$(document).ready(function(){
+  emailjs.init("user_OsNgtYwXQv1DWsI0vRCnf");
+});
+//emailjs.sendForm("gmail","email_form_sodev","#form");
+$(document).ready(function(){
+  var myform = $("#form");
+  myform.submit(function(event){
+    event.preventDefault();
 
+    // Change to your service ID, or keep using the default service
+    var service_id = "default_service";
+    var template_id = "email_form_sodev";
+
+    myform.find("button").text("Sending...");
+    emailjs.sendForm(service_id,template_id,"form")
+      .then(function(){ 
+         alert("Sent!");
+         myform.find("button").text("Send");
+      }, function(err) {
+         alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+         myform.find("button").text("Send");
+      });
+    return false;
+  })
+});
 
 
 

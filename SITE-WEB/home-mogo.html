@@ -23,8 +23,6 @@
 	<meta property="og:image" content="http://example.com/image.jpg"/>
 	<meta property="og:description" content="Site front end developer"/>
 
-	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	
 </head>
 <body>
 	<header role="banner" >
@@ -330,7 +328,7 @@
 				<div class="row" id="contact">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<p>If you have any question about my profile or about a project, don't hesitate to write me a message !</p>
-						<form id="form">
+						<form id="form" method="POST">
 							<label for="nom">Name *</label>
 							<input type="text" name="nom" id="nom" placeholder="Name" required> <br/>
 							<label for="mail">Email *</label>
@@ -338,7 +336,7 @@
 							<label for="company">Company </label>
 							<input type="text" name="company" id="company" placeholder="Company"> <br/>
 							<label for="message">Leave me a comment </label><br/>
-							<textarea maxlength="500" id="message" placeholder="Your comment"></textarea><br/>
+							<textarea maxlength="500" name="message" id="message" placeholder="Your comment"></textarea><br/>
 							<input type="submit" name="envoi" value="Send" id="envoi">
 						</form>
 					</div>
@@ -370,5 +368,6 @@
 	<script src="bootstrap.min.js"></script>
 	<script src="home-mogo.js"></script>
 	<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>
