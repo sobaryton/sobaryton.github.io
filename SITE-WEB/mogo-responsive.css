@@ -3,7 +3,7 @@
 /**************************************************************************************************************************/
 @media (max-width: 767px)
 {/**Pour écrans petits type petits smartphone**/
-	.container-fluid
+	.container-fluid, .container
 	{
 		width: auto;
 	}
@@ -12,6 +12,7 @@
 	{
 		background-image: repeating-linear-gradient(#647277, #6E8A94, #F3ECD9);
 		height: 100vh;
+		width: auto;
 	}
 	h1
 	{
@@ -29,19 +30,18 @@
 	.container
 	{
 		height: 100px;
-		width: auto;
 	}
 
 	.side-collapse 
 	{
 	  width:100%;
-	  position:relative;
 	  overflow:hidden;
 	  transition:width .4s;
 	}
 	.side-collapse.in 
 	{
 		width:0;
+		height: 0;
 		
 	}
 	#navigation
@@ -97,7 +97,58 @@
 	}
 
 /********************************Work on the section skills****************************************/
+	.skillssquare
+	{
+		height: 400px;
+		text-align: center;
+		border: 2px solid #bad1d1;
+		border-radius: 5px;
+		margin-bottom: 50px;
+		width: 100%;
+	}
+	#animdev
+	{
+		text-align: center;
+		justify-content: center;
+		background-color: #bad1d1;
+		color: white;
+	}
+	#animdev p
+	{
+		animation: type 4s steps(60, end);
+		-webkit-animation: type 4s steps(60, end);
+		width: 260px;
+		white-space:nowrap;
+		overflow:hidden;
+		font-size: 1.8em;
+		font-family: "Courier";
+		margin-top: 10px;
 
+	}
+	#devskills h2
+	{
+		font-size: 1.5em;
+		margin-bottom: 30px;
+	}
+	.skillslist
+	{
+		width:70%;
+
+	}
+	.squares
+	{
+		margin-bottom: 10px ;
+	}
+	.squares p
+	{
+		font-size: 0.8em;
+	}
+	.squares .colour1, .squares .colour2
+	{
+		width: 10px;
+		height: 10px;
+		margin: 5px;
+	}
 
 /********************************Work on the section work****************************************/
 	.bloc11, .bloc22, .bloc1, .bloc2
@@ -136,6 +187,11 @@
 		height: 30px;
 	}
 
+}
+/********************************Work on the section contact****************************************/
+#footer-social
+{
+	flex-direction: row;
 }
 
 /***********************************************************************************************************************************/
@@ -242,6 +298,34 @@
 	{
 		margin: 0;
 	}
+	/********************************Work on the section numbers****************************************/
+	.colour1, .colour2
+	{
+		width: 20px;
+		height: 20px;
+		margin: 10px;
+
+	}
+	.skillslist
+	{
+		width: 90%;
+	}
+	#animdev
+	{
+		height: 100%;
+	}
+	#animdev p
+	{
+		height: 100%;
+		width: 280px;
+		font-size: 1.8em;
+		margin-top: 70%;
+	}
+	.skillssquare
+	{
+		height: 350px;
+		margin-bottom: 50px;
+	}
 
 	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
@@ -274,6 +358,10 @@
 		height: 60px;
 	}
 
+
+
+
+
 }
 
 
@@ -299,11 +387,19 @@
 	{
 		display: none;
 	}
+	h1
+	{
+		margin-top: 150px;
+	}
 	/******************Header and nav**************/
 	.container
 	{
 		height: 50px;
 		width: 970px;
+	}
+	header
+	{
+		height: 40vh;
 	}
 	#navigation
 	{
@@ -371,6 +467,35 @@
 	{
 		margin: 0;
 	}
+	/********************************Work on the section skills****************************************/
+	.colour1, .colour2
+	{
+		width: 20px;
+		height: 20px;
+		margin: 10px;
+
+	}
+	.skillslist
+	{
+		width: 50%;
+	}
+
+	#animdev p
+	{
+		width: 360px;
+		font-size: 2.5em;
+		margin-top: 50%;
+	}
+	.skillssquare
+	{
+		height: 350px;
+		margin-bottom: 50px;
+	}
+	#humanimg
+	{
+		width: 100%;
+		margin-top: 15px;
+	}
 	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
 	{
@@ -383,6 +508,8 @@
 	#footer-social
 	{
 		text-align: center;
+		flex-direction: column;
+
 
 	}
 
@@ -515,7 +642,22 @@
 		margin-top: 60px;
 	}
 /********************************Work on the section skills****************************************/
+	.colour1, .colour2
+	{
+		width: 20px;
+		height: 20px;
+		margin: 15px;
 
+	}
+	.skillslist
+	{
+		width: 50%;
+	}
+	.skillssquare
+	{
+		height: 400px;
+
+	}
 /********************************Work on the section work****************************************/
 
 	.bloc1, .bloc2

@@ -118,11 +118,9 @@ h1
 }
 .skillssquare
 {
-	height: 400px;
 	text-align: center;
 	border: 2px solid #bad1d1;
 	border-radius: 5px;
-	margin-bottom: 50px;
 }
 #devskills, #designskills, #humanskills
 {
@@ -131,29 +129,21 @@ h1
 	align-items: center;
 
 }
-.skillslist
-{
-	width: 50%;
-}
+
 #animdev
 {
-	height: 100%;
 	text-align: center;
 	justify-content: center;
 }
-#animdev p
-{
-	margin-top: 50%;
-}
+
 #animdev p
 {
 	animation: type 4s steps(60, end);
 	-webkit-animation: type 4s steps(60, end);
-	width: 360px;
 	white-space:nowrap;
 	overflow:hidden;
-	font-size: 2.5em;
 	font-family: "Courier";
+
 }
 /*Animation of the word "Development" in the development section*/
 @keyframes type{
@@ -185,13 +175,7 @@ h1
 	align-items: baseline;
 
 }
-.colour1, .colour2
-{
-	width: 20px;
-	height: 20px;
-	margin: 15px;
 
-}
 .colour1
 {
 	background-color: #647277;

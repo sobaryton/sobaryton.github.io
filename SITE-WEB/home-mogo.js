@@ -113,13 +113,13 @@ $(document).ready(function(){
 		var template_id = "email_form_sodev";
 
 		$envoi.val("Sending...");
-		//emailjs.sendForm(service_id,template_id,"form")
-        (new Promise(function (resolve, reject){
+		emailjs.sendForm(service_id,template_id,"form")
+        /*(new Promise(function (resolve, reject){
             setTimeout(
                 resolve,
                 5000
             );
-        }))
+        }))*/
 			.then(function(){
 				alert("Your comment is sent. Thank you for that I will answer you as soon as possible.");
 				formContact.find("button").text("Send");
