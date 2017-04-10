@@ -275,22 +275,12 @@ textarea
 }
 
 /********************************Work on the footer****************************************/
-
-footer
-{
-	height: 300px;
-	text-align: center;
-
-}
-footer .row
-{
-	height: 100%;	
-}
 #footer-social
 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+	height: 100%;
 }
 
 #footer-social .fa
