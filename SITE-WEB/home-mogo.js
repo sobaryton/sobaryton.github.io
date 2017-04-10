@@ -65,6 +65,7 @@ var startDate = new Date("Jan 13 15:15:15 2017");
 
 
 
+
 //animation des cercles dans la section skills
 
 function onLoad() {

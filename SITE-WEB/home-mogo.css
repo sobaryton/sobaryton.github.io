@@ -135,6 +135,49 @@ h1
 {
 	width: 50%;
 }
+#animdev
+{
+	height: 100%;
+	text-align: center;
+	justify-content: center;
+}
+#animdev p
+{
+	margin-top: 50%;
+}
+#animdev p
+{
+	animation: type 4s steps(60, end);
+	-webkit-animation: type 4s steps(60, end);
+	width: 360px;
+	white-space:nowrap;
+	overflow:hidden;
+	font-size: 2.5em;
+	font-family: "Courier";
+}
+/*Animation of the word "Development" in the development section*/
+@keyframes type{
+	from { width: 0; }
+}
+
+@-webkit-keyframes type{
+	from { width: 0; }
+}
+
+#animdev p span
+{
+	animation: blink 1s infinite;
+	-webkit-animation: blink 1s infinite;
+	font-family: "Courier";
+}
+@-webkit-keyframes blink {
+	to{opacity: .0;}
+}
+@keyframes blink{
+	to{opacity: .0;}
+}
+
+
 .squares
 {
 	display: flex;
@@ -157,6 +200,10 @@ h1
 {
 	background-color: #bad1d1;
 }
+
+
+
+
 /********************************Work on the section work****************************************/
 
 .work-thumb-container
