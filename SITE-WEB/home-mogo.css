@@ -11,7 +11,10 @@
 {
 	margin: 0;
 }
-
+section
+{
+	margin-bottom: 40px;
+}
 /*************************************Work on the header for all formats********************************/
 header
 {
@@ -130,13 +133,13 @@ h1
 
 }
 
-#animdev
+.animdev
 {
 	text-align: center;
 	justify-content: center;
 }
 
-#animdev p
+.animdev p
 {
 	animation: type 4s steps(60, end);
 	-webkit-animation: type 4s steps(60, end);
@@ -154,7 +157,7 @@ h1
 	from { width: 0; }
 }
 
-#animdev p span
+.animdev p span
 {
 	animation: blink 1s infinite;
 	-webkit-animation: blink 1s infinite;

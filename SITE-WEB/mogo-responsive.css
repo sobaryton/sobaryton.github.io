@@ -6,6 +6,7 @@
 	.container-fluid, .container
 	{
 		width: auto;
+		margin: auto;
 	}
 	
 	header
@@ -25,6 +26,10 @@
 	{
 		font-size: 2em;
 
+	}
+	section
+	{
+		margin-bottom: 50px;
 	}
 /*Work on the navigation bar*/
 	.container
@@ -95,61 +100,84 @@
 	{
 		font-size: 1.3em;
 	}
-
+	#container-numbers
+	{
+		margin-bottom: 50px;
+		height: auto;
+	}
+	.num2
+	{
+		background-color: #6e8a94 ;
+	}
+	#numbers
+	{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
 /********************************Work on the section skills****************************************/
 	.skillssquare
 	{
-		height: 400px;
+		height: 370px;
 		text-align: center;
-		border: 2px solid #bad1d1;
-		border-radius: 5px;
 		margin-bottom: 50px;
 		width: 100%;
 	}
-	#animdev
+	.animdev
 	{
 		text-align: center;
 		justify-content: center;
 		background-color: #bad1d1;
 		color: white;
+		height: 50px;
+
 	}
-	#animdev p
+	.animdev p
 	{
-		animation: type 4s steps(60, end);
-		-webkit-animation: type 4s steps(60, end);
-		width: 260px;
-		white-space:nowrap;
-		overflow:hidden;
-		font-size: 1.8em;
-		font-family: "Courier";
+		width: 100%;
+		font-size: 1.5em;
 		margin-top: 10px;
 
 	}
-	#devskills h2
+	#devskills h2, #designskills h2, #humanskills h2
 	{
-		font-size: 1.5em;
+		font-size: 1.8em;
 		margin-bottom: 30px;
 	}
 	.skillslist
 	{
-		width:70%;
+		width:100%;
 
 	}
 	.squares
 	{
 		margin-bottom: 10px ;
+		justify-content: flex-start;
 	}
 	.squares p
 	{
 		font-size: 0.8em;
+		margin-right: 20px;
 	}
 	.squares .colour1, .squares .colour2
 	{
-		width: 10px;
-		height: 10px;
-		margin: 5px;
+		width: 20px;
+		height: 20px;
+		margin:0;
 	}
-
+	#humanskills .skillslist
+	{
+		width:100%;
+	}
+	.humanimg
+	{
+		width: 100%;
+		margin-top:100px;
+	}
+	.designimg
+	{
+		width:50%;
+	}
 /********************************Work on the section work****************************************/
 	.bloc11, .bloc22, .bloc1, .bloc2
 	{
@@ -187,13 +215,13 @@
 		height: 30px;
 	}
 
-}
-/********************************Work on the section contact****************************************/
-#footer-social
-{
-	flex-direction: row;
-}
 
+/********************************Work on the section contact****************************************/
+	#footer-social
+	{
+		flex-direction: row;
+	}
+}
 /***********************************************************************************************************************************/
 /*************									ECRAN SMARTPHONE						********************************************/
 /***********************************************************************************************************************************/
@@ -212,6 +240,7 @@
 	{
 		font-size: 3em;
 		height: 70px;
+		margin-top: 100px;
 	}
 	h2
 	{
@@ -227,6 +256,10 @@
 		margin-bottom: 100px; 
 	}
 	/******************Header and nav**************/
+	header
+	{
+		height:50vh;
+	}
 	.container
 	{
 		height: 50px;
@@ -310,15 +343,15 @@
 	{
 		width: 90%;
 	}
-	#animdev
+	.animdev
 	{
 		height: 100%;
 	}
-	#animdev p
+	.animdev p
 	{
 		height: 100%;
 		width: 280px;
-		font-size: 1.8em;
+		font-size: 1.9em;
 		margin-top: 70%;
 	}
 	.skillssquare
@@ -326,7 +359,17 @@
 		height: 350px;
 		margin-bottom: 50px;
 	}
+	.humanimg
+	{
+		width: 90%;
+		margin-top: 2%;
 
+	}
+	.designimg
+	{
+		margin-top: 10%;
+		width: 130%;
+	}
 	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
 	{
@@ -358,6 +401,11 @@
 		height: 60px;
 	}
 
+	/********************************Work on the section contact****************************************/
+	#footer-social
+	{
+		flex-direction: row;
+	}
 
 
 
@@ -399,7 +447,7 @@
 	}
 	header
 	{
-		height: 40vh;
+		height: 500px;
 	}
 	#navigation
 	{
@@ -460,9 +508,9 @@
 	/********************************Work on the section numbers****************************************/
 	#container-numbers
 	{
-		margin-bottom: 150px;
-		height: 250px;
+		height: 200px;
 	}
+
 	#container-numbers section
 	{
 		margin: 0;
@@ -480,7 +528,7 @@
 		width: 50%;
 	}
 
-	#animdev p
+	.animdev p
 	{
 		width: 360px;
 		font-size: 2.5em;
@@ -491,10 +539,10 @@
 		height: 350px;
 		margin-bottom: 50px;
 	}
-	#humanimg
+	.humanimg
 	{
 		width: 100%;
-		margin-top: 15px;
+		margin-top: 5%;
 	}
 	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
@@ -657,6 +705,10 @@
 	{
 		height: 400px;
 
+	}
+	.humanimg
+	{
+		margin: 0;
 	}
 /********************************Work on the section work****************************************/
 
