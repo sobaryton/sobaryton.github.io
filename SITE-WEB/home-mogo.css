@@ -267,17 +267,10 @@ article.project-thumb:hover h2
 	border: 2px dotted #FCB3B3;
 
 }
-form
-{
-	width: 80%;
-}
+
 form label, form input, form textarea
 {
-	margin-left: 100px;
-	margin-bottom: 20px;
-	margin-top: 10px;
 	color: black;
-	font-size: 1.2em;
 	font-family: courier;
 }
 form input:focus, form textarea:focus
@@ -320,8 +313,6 @@ textarea
 #footer-social .fa
 {
 	color: black;
-	margin: 30px;
-
 }
 #footer-social a :hover
 {

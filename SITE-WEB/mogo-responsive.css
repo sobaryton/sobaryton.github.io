@@ -172,7 +172,7 @@
 	.humanimg
 	{
 		width: 100%;
-		margin-top:100px;
+		margin-top:10%;
 	}
 	.designimg
 	{
@@ -221,6 +221,21 @@
 	{
 		flex-direction: row;
 	}
+	#footer-social .fa
+	{
+		margin: 10px;
+
+	}
+	form
+	{
+		width: 100%;
+	}
+	form label, form input, form textarea
+	{
+		margin-bottom: 20px;
+		margin-top: 10px;
+		font-size: 1.2em;
+	}
 }
 /***********************************************************************************************************************************/
 /*************									ECRAN SMARTPHONE						********************************************/
@@ -258,7 +273,7 @@
 	/******************Header and nav**************/
 	header
 	{
-		height:50vh;
+		height:70vh;
 	}
 	.container
 	{
@@ -331,13 +346,20 @@
 	{
 		margin: 0;
 	}
-	/********************************Work on the section numbers****************************************/
+	/********************************Work on the section skills****************************************/
+	.colour1, .colour2, .skills p
+	{
+		margin: 10px;
+	}
+
+	.skills p
+	{
+		height: 30px;
+	}
 	.colour1, .colour2
 	{
 		width: 20px;
 		height: 20px;
-		margin: 10px;
-
 	}
 	.skillslist
 	{
@@ -350,19 +372,18 @@
 	.animdev p
 	{
 		height: 100%;
-		width: 280px;
-		font-size: 1.9em;
-		margin-top: 70%;
+		width: 250px;
+		font-size: 1.5em;
+		margin-top: 50%;
 	}
 	.skillssquare
 	{
-		height: 350px;
+		height: 310px;
 		margin-bottom: 50px;
 	}
 	.humanimg
 	{
-		width: 90%;
-		margin-top: 2%;
+		width: 100%;
 
 	}
 	.designimg
@@ -406,9 +427,22 @@
 	{
 		flex-direction: row;
 	}
+	#footer-social .fa
+	{
+		margin: 30px;
 
-
-
+	}
+	form
+	{
+		width: 80%;
+	}
+	form label, form input, form textarea
+	{
+		margin-left: 100px;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		font-size: 1.2em;
+	}
 
 }
 
@@ -447,7 +481,7 @@
 	}
 	header
 	{
-		height: 500px;
+		height: 75vh;
 	}
 	#navigation
 	{
@@ -530,9 +564,9 @@
 
 	.animdev p
 	{
-		width: 360px;
-		font-size: 2.5em;
-		margin-top: 50%;
+		width: 320px;
+		font-size: 2.0em;
+		margin-top: 30%;
 	}
 	.skillssquare
 	{
@@ -541,8 +575,8 @@
 	}
 	.humanimg
 	{
-		width: 100%;
-		margin-top: 5%;
+		width: 80%;
+
 	}
 	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
