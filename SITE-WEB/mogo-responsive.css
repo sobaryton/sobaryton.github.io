@@ -81,7 +81,11 @@
 		margin-top: 50px;
 
 	}
-
+	#btntop
+	{
+		top: 85%;
+		left: 85%;
+	}
 /********************************Work on the section Intro****************************************/
 	#intro
 	{
@@ -170,10 +174,13 @@
 	{
 		width:100%;
 	}
+	#humansquares
+	{
+		padding-bottom: 10px;
+	}
 	.humanimg
 	{
-		width: 100%;
-		margin-top:10%;
+		width: 30%;
 	}
 	.designimg
 	{
@@ -313,6 +320,11 @@
 		margin-top: 50px;
 		margin-bottom: 10px;
 
+	}
+	#btntop
+	{
+		top: 85%;
+		left: 95%;
 	}
 /*************************Section intro**********************/
 	#intro
@@ -484,12 +496,17 @@
 		height: 50px;
 		width: 970px;
 	}
+	#hautdepage
+	{
+		display: block;
+	}
+
 	header
 	{
 		height: 100vh;
 	}
 	#titre{
-		margin-top: 20%;
+		margin-top: 10%;
 	}
 	#navigation
 	{
