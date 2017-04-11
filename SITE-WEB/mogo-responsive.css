@@ -537,7 +537,7 @@
 	.navbar-nav
 	{
 		flex: 3;
-		margin-left: 5%;
+		margin-left: 3%;
 	}
 	.navbar-nav li
 	{
@@ -702,14 +702,9 @@
 		height: 100%;
 	
 	}
-	.navbar-brand
-	{
-		flex: 1;
-	}
 	.navbar-nav
 	{
-		flex: 4;
-		margin-left: 3%;
+		margin-left: 0;
 	}
 	.navbar-nav li
 	{
