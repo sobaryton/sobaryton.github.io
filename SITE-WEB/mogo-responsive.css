@@ -639,8 +639,12 @@
 	{
 		font-size: 5.5em;
 		height: 150px;
-		margin-top: 80px;
 
+
+	}
+	#hautdepage
+	{
+		display: block;
 	}
 	/*Work on the navigation bar*/
 	.btn-navbar

@@ -25,6 +25,13 @@ h1
 	color: white;
 	text-align: center;
 }
+#hautdepage
+{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
 /*Work on the navigation bar*/
 .navbar-brand
 {
