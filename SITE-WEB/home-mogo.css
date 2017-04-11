@@ -83,6 +83,15 @@ h1
 	background-color: #FCB3B3;
 }
 
+#btntop
+{
+	position: fixed;
+	top: 85%;
+	left: 95%;
+	color: #4a4a4a;
+	opacity: 0.5;
+}
+
 /********************************Work on the section Intro****************************************/
 #introtxt p, #introtxt h2
 {
