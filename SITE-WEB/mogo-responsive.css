@@ -252,6 +252,7 @@
 	form
 	{
 		width: 100%;
+		text-align: center;
 	}
 	form label, form input, form textarea
 	{
@@ -478,6 +479,7 @@
 	form
 	{
 		width: 80%;
+		text-align: center;
 	}
 	form label, form input, form textarea
 	{
@@ -652,15 +654,23 @@
 	{
 		font-size: 1.5em;
 	}  
-	#footer-social
-	{
-		text-align: center;
-		flex-direction: column;
 
+	/********************************Work on the section contact****************************************/
+	form
+	{
+		text-align: left;
+		height: 100%;
+	}
+	#footer-social
+ 	{
+	 text-align: center;
+	 flex-direction: column;
+ 	}
+	#footer-social .fa
+	{
+		margin: 20px;
 
 	}
-
-
 }
 
 
