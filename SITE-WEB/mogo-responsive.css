@@ -616,6 +616,9 @@
 		width: 80%;
 
 	}
+	.squarelist, .skills{
+		margin-top: 2%;
+	}
 	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
 	{
@@ -793,6 +796,7 @@
 	.animdev
 	{
 		height: 50px;
+		margin-top: 10%;
 
 	}
 	.animdev p
@@ -823,7 +827,9 @@
 		height: 20px;
 		margin:10px;
 	}
-
+	.squarelist, .skills{
+		margin-top: 4%;
+	}
 /********************************Work on the section work****************************************/
 
 	.bloc1, .bloc2
