@@ -191,6 +191,10 @@
 		text-align: center;
 		text-align: -webkit-center;
 	}
+	.skills p, .squares
+	{
+		width: 50%;
+	}
 /********************************Work on the section work****************************************/
 	.bloc11, .bloc22, .bloc1, .bloc2
 	{
@@ -410,6 +414,10 @@
 	{
 		margin-top: 10%;
 		width: 130%;
+	}
+	.skills p, .squares
+	{
+		width: 100%;
 	}
 	/********************************Work on the section work****************************************/
 	.bloc1, .bloc2
