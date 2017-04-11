@@ -135,16 +135,17 @@
 		background-color: #bad1d1;
 		color: white;
 		height: 50px;
+		margin-top: 10%;
 
 	}
 	.animdev p
 	{
 		width: 100%;
 		font-size: 1.5em;
-		margin-top: 10px;
+
 
 	}
-	#devskills h2, #designskills h2, #humanskills h2
+	.skillssquare h2
 	{
 		font-size: 1.8em;
 		margin-bottom: 30px;
@@ -180,11 +181,23 @@
 	}
 	.humanimg
 	{
-		width: 30%;
+		width: 23%;
 	}
 	.designimg
 	{
-		width:50%;
+		width:70%;
+	}
+	.skillssquare .visible-xs
+	{
+		padding-right: 0;
+		padding-left: 0;
+		padding-bottom: 0;
+		padding-top: 10px;
+	}
+	.visible-xs
+	{
+		text-align: center;
+		text-align: -webkit-center;
 	}
 /********************************Work on the section work****************************************/
 	.bloc11, .bloc22, .bloc1, .bloc2
