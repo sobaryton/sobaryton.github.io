@@ -30,9 +30,10 @@ $(document).ready(function() {
 	var $titre = $('#titre');
 
 	sideslider.click(function(event){
+		$titre.fadeToggle();
 		$(sel).toggleClass('in');
 		navig.removeClass('navbar-fixed-top');
-		$titre.fadeToggle();
+
 
 
 
