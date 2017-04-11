@@ -86,10 +86,9 @@ h1
 #btntop
 {
 	position: fixed;
-	top: 85%;
-	left: 95%;
 	color: #4a4a4a;
-	opacity: 0.5;
+	opacity: 0.7;
+	z-index: 2;
 }
 
 /********************************Work on the section Intro****************************************/
@@ -204,8 +203,10 @@ h1
 	background-color: #bad1d1;
 }
 
-
-
+.skills p, .squares
+{
+	width: 50%;
+}
 
 /********************************Work on the section work****************************************/
 
