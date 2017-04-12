@@ -201,6 +201,15 @@ h1
 
 
 /********************************Work on the section work****************************************/
+.carousel
+{
+	position: fixed;
+}
+.modal-dialog
+{
+	width: 500px;
+	height: 500px;
+}
 #work h4
 {
 	text-align: center;

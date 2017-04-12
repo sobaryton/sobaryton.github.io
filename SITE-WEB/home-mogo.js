@@ -96,6 +96,7 @@ var startDate = new Date("Jan 13 15:15:15 2017");
 
 
 
+
 //*****************************************************************Management of the comments in the contact section
 var $nom = $('#nom');
 var $mail = $('#mail');
@@ -147,48 +148,5 @@ $(document).ready(function(){
 
 
 
-/*
- function openContactForm(source)
- {
- var popup = $('.popup-overlay');
- popup.css('display','block');
- popup.find('.button-text').text('Send');
- popup.find('button.main').removeClass('done');
- popup.find('[name=source]').val(source);
 
- popup.find('.close-popup').click(function(){
- popup.removeClass('visible');
- setTimeout(function(){ popup.css('display','none');},200);
- });
 
- setTimeout(function(){ popup.addClass('visible')});
- return false;
- }
-
- $(document).ready(function(){
- $('.contact-us').click(function(event){
- if (typeof mixpanel != 'undefined')
- mixpanel.track('Contact form opened');
-
- event.preventDefault();
- openContactForm();
- });
-
- $('#contact-popup form').submit(function(event){
- event.preventDefault();
-
- var button = $(this).find('button.main');
- var button_text = button.find('.button-text');
- button_text.text('Sending...');
-
- emailjs.sendForm("default_service","contact_form","contact-form")
- .then(function(){
- button_text.text('Done, thank you!');
- button.addClass('done');
-
- if (typeof mixpanel != 'undefined')
- mixpanel.track('Contact form submitted');
- })
- return false;
- });
- })*/
