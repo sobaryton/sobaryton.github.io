@@ -79,13 +79,13 @@ var startDate = new Date("Jan 13 15:15:15 2017");
 
  //for xs format
  var heightXsDesign = $( "header" ).height() + $("#intro").height() + $('#container-numbers').height() + $("#devskills").height();
- var heightXsHuman = $( "header" ).height() + $("#intro").height() + $('#container-numbers').height() + $("#designskills").height() + $("#devskills").height();
+ var heightXsHuman = heightXsDesign + $("#designskills").height();
  var heightClientDesign = heightXsDesign-scroll;
  var heightClientHuman = heightXsHuman-scroll;
  if (heightClientDesign <= 0){
 	$animdevDes.css({"animation": "type 4s steps(60, end)"}, {"-webkit-animation": "type 4s steps(60, end)"});
  }
- if (heightXsHuman <=0){
+ if (heightClientHuman <=0){
  	$animdevHum.css({"animation": "type 4s steps(60, end)"}, {"-webkit-animation": "type 4s steps(60, end)"});
  }
  // for the other formats (sm, md, lg)
