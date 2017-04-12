@@ -1,4 +1,6 @@
-//barre de navigation
+
+
+//******************************************************Navigation bar on top
 $(document).ready(function() {
 	$(window).scroll(function () {
 	    updateNavigation();
@@ -22,7 +24,7 @@ function updateNavigation() {
 	}
 }
 
-//gestion de la navbar en petit format avec le bouton
+//Navigation management in xs format with the "hamburger" button
 $(document).ready(function() {
 	var sideslider = $('[data-toggle=collapse-side]');
 	var sel = sideslider.attr('data-target');
@@ -40,7 +42,7 @@ $(document).ready(function() {
 	});
 });
 
-//Section numbers pour animer mes chiffres
+//******************************************************Animation of the numbers in numbers section
 
 // Set the date we're counting down to
 var startDate = new Date("Jan 13 15:15:15 2017");
@@ -66,38 +68,35 @@ var startDate = new Date("Jan 13 15:15:15 2017");
 
 
 
-
-
-
-//animation des cercles dans la section skills
-
-function onLoad() {
-	var circle = new ProgressBar.Circle('.cercle', {
-		color: '#FCB3B3',
-		duration: 2000,
-		easing: 'bounce',
-		strokeWidth: 6,
-		trailWidth: 1
-	});
-	circle.animate(1);
-}
-
-/*
+//***********************************************************************Animation in the skills section
  $(window).scroll(function(){
  var scroll = $( window ).scrollTop();
- var height = $( "header" ).height() + $("#intro").height() + $('#container-numbers').height() + $('#skills').height();
+ var height = $( "header" ).height() + $("#intro").height() + $('#container-numbers').height();
  var heightClient = height-scroll;
- var skillsquare = $("#skillssquare h2");
- for (var i = 0; i <)
- onLoad();
- if (heightClient>0){
+ var $animdevDev = $(".animdevDev");
+ var $animdevDes = $("#animdevDes");
+ var $animdevHum = $("#animdevHum");
 
+ //for xs format
+ var heightXsDesign = $( "header" ).height() + $("#intro").height() + $('#container-numbers').height() + $("#devskills").height();
+ var heightXsHuman = $( "header" ).height() + $("#intro").height() + $('#container-numbers').height() + $("#designskills").height() + $("#devskills").height();
+ var heightClientDesign = heightXsDesign-scroll;
+ var heightClientHuman = heightXsHuman-scroll;
+ if (heightClientDesign <= 0){
+	$animdevDes.css({"animation": "type 4s steps(60, end)"}, {"-webkit-animation": "type 4s steps(60, end)"});
  }
+ if (heightXsHuman <=0){
+ 	$animdevHum.css({"animation": "type 4s steps(60, end)"}, {"-webkit-animation": "type 4s steps(60, end)"});
+ }
+ // for the other formats (sm, md, lg)
+	 if (heightClient <= 0){
+		 $animdevDev.css({"animation": "type 4s steps(60, end)"}, {"-webkit-animation": "type 4s steps(60, end)"});
+	 }
  });
- */
 
 
 
+//*****************************************************************Management of the comments in the contact section
 var $nom = $('#nom');
 var $mail = $('#mail');
 var $company = $('#company');

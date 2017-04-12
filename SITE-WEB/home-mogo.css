@@ -138,24 +138,11 @@ h1
 }
 
 /********************************Work on the section skills****************************************/
-.cercle
-{
-	margin: 20px;
-	width: 20px;
-	height: 20px;
-}
 .skillssquare
 {
 	text-align: center;
 	border: 2px solid #bad1d1;
 	border-radius: 5px;
-}
-#devskills, #designskills, #humanskills
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
 }
 
 .animdev
@@ -166,8 +153,6 @@ h1
 
 .animdev p
 {
-	animation: type 4s steps(60, end);
-	-webkit-animation: type 4s steps(60, end);
 	white-space:nowrap;
 	overflow:hidden;
 	font-family: "Courier";
