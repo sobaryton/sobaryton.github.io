@@ -1,4 +1,4 @@
-/*mise en forme generale*/
+/*General style for all formats*/
 .container-fluid
 {
 	font-family: 'Roboto', sans-serif;
@@ -8,7 +8,7 @@ h2
 		color: #4a4a4a;
 		text-align: center;
 	}
-/*Travail sur l'entete*/
+/*Work on the header*/
 header
 {
 	background: url("images/marina-bay.png")top no-repeat;
@@ -50,7 +50,7 @@ nav, #hautdepage
 }
 .form-group
 {
-	margin-bottom:0px;
+	margin-bottom:0;
 	margin-top:20px;
 	
 }
@@ -66,7 +66,7 @@ nav, #hautdepage
 {
    opacity: 1;
 }
-/*Travail sur l'entete - et les liens de la navigation: ecrit en blanc, survol en orange.*/
+/*Work on the header, and links of the navbar: written in white and hover in orange.*/
 .navbar-nav a
 {
 	text-decoration: none;
@@ -126,7 +126,7 @@ nav, #hautdepage
 	color: #fbad27;
 }
 
-/*Travail sur la premiere section du site: welcome*/
+/*Work on the first section of the website: Welcome*/
 #welcome
 {
 	max-height: 1100px;
@@ -165,12 +165,12 @@ nav, #hautdepage
 {
 	text-align: center;
 }
-#ronds
+.ronds
 {
 	text-align: center;
 	padding-top: 80px;
 }
-/*Travail sur la section 2 du site: destinations*/
+/*Work on the second part of the website: destinations*/
 
 #destination a
 {
@@ -287,7 +287,7 @@ nav, #hautdepage
 	box-shadow: none;
 }
 
-/*Travail sur la section 3 du site: blog*/
+/*Work on the third part of the website: blog*/
 
 .blogtext
 {
@@ -348,7 +348,7 @@ nav, #hautdepage
 	text-align: center;
 		
 }
-/*Travail sur la section 4 du site: temoignage*/
+/*Work on the fourth part of te website: temoignages*/
 
 .temoignage-para
 {
@@ -383,7 +383,7 @@ nav, #hautdepage
 	border-radius: 25px;
 }
 
-/*Travail sur la section 5 du site: discount*/
+/*Work on the fifth part of the website: discount*/
 
 #discount .container-fluid
 {
@@ -411,7 +411,7 @@ nav, #hautdepage
 	color: #fbad27;
 }
 
-/*Travail sur le pied de page*/
+/*Work on the footer*/
 footer
 {
 	height: 335px;
@@ -467,7 +467,7 @@ address
 	color: #969696;
 	text-align: center;
 }
-/*Travail dans le pied de page sur les icones*/
+/*Work in the footer on the icons (fa)*/
 .follow a
 {
 	text-decoration: none;

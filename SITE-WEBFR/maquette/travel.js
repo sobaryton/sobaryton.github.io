@@ -1,10 +1,23 @@
-//gestion de la navbar en petit format avec le bouton
-var $boutonMenu = $('#boutonBarres');
-var $menuDeroulant = $('#myNavbar');
-$menuDeroulant.collapse()
+//Management of the navbar in the small formats with the hamburger like button
+/*var $boutonMenu = $('.navbar-toggle');
+var $menuDeroulant = $('.navbar-nav');
+$menuDeroulant.hide();
+$boutonMenu.on ("click", function(){
+	$menuDeroulant.toggle();
+});
+$(document).ready(function() {
+	var sideslider = $('[data-toggle=collapse]');
+	var sel = sideslider.attr('data-target');
+	var navig = $('#myNavbar');
+
+	sideslider.click(function(){
+		$(sel).toggleClass('in');
+		navig.css("z-index:5");
+	});
+});*/
 
 
-//création du caroussel pour les photos de voyage
+//Carousel with the pictures
 var $carou1 = $('#carou1');
 var $carou2 = $('#carou2');
 var $fleche = $('.fleche');
@@ -18,7 +31,7 @@ $(function($) {
 
 });
 
-//Page services, gestion du hover pour coeur
+//Services pages, work on the hover for the plane, heart and star
 
 $(function () {
   var $avionInit = $('#avionVisible');
@@ -79,7 +92,7 @@ $(function () {
   
 });
 
-//Page About us, gestion des images en dessous d'une width de 500px
+//Page About us, management of the pictures with a width smaller than 500px
 var $trust = $('#trust');
 var $quality = $('#quality');
 var $safety = $('#safety');
@@ -100,5 +113,5 @@ if ( larg <500) {
   $trust.css("margin-bottom:70px");
   $safety.css("margin-bottom:70px");
   $quality.css("margin-bottom:70px");
-};
+}
 

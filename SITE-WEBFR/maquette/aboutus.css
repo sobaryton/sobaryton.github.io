@@ -1,5 +1,5 @@
 @media (max-width: 767px)
-{/**Pour écrans petits type petits smartphone**/
+{/**For little screens of smartphones**/
 	.container-fluid
 	{
 		width: auto;
@@ -16,57 +16,59 @@
 	{
 		font-size: 1.5em;
 	}
-	header
-	{
-		height: 65px;
-
-	}
 	nav
 	{
 		background-color: black;
 		color: #FBAD27;
 	}
-	nav button
-	{
-		color: #FBAD27;
-	}
 	.navbar-brand 
 	{
 		text-decoration: none;
-		color: #FBAD27;
-		font-size: 2.3em;
+		color: #FBAD27 !important;
+		font-size: 1.5em;
 	}
 	.navbar-brand:hover
 	{
 		color: white;
-		
 	}
-	.navbar
+	.navigation
 	{
-		font-size: 1em;
+		width: 100%;
+
 	}
+	.container>.navbar-collapse
+	{
+		margin: 0;
+	}
+	.nav, .navigation
+	{
+		padding: 0;
+		margin: auto;
+	}
+
+
 	.navbar-nav a
 	{
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 	.navbar-nav li
 	{
-		width: 30%;
-		margin-bottom: 12px;
-		text-align: center;
+		width: 100%;
 	}
 	.navbar-nav
 	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		display: inherit;
 	}
 
 	#btntop 
 	{
 	  display: none;
 	}
-	/**Partie texte**/
+	.btn-navbar
+	{
+		color:  #FBAD27 !important;
+	}
+	/**Text part**/
 	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
@@ -154,10 +156,10 @@
 
 	
 }
-/*******************************************************ECRAN SMARTPHONE************************************************/
+/******************************************************SMARTPHONE  SCREEN************************************************/
 
 @media (min-width: 768px)
-{/**Pour écrans petits type smartphone**/
+{/**For smartphone's screens**/
 	.container-fluid
 	{
 		width: 750px;
@@ -214,7 +216,7 @@
 	{
 	  display: none;
 	}
-	/**Partie 1 Welcome**/
+	/**Part 1 Welcome**/
 	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
@@ -282,7 +284,7 @@
 	{
 		border-top: 2px #FBAD27 solid;
 	}
-	/*Travail sur le pied de page*/
+	/*Work on the footer*/
 	footer
 	{
 		margin-top: 50px;
@@ -308,13 +310,13 @@
 
 	
 }
-}
 
-/***********************************************************ECRAN TABLETTES*********************************************/
+
+/***********************************************************TABLETS SCREENS*********************************************/
 
 
 @media (min-width: 992px)
-{/**Pour écrans moyens type tablettes**/
+{/**For tablets' screens**/
 	.container-fluid
 	{
 		width: 970px;
@@ -357,7 +359,7 @@
 	  display: none;
 	}
 
-	/**Partie 1 Welcome**/
+	/**Part 1 Welcome**/
 	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
@@ -443,10 +445,10 @@
 	
 }
 
-/******************************************************Ecrans ORDI***************************************/
+/******************************************************DESKTP SCREENS***************************************/
 
 @media (min-width: 1200px) 
-{	/**Pour écrans larges**/
+{	/**For large screens like desktops**/
 	.container-fluid
 	{
 		width: 1170px;
@@ -487,7 +489,7 @@
 	{
 	  display: block;
 	}
-	/*Premiere section*/
+	/*First section*/
 	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
@@ -568,7 +570,7 @@
 	
 }
 
-/*******************************************GROS ECRANS*******************************/
+/*******************************************BIG SCREENS*******************************/
 @media (min-width: 1920px)
 {
 	.container-fluid
@@ -584,7 +586,7 @@
 		font-size: 5em;
 		
 	}
-	/*Travail sur l'entete*/
+	/*Work on the header*/
 	header
 	{
 		height: 200px;
@@ -619,7 +621,7 @@
 	  display: block;
 	}
 	
-	/*Premiere section*/
+	/*First section*/
 	#paraS p, #valuestxt, #mission p
 	{
 		text-align: justify;
@@ -745,7 +747,7 @@
 	{
 		text-align: center;
 	}
-	/*Travail dans le pied de page sur les icones*/
+	/*Work on the footer and icons*/
 	.follow a
 	{
 		text-decoration: none;
