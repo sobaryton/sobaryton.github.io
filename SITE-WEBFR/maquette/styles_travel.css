@@ -30,6 +30,11 @@ nav, #hautdepage
 {
 	font-size: 2em;
 }
+.navbar-brand
+{
+	text-decoration: none;
+	color: #FBAD27 !important;
+}
 .navbar
 {
 	margin: 0 0 !important;
