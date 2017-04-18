@@ -68,13 +68,49 @@
 		color:  #FBAD27 !important;
 	}
 	/**Partie texte**/
+	#carte
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 70px;
+		margin-bottom: 70px;
+		justify-content: space-between;
+	}
 
+	form input, form textarea
+	{
+		margin-bottom: 15px;
+	}
+	form input:focus, form textarea:focus
+	{
+		outline-color: #FBAD27;
 
+	}
+	#envoi:hover
+	{
+		border: 1px solid #FBAD27;
+		color: #FBAD27;
+	}
+	#contact p, #contact h2
+	{
+		text-align: center;
+	}
+	#carte iframe, #form
+	{
+		width: 80%;
+	}
+	textarea
+	{
+		width: 80%;
+		height: 100px;
+	}
 	/*Travail sur le pied de page*/
 	footer
 	{
 		margin-top: 50px;
 		height: 200px;
+		border-top: 1px #FBAD27 solid;
 	}
 	footer ul, footer address, .contacter p
 	{
@@ -152,7 +188,54 @@
 		display: none;
 	}
 	/**Partie 1 Welcome**/
+	#contact p, #contact h2
+	{
+		text-align: center;
+		margin-top: 30px;
+	}
 
+	#carte
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 40px;
+		margin-bottom: 70px;
+		justify-content: space-between;
+	}
+	#form
+	{
+		width: 80%;
+		margin-bottom: 50px;
+	}
+	form input, form textarea
+	{
+		margin-bottom: 30px;
+	}
+	form input:focus, form textarea:focus
+	{
+		outline-color: #FBAD27;
+
+	}
+	textarea
+	{
+		width: 80%;
+		height: 100px;
+	}
+	#envoi
+	{
+		width: 30%;
+		height: 35px;
+	}
+	#envoi:hover
+	{
+		border: 1px solid #FBAD27;
+		color: #FBAD27;
+	}
+	#carte iframe
+	{
+		width: 80%;
+	}
 	/*Travail sur le pied de page*/
 	footer
 	{
@@ -235,7 +318,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		margin-top: 100px;
+		margin-top: 70px;
 		margin-bottom: 150px;
 		justify-content: space-around;
 	}
@@ -245,11 +328,13 @@
 		border-left: 2px solid #FBAD27;
 		border-bottom: 2px solid #FBAD27;
 		padding-left: 30px;
+		margin-bottom: 0;
 
 	}
 	#contact p, #contact h2
 	{
 		text-align: center;
+		margin-top: 70px;
 	}
 	form input, form textarea
 	{
@@ -274,6 +359,10 @@
 	{
 		border: 1px solid #FBAD27;
 		color: #FBAD27;
+	}
+	#carte iframe
+	{
+		width: 50%;
 	}
 	/*Travail sur le pied de page*/
 	footer
