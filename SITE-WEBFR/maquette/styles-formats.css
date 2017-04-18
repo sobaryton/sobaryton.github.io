@@ -26,31 +26,33 @@
 	{
 		margin-top: 15px;
 	}
+	.navbar-inverse
+	{
+		position: fixed;
+		float: left;
+		width: 100%;
+		border: none;
+		z-index: 5;
+		background-color: #12111D;
+	}
+
+	.navbar-nav a
+	{
+		font-size: 1.2em;
+	}
 	.navigation
 	{
 		width: 100%;
-	}
-	.navbar-inverse
-	{
-		position: absolute;
-		float: left;
-		width: 100%;
-		background-color: transparent;
-		border: none;
+
 	}
 	.container>.navbar-collapse
 	{
 		margin: 0;
-		background-color: #0F1224;
 	}
 	.nav, .navigation
 	{
 		padding: 0;
 		margin: auto;
-	}
-	.navbar-nav a
-	{
-		font-size: 1.2em;
 	}
 	.navbar-nav li
 	{
@@ -59,6 +61,10 @@
 	.navbar-nav
 	{
 		display: inherit;
+	}
+	.navbar-inverse .navbar-nav>li>a
+	{
+		color: white !important;
 	}
 	.btn-navbar
 	{
@@ -364,7 +370,7 @@
 	}
 	.btn-navbar
 	{
-		display: block;
+		display: none;
 	}
 	/**Partie 1 Welcome**/
 	#welcome_fusion
