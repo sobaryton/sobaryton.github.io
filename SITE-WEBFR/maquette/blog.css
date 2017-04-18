@@ -1,0 +1,869 @@
+@media (max-width: 767px)
+{/**Pour écrans petits type petits smartphone**/
+	.container-fluid
+	{
+		width: auto;
+	}
+	h1
+	{
+		font-size: 5em;
+	}
+	h2
+	{
+		font-size: 2.5em;
+	}
+	h3
+	{
+		font-size: 1.5em;
+	}
+
+	nav
+	{
+		background-color: black;
+		color: #FBAD27;
+	}
+	.navbar-brand
+	{
+		text-decoration: none;
+		color: #FBAD27;
+		font-size: 2.3em;
+	}
+	.navbar-brand:hover
+	{
+		color: white;
+
+	}
+	.navigation
+	{
+		width: 100%;
+
+	}
+	.container>.navbar-collapse
+	{
+		margin: 0;
+	}
+	.nav, .navigation
+	{
+		padding: 0;
+		margin: auto;
+	}
+	.navbar-nav a
+	{
+		font-size: 1.2em;
+	}
+	.navbar-nav li
+	{
+		width: 100%;
+	}
+	.navbar-nav
+	{
+		display: inherit;
+	}
+	#btntop
+	{
+		display: none;
+	}
+	.btn-navbar
+	{
+		color:  #FBAD27 !important;
+	}
+	/**Partie texte**/
+	#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		color: #757575;
+		font-size: 1.2em;
+
+	}
+	#parts
+	{
+		text-align: center;
+		width: 100%;
+	}
+	#titreS
+	{
+		margin-top: 135px;
+	}
+	#avion, #coeur, #etoile
+	{
+		width: 70%;
+		height: 200px;
+		margin: auto;
+	}
+
+	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
+	{
+		background-color: #FBAD27;
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	#etoileHover, #coeurHover, #avionHover
+	{
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#coeur .fa, #avion .fa, #etoile .fa
+	{
+		color: white;
+		margin-top: 75px;
+	}
+	#avionTxt, #etoileTxt, #coeurTxt
+	{
+		text-align: center;
+		height: 100%;
+
+	}
+	#avionSection, #coeurSection, #etoileSection
+	{
+		opacity: 0.75;
+	}
+	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
+	{
+		color: #FBAD27;
+	}
+	#avionTxt p, #etoileTxt p, #coeurTxt p
+	{
+		font-size: 20px;
+
+	}
+	#avionSection
+	{
+		background: url('images/plane.jpg')no-repeat;
+	}
+	#coeurSection
+	{
+		background: url('images/coeur.jpg')no-repeat;
+	}
+	#etoileSection
+	{
+		background: url('images/etoile.jpg')no-repeat;
+	}
+
+	#coeur
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.txt h3
+	{
+		font-size: 2.5em;
+
+	}
+
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 0.9em
+	}
+	.contacter, .about, .adresse, .follow
+	{
+		padding: 5px;
+	}
+	.bloc1, .bloc2
+	{
+		text-align: center;
+	}
+
+
+}
+/*******************************************************ECRAN SMARTPHONE************************************************/
+
+@media (min-width: 768px)
+{/**Pour écrans petits type smartphone**/
+	.container-fluid
+	{
+		width: 750px;
+	}
+	h1
+	{
+		font-size: 3em;
+	}
+	h2
+	{
+		font-size: 3em;
+	}
+	h3
+	{
+		font-size: 1.1em;
+	}
+
+	.navbar-brand
+	{
+		text-decoration: none;
+		color: #FBAD27;
+		font-size: 2.3em;
+	}
+	.navbar-brand:hover
+	{
+		color: white;
+
+	}
+	.navbar
+	{
+		font-size: 1em;
+	}
+	.navbar-nav a
+	{
+		font-size: 1.1em;
+	}
+	.navbar-nav li
+	{
+		width: 30%;
+		margin-bottom: 12px;
+		text-align: center;
+	}
+	.navbar-nav
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+	}
+	#btntop, .btn-navbar
+	{
+		display: none;
+	}
+	/**Partie 1 Welcome**/
+	#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		color: #757575;
+		font-size: 1.2em;
+
+	}
+	#parts
+	{
+		text-align: center;
+		width: 100%;
+	}
+	#titreS
+	{
+		margin-top: 100px;
+	}
+	#avion, #coeur, #etoile
+	{
+		width: 80%;
+		height: 300px;
+		margin: auto;
+	}
+
+	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
+	{
+		background-color: #FBAD27;
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#etoileHover, #coeurHover, #avionHover
+	{
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#coeur .fa, #avion .fa, #etoile .fa
+	{
+		color: white;
+		margin-top: 100px;
+	}
+	#avionTxt, #etoileTxt, #coeurTxt
+	{
+		text-align: center;
+		height: 100%;
+		margin-top: 70px;
+	}
+	#avionSection, #coeurSection, #etoileSection
+	{
+		opacity: 0.75;
+	}
+	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
+	{
+		color: #FBAD27;
+		font-size: 30px;
+	}
+	#avionTxt p, #etoileTxt p, #coeurTxt p
+	{
+		font-size: 20px;
+	}
+	#avionSection
+	{
+		background: url('images/plane.jpg')no-repeat;
+	}
+	#coeurSection
+	{
+		background: url('images/coeur.jpg')no-repeat;
+	}
+	#etoileSection
+	{
+		background: url('images/etoile.jpg')no-repeat;
+	}
+
+	#coeur
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.txt h3
+	{
+		font-size: 2.5em;
+
+	}
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 1em
+	}
+	.contacter, .about, .adresse, .follow
+	{
+		padding: 10px;
+	}
+	.bloc1, .bloc2
+	{
+		text-align: center;
+	}
+	.copyright
+	{
+		text-align: center;
+	}
+
+
+}
+
+
+/***********************************************************ECRAN TABLETTES*********************************************/
+
+
+@media (min-width: 992px)
+{/**Pour écrans moyens type tablettes**/
+	.container-fluid
+	{
+		width: 970px;
+
+	}
+	h1
+	{
+		font-size: 3.5em;
+	}
+	h2
+	{
+		font-size: 2em;
+	}
+	h3
+	{
+		font-size: 0.9em;
+	}
+	/**Header**/
+
+	.navbar-brand
+	{
+		text-decoration: none !important;
+		color: #FBAD27 !important;
+		font-size: 2em;
+	}
+	.navbar-brand:hover
+	{
+		color: white !important;
+
+	}
+	.navbar-nav a
+	{
+		font-size: 1.3em;
+	}
+	#btntop
+	{
+		display: none;
+	}
+
+
+	/**Partie 1 Welcome**/
+	#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		color: #757575;
+		font-size: 1.2em;
+
+	}
+	#parts
+	{
+		text-align: center;
+		width: 100%;
+	}
+	#titreS
+	{
+		margin-top: 100px;
+	}
+	#avion, #coeur, #etoile
+	{
+		width: 70%;
+		height: 300px;
+		margin: auto;
+	}
+
+	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
+	{
+		background-color: #FBAD27;
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#etoileHover, #coeurHover, #avionHover
+	{
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#coeur .fa, #avion .fa, #etoile .fa
+	{
+		color: white;
+		margin-top: 100px;
+	}
+	#avionTxt, #etoileTxt, #coeurTxt
+	{
+		text-align: center;
+		height: 100%;
+		margin-top: 90px;
+	}
+	#avionSection, #coeurSection, #etoileSection
+	{
+		opacity: 0.75;
+	}
+	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
+	{
+		color: #FBAD27;
+	}
+	#avionSection
+	{
+		background: url('images/plane.jpg')no-repeat;
+	}
+	#coeurSection
+	{
+		background: url('images/coeur.jpg')no-repeat;
+	}
+	#etoileSection
+	{
+		background: url('images/etoile.jpg')no-repeat;
+	}
+
+	#coeur
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.txt h3
+	{
+		font-size: 2.5em;
+
+	}
+
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 1.1em
+	}
+	.contacter, .about, .adresse, .follow
+	{
+		padding: 5px;
+	}
+	.bloc1, .bloc2
+	{
+		text-align: center;
+	}
+
+
+}
+
+/******************************************************Ecrans ORDI***************************************/
+
+@media (min-width: 1200px)
+{	/**Pour écrans larges**/
+	.container-fluid
+	{
+		width: 1170px;
+	}
+	h1
+	{
+		font-size: 5em;
+	}
+	h2
+	{
+		font-size: 3em;
+	}
+	h3
+	{
+		font-size: 1.5em;
+	}
+	/**Header**/
+
+	.navbar-brand
+	{
+		text-decoration: none !important;
+		color: #FBAD27 !important;
+		font-size: 2em;
+	}
+	.navbar-brand:hover
+	{
+		color: white !important;
+
+	}
+	.navbar
+	{
+		font-size: 1em;
+	}
+	#btntop
+	{
+		display: block;
+	}
+	/*Premiere section*/
+	#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		color: #757575;
+		font-size: 1.2em;
+
+	}
+	#parts
+	{
+		text-align: center;
+		width: 100%;
+	}
+	#titreS
+	{
+		margin-top: 100px;
+	}
+	#avion, #coeur, #etoile
+	{
+		width: 70%;
+		height: 300px;
+		margin: auto;
+	}
+
+	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
+	{
+		background-color: #FBAD27;
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#etoileHover, #coeurHover, #avionHover
+	{
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#coeur .fa, #avion .fa, #etoile .fa
+	{
+		color: white;
+		margin-top: 100px;
+	}
+	#avionTxt, #etoileTxt, #coeurTxt
+	{
+		text-align: center;
+		height: 100%;
+		margin-top: 90px;
+	}
+	#avionSection, #coeurSection, #etoileSection
+	{
+		opacity: 0.75;
+	}
+	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
+	{
+		color: #FBAD27;
+	}
+	#avionSection
+	{
+		background: url('images/plane.jpg')no-repeat;
+	}
+	#coeurSection
+	{
+		background: url('images/coeur.jpg')no-repeat;
+	}
+	#etoileSection
+	{
+		background: url('images/etoile.jpg')no-repeat;
+	}
+
+	#coeur
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.txt h3
+	{
+		font-size: 2.5em;
+
+	}
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 80px;
+		height: 335px;
+	}
+	.contacter, .about, .adresse, .follow
+	{
+		padding: 5px;
+	}
+	.bloc1, .bloc2
+	{
+		text-align: center;
+	}
+
+}
+
+/*******************************************GROS ECRANS*******************************/
+@media (min-width: 1920px)
+{
+	.container-fluid
+	{
+		width: 1920px;
+	}
+	h1
+	{
+		font-size: 7.5em;
+	}
+	h2
+	{
+		font-size: 5em;
+
+	}
+	/*Travail sur l'entete*/
+	header
+	{
+		height: 200px;
+	}
+	nav, #hautdepage
+	{
+		height: 100%;
+	}
+	.navbar-brand
+	{
+		text-decoration: none !important;
+		color: #FBAD27 !important;
+		font-size: 3em;
+		height: 70px;
+	}
+	.navbar-brand:hover
+	{
+		color: white !important;
+
+	}
+	.navbar-nav
+	{
+		height: 100%;
+		margin-top: 30px;
+	}
+	.navbar-nav a
+	{
+		font-size: 2em;
+	}
+	#btntop
+	{
+		display: block;
+	}
+
+	/*Premiere section*/
+	#paraS p
+	{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		color: #757575;
+		font-size: 2em;
+
+	}
+	#parts
+	{
+		text-align: center;
+		width: 100%;
+	}
+	#titreS
+	{
+		margin-top: 100px;
+	}
+	#avion, #coeur, #etoile
+	{
+		width: 80%;
+		height: 350px;
+		margin: auto;
+		margin-bottom: 150px;
+	}
+
+	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
+	{
+		background-color: #FBAD27;
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#etoileHover, #coeurHover, #avionHover
+	{
+		height: 100%;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+	}
+	#coeur .fa, #avion .fa, #etoile .fa
+	{
+		color: white;
+		margin-top: 100px;
+	}
+	#avionTxt, #etoileTxt, #coeurTxt
+	{
+		text-align: center;
+		height: 100%;
+		margin-top: 80px;
+	}
+	#avionSection, #coeurSection, #etoileSection
+	{
+		opacity: 0.75;
+	}
+	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
+	{
+		color: #FBAD27;
+		font-size: 3em;
+	}
+	#avionTxt p, #etoileTxt p, #coeurTxt p
+	{
+		font-size: 2em;
+	}
+
+	#avionSection
+	{
+		background: url('images/plane.jpg')no-repeat;
+	}
+	#coeurSection
+	{
+		background: url('images/coeur.jpg')no-repeat;
+	}
+	#etoileSection
+	{
+		background: url('images/etoile.jpg')no-repeat;
+	}
+	.txt h3
+	{
+		font-size: 3em;
+	}
+
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 200px;
+		height: 335px;
+	}
+	footer h3
+	{
+		font-weight: bold;
+	}
+
+	footer ul
+	{
+		list-style-type: none;
+		margin-left:0;
+		padding-left:0;
+	}
+	#info a:visited, #info a:focus
+	{
+		text-decoration: none !important;
+		color: #969696 !important;
+		background-color: transparent !important;
+	}
+	#info a:hover
+	{
+		text-decoration: none;
+		color: #fbad27;
+		background-color: transparent !important;
+	}
+	.bloc1
+	{
+		padding-left: 45px;
+	}
+
+	address
+	{
+		color: #969696;
+	}
+
+	footer ul, footer address, .contacter p
+	{
+		color: #969696;
+		font-size: 1.2em ;
+	}
+	.copyright
+	{
+		margin-top: 55px;
+		text-align: center;
+		background: url("images/Shape3.png") no-repeat top;
+	}
+	.copyright p
+	{
+		padding-top: 55px;
+		color: #969696;
+	}
+	.contacter, .about, .adresse, .follow
+	{
+		padding: 5px;
+	}
+	.bloc1, .bloc2
+	{
+		text-align: center;
+	}
+	/*Travail dans le pied de page sur les icones*/
+	.follow a
+	{
+		text-decoration: none;
+		color: #a0a0a0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.fa-instagram
+	{
+		background-color: #fbad27;
+		color: white;
+		font-size: 1.25em;
+	}
+
+	.fa-twitter, .fa-facebook
+	{
+		background-color: #616161;
+		color: white;
+		font-size: 1.2em;
+	}
+	.follow .btn-success
+	{
+		border-radius: 25px;
+		width: 30px;
+		height: 30px;
+		background-color: #616161;
+	}
+	.follow .btn-warning
+	{
+		border-radius: 25px;
+		width: 30px;
+		height: 30px;
+		background-color: #fbad27;
+	}
+}

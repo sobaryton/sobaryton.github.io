@@ -341,11 +341,8 @@
 		font-size: 0.9em;
 	}
 	/**Header**/
-	header
-	{
-		height: auto;
-	}
-	.navbar-brand 
+
+	.navbar-brand
 	{
 		text-decoration: none !important;
 		color: #FBAD27 !important;
@@ -354,19 +351,15 @@
 	.navbar-brand:hover
 	{
 		color: white !important;
-		
+
 	}
-	.navbar
+	.navbar-nav a
 	{
-		font-size: 1em;
+		font-size: 1.3em;
 	}
-	#btntop 
+	#btntop, .btn-navbar
 	{
 	  display: none;
-	}
-	.btn-navbar
-	{
-		display: none;
 	}
 
 	/**Part 1 Welcome**/
@@ -475,11 +468,7 @@
 		font-size: 1.5em;
 	}
 	/**Header**/
-	header
-	{
-		height: auto;
-	}
-	.navbar-brand 
+	.navbar-brand
 	{
 		text-decoration: none !important;
 		color: #FBAD27 !important;
@@ -488,7 +477,7 @@
 	.navbar-brand:hover
 	{
 		color: white !important;
-		
+
 	}
 	.navbar
 	{
