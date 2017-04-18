@@ -35,10 +35,13 @@
 		position: absolute;
 		float: left;
 		width: 100%;
+		background-color: transparent;
+		border: none;
 	}
 	.container>.navbar-collapse
 	{
 		margin: 0;
+		background-color: #0F1224;
 	}
 	.nav, .navigation
 	{
@@ -296,10 +299,6 @@
 	{
 		height: 450px;
 	}
-	#hautdepage
-	{
-		padding-left: 0 !important;
-	}
 	.navbar
 	{
 		font-size: 0.98em;
@@ -311,6 +310,7 @@
 	.navbar-nav a
 	{
 		font-size: 0.98em;
+		color: white !important;
 	}
 	.navbar-nav li
 	{
@@ -319,11 +319,21 @@
 		text-align: center;
 	}
 	.navbar-nav
-{
-	width: 100%;
+	{
+		width: 100%;
+		background-color: transparent;
 
-}
-	
+	}
+	.navbar-inverse
+	{
+
+		background-color: transparent;
+		border: none;
+	}
+	.navbar-fixed-top
+	{
+		background-color: #080A17;
+	}
 	#titre
 	{
 		height: 280px;
@@ -348,9 +358,13 @@
 		color: white;
 		
 	}
-	#btntop 
+	#btntop
 	{
 	  display: none;
+	}
+	.btn-navbar
+	{
+		display: block;
 	}
 	/**Partie 1 Welcome**/
 	#welcome_fusion
@@ -433,7 +447,7 @@
 	}
 	.photo
 	{
-		width: 130px;
+		width: 150px;
 	}
 	.bali1 p,.bali2 p, .istambul_text p
 	{
@@ -516,7 +530,7 @@
 
 	
 }
-}
+
 
 /***********************************************************ECRAN TABLETTES*********************************************/
 
@@ -581,7 +595,10 @@
 		height: 40px;
 		width: 150px;
 		color: white;
-		
+	}
+	#btntop
+	{
+		display: block;
 	}
 
 	/**Partie 1 Welcome**/
@@ -607,24 +624,30 @@
 	/**Partie 2 Destination**/
 	.pays
 	{
-		width: 220px;
-		height: 220px;
+		height: 250px;
+		margin: auto;
+	}
+	#lespays, #pays-list
+	{
+		text-align: center;
 	}
 	.pays p
 	{
 		padding-top: 20px;
 	}
-	#fleche2, #fleche1
-	{
-		line-height: 450px;
-	}
 	#pays-list
 	{
-		height: 500px;
-		margin-bottom: 30px;
-		width: 80%;
+		width: 100%;
 	}
-	
+	#fleche1, #fleche3
+	{
+		line-height: 50px;
+	}
+	#places
+	{
+		background: none;
+	}
+
 	/**Partie 3 Blog**/
 	#blog h2
 	{
@@ -656,7 +679,7 @@
 	}
 	.photo
 	{
-		width: 140px;
+		width: 200px;
 	}
 	.bali1 p,.bali2 p, .istambul_text p
 	{
@@ -665,8 +688,7 @@
 	}
 	.china
 	{
-		margin-top: 25px;
-		padding: 0;
+		margin-left: 130px;
 	}
 	
 	.bali1, .bali2
@@ -679,6 +701,7 @@
 	}
 	.bali2
 	{
+		margin-top: 65px;
 		margin-top: 65px;
 	}
 	.villes
@@ -801,6 +824,10 @@
 		width: 240px;
 		color: white;
 		
+	}
+	#btntop
+	{
+		display: block;
 	}
 	/**Partie 1 Welcome**/
 	#welcome_fusion
