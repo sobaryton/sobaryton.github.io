@@ -16,18 +16,10 @@
 	{
 		font-size: 1.5em;
 	}
-	header
-	{
-		height: 65px;
 
-	}
 	nav
 	{
 		background-color: black;
-		color: #FBAD27;
-	}
-	nav button
-	{
 		color: #FBAD27;
 	}
 	.navbar-brand 
@@ -41,29 +33,39 @@
 		color: white;
 		
 	}
-	.navbar
+	.navigation
 	{
-		font-size: 1em;
+		width: 100%;
+
+	}
+	.container>.navbar-collapse
+	{
+		margin: 0;
+	}
+	.nav, .navigation
+	{
+		padding: 0;
+		margin: auto;
 	}
 	.navbar-nav a
 	{
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 	.navbar-nav li
 	{
-		width: 30%;
-		margin-bottom: 12px;
-		text-align: center;
+		width: 100%;
 	}
 	.navbar-nav
 	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		display: inherit;
 	}
 	#btntop 
 	{
 	  display: none;
+	}
+	.btn-navbar
+	{
+		color:  #FBAD27 !important;
 	}
 	/**Partie texte**/
 	#paraS p
@@ -216,7 +218,7 @@
 	}
 	.navbar-nav a
 	{
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 	.navbar-nav li
 	{
@@ -231,7 +233,7 @@
 		align-items: center;
 		width: 100%;
 	}
-	#btntop 
+	#btntop, .btn-navbar
 	{
 	  display: none;
 	}
@@ -386,9 +388,9 @@
 		color: white !important;
 		
 	}
-	.navbar
+	.navbar-nav a
 	{
-		font-size: 1em;
+		font-size: 1.3em;
 	}
 	#btntop 
 	{
