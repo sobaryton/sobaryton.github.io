@@ -158,6 +158,7 @@
 	{
 		margin-top: 50px;
 		height: 200px;
+		border-top: 1px #FBAD27 solid;
 	}
 	footer ul, footer address, .contacter p
 	{
@@ -256,7 +257,8 @@
 	}
 	form input:focus, form textarea:focus
 	{
-		outline-color: transparent;
+		outline-color: #FBAD27;
+
 	}
 	textarea
 	{
@@ -267,6 +269,11 @@
 	{
 		width: 20%;
 		height: 40px;
+	}
+	#envoi:hover
+	{
+		border: 1px solid #FBAD27;
+		color: #FBAD27;
 	}
 	/*Travail sur le pied de page*/
 	footer
