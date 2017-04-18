@@ -106,12 +106,8 @@ if ( larg <500) {
   $qualityimg.hide();
   $safetyimg.hide();
 
-  $trust.height (300 +'px');
-  $safety.height (300 +'px');
-  $quality.height (300 +'px');
-
-  $trust.css("margin-bottom:70px");
-  $safety.css("margin-bottom:70px");
-  $quality.css("margin-bottom:70px");
+  $trust.css("margin-bottom:40px");
+  $safety.css("margin-bottom:40px");
+  $quality.css("margin-bottom:40px");
 }
 
