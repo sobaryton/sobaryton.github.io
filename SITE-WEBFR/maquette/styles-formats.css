@@ -20,26 +20,49 @@
 	{
 		height: 500px;
 	}
-	.navbar
-	{
-		font-size: 1em;
-	}
+
+	/*Work on the navbar and navbar collapse*/
 	.navbar-text
 	{
 		margin-top: 15px;
 	}
+	.navigation
+	{
+		width: 100%;
+	}
+	.navbar-inverse
+	{
+		position: absolute;
+		float: left;
+		width: 100%;
+	}
+	.container>.navbar-collapse
+	{
+		margin: 0;
+	}
+	.nav, .navigation
+	{
+		padding: 0;
+		margin: auto;
+	}
 	.navbar-nav a
 	{
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
-	.navbar-nav 
+	.navbar-nav li
 	{
-		flex-wrap: wrap;
+		width: 100%;
 	}
-	nav button
+	.navbar-nav
 	{
-		color: #FBAD27;
+		display: inherit;
 	}
+	.btn-navbar
+	{
+		color:  #FBAD27 !important;
+	}
+
+	/*Work on the title of the header*/
 	#titre
 	{
 		height: 350px;
@@ -66,12 +89,13 @@
 		height: 40px;
 		width: 150px;
 		color: white;
-		
 	}
 	#btntop 
 	{
 	  display: none;
 	}
+
+
 	/**Partie 1 Welcome**/
 	#welcome_fusion
 	{

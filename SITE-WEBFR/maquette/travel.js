@@ -1,21 +1,3 @@
-//Management of the navbar in the small formats with the hamburger like button
-/*var $boutonMenu = $('.navbar-toggle');
-var $menuDeroulant = $('.navbar-nav');
-$menuDeroulant.hide();
-$boutonMenu.on ("click", function(){
-	$menuDeroulant.toggle();
-});
-$(document).ready(function() {
-	var sideslider = $('[data-toggle=collapse]');
-	var sel = sideslider.attr('data-target');
-	var navig = $('#myNavbar');
-
-	sideslider.click(function(){
-		$(sel).toggleClass('in');
-		navig.css("z-index:5");
-	});
-});*/
-
 
 //Carousel with the pictures
 var $carou1 = $('#carou1');
