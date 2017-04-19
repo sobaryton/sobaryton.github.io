@@ -96,7 +96,7 @@ if ( larg <500) {
 
 //Page travel ideas, on xs and sm formats, when you click on the country, price, a programm and a "book" button appear.
 
-if ( larg <992){
+if ( larg <767){
 	var $tripprix = $('.tripprix');
 	var $prixdetail = $('.prixdetail');
 	$prixdetail.hide();

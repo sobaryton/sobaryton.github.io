@@ -247,10 +247,17 @@
 	{
 		display: none;
 	}
-	/**Work on the countries**/
-	.payslg
+	/* Work on the countries*/
+	.pays a
 	{
 		display: none;
+	}
+	.payslg
+	{
+		display: flex;
+		height: 150px;
+		margin-top: 200px;
+
 	}
 	#ideastxt
 	{
@@ -263,9 +270,10 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		height: 1400px;
+		height: auto;
 		padding-top: 135px;
 		justify-content: space-around;
+		align-items: center;
 	}
 	.listpays a
 	{
@@ -273,24 +281,17 @@
 	}
 	.pays
 	{
-		width: 200px;
-		height: 200px;
+		width: 350px;
+		height: 350px;
+		margin-bottom: 20px;
 	}
-	.prix
-	{
-		background-color: #FBAD27;
-		position: absolute;
-		width: 75px;
-		height: 35px;
-		margin-top: 125px;
-		margin-left: 122px;
-		box-shadow: black 3px 3px 3px;
-	}
+
 	.prixdetail
 	{
 		display: flex;
-		flex-direction: column;
-		background-color: rgba(0,0,0,0.7);
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: rgba(0,0,0,0.5);
 	}
 	.tripprix
 	{
@@ -301,21 +302,20 @@
 	.tripdetail
 	{
 		display: flex;
-		flex-direction: row;
-		align-items: center;
+		flex-direction: column;
+		align-items: stretch;
 		justify-content: space-around;
 		background-color: rgba(0,0,0,1);
-		height: 50px;
-		border-top: 1px solid #FBAD27;
-	}
-	.tripitinary
-	{
 		height: 150px;
+		width: 100px;
+		border-top:none;
+		text-align: center;
 	}
+
 	.tripitinary h4
 	{
 		color: white;
-		text-align: center;
+		text-align: left;
 		font-weight: bold;
 	}
 	.tripitinary p
@@ -336,6 +336,7 @@
 		color: white;
 		font-weight: bold;
 		font-size: 1.2em;
+
 	}
 	/*Work on the footer*/
 	footer
@@ -413,7 +414,7 @@
 	}
 
 
-	/* Wor on the countries*/
+	/* Work on the countries*/
 	.pays a
 	{
 		display: none;
@@ -449,7 +450,7 @@
 	{
 		width: 350px;
 		height: 350px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	.prixdetail
