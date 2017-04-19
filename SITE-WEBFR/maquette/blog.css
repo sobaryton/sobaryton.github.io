@@ -74,10 +74,98 @@
 	{
 		color:  #FBAD27 !important;
 	}
-	/**Partie texte**/
+	/******Work on the first article with the big picture*******/
+	#blogtitre
+	{
+		padding-top:75px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	#bigarticle
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width:100%;
+		flex-wrap: wrap;
+	}
+	#photobig
+	{
+		width: 100%;
+		height:300px;
+		background: url("images/marina.png") no-repeat;
+		overflow: hidden;
+		background-size: cover;
+	}
+	#articlebigtxt
+	{
+		width: 100%;
+		text-align: left;
+	}
+	#articlebigtxt p
+	{
+		text-align: justify;
+	}
+	/********Work on the second article "Last destination bought"*******/
+	.medarticle
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 100px;
+	}
+	.photomed
+	{
+		width: 50%;
+		height:250px;
+		overflow: hidden;
+	}
+	#photomed1
+	{
+		background: url("images/mauritius.jpg") no-repeat;
+		background-size: cover;
+	}
+	#photomed2
+	{
+		background: url("images/maldives.jpg") no-repeat;
+		background-size: cover;
+	}
+	#photomed3
+	{
+		background: url("images/NYCLiberty.jpg") no-repeat;
+		background-size: cover;
+	}
+	#photomed4
+	{
+		background: url("images/NewYork.jpg") no-repeat;
+		background-size: cover;
+	}
+	.medarticletxt
+	{
+		width: 100%;
+	}
+	.medarticletxt p
+	{
+		text-align: justify;
+	}
+	/*******Work on the second section, testimonials*****/
+	.testipic
+	{
+		width: 40%;
+		height:250px;
+		overflow: hidden;
+	}
+	#testipic1
+	{
+		background: url("images/josh.jpg") no-repeat;
+		background-size: cover;
+	}
+	#testipic2
+	{
 
+	}
 
-	/*Travail sur le pied de page*/
+	/*******Work on the footer*****/
 	footer
 	{
 		margin-top: 50px;
@@ -156,10 +244,35 @@
 	{
 		display: none;
 	}
-	/**Partie 1 Welcome**/
+	/******Work on the first article with the big picture*******/
+	#blogtitre
+	{
+		padding-top:75px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	#bigarticle
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width:100%;
+	}
+	#photobig
+	{
+		width: 75%;
+		height:300px;
+		background: url("images/marina.png") no-repeat;
+		overflow: hidden;
+		background-size: cover;
+	}
+	#articlebigtxt
+	{
+		width: 25%;
+		text-align: center;
+	}
 
-
-	/*Travail sur le pied de page*/
+	/*Work on the footer*/
 	footer
 	{
 		margin-top: 50px;
@@ -232,11 +345,37 @@
 	}
 
 
-	/**Partie 1 Welcome**/
+	/******Work on the first article with the big picture*******/
+	#blogtitre
+	{
+		padding-top:75px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	#bigarticle
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width:100%;
+	}
+	#photobig
+	{
+		width: 75%;
+		height:300px;
+		background: url("images/marina.png") no-repeat;
+		overflow: hidden;
+		background-size: cover;
+	}
+	#articlebigtxt
+	{
+		width: 25%;
+		text-align: center;
+	}
 
 
 
-	/*Travail sur le pied de page*/
+	/*Work on the footer*/
 	footer
 	{
 		margin-top: 50px;
@@ -299,9 +438,32 @@
 	{
 		display: block;
 	}
-	/*Premiere section*/
-
-	/*Travail sur le pied de page*/
+	/******Work on the first article with the big picture*******/
+	#blogtitre
+	{
+		padding-top:75px;
+	}
+	#bigarticle
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width:100%;
+	}
+	#photobig
+	{
+		width: 75%;
+		height:300px;
+		background: url("images/marina.png") no-repeat;
+		overflow: hidden;
+		background-size: cover;
+	}
+	#articlebigtxt
+	{
+		width: 25%;
+		text-align: center;
+	}
+	/*Work on the footer*/
 	footer
 	{
 		margin-top: 80px;
@@ -369,10 +531,32 @@
 		display: block;
 	}
 
-	/*Premiere section*/
-
-
-	/*Travail sur le pied de page*/
+	/******Work on the first article with the big picture*******/
+	#blogtitre
+	{
+		padding-top:135px;
+	}
+	#bigarticle
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width:100%;
+	}
+	#photobig
+	{
+		width: 75%;
+		height:300px;
+		background: url("images/marina.png") no-repeat;
+		overflow: hidden;
+		background-size: cover;
+	}
+	#articlebigtxt
+	{
+		width: 25%;
+		text-align: center;
+	}
+	/*Work on the footer*/
 	footer
 	{
 		margin-top: 200px;
