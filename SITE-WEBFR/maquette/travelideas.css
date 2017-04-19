@@ -31,12 +31,19 @@
 	.navbar-brand:hover
 	{
 		color: white;
-
 	}
 	.navigation
 	{
 		width: 100%;
-
+	}
+	.navbar-inverse
+	{
+		position: fixed;
+		float: left;
+		width: 100%;
+		border: none;
+		z-index: 5;
+		background-color: #12111D;
 	}
 	.container>.navbar-collapse
 	{
@@ -67,96 +74,98 @@
 	{
 		color:  #FBAD27 !important;
 	}
-	/**Partie texte**/
-	#paraS p
+	/**Section of the countries**/
+	.payslg
+	{
+		display: none;
+	}
+	#ideastxt
 	{
 		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 100px;
-		color: #757575;
-		font-size: 1.2em;
+		padding-top: 135px;
 
 	}
-	#parts
+	.listpays
 	{
-		text-align: center;
-		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 1400px;
+		padding-top: 135px;
+		justify-content: space-around;
 	}
-	#titreS
+	.listpays a
 	{
-		margin-top: 135px;
+		text-decoration: none;
 	}
-	#avion, #coeur, #etoile
+	.pays
 	{
-		width: 70%;
+		width: 200px;
 		height: 200px;
-		margin: auto;
 	}
-
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
+	.prix
 	{
 		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-		margin-top: 50px;
-		margin-bottom: 50px;
+		position: absolute;
+		width: 75px;
+		height: 35px;
+		margin-top: 125px;
+		margin-left: 122px;
+		box-shadow: black 3px 3px 3px;
 	}
-	#etoileHover, #coeurHover, #avionHover
+	.prixdetail
 	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0,0,0,0.7);
 	}
-	#coeur .fa, #avion .fa, #etoile .fa
+	.tripprix
+	{
+		width: 100%;
+		height: 100%;
+	}
+	/*when you click on the trip you want*/
+	.tripdetail
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		background-color: rgba(0,0,0,1);
+		height: 50px;
+		border-top: 1px solid #FBAD27;
+	}
+	.tripitinary
+	{
+		height: 150px;
+	}
+	.tripitinary h4
 	{
 		color: white;
-		margin-top: 75px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
 		text-align: center;
-		height: 100%;
-
+		font-weight: bold;
 	}
-	#avionSection, #coeurSection, #etoileSection
+	.tripitinary p
 	{
-		opacity: 0.75;
+		font-size: 0.89em;
+		color: white;
+		text-align: left;
 	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
+	.bookbtn button
 	{
-		color: #FBAD27;
+		background-color: #FBAD27;
+		color: white;
+		font-weight: bold;
 	}
-	#avionTxt p, #etoileTxt p, #coeurTxt p
+	.tripprice
 	{
-		font-size: 20px;
-
-	}
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		font-size: 1.2em;
 	}
 
-	#coeur
-	{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-	.txt h3
-	{
-		font-size: 2.5em;
-
-	}
-
-	/*Travail sur le pied de page*/
+	/*Work on the footer*/
 	footer
 	{
 		margin-top: 50px;
@@ -238,93 +247,97 @@
 	{
 		display: none;
 	}
-	/**Partie 1 Welcome**/
-	#paraS p
+	/**Work on the countries**/
+	.payslg
+	{
+		display: none;
+	}
+	#ideastxt
 	{
 		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 100px;
-		color: #757575;
-		font-size: 1.2em;
+		padding-top: 135px;
 
 	}
-	#parts
+	.listpays
 	{
-		text-align: center;
-		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 1400px;
+		padding-top: 135px;
+		justify-content: space-around;
 	}
-	#titreS
+	.listpays a
 	{
-		margin-top: 100px;
+		text-decoration: none;
 	}
-	#avion, #coeur, #etoile
+	.pays
 	{
-		width: 80%;
-		height: 300px;
-		margin: auto;
+		width: 200px;
+		height: 200px;
 	}
-
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
+	.prix
 	{
 		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
+		position: absolute;
+		width: 75px;
+		height: 35px;
+		margin-top: 125px;
+		margin-left: 122px;
+		box-shadow: black 3px 3px 3px;
 	}
-	#etoileHover, #coeurHover, #avionHover
+	.prixdetail
 	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0,0,0,0.7);
 	}
-	#coeur .fa, #avion .fa, #etoile .fa
+	.tripprix
+	{
+		width: 100%;
+		height: 100%;
+	}
+	/*when you click on the trip you want*/
+	.tripdetail
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		background-color: rgba(0,0,0,1);
+		height: 50px;
+		border-top: 1px solid #FBAD27;
+	}
+	.tripitinary
+	{
+		height: 150px;
+	}
+	.tripitinary h4
 	{
 		color: white;
-		margin-top: 100px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
 		text-align: center;
-		height: 100%;
-		margin-top: 70px;
+		font-weight: bold;
 	}
-	#avionSection, #coeurSection, #etoileSection
+	.tripitinary p
 	{
-		opacity: 0.75;
+		font-size: 0.89em;
+		color: white;
+		text-align: left;
 	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
+	.bookbtn button
 	{
-		color: #FBAD27;
-		font-size: 30px;
+		background-color: #FBAD27;
+		color: white;
+		font-weight: bold;
 	}
-	#avionTxt p, #etoileTxt p, #coeurTxt p
+	.tripprice
 	{
-		font-size: 20px;
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		font-size: 1.2em;
 	}
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
-
-	#coeur
-	{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-	.txt h3
-	{
-		font-size: 2.5em;
-
-	}
-	/*Travail sur le pied de page*/
+	/*Work on the footer*/
 	footer
 	{
 		margin-top: 50px;
@@ -400,89 +413,98 @@
 	}
 
 
-	/**Partie 1 Welcome**/
-	#paraS p
+	/* Wor on the countries*/
+	.pays a
+	{
+		display: none;
+	}
+	.payslg
+	{
+		display: flex;
+		height: 150px;
+		margin-top: 200px;
+
+	}
+	#ideastxt
 	{
 		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 100px;
-		color: #757575;
+		padding-top: 135px;
+
+	}
+	.listpays
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: auto;
+		padding-top: 135px;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.listpays a
+	{
+		text-decoration: none;
+	}
+	.pays
+	{
+		width: 350px;
+		height: 350px;
+		margin-bottom: 10px;
+	}
+
+	.prixdetail
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: rgba(0,0,0,0.5);
+	}
+	.tripprix
+	{
+		width: 100%;
+		height: 100%;
+	}
+	/*when you click on the trip you want*/
+	.tripdetail
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: space-around;
+		background-color: rgba(0,0,0,1);
+		height: 150px;
+		width: 100px;
+		border-top:none;
+		text-align: center;
+	}
+
+	.tripitinary h4
+	{
+		color: white;
+		text-align: left;
+		font-weight: bold;
+	}
+	.tripitinary p
+	{
+		font-size: 0.89em;
+		color: white;
+		text-align: left;
+	}
+	.bookbtn button
+	{
+		background-color: #FBAD27;
+		color: white;
+		font-weight: bold;
+	}
+	.tripprice
+	{
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
 		font-size: 1.2em;
 
 	}
-	#parts
-	{
-		text-align: center;
-		width: 100%;
-	}
-	#titreS
-	{
-		margin-top: 100px;
-	}
-	#avion, #coeur, #etoile
-	{
-		width: 70%;
-		height: 300px;
-		margin: auto;
-	}
-
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
-	{
-		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#etoileHover, #coeurHover, #avionHover
-	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#coeur .fa, #avion .fa, #etoile .fa
-	{
-		color: white;
-		margin-top: 100px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
-		text-align: center;
-		height: 100%;
-		margin-top: 90px;
-	}
-	#avionSection, #coeurSection, #etoileSection
-	{
-		opacity: 0.75;
-	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
-	{
-		color: #FBAD27;
-	}
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
-
-	#coeur
-	{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-	.txt h3
-	{
-		font-size: 2.5em;
-
-	}
-
-	/*Travail sur le pied de page*/
+	/*Work on the footer*/
 	footer
 	{
 		margin-top: 50px;
@@ -549,86 +571,7 @@
 		display: block;
 	}
 	/*Premiere section*/
-	#paraS p
-	{
-		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 100px;
-		color: #757575;
-		font-size: 1.2em;
 
-	}
-	#parts
-	{
-		text-align: center;
-		width: 100%;
-	}
-	#titreS
-	{
-		margin-top: 100px;
-	}
-	#avion, #coeur, #etoile
-	{
-		width: 70%;
-		height: 300px;
-		margin: auto;
-	}
-
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
-	{
-		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#etoileHover, #coeurHover, #avionHover
-	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#coeur .fa, #avion .fa, #etoile .fa
-	{
-		color: white;
-		margin-top: 100px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
-		text-align: center;
-		height: 100%;
-		margin-top: 90px;
-	}
-	#avionSection, #coeurSection, #etoileSection
-	{
-		opacity: 0.75;
-	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
-	{
-		color: #FBAD27;
-	}
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
-
-	#coeur
-	{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-	.txt h3
-	{
-		font-size: 2.5em;
-
-	}
 	/*Travail sur le pied de page*/
 	footer
 	{
@@ -698,86 +641,7 @@
 	}
 
 	/*Premiere section*/
-	#paraS p
-	{
-		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 100px;
-		color: #757575;
-		font-size: 2em;
 
-	}
-	#parts
-	{
-		text-align: center;
-		width: 100%;
-	}
-	#titreS
-	{
-		margin-top: 100px;
-	}
-	#avion, #coeur, #etoile
-	{
-		width: 80%;
-		height: 350px;
-		margin: auto;
-		margin-bottom: 150px;
-	}
-
-	#etoileVisible, #coeurVisible, #avionVisible, #coeurSection, #etoileSection, #avionSection
-	{
-		background-color: #FBAD27;
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#etoileHover, #coeurHover, #avionHover
-	{
-		height: 100%;
-		text-align: center;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#coeur .fa, #avion .fa, #etoile .fa
-	{
-		color: white;
-		margin-top: 100px;
-	}
-	#avionTxt, #etoileTxt, #coeurTxt
-	{
-		text-align: center;
-		height: 100%;
-		margin-top: 80px;
-	}
-	#avionSection, #coeurSection, #etoileSection
-	{
-		opacity: 0.75;
-	}
-	#avionTxt h3, #etoileTxt h3, #coeurTxt h3
-	{
-		color: #FBAD27;
-		font-size: 3em;
-	}
-	#avionTxt p, #etoileTxt p, #coeurTxt p
-	{
-		font-size: 2em;
-	}
-
-	#avionSection
-	{
-		background: url('images/plane.jpg')no-repeat;
-	}
-	#coeurSection
-	{
-		background: url('images/coeur.jpg')no-repeat;
-	}
-	#etoileSection
-	{
-		background: url('images/etoile.jpg')no-repeat;
-	}
-	.txt h3
-	{
-		font-size: 3em;
-	}
 
 	/*Travail sur le pied de page*/
 	footer

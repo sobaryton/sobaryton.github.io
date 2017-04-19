@@ -93,3 +93,28 @@ if ( larg <500) {
   $quality.css("margin-bottom:40px");
 }
 
+
+//Page travel ideas, on xs and sm formats, when you click on the country, price, a programm and a "book" button appear.
+
+if ( larg <992){
+	var $tripprix = $('.tripprix');
+	var $prixdetail = $('.prixdetail');
+	$prixdetail.hide();
+	$tripprix.each( function(index){
+		var $tripprixindex = $('#tripprix'+index);
+		var $prixdetailindex = $('#prixdetail'+index);
+		$tripprixindex.click(function() {
+			$tripprixindex.hide();
+			$prixdetailindex.slideToggle("slow");
+			$prixdetailindex.click(function () {
+				$prixdetailindex.slideUp("slow");
+				$tripprixindex.show();
+			});
+		});
+	});
+}
+
+
+
+
+

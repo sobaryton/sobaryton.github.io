@@ -31,12 +31,19 @@
 	.navbar-brand:hover
 	{
 		color: white;
-		
+	}
+	.navbar-inverse
+	{
+		position: fixed;
+		float: left;
+		width: 100%;
+		border: none;
+		z-index: 5;
+		background-color: #12111D;
 	}
 	.navigation
 	{
 		width: 100%;
-
 	}
 	.container>.navbar-collapse
 	{

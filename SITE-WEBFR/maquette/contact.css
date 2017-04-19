@@ -31,12 +31,19 @@
 	.navbar-brand:hover
 	{
 		color: white;
-
 	}
 	.navigation
 	{
 		width: 100%;
-
+	}
+	.navbar-inverse
+	{
+		position: fixed;
+		float: left;
+		width: 100%;
+		border: none;
+		z-index: 5;
+		background-color: #12111D;
 	}
 	.container>.navbar-collapse
 	{
@@ -68,6 +75,10 @@
 		color:  #FBAD27 !important;
 	}
 	/**Partie texte**/
+	#contact h2
+	{
+		padding-top: 135px;
+	}
 	#carte
 	{
 		display: flex;

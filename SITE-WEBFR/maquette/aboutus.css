@@ -21,6 +21,15 @@
 		background-color: black;
 		color: #FBAD27;
 	}
+	.navbar-inverse
+	{
+		position: fixed;
+		float: left;
+		width: 100%;
+		border: none;
+		z-index: 5;
+		background-color: #12111D;
+	}
 	.navbar-brand 
 	{
 		text-decoration: none;
@@ -69,6 +78,10 @@
 		color:  #FBAD27 !important;
 	}
 	/**Text part**/
+	#titreA
+	{
+		margin-top: 100px;
+	}
 	#paraS p, #valuestxt, #mission p
 	{
 		text-align: center;
