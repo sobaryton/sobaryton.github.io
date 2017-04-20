@@ -41,6 +41,11 @@ h1
 	align-content: center;
 }
 /*Work on the navigation bar*/
+.navbar
+{
+	width: 100%;
+	z-index: 20;
+}
 .navbar-brand
 {
 	color: #647277;

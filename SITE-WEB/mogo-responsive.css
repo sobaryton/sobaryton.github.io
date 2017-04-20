@@ -61,21 +61,34 @@
 	.navbar
 	{
 		z-index: 10;
+		background-color: transparent;
 	}
 	.navbar-nav
 	{
 		display: inherit;
 	}
+	#navbarbrand
+	{
+		height: 40px;
+		padding: 4px 10px;
+	}
+	#navbarbrand a
+	{
+		font-size: 2.4em;
+		color: #FCB3B3;
+		padding: 0;
+		height: 40px;
+	}
+	#navbarbrand a:hover
+	{
+		background-color: transparent !important;
+		color: white;
+	}
 	.navigation
 	{
-		height: 70vh;
-		margin-top: 40px;
+		height: 85vh;
 		width: 90%;
 		background-color: #647277;
-	}
-	.navbar-left
-	{
-		margin-top: 40px;
 	}
 	.navigation ul li
 	{
@@ -84,7 +97,8 @@
 	}
 	.navbar-nav>li>a
 	{
-		line-height: 50px;
+		line-height: 40px;
+		color: #FCB3B3;
 	}
 	.navbar-nav a:hover
 	{
@@ -105,7 +119,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		height: 100vh;
+		height: 80vh;
 	}
 	#learn
 	{
@@ -300,7 +314,6 @@
 	h1
 	{
 		font-size: 3em;
-
 	}
 	h2
 	{
@@ -310,7 +323,6 @@
 		color: black;
 		border-bottom: none;
 		text-align: center;
-
 	}
 	h3
 	{
@@ -330,15 +342,22 @@
 		height: 100vh;
 	}
 	#titre{
-		margin-top: 7%;
+		padding-top: 7%;
 	}
 	.container
 	{
 		height: 50px;
 		width: 750px;
 	}
-
-	#navigation
+	.navbar
+	{
+		position: fixed;
+	}
+	.navbar-nav
+	{
+		display: flex;
+	}
+	.navigation
 	{
 		display: flex;
 		flex-direction: row;
@@ -346,14 +365,14 @@
 		width: 100%;
 		height: 100%;
 	}
-	.navbar-brand
+	#navbarbrand a
 	{
-		flex: 1;
+		font-size: 2em;
+		color: #647277 !important;
 	}
 	.navbar-nav
 	{
-		flex: 4;
-		margin-left: 2%;
+
 	}
 	.navbar-nav li
 	{
@@ -568,15 +587,19 @@
 	}
 	#titre
 	{
-		margin-top: 7%;
+		padding-top: 7%;
 	}
-	#navigation
+	.navigation
 	{
 		display: flex;
 		flex-direction: row;
 		align-items: stretch;
 		width: 100%;
 		height: 100%;
+	}
+	.navbar
+	{
+		position: fixed;
 	}
 	.navbar-brand
 	{
@@ -585,7 +608,7 @@
 	.navbar-nav
 	{
 		flex: 4;
-		margin-left: 1%;
+		margin-left: 9%;
 	}
 	.navbar-nav li
 	{
@@ -739,12 +762,15 @@
 	}
 	#hautdepage
 	{
-		display: block;
 	}
 	/*Work on the navigation bar*/
 	.btn-navbar
 	{
 		display: none;
+	}
+	.navbar
+	{
+		position: fixed;
 	}
 	.navbar-header
 	{
@@ -754,7 +780,7 @@
 	{
 		font-size: 3em;
 	}
-	#navigation
+	.navigation
 	{
 		display: flex;
 		flex-direction: row;
@@ -765,7 +791,7 @@
 	.navbar-nav
 	{
 		flex: 5;
-		margin-left: 5%;
+		margin-left: 0;
 	}
 	.navbar-nav li
 	{

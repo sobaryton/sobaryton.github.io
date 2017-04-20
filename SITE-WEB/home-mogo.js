@@ -1,19 +1,26 @@
 
 
 //******************************************************Navigation bar on top
+
 $(document).ready(function() {
 	$(window).scroll(function () {
-	    updateNavigation();
+		var larg = (window.innerWidth);
+		if(larg>767){
+			updateNavigation();
+		}
 	});
+	var larg = (window.innerWidth);
+	if(larg>767){
+		updateNavigation();
+	}
 
-	updateNavigation();
 });
 
 function updateNavigation() {
 	var scroll = $(window).scrollTop();
 	var win_height = $("header").height();
-	var $myNavBar = $('#navigation');
-	var $navElt = $('.navbar-nav a');
+	var $myNavBar = $('.navbar');
+	var $navElt = $('.navbar-left a');
 	var heightClient = win_height - scroll;
 	if (heightClient <= 0) {
 		$myNavBar.css({"background-color": "#FCB3B3"});
@@ -23,25 +30,7 @@ function updateNavigation() {
 		$navElt.css({"color": "#FCB3B3"});
 	}
 }
-/*
-//Navigation management in xs format with the "hamburger" button
-$(document).ready(function() {
-	var sideslider = $('[data-toggle=collapse-side]');
-	var sel = sideslider.attr('data-target');
-	var navig = $('#navig');
-	var $titre = $('#titre');
 
-	sideslider.click(function(event){
-		$titre.fadeToggle();
-		$(sel).toggleClass('in');
-		navig.removeClass('navbar-fixed-top');
-
-
-
-
-	});
-});
-*/
 //******************************************************Animation of the numbers in numbers section
 
 // Set the date we're counting down to
