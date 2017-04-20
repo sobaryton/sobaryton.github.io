@@ -102,6 +102,7 @@ nav, #hautdepage
 .bouton-orange:hover
 {
 	background-color: white;
+	color: #fbad27;
 }
 .bouton-orange a
 {
@@ -397,7 +398,7 @@ nav, #hautdepage
 #offer:hover
 {
 	background-color: white;
-
+	color: #fbad27;
 }
 #offer a
 {
