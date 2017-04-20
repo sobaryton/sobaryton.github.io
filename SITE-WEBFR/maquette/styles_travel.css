@@ -4,28 +4,25 @@
 	font-family: 'Roboto', sans-serif;
 }
 h2
-	{
-		color: #4a4a4a;
-		text-align: center;
-	}
+{
+	color: #4a4a4a;
+	text-align: center;
+}
 /*Work on the header*/
 header
 {
 	background: url("images/marina-bay.png")top no-repeat;
 	background-size: cover;
-	
 }
 .navig
 {
 	color: white;
 	background: url("images/Shape 3.png") bottom no-repeat;
-	
 }
 nav, #hautdepage
 {
 	height: 100%;
 }
-
 .navbar-nav a
 {
 	font-size: 2em;
@@ -45,7 +42,6 @@ nav, #hautdepage
 	flex-direction: row;
 	align-items: center;
 	width: auto;
-
 }
 .navbar-nav li
 {
@@ -57,7 +53,6 @@ nav, #hautdepage
 {
 	margin-bottom:0;
 	margin-top:20px;
-	
 }
 #btntop 
 {
@@ -97,20 +92,25 @@ nav, #hautdepage
 	align-items: center;
 	justify-content: center;
 }
-
 .bouton-orange
 {
 	border-radius: 25px;
 	background-color: #fbad27;
 	border: none;
 	color: white;
-	
 }
 .bouton-orange:hover
 {
 	background-color: white;
+}
+.bouton-orange a
+{
+	text-decoration: none;
+	color: white;
+}
+.bouton-orange a:hover
+{
 	color: #fbad27;
-	
 }
 #video
 {
@@ -139,17 +139,14 @@ nav, #hautdepage
 #welcome_fusion
 {
 	text-align: center;
-	
 }
 .fa-plane,.fa-star-o,.fa-heart
 {
 	color:#fbad27;
-	
 }
 #welcome p
 {
 	color: #757575;
-	
 }
 #welcome h3
 {
@@ -160,7 +157,6 @@ nav, #hautdepage
 {
 	padding-left: 45px;
 	padding-right: 45px;
-	
 }
 .shadow
 {
@@ -203,12 +199,10 @@ nav, #hautdepage
 	flex-wrap: wrap;
 	justify-content: space-around;
 	list-style: none;
-
 }
 .fleche i
 {
 	color:#B8B8B8;
-	
 }
 .fleche, .fleche button, .fleche .fa
 {
@@ -234,7 +228,6 @@ nav, #hautdepage
 #pays1
 {
 	background: url("images/thailand.png") no-repeat;
-
 }
 #pays2
 {
@@ -296,7 +289,6 @@ nav, #hautdepage
 
 .blogtext
 {
-	
 	background: url("images/Shape3.png") no-repeat top;
 }
 .para
@@ -320,7 +312,6 @@ nav, #hautdepage
 }
 .istambul
 {
-	
 	margin-top: 45px;
 	box-shadow: 15px 15px 10px #faf8f5;
 }
@@ -351,23 +342,18 @@ nav, #hautdepage
 .bouton-centre
 {
 	text-align: center;
-		
 }
 /*Work on the fourth part of te website: temoignages*/
 
 .temoignage-para
 {
 	background: url("images/Shape3.png") no-repeat top;
-	
 }
-
-
 .fa-quote-left, .fa-quote-right
 {
 	color: #f5f5f5;
 	font-size: 7em;
 }
-
 .dimi
 {
 	color: #fbad27;
@@ -377,7 +363,6 @@ nav, #hautdepage
 	box-shadow: 15px 15px 10px #faf8f5;
 	border-radius: 25px;
 	font-size: 1em;
-
 }
 .temoignage-text p
 {
@@ -408,11 +393,19 @@ nav, #hautdepage
 	border-radius: 25px;
 	background-color: #fbad27;
 	border: 2px solid white;
-	
 }
 #offer:hover
 {
 	background-color: white;
+
+}
+#offer a
+{
+	text-decoration: none;
+	color: white;
+}
+#offer a:hover
+{
 	color: #fbad27;
 }
 
@@ -425,7 +418,6 @@ footer h3
 {
 	font-weight: bold;
 }
-
 footer ul
 {
 	list-style-type: none;
@@ -456,7 +448,6 @@ address
 {
 	color: #969696;
 }
-
 .contacter p
 {
 	color: #969696;
@@ -486,7 +477,6 @@ address
 	color: white;
 	font-size: 1.25em;
 }
-
 .fa-twitter, .fa-facebook
 {
 	background-color: #616161;
