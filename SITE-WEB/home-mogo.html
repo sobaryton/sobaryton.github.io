@@ -26,31 +26,31 @@
 </head>
 <body>
 <header role="banner" >
-	<div class="container" id="hautdepage">
-		<div id="toptop"></div>
-		<div class="navbar-header">
-			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-			<a class="btn btn-navbar pull-right" data-toggle="collapse-side" data-target=".side-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+	<div id="toptop"></div>
+	<div class="navbar">
+		<div class="container" id="hautdepage">
+			<a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".navigation"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
 			</a>
 
-		</div>
-		<div class="side-collapse in navbar-fixed-top" id="navig">
-			<nav role='navigation' class="navbar-collapse " id="navigation">
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+
+			<div class="collapse navbar-collapse navigation" id="navig">
 				<a class="navbar-brand" href="home-mogo.html">SoDev</a>
-				<ul class="nav navbar-nav ">
+				<ul class="nav navbar-nav navbar-left ">
 					<li class="active"><a href="#intro">Intro</a></li>
 					<li><a href="#skills">Skills</a></li>
+					<li><a href="cv.html" target="_blank">My CV</a></li>
 					<li><a href="#work">Work</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
-			</nav>
-		</div>
-		<div id="titre">
-			<h1>Welcome to SoDev</h1>
-			<img src="images/logo2.png">
-			<a href="#intro"><button id="learn">Learn more</button></a>
+			</div>
 		</div>
 	</div>
+	<div id="titre">
+	<h1>Welcome to SoDev</h1>
+	<img src="images/logo2.png">
+	<a href="#intro"><button id="learn">Learn more</button></a>
+</div>
 </header>
 <div class="container-fluid">
 	<section>
@@ -107,8 +107,13 @@
 <div class="container-fluid">
 	<section>
 		<div class="row" id="skills">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="skillstitre">
 				<h2>Skills</h2>
+				<p>Click here to have a look on my whole CV</p>
+				<div id="cv">
+					<a href="cv.html"class="envoi" target="_blank">My CV</a>
+				</div>
+
 			</div>
 		</div>
 		<div class="row skillssquare" id="devskills">
@@ -538,7 +543,7 @@
 						<input type="text" name="company" id="company" placeholder="Company"> <br/>
 						<label for="message">Leave me a comment </label><br/>
 						<textarea maxlength="500" name="message" id="message" placeholder="Your comment"></textarea><br/>
-						<input type="submit" name="envoi" value="Send" id="envoi">
+						<input type="submit" name="envoi" value="Send" class="envoi">
 					</form>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-4" id="footer-social">

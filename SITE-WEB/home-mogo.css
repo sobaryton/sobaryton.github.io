@@ -19,7 +19,6 @@ h2
 {
 	font-family: Courier;
 	font-style: oblique;
-
 }
 h4
 {
@@ -37,7 +36,6 @@ h1
 }
 #hautdepage
 {
-	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -138,6 +136,30 @@ h1
 }
 
 /********************************Work on the section skills****************************************/
+#skillstitre
+{
+	margin-bottom: 50px;
+}
+#cv
+{
+	display: flex;
+	justify-content: center;
+}
+#skillstitre p, #cv
+{
+	text-align: center;
+}
+#cv a
+{
+	text-decoration: none;
+	color: #FCB3B3;
+	font-size: 1.7em;
+}
+#cv a:hover
+{
+	text-decoration: none;
+	color: white;
+}
 .skillssquare
 {
 	text-align: center;
@@ -300,7 +322,7 @@ form input:focus, form textarea:focus
 	box-shadow: 1px 1px 1px 1px #FCB3B3;
 	outline-color: transparent;
 }
-#envoi
+.envoi
 {
 	
 	text-align: center;
@@ -311,7 +333,7 @@ form input:focus, form textarea:focus
 	color: #FCB3B3;
 	border: 2px dotted #FCB3B3;
 }
-#envoi:hover
+.envoi:hover
 {
 	color: white;
 	border: 2px solid white;

@@ -30,8 +30,6 @@
 		color: black;
 		border-bottom: dotted 3px #FCB3B3;
 		text-align: center;
-
-
 	}
 	section
 	{
@@ -42,37 +40,65 @@
 	{
 		height: 100px;
 	}
-
-	.side-collapse 
+	#hautdepage
 	{
-	  width:100%;
-	  overflow:hidden;
-	  transition:width .4s;
+		position: fixed;
+		width: 100%;
+		background-color: #647277;
+		height: 40px;
 	}
-	.side-collapse.in 
+	.container>.navbar-collapse
 	{
-		width:0;
-		height: 0;
-		
+		text-align: center;
 	}
-	#navigation
+	.btn-navbar
 	{
-		height: 100vh;
-		margin-top: 50px;
-		display: flex;
-		flex-direction: column;
-		background-image: repeating-linear-gradient(#647277,#6E8A94, #F3ECD9);
+		width: 100%;
+		position: fixed;
+		text-align: left;
+		z-index: 11;
 	}
-	#navigation ul li
+	.navbar
+	{
+		z-index: 10;
+	}
+	.navbar-nav
+	{
+		display: inherit;
+	}
+	.navigation
+	{
+		height: 70vh;
+		margin-top: 40px;
+		width: 90%;
+		background-color: #647277;
+	}
+	.navbar-left
+	{
+		margin-top: 40px;
+	}
+	.navigation ul li
 	{
 		font-size: 2em;
+		margin-top: 10px;
+	}
+	.navbar-nav>li>a
+	{
+		line-height: 50px;
+	}
+	.navbar-nav a:hover
+	{
+		color:  white!important;
+		background-color: #6E8A94 !important;
 	}
 	.navbar-brand
 	{
 		font-size: 2em;
-		color: #F3ECD9;
+		color: #FCB3B3;
+		text-align: left;
+		width: 100%;
+		border-bottom: 1px solid #FCB3B3;
 	}
-	
 	#titre
 	{
 		display: flex;
@@ -85,7 +111,6 @@
 	{
 		font-size: 1.5em;
 		margin-top: 50px;
-
 	}
 	#btntop
 	{
@@ -305,13 +330,14 @@
 		height: 100vh;
 	}
 	#titre{
-		margin-top: 10%;
+		margin-top: 7%;
 	}
 	.container
 	{
 		height: 50px;
 		width: 750px;
 	}
+
 	#navigation
 	{
 		display: flex;
@@ -319,22 +345,22 @@
 		align-items: stretch;
 		width: 100%;
 		height: 100%;
-	
 	}
 	.navbar-brand
 	{
-		font-size: 2em;
 		flex: 1;
 	}
 	.navbar-nav
 	{
 		flex: 4;
+		margin-left: 2%;
 	}
 	.navbar-nav li
 	{
 		font-size: 1.5em;
-		margin-left: 5px;
-	
+		height: 100%;
+		width: 110px;
+		text-align: center;
 	}
 	#learn
 	{
@@ -536,13 +562,13 @@
 	{
 		display: block;
 	}
-
 	header
 	{
 		height: 100vh;
 	}
-	#titre{
-		margin-top: 10%;
+	#titre
+	{
+		margin-top: 7%;
 	}
 	#navigation
 	{
@@ -551,7 +577,6 @@
 		align-items: stretch;
 		width: 100%;
 		height: 100%;
-	
 	}
 	.navbar-brand
 	{
@@ -559,21 +584,21 @@
 	}
 	.navbar-nav
 	{
-		flex: 3;
-		margin-left: 3%;
+		flex: 4;
+		margin-left: 1%;
 	}
 	.navbar-nav li
 	{
 		font-size: 1.5em;
 		height: 100%;
-	
+		width: 120px;
+		text-align: center;
 	}
 	#learn
 	{
 		font-size: 1.5em;
 		margin-top: 50px;
 		margin-bottom: 20px;
-
 	}
 	/*************************Section intro**********************/
 	#intro
@@ -729,7 +754,6 @@
 	{
 		font-size: 3em;
 	}
-	
 	#navigation
 	{
 		display: flex;
@@ -737,11 +761,11 @@
 		align-items: stretch;
 		width: 100%;
 		height: 100%;
-	
 	}
 	.navbar-nav
 	{
-		margin-left: 0;
+		flex: 5;
+		margin-left: 5%;
 	}
 	.navbar-nav li
 	{

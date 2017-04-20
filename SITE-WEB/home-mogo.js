@@ -23,7 +23,7 @@ function updateNavigation() {
 		$navElt.css({"color": "#FCB3B3"});
 	}
 }
-
+/*
 //Navigation management in xs format with the "hamburger" button
 $(document).ready(function() {
 	var sideslider = $('[data-toggle=collapse-side]');
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 	});
 });
-
+*/
 //******************************************************Animation of the numbers in numbers section
 
 // Set the date we're counting down to
