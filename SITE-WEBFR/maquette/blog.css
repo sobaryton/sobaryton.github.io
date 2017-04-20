@@ -149,50 +149,62 @@
 		text-align: justify;
 	}
 	/*******Work on the second section, testimonials*****/
-	#testimonials
+	.carousel-inner
 	{
 		display: flex;
 		flex-direction: row;
 		margin-top: 120px;
 	}
-	#carou1, #carou2
-	{
-		border: 2px solid #FBAD27;
-	}
-	.fleche
-	{
-		width: 10%;
-		margin-top: 125px;
-	}
-	.testi
+
+	.active .testi
 	{
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		align-items: center;
 		width: 80%;
+		margin-left: 10%;
 	}
 	.testitxt
 	{
-		width: 75%;
 		text-align: justify;
+		width:50%;
 	}
 	.testipic
 	{
-		width: 25%;
-		height:150px;
 		overflow: hidden;
+		height: 150px;
+		width:40%;
+		margin-left: 3%;
+
 	}
 	#testipic1
 	{
 		background: url("images/joshxs.jpg") no-repeat;
-		background-size: cover;
+		background-size: contain;
 	}
 	#testipic2
 	{
 		background: url("images/cat.jpg") no-repeat;
-		background-size: cover;
+		background-size: contain;
 	}
-
+	#testipic3
+	{
+		background: url("images/pixhugo.jpg") no-repeat;
+		background-size: contain;
+	}
+	#testipic4
+	{
+		background: url("images/adeline.jpg") no-repeat;
+		background-size: contain;
+	}
+	.carousel-control
+	{
+		padding-top: 15%;
+	}
+	.fa-chevron-right, .fa-chevron-left
+	{
+		font-weight: bold;
+	}
 	/*******Work on the footer*****/
 	footer
 	{
@@ -285,21 +297,122 @@
 		flex-direction: row;
 		align-items: flex-start;
 		width:100%;
+		flex-wrap: wrap;
 	}
 	#photobig
 	{
-		width: 75%;
-		height:300px;
+		width: 100%;
+		height:400px;
 		background: url("images/marina.png") no-repeat;
 		overflow: hidden;
 		background-size: cover;
 	}
 	#articlebigtxt
 	{
-		width: 25%;
-		text-align: center;
+		width: 100%;
+	}
+	#articlebigtxt p
+	{
+		text-align: justify;
+	}
+	/********Work on the second article "Last destination bought"*******/
+	.medarticle
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 100px;
+	}
+	.photomed
+	{
+		width: 50%;
+		height:400px;
+		overflow: hidden;
+	}
+	#photomed1
+	{
+		background: url("images/mauritius.jpg") no-repeat;
+		background-size: cover;
+	}
+	#photomed2
+	{
+		background: url("images/maldives.jpg") no-repeat;
+		background-size: cover;
+	}
+	#photomed3
+	{
+		background: url("images/NYCLiberty.jpg") no-repeat;
+		background-size: cover;
+	}
+	#photomed4
+	{
+		background: url("images/NewYork.jpg") no-repeat;
+		background-size: cover;
+	}
+	.medarticletxt
+	{
+		width: 100%;
+	}
+	.medarticletxt p
+	{
+		text-align: justify;
+	}
+	/*******Work on the second section, testimonials*****/
+	.carousel-inner
+	{
+		display: flex;
+		flex-direction: row;
+		margin-top: 120px;
 	}
 
+	.active .testi
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.testitxt
+	{
+		text-align: justify;
+		width:50%;
+	}
+	.testipic
+	{
+		overflow: hidden;
+		height: 200px;
+		width:40%;
+		margin-left: 3%;
+	}
+	#testipic1
+	{
+		background: url("images/joshxs.jpg") no-repeat;
+		background-size: contain;
+	}
+	#testipic2
+	{
+		background: url("images/cat.jpg") no-repeat;
+		background-size: contain;
+	}
+	#testipic3
+	{
+		background: url("images/pixhugo.jpg") no-repeat;
+		background-size: contain;
+	}
+	#testipic4
+	{
+		background: url("images/adeline.jpg") no-repeat;
+		background-size: contain;
+	}
+	.carousel-control
+	{
+		padding-top: 13%;
+	}
+	.fa-chevron-right, .fa-chevron-left
+	{
+		font-weight: bold;
+	}
 	/*Work on the footer*/
 	footer
 	{
@@ -386,21 +499,41 @@
 		flex-direction: row;
 		align-items: flex-start;
 		width:100%;
+		flex-wrap: wrap;
 	}
 	#photobig
 	{
-		width: 75%;
-		height:300px;
+		width: 100%;
+		height:400px;
 		background: url("images/marina.png") no-repeat;
 		overflow: hidden;
 		background-size: cover;
 	}
 	#articlebigtxt
 	{
-		width: 25%;
-		text-align: center;
-	}
+		width: 100%;
 
+	}
+	/********Work on the second article "Last destination bought"*******/
+	.photomed
+	{
+		width: 50%;
+		height:400px;
+		overflow: hidden;
+	}
+	/*******Work on the second section, testimonials*****/
+	.carousel
+	{
+		height: 300px;
+	}
+	.carousel-inner
+	{
+		padding-top: 5%;
+	}
+	.carousel-control
+	{
+		padding-top: 13%;
+	}
 
 
 	/*Work on the footer*/
@@ -476,20 +609,34 @@
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
+		flex-wrap: wrap;
 		width:100%;
 	}
 	#photobig
 	{
-		width: 75%;
-		height:300px;
+		width: 100%;
+		height:550px;
 		background: url("images/marina.png") no-repeat;
 		overflow: hidden;
 		background-size: cover;
 	}
 	#articlebigtxt
 	{
-		width: 25%;
-		text-align: center;
+		width: 100%;
+	}
+
+	/********Work on the second article "Last destination bought"*******/
+	.photomed
+	{
+		width: 50%;
+		height:450px;
+		overflow: hidden;
+	}
+	/*******Work on the second section, testimonials*****/
+
+	.carousel-control
+	{
+		padding-top: 11%;
 	}
 	/*Work on the footer*/
 	footer
