@@ -136,6 +136,28 @@ $(document).ready(function(){
 });
 
 
+/***** On the CV page, click to open education, skills and experience*****/
+var $cvexp = $('#cvexp');
+var $cvskills = $('#cvskills');
+var $cveduc = $('#cveduc');
+var $education = $('#education');
+var $skillscv = $('#skillscv');
+var $experiencecv = $('#experiencecv');
 
+$education.hide();
+$skillscv.hide();
+$experiencecv.hide();
+
+$cvexp.click(function(){
+	$experiencecv.toggle('slow');
+});
+
+$cvskills.click(function(){
+	$skillscvcv.show('slow');
+});
+
+$cveduc.click(function(){
+	$education.toggle('slow');
+});
 
 
