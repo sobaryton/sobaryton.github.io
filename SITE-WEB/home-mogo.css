@@ -367,3 +367,27 @@ textarea
 {
 	color: #FCB3B3;
 }
+
+/*********************************************************************************************************************************************************/
+/***********************************************************   CV Page general style   *******************************************************************/
+/*********************************************************************************************************************************************************/
+
+
+/*Work on the header*/
+#titrecv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#crans {
+	display: flex;
+	justify-content: flex-start;
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid white;
+}

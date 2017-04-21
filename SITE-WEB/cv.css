@@ -1,7 +1,170 @@
-#footer-social
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+/*********************************************************************************************************************************************************/
+/***********************************************************   CV Page in responsive   *******************************************************************/
+/*********************************************************************************************************************************************************/
 
+
+/**************************************************************************************************************************/
+/*************									SMALL SMARTPHONE SCREENS			    ***********************************/
+/**************************************************************************************************************************/
+@media (max-width: 767px) {
+	/**For small creens of smartphones**/
+	.container-fluid, .container {
+		width: auto;
+		margin: auto;
+	}
+	section {
+		margin-bottom: 50px;
+	}
+
+	/*Work on the header*/
+	header {
+		height: 500px;
+	}
+	h1{
+		height: 50px;
+	}
+	.triangle-up {
+		padding-top: 120px;
+	}
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+}
+
+
+
+/***********************************************************************************************************************************/
+/*************									SMARTPHONE SCREENS						********************************************/
+/***********************************************************************************************************************************/
+
+@media (min-width: 768px) {
+	/**For small screens like smartphones **/
+	.container-fluid {
+		width: 750px;
+	}
+
+	.btn-navbar {
+		display: none;
+	}
+
+	section {
+		margin-bottom: 100px;
+	}
+
+	/******************Header and nav**************/
+	header {
+		height: 500px;
+	}
+	#titrecv {
+		padding-top: 110px;
+	}
+	.container {
+		height: 50px;
+		width: 750px;
+	}
+	h1{
+		height: 70px;
+	}
+
+	.triangle-up {
+		padding-top: 100px;
+	}
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+}
+
+
+
+/****************************************************************************************************************************************/
+/*************									TABLETS SCREENS  						*************************************************/
+/****************************************************************************************************************************************/
+
+
+@media (min-width: 992px) {
+	/**For middle screens like tablets**/
+	.container-fluid {
+		width: 970px;
+	}
+
+	section {
+		margin-bottom: 150px;
+	}
+
+	.btn-navbar {
+		display: none;
+	}
+
+	/******************Header**************/
+	.container {
+		height: 50px;
+		width: 970px;
+	}
+	h1{
+		height: 90px;
+	}
+	.triangle-up {
+		padding-top: 100px;
+	}
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+}
+/*************************************************************************************************************************************/
+/*************									DESKTOP SCREEN     						**********************************************/
+/*************************************************************************************************************************************/
+
+@media (min-width: 1200px) {
+	/**For large screens**/
+	.container {
+		width: 1170px;
+	}
+
+	.container-fluid {
+		width: 1170px;
+	}
+
+	section {
+		margin-bottom: 150px;
+	}
+
+	/*Work on the header*/
+	header {
+		height: 550px;
+	}
+	h1{
+		height: 140px;
+	}
+	#titrecv {;
+		padding-top: 100px;
+	}
+	.triangle-up {
+		 padding-top: 110px;
+	 }
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
 }
