@@ -395,7 +395,7 @@ textarea
 .etiquettebtn{
 	color: #647277;
 }
-.etiquettebtn:hover{
+.etiquettebtn:hover, .etiquettebtn:focus{
 	color: white;
 	text-decoration: none;
 }
@@ -439,6 +439,20 @@ textarea
 	border-bottom: 30px solid transparent;
 	border-right: 30px solid #bad1d1;
 }
-#education, #skillscv, #experiencecv{
+
+/*Work on the second section with experence, skills and education*/
+#cveducation, #skillscv, #experiencecv{
 	border: dotted 1px #bad1d1;
+}
+#cveducation{
+	padding-left: 10px;
+}
+#cvschools{
+	display: flex;
+	flex-direction: column;
+}
+.datecv{
+	color: #647277;
+	font-size: 2em;
+	font-weight: bold;
 }
