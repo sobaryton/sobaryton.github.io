@@ -444,6 +444,10 @@ textarea
 #cveducation, #skillscv, #experiencecv{
 	border: dotted 1px #bad1d1;
 }
+
+.expdetails{
+	display: flex;
+}
 #cveducation{
 	padding-left: 10px;
 }
@@ -451,7 +455,7 @@ textarea
 	display: flex;
 	flex-direction: column;
 }
-.datecv{
+.datecv, .dateexpcv{
 	color: #647277;
 	font-size: 2em;
 	font-weight: bold;
