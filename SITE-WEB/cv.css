@@ -31,6 +31,18 @@
 		padding-top: 120px;
 	}
 
+	/*Work on the first section with the intro*/
+	#cvintrotxt
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#cvintrotxt p
+	{
+		text-align: justify;
+	}
 	/*Work on the footer*/
 	#footer-social {
 		display: flex;
@@ -80,6 +92,19 @@
 		padding-top: 100px;
 	}
 
+	/*Work on the first section with the intro*/
+	#cvintrotxt
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#cvintrotxt p
+	{
+		text-align: justify;
+	}
+
 	/*Work on the footer*/
 	#footer-social {
 		display: flex;
@@ -121,6 +146,19 @@
 	}
 	.triangle-up {
 		padding-top: 100px;
+	}
+
+	/*Work on the first section with the intro*/
+	#cvintrotxt
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	#cvintrotxt p
+	{
+		text-align: justify;
 	}
 
 	/*Work on the footer*/
