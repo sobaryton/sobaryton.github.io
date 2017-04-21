@@ -383,6 +383,8 @@ textarea
 #crans {
 	display: flex;
 	justify-content: flex-start;
+	width: 100%;
+	overflow: hidden;
 }
 .triangle-up {
 	width: 0;
