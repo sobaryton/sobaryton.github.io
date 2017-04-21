@@ -17,6 +17,10 @@
 	}
 
 	/*Work on the header*/
+	.navbar
+	{
+		background-color: transparent;
+	}
 	header {
 		height: 500px;
 	}
