@@ -53,9 +53,7 @@
 	}
 	.btn-navbar
 	{
-		width: 100%;
 		position: fixed;
-		text-align: left;
 		z-index: 11;
 	}
 	.navbar
@@ -82,7 +80,7 @@
 	.navigation
 	{
 		height: 85vh;
-		width: 90%;
+		width: 95%;
 		background-color: #647277;
 	}
 	.navigation ul li
@@ -345,6 +343,12 @@
 		height: 50px;
 		width: 750px;
 	}
+	#hautdepage
+	{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
 	.navbar
 	{
 		position: fixed;
@@ -365,10 +369,6 @@
 	{
 		font-size: 2em;
 		color: #647277 !important;
-	}
-	.navbar-nav
-	{
-
 	}
 	.navbar-nav li
 	{

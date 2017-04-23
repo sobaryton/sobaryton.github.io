@@ -34,12 +34,7 @@ h1
 	color: white;
 	text-align: center;
 }
-#hautdepage
-{
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
+
 /*Work on the navigation bar*/
 .navbar
 {
