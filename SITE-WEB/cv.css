@@ -43,7 +43,14 @@
 	{
 		text-align: justify;
 	}
-	#cvintroimg{
+	#cvintroimg, #cvintrotxt #presentation{
+		text-align: center;
+	}
+	#cvintrotxt #presentation{
+		font-weight: bold;
+		padding-top: 30px;
+	}
+	#cvintroimg img{
 		width: 250px;
 	}
 
@@ -126,6 +133,16 @@
 		text-align: justify;
 	}
 
+	#cvintroimg, #cvintrotxt #presentation{
+		text-align: center;
+	}
+	#cvintrotxt #presentation{
+		font-weight: bold;
+		padding-top: 30px;
+	}
+	#cvintroimg img{
+		width: 250px;
+	}
 	/*Work on the second section with education, experience and skills*/
 	.etiquette{
 		margin-bottom: 70px;
@@ -190,7 +207,9 @@
 	{
 		text-align: justify;
 	}
-
+	#cvintroimg img{
+		width: 300px;
+	}
 	/*Work on the second section with education, experience and skills*/
 	.etiquette{
 		margin-bottom: 70px;

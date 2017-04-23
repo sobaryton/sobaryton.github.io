@@ -67,11 +67,6 @@
 	{
 		display: inherit;
 	}
-	#navbarbrand
-	{
-		height: 40px;
-		padding: 4px 10px;
-	}
 	#navbarbrand a
 	{
 		font-size: 2.4em;
@@ -109,9 +104,10 @@
 	{
 		font-size: 2em;
 		color: #FCB3B3;
-		text-align: left;
+		text-align: center;
 		width: 100%;
 		border-bottom: 1px solid #FCB3B3;
+		height: 40px;
 	}
 	#titre
 	{
