@@ -437,7 +437,7 @@ textarea
 	border-right: 30px solid #bad1d1;
 }
 
-/*Work on the second section with experence, skills and education*/
+/*Work on the second section with experience, skills and education*/
 #cveducation, #skillscv, #experiencecv{
 	border: dotted 1px #bad1d1;
 }
@@ -457,3 +457,18 @@ textarea
 	font-size: 2em;
 	font-weight: bold;
 }
+
+.progress{
+	border-radius: 25px;
+	width: 50%;
+}
+.progress-bar{
+	width: 0;
+}
+.barhover{
+	background: #647277;
+	transition: background 300ms, width 300ms;
+	-moz-transition: background 300ms, width 300ms;
+	-webkit-transition: background 300ms, width 300ms;
+}
+

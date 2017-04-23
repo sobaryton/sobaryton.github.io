@@ -135,6 +135,16 @@ function initEmailJS() {
 	})
 }
 
+//*****************************************************************Management of the progress bar hover in CV-skills
+var $progress = $('.progress');
+
+$progress.hover(function(){
+	$progressbar = $($(this).children()[0]);
+	$progressbar.css({"width": $progressbar.data('value')+'%'});
+	$progressbar.css({"background": $progressbar.data('color')});
+	$progressbar.addClass('.barhover');
+});
+
 //**********************************************************************Check what the current page is
 
 function isHome() {
