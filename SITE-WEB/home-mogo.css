@@ -227,7 +227,9 @@ h1
 {
 	position: fixed;
 }
-
+.item img{
+	margin: auto;
+}
 #work h4
 {
 	text-align: center;
