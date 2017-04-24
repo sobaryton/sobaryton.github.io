@@ -67,13 +67,13 @@ function animateSkills() {
 	var scroll = $(window).scrollTop();
 	var height = $("header").height() + $("#intro").height() + $("#container-numbers").height();
 	var heightClient = height-scroll;
-	var $animdevDev = $(".animdevDev");
-	var $animdevDes = $("#animdevDes");
-	var $animdevHum = $("#animdevHum");
+	var $animdevDev = $(".animDevDev");
+	var $animdevDes = $("#animDevDes");
+	var $animdevHum = $("#animDevHum");
 
 	//for xs format
-	var heightXsDesign = $("header").height() + $("#intro").height() + $("#container-numbers").height() + $("#devskills").height();
-	var heightXsHuman = heightXsDesign + $("#designskills").height();
+	var heightXsDesign = $("header").height() + $("#intro").height() + $("#container-numbers").height() + $("#devSkills").height();
+	var heightXsHuman = heightXsDesign + $("#designSkills").height();
 	var heightClientDesign = heightXsDesign-scroll;
 	var heightClientHuman = heightXsHuman-scroll;
 	if (heightClientDesign <= 0){
