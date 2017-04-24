@@ -32,25 +32,25 @@
 	}
 
 	/*Work on the first section with the intro*/
-	#cvintrotxt
+	#cvIntroTxt
 	{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-	#cvintrotxt p
+	#cvIntroTxt p
 	{
 		text-align: justify;
 	}
-	#cvintroimg, #cvintrotxt #presentation{
+	#cvIntroImg, #cvIntroTxt #presentation{
 		text-align: center;
 	}
-	#cvintrotxt #presentation{
+	#cvIntroTxt #presentation{
 		font-weight: bold;
 		padding-top: 30px;
 	}
-	#cvintroimg img{
+	#cvIntroImg img{
 		width: 250px;
 	}
 
@@ -59,12 +59,12 @@
 	.etiquette{
 		margin-bottom: 70px;
 	}
-	.expdetails {
+	.expDetails {
 		flex-direction: column;
 		text-align: center ;
 		margin-bottom: 40px;
 	}
-	.educationdetails{
+	.educationDetails{
 		text-align: center;
 		margin-bottom: 40px;
 	}
@@ -105,7 +105,7 @@
 	header {
 		height: 500px;
 	}
-	#titrecv {
+	#titreCv {
 		padding-top: 110px;
 	}
 	.container {
@@ -121,33 +121,33 @@
 	}
 
 	/*Work on the first section with the intro*/
-	#cvintrotxt
+	#cvIntroTxt
 	{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-	#cvintrotxt p
+	#cvIntroTxt p
 	{
 		text-align: justify;
 	}
 
-	#cvintroimg, #cvintrotxt #presentation{
+	#cvIntroImg, #cvIntroTxt #presentation{
 		text-align: center;
 	}
-	#cvintrotxt #presentation{
+	#cvIntroTxt #presentation{
 		font-weight: bold;
 		padding-top: 30px;
 	}
-	#cvintroimg img{
+	#cvIntroImg img{
 		width: 250px;
 	}
 	/*Work on the second section with education, experience and skills*/
 	.etiquette{
 		margin-bottom: 70px;
 	}
-	.expdetails {
+	.expDetails {
 		flex-direction: column;
 		text-align: center ;
 		margin-bottom: 40px;
@@ -196,25 +196,25 @@
 	}
 
 	/*Work on the first section with the intro*/
-	#cvintrotxt
+	#cvIntroTxt
 	{
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 	}
-	#cvintrotxt p
+	#cvIntroTxt p
 	{
 		text-align: justify;
 	}
-	#cvintroimg img{
+	#cvIntroImg img{
 		width: 300px;
 	}
 	/*Work on the second section with education, experience and skills*/
 	.etiquette{
 		margin-bottom: 70px;
 	}
-	.expdetails {
+	.expDetails {
 		flex-direction: row;
 		justify-content: flex-start;
 		margin-bottom: 40px;
@@ -224,7 +224,7 @@
 		flex: 5;
 		padding-left: 20px;
 	}
-	.dateexpcv{
+	.dateExpCv{
 		width: 150px;
 		text-align: left;
 	}
@@ -262,7 +262,7 @@
 	h1{
 		height: 140px;
 	}
-	#titrecv {
+	#titreCv {
 		padding-top: 100px;
 	}
 	.triangle-up {
@@ -272,28 +272,28 @@
 	.etiquette{
 		margin-bottom: 70px;
 	}
-	.expdetails {
+	.expDetails {
 		flex-direction: row;
 		justify-content: flex-start;
 		margin-bottom: 40px;
 	}
-	.educationdetails{
+	.educationDetails{
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
 		margin-bottom: 40px;
 	}
-	#cvschools{
+	#cvSchools{
 		align-items: flex-start;
 	}
 	.schools{
 		flex: 5;
 	}
-	.dateexpcv{
+	.dateExpCv{
 		width: 180px;
 	}
-	.datecv
+	.dateCv
 	{
 		width: 200px;
 	}

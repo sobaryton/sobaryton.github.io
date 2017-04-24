@@ -91,7 +91,7 @@ h1
 	background-color: #FCB3B3;
 }
 
-#btntop
+#btnTop
 {
 	position: fixed;
 	color: #4a4a4a;
@@ -100,13 +100,13 @@ h1
 }
 
 /********************************Work on the section Intro****************************************/
-#introtxt p, #introtxt h2
+#introTxt p, #introTxt h2
 {
 	text-align: center;
 	width: 80%;
 }
 
-#introtxt p a
+#introTxt p a
 {
 	text-decoration: none;
 	color: #647277;
@@ -136,7 +136,7 @@ h1
 }
 
 /********************************Work on the section skills****************************************/
-#skillstitre
+#skillsTitre
 {
 	margin-bottom: 50px;
 }
@@ -145,7 +145,7 @@ h1
 	display: flex;
 	justify-content: center;
 }
-#skillstitre p, #cv
+#skillsTitre p, #cv
 {
 	text-align: center;
 }
@@ -160,20 +160,20 @@ h1
 	text-decoration: none;
 	color: white;
 }
-.skillssquare
+.skillsSquare
 {
 	text-align: center;
 	border: 2px solid #bad1d1;
 	border-radius: 5px;
 }
 
-.animdev
+.animDev
 {
 	text-align: center;
 	justify-content: center;
 }
 
-.animdev p
+.animDev p
 {
 	white-space:nowrap;
 	overflow:hidden;
@@ -189,7 +189,7 @@ h1
 	from { width: 0; }
 }
 
-.animdev p span
+.animDev p span
 {
 	animation: blink 1s infinite;
 	-webkit-animation: blink 1s infinite;
@@ -371,7 +371,7 @@ textarea
 
 
 /*Work on the header*/
-#titrecv {
+#titreCv {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -391,10 +391,10 @@ textarea
 	border-bottom: 20px solid white;
 }
 /*Work on the second section: education*/
-.etiquettebtn{
+.etiquetteBtn{
 	color: #647277;
 }
-.etiquettebtn:hover, .etiquettebtn:focus{
+.etiquetteBtn:hover, .etiquetteBtn:focus{
 	color: white;
 	text-decoration: none;
 }
@@ -409,20 +409,20 @@ textarea
 	flex-direction: row;
 	justify-content: flex-end;
 }
-.etiquettetxt
+.etiquetteTxt
 {
 	text-align: center;
 	background-color: #bad1d1;
 	width: 200px;
 	height: 60px;
 }
-.etiquettetxt h3
+.etiquetteTxt h3
 {
 	font-size: 2em;
 	margin: 0;
 	line-height: 2.0;
 }
-.arrowleft
+.arrowLeft
 {
 	width: 0;
 	height: 0;
@@ -430,7 +430,7 @@ textarea
 	border-bottom: 30px solid transparent;
 	border-left: 30px solid #bad1d1;
 }
-.arrowright
+.arrowRight
 {
 	width: 0;
 	height: 0;
@@ -440,21 +440,21 @@ textarea
 }
 
 /*Work on the second section with experience, skills and education*/
-#cveducation, #skillscv, #experiencecv{
+#cvEducation, #skillsCv, #experienceCv{
 	border: dotted 1px #bad1d1;
 }
 
-.expdetails{
+.expDetails{
 	display: flex;
 }
-#cveducation{
+#cvEducation{
 	padding-left: 10px;
 }
-#cvschools{
+#cvSchools, #cvCompanies{
 	display: flex;
 	flex-direction: column;
 }
-.datecv, .dateexpcv{
+.dateCv, .dateExpCv{
 	color: #647277;
 	font-size: 2em;
 	font-weight: bold;

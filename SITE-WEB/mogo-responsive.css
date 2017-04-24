@@ -40,7 +40,7 @@
 	{
 		height: 100px;
 	}
-	#hautdepage
+	#hautDePage
 	{
 		position: fixed;
 		width: 100%;
@@ -120,7 +120,7 @@
 		font-size: 1.5em;
 		margin-top: 50px;
 	}
-	#btntop
+	#btnTop
 	{
 		top: 85%;
 		left: 85%;
@@ -135,12 +135,12 @@
 	{
 		text-align: center;
 	}
-	#introtxt p, #introtxt h2
+	#introTxt p, #introTxt h2
 	{
 		width: 100%;
 	}
 	
-	#introtxt p
+	#introTxt p
 	{
 		font-size: 1.3em;
 	}
@@ -160,14 +160,14 @@
 		flex-direction: column;
 	}
 /********************************Work on the section skills****************************************/
-	.skillssquare
+	.skillsSquare
 	{
 		height: 370px;
 		text-align: center;
 		margin-bottom: 50px;
 		width: 100%;
 	}
-	.animdev
+	.animDev
 	{
 		text-align: center;
 		justify-content: center;
@@ -177,20 +177,15 @@
 		margin-top: 10%;
 
 	}
-	.animdev p
+	.animDev p
 	{
 		width: 100%;
 		font-size: 1.5em;
 	}
-	.skillssquare h3
+	.skillsSquare h3
 	{
 		font-size: 1.8em;
 		margin-bottom: 30px;
-	}
-	.skillslist
-	{
-		width:100%;
-
 	}
 	.squares
 	{
@@ -209,12 +204,7 @@
 		margin:0;
 	}
 
-	#humansquares
-	{
-		padding-bottom: 10px;
-	}
-
-	.skillssquare .visible-xs
+	.skillsSquare .visible-xs
 	{
 		padding-right: 0;
 		padding-left: 0;
@@ -343,7 +333,7 @@
 		height: 50px;
 		width: 750px;
 	}
-	#hautdepage
+	#hautDePage
 	{
 		display: flex;
 		justify-content: center;
@@ -384,7 +374,7 @@
 		margin-bottom: 10px;
 
 	}
-	#btntop
+	#btnTop
 	{
 		top: 85%;
 		left: 95%;
@@ -404,12 +394,12 @@
 	{
 		margin-top: 50%;
 	}
-	#introtxt p, #introtxt h2
+	#introTxt p, #introTxt h2
 	{
 		width: 100%;
 	}
 	
-	#introtxt p
+	#introTxt p
 	{
 		font-size: 1.3em;
 	}
@@ -439,32 +429,28 @@
 		width: 20px;
 		height: 20px;
 	}
-	.skillslist
-	{
-		width: 90%;
-	}
-	.animdev
+	.animDev
 	{
 		height: 100%;
 	}
-	.animdev p
+	.animDev p
 	{
 		height: 100%;
 		width: 250px;
 		font-size: 1.5em;
 		margin-top: 50%;
 	}
-	.skillssquare
+	.skillsSquare
 	{
 		height: 310px;
 		margin-bottom: 50px;
 	}
-	.humanimg
+	.humanImg
 	{
 		width: 100%;
 
 	}
-	.designimg
+	.designImg
 	{
 		margin-top: 10%;
 		width: 130%;
@@ -573,7 +559,7 @@
 		height: 50px;
 		width: 970px;
 	}
-	#hautdepage
+	#hautDePage
 	{
 		display: block;
 	}
@@ -634,12 +620,12 @@
 	{
 		margin-top: 30%;
 	}
-	#introtxt p, #introtxt h2
+	#introTxt p, #introTxt h2
 	{
 		width: 100%;
 	}
 	
-	#introtxt p
+	#introTxt p
 	{
 		font-size: 1.3em;
 	}
@@ -662,28 +648,24 @@
 		margin: 10px;
 
 	}
-	.skillslist
-	{
-		width: 50%;
-	}
 
-	.animdev p
+	.animDev p
 	{
 		width: 320px;
 		font-size: 2.0em;
 		margin-top: 30%;
 	}
-	.skillssquare
+	.skillsSquare
 	{
 		height: 350px;
 		margin-bottom: 50px;
 	}
-	.humanimg
+	.humanImg
 	{
 		width: 80%;
 
 	}
-	.squarelist, .skills{
+	.squareList, .skills{
 		margin-top: 2%;
 	}
 	/********************************Work on the section work****************************************/
@@ -756,7 +738,7 @@
 		text-align: center;
 		font-size:3.2em;
 	}
-	#hautdepage
+	#hautDePage
 	{
 	}
 	/*Work on the navigation bar*/
@@ -820,7 +802,7 @@
 		margin-top: 20px;
 
 	}
-	#introtxt p, #introtxt h2
+	#introTxt p, #introTxt h2
 	{
 		text-align: center;
 		width: 80%;
@@ -854,37 +836,34 @@
 		margin: 15px;
 
 	}
-	.skillslist
-	{
-		width: 50%;
-	}
-	.skillssquare
+
+	.skillsSquare
 	{
 		height: 400px;
 
 	}
 
-	.skillssquare
+	.skillsSquare
 	{
 		height: 400px;
 		text-align: center;
 		margin-bottom: 50px;
 		width: 100%;
 	}
-	.animdev
+	.animDev
 	{
 		height: 50px;
 		margin-top: 10%;
 
 	}
-	.animdev p
+	.animDev p
 	{
 		width: 100%;
 		font-size: 1.5em;
 		margin-top: 10px;
 
 	}
-	#devskills h3, #designskills h3, #humanskills h3
+	#devSkills h3, #designskills h3, #humanSkills h3
 	{
 		font-size: 1.8em;
 		margin-bottom: 30px;
@@ -905,7 +884,7 @@
 		height: 20px;
 		margin:10px;
 	}
-	.squarelist, .skills{
+	.squareList, .skills{
 		margin-top: 4%;
 	}
 /********************************Work on the section work****************************************/
