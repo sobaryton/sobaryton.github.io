@@ -97,7 +97,7 @@ function initEmailJS() {
 	var $mail = $("#mail");
 	var $company = $("#company");
 	var $message = $("#message");
-	var $envoi = $("#envoi");
+	var $envoi = $("#envoiForm");
 	var formContact = $("#form");
 
 	formContact.submit(function(event){
@@ -136,22 +136,52 @@ function initEmailJS() {
 }
 
 //*****************************************************************Management of the progress bar hover in CV-skills
-var $progress = $('.progress');
-var $window = $(window);
-var $progressFrontEnd = $('.progressFrontEnd');
-var $progressDesign = $('.progressDesign');
-var $progressHuman = $('.progressHuman');
+function animateProgressBars(){
+	//var $window = $(window);
+	var $progressFrontEnd = $('.progressFrontEnd');
+	var $progressDesign = $('.progressDesign');
+	var $progressHuman = $('.progressHuman');
 
 //Function which draws the progress-bars for a kind of skill (front-end, design and human)
-function drawProgressBar(skill) {
-	var $progressSkill = $(skill);
-	$.each($progressSkill, function () {
-		$progressbar = $($(this).children()[0]);
-		$progressbar.addClass('barhover');
-		$progressbar.css({"width": $progressbar.data('value') + '%'});
-		$progressbar.css({"background": $progressbar.data('color')});
-	});
+	function drawProgressBar(skill) {
+		var $progressSkill = $(skill);
+		$.each($progressSkill, function () {
+			$progressbar = $($(this).children()[0]);
+			$progressbar.addClass('barhover');
+			$progressbar.css({"width": $progressbar.data('value') + '%'});
+			$progressbar.css({"background": $progressbar.data('color')});
+		});
+	}
+	//for small and XS formats, need to click on the skills
+	if(window.innerWidth <= 992){
+
+		$progressFrontEnd.click(function(){
+			drawProgressBar('.progressFrontEnd');
+		});
+		$progressDesign.click(function(){
+			drawProgressBar('.progressDesign');
+		});
+		$progressHuman.click(function(){
+			drawProgressBar('.progressHuman');
+		});
+
+	}
+//for medium and large formats, need to hover the skills
+	if(window.innerWidth > 992){
+
+		$progressFrontEnd.hover(function(){
+			drawProgressBar('.progressFrontEnd');
+		});
+		$progressDesign.hover(function(){
+			drawProgressBar('.progressDesign');
+		});
+		$progressHuman.hover(function(){
+			drawProgressBar('.progressHuman');
+		});
+
+	}
 }
+
 
 
 //check if the progress bar is in view
@@ -177,34 +207,7 @@ function drawProgressBar(skill) {
 	});
 }*/
 
-//for small and XS formats, need to click on the skills
-if(window.innerWidth <= 992){
 
-	$progressFrontEnd.click(function(){
-		drawProgressBar('.progressFrontEnd');
-	});
-	$progressDesign.click(function(){
-		drawProgressBar('.progressDesign');
-	});
-	$progressHuman.click(function(){
-		drawProgressBar('.progressHuman');
-	});
-
-}
-//for medium and large formats, need to hover the skills
-if(window.innerWidth > 992){
-
-	$progressFrontEnd.hover(function(){
-		drawProgressBar('.progressFrontEnd');
-	});
-	$progressDesign.hover(function(){
-		drawProgressBar('.progressDesign');
-	});
-	$progressHuman.hover(function(){
-		drawProgressBar('.progressHuman');
-	});
-
-}
 
 
 //**********************************************************************Check what the current page is
@@ -231,6 +234,7 @@ $(document).ready(function() {
 	}
 	if (isCV()) {
 		createWave();
+		animateProgressBars();
 	}
 });
 
