@@ -468,9 +468,9 @@ textarea
 	width: 0;
 }
 .barhover{
-	background: #647277;
-	transition: background 300ms, width 300ms;
-	-moz-transition: background 300ms, width 300ms;
-	-webkit-transition: background 300ms, width 300ms;
+	transition: background 2000ms, width 2000ms;
+	-moz-transition: background 2000ms, width 2000ms;
+	-webkit-transition: background 2000ms, width 2000ms;
 }
+
 

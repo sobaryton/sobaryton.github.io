@@ -137,13 +137,75 @@ function initEmailJS() {
 
 //*****************************************************************Management of the progress bar hover in CV-skills
 var $progress = $('.progress');
+var $window = $(window);
+var $progressFrontEnd = $('.progressFrontEnd');
+var $progressDesign = $('.progressDesign');
+var $progressHuman = $('.progressHuman');
 
-$progress.hover(function(){
-	$progressbar = $($(this).children()[0]);
-	$progressbar.css({"width": $progressbar.data('value')+'%'});
-	$progressbar.css({"background": $progressbar.data('color')});
-	$progressbar.addClass('.barhover');
-});
+//Function which draws the progress-bars for a kind of skill (front-end, design and human)
+function drawProgressBar(skill) {
+	var $progressSkill = $(skill);
+	$.each($progressSkill, function () {
+		$progressbar = $($(this).children()[0]);
+		$progressbar.addClass('barhover');
+		$progressbar.css({"width": $progressbar.data('value') + '%'});
+		$progressbar.css({"background": $progressbar.data('color')});
+	});
+}
+
+
+//check if the progress bar is in view
+/*function check_if_in_view() {
+	var window_height = $window.height();
+	var window_top_position = $window.scrollTop();
+	var window_bottom_position = (window_top_position + window_height);
+
+	$.each($progress, function() {
+		var $element = $(this);
+		$progressbar = $($element.children());
+		var element_height = $progressbar.outerHeight();
+		var element_top_position = $progressbar.offset().top;
+		var element_bottom_position = (element_top_position + element_height);
+
+		//check to see if this current container is within viewport
+		if ((element_bottom_position >= window_top_position) &&
+			(element_top_position <= window_bottom_position)) {
+			$progressbar.addClass('in-view');
+		} else {
+			$progressbar.removeClass('in-view');
+		}
+	});
+}*/
+
+//for small and XS formats, need to click on the skills
+if(window.innerWidth <= 992){
+
+	$progressFrontEnd.click(function(){
+		drawProgressBar('.progressFrontEnd');
+	});
+	$progressDesign.click(function(){
+		drawProgressBar('.progressDesign');
+	});
+	$progressHuman.click(function(){
+		drawProgressBar('.progressHuman');
+	});
+
+}
+//for medium and large formats, need to hover the skills
+if(window.innerWidth > 992){
+
+	$progressFrontEnd.hover(function(){
+		drawProgressBar('.progressFrontEnd');
+	});
+	$progressDesign.hover(function(){
+		drawProgressBar('.progressDesign');
+	});
+	$progressHuman.hover(function(){
+		drawProgressBar('.progressHuman');
+	});
+
+}
+
 
 //**********************************************************************Check what the current page is
 
