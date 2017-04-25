@@ -145,17 +145,17 @@ h1
 	display: flex;
 	justify-content: center;
 }
-#skillsTitre p, #cv
+#skillsTitre p, #cv, #projects
 {
 	text-align: center;
 }
-#cv a
+#cv a, #projects a
 {
 	text-decoration: none;
 	color: #FCB3B3;
 	font-size: 1.7em;
 }
-#cv a:hover
+#cv a:hover, #projects a:hover
 {
 	text-decoration: none;
 	color: white;
