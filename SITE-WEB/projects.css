@@ -1,0 +1,198 @@
+/*********************************************************************************************************************************************************/
+/***********************************************************  Projects Page in responsive   *******************************************************************/
+/*********************************************************************************************************************************************************/
+
+
+/**************************************************************************************************************************/
+/*************									SMALL SMARTPHONE SCREENS			    ***********************************/
+/**************************************************************************************************************************/
+@media (max-width: 767px) {
+	/**For small creens of smartphones**/
+	.container-fluid, .container {
+		width: auto;
+		margin: auto;
+	}
+	section {
+		height:100vh;
+		width: 100%;
+	}
+
+	/*Work on the header*/
+	.navbar
+	{
+		background-color: transparent;
+	}
+	header {
+		height: 100vh;
+	}
+	h1{
+		height: 50px;
+	}
+	.triangle-up {
+		padding-top: 120px;
+	}
+
+	/*Work on the first section */
+
+
+	/*Work on the second section */
+
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+
+
+}
+
+
+
+/***********************************************************************************************************************************/
+/*************									SMARTPHONE SCREENS						********************************************/
+/***********************************************************************************************************************************/
+
+@media (min-width: 768px) {
+	/**For small screens like smartphones **/
+	.container-fluid {
+		width: 750px;
+	}
+
+	.btn-navbar {
+		display: none;
+	}
+
+	section {
+		height:100vh;
+		width: 100%;
+	}
+
+	/******************Header and nav**************/
+	header {
+		height: 100vh;
+	}
+	#titreCv {
+		padding-top: 110px;
+	}
+	.container {
+		height: 50px;
+		width: 750px;
+	}
+	h1{
+		height: 70px;
+	}
+
+	.triangle-up {
+		padding-top: 100px;
+	}
+
+	/*Work on the first section*/
+
+	/*Work on the second section */
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+}
+
+
+
+/****************************************************************************************************************************************/
+/*************									TABLETS SCREENS  						*************************************************/
+/****************************************************************************************************************************************/
+
+
+@media (min-width: 992px) {
+	/**For middle screens like tablets**/
+	.container-fluid {
+		width: 970px;
+	}
+
+	section {
+		height:100vh;
+		width: 100%;
+	}
+
+	.btn-navbar {
+		display: none;
+	}
+
+	/******************Header**************/
+	.container {
+		height: 50px;
+		width: 970px;
+	}
+	header{
+		height: 100vh;
+	}
+	h1{
+		height: 90px;
+	}
+	.triangle-up {
+		padding-top: 100px;
+	}
+
+	/*Work on the first section */
+
+	/*Work on the second section */
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+}
+/*************************************************************************************************************************************/
+/*************									DESKTOP SCREEN     						**********************************************/
+/*************************************************************************************************************************************/
+
+@media (min-width: 1200px) {
+	/**For large screens**/
+	.container {
+		width: 1170px;
+	}
+
+	.container-fluid {
+		width: 1170px;
+	}
+
+	section {
+		height:100vh;
+		width: 100%;
+	}
+
+	/*Work on the header*/
+	header {
+		height: 100vh;
+	}
+	h1{
+		height: 140px;
+	}
+	#titreCv {
+		padding-top: 100px;
+	}
+	.triangle-up {
+		padding-top: 110px;
+	}
+	/*Work on the second section */
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+}

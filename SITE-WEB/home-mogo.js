@@ -208,7 +208,15 @@ function animateProgressBars(){
 }*/
 
 
-
+//*****************************************************************Management of the parallax effect in Project page
+$(document).ready(function(){
+	$('#slide1').parallax("center", 0, 0.1, true);
+	$('#slide2').parallax("center", 900, 0.1, true);
+	$('#slide3').parallax("center", 2900, 0.1, true);
+	$('#slide4').parallax("center", 0, 0.1, true);
+	$('#slide5').parallax("center", 900, 0.1, true);
+	$('#slide6').parallax("center", 2900, 0.1, true);
+});
 
 //**********************************************************************Check what the current page is
 
