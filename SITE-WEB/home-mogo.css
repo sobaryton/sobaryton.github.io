@@ -122,8 +122,6 @@ h1
 {
 	background-color: #bad1d1;
 	text-align: center;
-
-	
 }
 #numbers a
 {
@@ -476,19 +474,26 @@ textarea
 /*********************************************************************************************************************************************************/
 /***********************************************************   Project Page general style   *******************************************************************/
 /*********************************************************************************************************************************************************/
+#container-projects
+{
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .slide{
 	width: 100%;
 	height: 100vh;
 }
 
 #slide1, #slide4 {
-	background: #bad1d1 center 0 no-repeat fixed;
+	background: url("images/bad1d1.png") center no-repeat fixed;
 }
 
 #slide2, #slide5 {
-	background: #FCB3B3 center 0 no-repeat fixed;
+	background: #FCB3B3 center no-repeat fixed;
 }
 
 #slide3, #slide6 {
-	background: #1b6d85 center 0 no-repeat fixed;
+	background: #1b6d85 center no-repeat fixed;
 }
