@@ -483,17 +483,17 @@ textarea
 
 .slide{
 	width: 100%;
-	height: 700px;
+	height: 600px;
 }
 
 
 
-#slide6{
+#slide2{
 	background: url("images/create.jpeg") center 0 fixed;
 	background-size: cover;
 }
 
-#slide2{
+#slide6{
 
 	background: url("images/pineapple.png") center 0 fixed;
 	background-size: contain;
@@ -503,4 +503,19 @@ textarea
 
 	background: url("images/desk.jpg") center 0 fixed;
 	background-size: cover;
+}
+.img-desktop{
+	width: 400px;
+}
+.project_txt{
+	display: flex;
+	flex-direction: row;
+}
+.project_txt div{
+	width: 300px;
+}
+.theProject{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
