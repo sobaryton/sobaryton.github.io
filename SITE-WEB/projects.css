@@ -190,8 +190,54 @@
 	.triangle-up {
 		padding-top: 110px;
 	}
-	/*Work on the second section */
-
+	/*Work on all the sections */
+	.slide{
+		width: 100%;
+		height: 600px;
+	}
+	.img-desktop{
+		width: 400px;
+	}
+	.project_txt div{
+		width: 300px;
+	}
+	/*Work on the second section on sodev website*/
+	#sodev_txt{
+		margin-left: 700px;
+	}
+	/*Work on the fourth section with logos*/
+	#logo-project{
+		width: 500px;
+		margin-left: -200px;
+	}
+	#logo-project div{
+		padding: 20px;
+	}
+	#logoCreation{
+		width: 200px;
+		height: 400px;
+		margin-left: 150px;
+	}
+	.img-round:before {
+		width: 130px;
+		height: 130px;
+	}
+	.img-round:after {
+		height:130px;
+		width: 130px;
+	}
+	#img-logo1{
+		width: 130px;
+		height: 130px;
+	}
+	#img-logo2{
+		width: 130px;
+		height: 130px;
+	}
+	#img-logo3{
+		width: 130px;
+		height: 130px;
+	}
 	/*Work on the footer*/
 	#footer-social {
 		display: flex;

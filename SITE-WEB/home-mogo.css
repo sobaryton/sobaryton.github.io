@@ -225,6 +225,9 @@ h1
 {
 	position: fixed;
 }
+.glyphicon{
+	padding-top: 20px;
+}
 .item img{
 	margin: auto;
 }
@@ -483,13 +486,10 @@ textarea
 
 .slide{
 	width: 100%;
-	height: 600px;
 }
 
-
-
 #slide2{
-	background: url("images/create.jpeg") center 0 fixed;
+	background: url("images/createsodev.png") center 0 fixed;
 	background-size: cover;
 }
 
@@ -504,18 +504,96 @@ textarea
 	background: url("images/desk.jpg") center 0 fixed;
 	background-size: cover;
 }
-.img-desktop{
-	width: 400px;
-}
 .project_txt{
 	display: flex;
 	flex-direction: row;
 }
-.project_txt div{
-	width: 300px;
-}
+
 .theProject{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+}
+#logo-title{
+	color: white;
+}
+#logo-project{
+	background: white;
+	border-radius: 10%;
+	display: flex;
+	flex-direction: column;
+}
+#logo-project div{
+	margin: auto;
+}
+#logoCreation{
+	display: inline-block;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	-ms-perspective: 1200px;
+	-o-perspective: 1200px;
+	perspective: 1200px;
+	-webkit-perspective-origin: 50% 50%;
+	-moz-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
+	-o-perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;
+}
+
+.img-round:before {
+	   content: "";
+	   position: absolute;
+	   top: 1%;
+	   left: 5%;
+	   border-radius: 50%;
+	   background: radial-gradient(circle at 35% 0px, #ffffff, rgba(255, 255, 255, 0) 30%);
+	   -webkit-filter: blur(5px);
+	   z-index: 2;
+   }
+.img-round:after {
+	content: "";
+	position: absolute;
+	border-radius: 100%;
+	top: 0;
+	left: 0;
+	background: radial-gradient(circle at 50% 30%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 50%, white 100%);
+}
+
+#img-logo1{
+	background: url('images/logos/StudNetwork-blue.png') center no-repeat;
+	display: inline-block;
+	margin: 0;
+	border-radius: 50%;
+	position: relative;
+	background-size: cover;
+}
+
+#img-logo2{
+	background: url('images/logo2.png') center no-repeat, white ;
+	display: inline-block;
+	margin: 0;
+	border-radius: 50%;
+	position: relative;
+	background-size: cover;
+}
+#img-logo3{
+	background: url('images/fox-dev.jpg') center no-repeat ;
+	display: inline-block;
+	margin: 0;
+	border-radius: 50%;
+	position: relative;
+	background-size: cover;
+}
+
+.img-mini{
+	width: 150px;
+	height: 150px;
+}
+.img-mini:hover{
+	transform: ;
+}
+.mini-project-txt{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
 }
