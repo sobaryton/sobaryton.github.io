@@ -612,9 +612,7 @@ textarea
 	width: 150px;
 	height: 150px;
 }
-.img-mini:hover{
-	transform: ;
-}
+
 .mini-project-txt{
 	display: flex;
 	flex-direction: column;
