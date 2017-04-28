@@ -9,14 +9,15 @@ li
 	box-shadow: 3px 3px 3px 3px;
 	text-align: center;
 	width: 350px;
-	height: 150px;
+	height: auto;
 	border-radius: 7px;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 li h1
 {
 	font-size: 1.7em;
 	font-family: 'Indie Flower', cursive;
+	padding: 20px;
 }
 
 .message
@@ -31,7 +32,7 @@ li h1
 	background-color: white;
 	font-family: 'Josefin Sans', sans-serif;
 	border-radius: 7px;
-	margin-top: 15px;
+	margin: 20px auto;
 	font-size: 1.2em;
 }
 .bouton:hover
