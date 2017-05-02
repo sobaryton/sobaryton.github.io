@@ -226,6 +226,9 @@ h1
 {
 	position: fixed;
 }
+.carousel-indicators{
+	bottom:5px;
+}
 .glyphicon{
 	padding-top: 20px;
 }
@@ -506,7 +509,13 @@ textarea
 	margin-left: 0;
 	margin-right: 0;
 }
-
+#project_skills{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 90px;
+}
 .slide{
 	width: 100%;
 }
