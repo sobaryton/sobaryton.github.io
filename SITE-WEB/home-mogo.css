@@ -382,12 +382,15 @@ textarea
 	align-items: center;
 	justify-content: center;
 }
+
+/*Working on the triangles at bottom of the header*/
 #crans {
 	display: flex;
 	justify-content: flex-start;
 	width: 100%;
 	overflow: hidden;
 }
+
 .triangle-up {
 	width: 0;
 	height: 0;
@@ -395,7 +398,8 @@ textarea
 	border-right: 20px solid transparent;
 	border-bottom: 20px solid white;
 }
-/*Work on the second section: education*/
+
+/*Work on the second section: education: making arrows*/
 .etiquetteBtn{
 	color: #647277;
 }
@@ -452,13 +456,16 @@ textarea
 .expDetails{
 	display: flex;
 }
+
 #cvEducation{
 	padding-left: 10px;
 }
+
 #cvSchools, #cvCompanies{
 	display: flex;
 	flex-direction: column;
 }
+
 .dateCv, .dateExpCv{
 	color: #647277;
 	font-size: 2em;
@@ -469,18 +476,24 @@ textarea
 	border-radius: 25px;
 	width: 50%;
 }
+
 .progress-bar{
 	width: 0;
 }
+
+/*Animation of the progress bars when you hover it*/
 .barhover{
 	transition: background 2000ms, width 2000ms;
 	-moz-transition: background 2000ms, width 2000ms;
 	-webkit-transition: background 2000ms, width 2000ms;
 }
+
+/*Button in order to download my CV*/
 #CVButton{
 	text-align: center;
 	margin-bottom: 30px;
 }
+
 #CV-download{
 	text-decoration: none;
 	font-size: 2em;
@@ -492,6 +505,7 @@ textarea
 	color: #FCB3B3;
 	border: 2px dotted #FCB3B3;
 }
+
 #CV-download:hover
 {
 	color: white;
@@ -509,6 +523,7 @@ textarea
 	margin-left: 0;
 	margin-right: 0;
 }
+
 #project_skills{
 	display: flex;
 	flex-direction: row;
@@ -516,48 +531,43 @@ textarea
 	justify-content: space-around;
 	margin-top: 90px;
 }
+.project-list{
+	list-style: none;
+	margin-top: 30px;
+}
+.project-list li{
+	padding-bottom: 20px;
+}
+/*Create the parallax effect with different background on the slides*/
 .slide{
 	width: 100%;
 }
-
-#slide2{
-	background: url("images/createsodev.png") center 0 fixed;
-	background-size: cover;
-}
-
-#slide6{
-
-	background: url("images/pineapple.png") center 0 fixed;
-	background-size: contain;
-}
-
-#slide4 {
-
-	background: url("images/desk.jpg") center 0 fixed;
-	background-size: cover;
+#project_intro p{
+	text-align: center;
 }
 .project_txt{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .theProject{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
 }
-#logo-title{
-	color: white;
-}
+
 #logo-project{
 	background: white;
 	border-radius: 10%;
 	display: flex;
 	flex-direction: column;
 }
-#logo-project div{
-	margin: auto;
-}
+
+
+
+/*Create an effect on the logo: like a small ball with logos inside*/
 #logoCreation{
 	display: inline-block;
 	-webkit-perspective: 1200px;
@@ -626,4 +636,7 @@ textarea
 	display: flex;
 	flex-direction: column;
 	width: 200px;
+}
+.mini-project{
+	height: 400px;
 }

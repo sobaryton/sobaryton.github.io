@@ -61,33 +61,34 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<section id="slide1" class="slide">
-					<div class="slide_inside">
+					<a href="#toptop" class="top"><i class="fa fa-arrow-circle-up fa-3x" id="btnTop"></i></a>
+					<div class="slide_inside" id="project_intro">
 						<h2>Introduction</h2>
 						<p>On this page you will see all my projects and work done so far.</p>
 						<p>Here is an overview of all the technologies, that I used during my studies:</p>
 						<div id="project_skills">
 							<div>
-							<h3>Web-development</h3>
-							<ul>
-								<li>HTML 5 & CSS 3</li>
-								<li>Bootstrap  &  Flexbox</li>
-								<li>Javascript</li>
-								<li>jQuery</li>
+							<h3><i class="fa fa-desktop" aria-hidden="true"></i> Web-development</h3>
+							<ul class="project-list">
+								<li><i class="fa fa-code" aria-hidden="true"></i> HTML 5 & CSS 3</li>
+								<li><i class="fa fa-code" aria-hidden="true"></i> Bootstrap  &  Flexbox</li>
+								<li><i class="fa fa-code" aria-hidden="true"></i> Javascript</li>
+								<li><i class="fa fa-code" aria-hidden="true"></i> jQuery</li>
 							</ul>
 							</div>
 							<div>
-								<h3>Web-design</h3>
-								<ul>
-									<li>Adobe Illustrator</li>
-									<li>Adobe XD</li>
-									<li>Adobe Photoshop</li>
+								<h3><i class="fa fa-paint-brush" aria-hidden="true"></i> Web-design</h3>
+								<ul class="project-list">
+									<li><i class="fa fa-picture-o" aria-hidden="true"></i> Adobe Illustrator</li>
+									<li><i class="fa fa-picture-o" aria-hidden="true"></i> Adobe XD</li>
+									<li><i class="fa fa-picture-o" aria-hidden="true"></i> Adobe Photoshop</li>
 								</ul>
 							</div>
 							<div>
-								<h3>In progress</h3>
-								<ul>
-									<li>Improve Photoshop skills</li>
-									<li>Learn React.js</li>
+								<h3><i class="fa fa-cogs" aria-hidden="true"></i> In progress</h3>
+								<ul class="project-list">
+									<li><i class="fa fa-cog" aria-hidden="true"></i> Improve Photoshop skills</li>
+									<li><i class="fa fa-cog" aria-hidden="true"></i> Learn React.js</li>
 								</ul>
 							</div>
 						</div>
@@ -97,6 +98,9 @@
 					<div class="slide_inside" id="sodev_txt">
 						<h2>Sodev website</h2>
 						<div class="theProject">
+							<div>
+								<img src="images/sodevdesktop.png" class="img-desktop" id="dsk_sodev">
+							</div>
 							<div class="project_txt" >
 								<div>
 									<h3>The project</h3>
@@ -124,7 +128,7 @@
 							<div>
 								<img src="images/fusiontraveldesktop.png" class="img-desktop">
 							</div>
-							<div class="project_txt">
+							<div class="project_txt" id="logo-project">
 								<div>
 									<h3>The project</h3>
 									<p>During my studies at OpenClassRooms, I had some projects including developing a full <a href="../SITE-WEBFR/maquette/index-travel.html">website</a> as if my client was a travel agency, from a Photoshop template
@@ -197,17 +201,7 @@
 								</div><!-- /.modal-dialog -->
 							</div><!-- /.modal -->
 
-
-
-
-
-
-
-
-
-
-
-							<div class="project_txt" id="logo-project">
+							<div class="project_txt" id="logo_txt">
 								<div>
 									<h3>The project</h3>
 									<p>In order to improve my design skills I decided to take part of some concourse online: <a href="http://www.brandsupply.com/">Brandsupply</a>
@@ -334,7 +328,7 @@
 								</div>
 							</div>
 							<div class="mini-project" id="mini3">
-								<div>
+								<div >
 									<a href="../SITE-WEBFR/anniversaire/index.html" class="mini-project-txt">
 										<img src="images/anniv.png" class="img-mini">
 									</a>
