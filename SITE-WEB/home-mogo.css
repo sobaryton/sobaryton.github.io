@@ -222,24 +222,33 @@ h1
 
 
 /********************************Work on the section work****************************************/
+#sectionsWork{
+	margin-top: 50px;
+}
+
 .carousel
 {
 	position: fixed;
 }
+
 .carousel-indicators{
 	bottom:5px;
 }
+
 .glyphicon{
 	padding-top: 20px;
 }
+
 .item img{
 	margin: auto;
 }
-#work h4
+
+#work h4, #work p
 {
 	text-align: center;
 	margin-bottom: 40px;
 }
+
 .work-thumb-container
 {
 	transition: top 0.35s;
@@ -247,6 +256,7 @@ h1
 	width: 100%;
 	overflow-x: hidden;
 }
+
 .work-thumb-overlay
 {
 	opacity: 0.9;
@@ -264,6 +274,7 @@ h1
 	position: absolute;
 	text-align: center;
 }
+
 .work-thumb-content h3
 {
 	color: #bad1d1;
@@ -277,18 +288,20 @@ h1
 	transition: bottom 0.5s, opacity 0.7s;
 	font-weight: bold;
 }
+
 #sectionsWork .row
 {
 	overflow: hidden;
 }
 article.project-thumb:hover img {
   top: -10px;
-
 }
+
 article.project-thumb:hover .work-thumb-overlay {
   bottom: 0;
   opacity: 0;
 }
+
 article.project-thumb h3
 {
   text-align: center;
@@ -297,6 +310,7 @@ article.project-thumb h3
   opacity: 0;
   transition: bottom 0.5s, opacity 0.7s;
 }
+
 article.project-thumb:hover h3
 {
 	bottom: 0;
