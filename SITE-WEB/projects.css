@@ -52,7 +52,6 @@
 	/*Work on the fourth section with logos*/
 
 	#logoCreation{
-		width: 150px;
 		text-align: center;
 	}
 	.img-round:before {
@@ -80,6 +79,11 @@
 	.mini-project{
 		width: 310px;
 		margin-bottom: 70px;
+		text-align: center;
+	}
+
+	.mini-list{
+		text-align: left;
 	}
 
 	.mini-project div{
@@ -87,6 +91,10 @@
 	}
 	.mini-project-txt{
 		width: auto;
+		display: block;
+	}
+	.mini-project{
+		height: 400px;
 	}
 
 	/*Work on the footer*/
@@ -115,11 +123,7 @@
 		display: none;
 	}
 
-	section {
-		height:100vh;
-		width: 100%;
-		margin-bottom: 0;
-	}
+
 
 	/******************Header and nav**************/
 	header {
@@ -140,8 +144,7 @@
 	/*Work on all the sections */
 	.slide{
 		width: 100%;
-		height: 600px;
-		border-top: 2px dotted #FCB3B3;;
+		border-top: 2px dotted #FCB3B3;
 	}
 	#slide1{
 		border-top: none;
@@ -150,29 +153,18 @@
 		width: 400px;
 	}
 	.project_txt div{
-		width: 300px;
-		padding-left: 20px;
+		width: 250px;
+		padding-left: 10px;
 	}
 	.project_txt{
 		justify-content: flex-start;
 
 	}
 	/*Work on the fourth section with logos*/
-	#slide4 .theProject{
-		justify-content: flex-start;
-	}
-	#logo-project{
-		width: 500px;
-		margin-left: -200px;
-	}
 	#logo-project div{
 		padding: 20px;
 	}
-	#logoCreation{
-		width: 200px;
-		height: 400px;
-		margin-left: 150px;
-	}
+
 	.img-round:before {
 		width: 130px;
 		height: 130px;
@@ -199,16 +191,18 @@
 	/*Work on the last section with the mini projects*/
 	.mini-project{
 		width: auto;
-
+		display: flex;
+		height: auto;
+		margin-bottom: 50px;
 	}
+
 
 	/*Work on the footer*/
 	#footer-social {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-
-	}
+		}
 
 }
 
@@ -252,7 +246,7 @@
 	.slide{
 		width: 100%;
 		height: 600px;
-		border-top: 2px dotted #FCB3B3;;
+		border-top: 2px dotted #FCB3B3;
 	}
 	#slide1{
 		border-top: none;
@@ -297,6 +291,15 @@
 	#img-logo3{
 		width: 130px;
 		height: 130px;
+	}
+
+	/*Work on the last section with the mini projects*/
+	.mini-project{
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		height: 400px;
+		margin-bottom: 50px;
 	}
 
 	/*Work on the footer*/

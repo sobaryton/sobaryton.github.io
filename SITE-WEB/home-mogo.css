@@ -564,7 +564,10 @@ textarea
 	display: flex;
 	flex-direction: column;
 }
-
+.link{
+	color: #FCB3B3;
+	text-decoration: none;
+}
 
 
 /*Create an effect on the logo: like a small ball with logos inside*/
@@ -636,7 +639,4 @@ textarea
 	display: flex;
 	flex-direction: column;
 	width: 200px;
-}
-.mini-project{
-	height: 400px;
 }
