@@ -41,6 +41,11 @@ h1
 	width: 100%;
 	z-index: 20;
 }
+.navbar-nav{
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
 .navbar-brand
 {
 	color: #647277;
@@ -396,13 +401,18 @@ textarea
 	align-items: center;
 	justify-content: center;
 }
-
+#header-CV{
+	position: relative;
+	height: 100vh;
+}
 /*Working on the triangles at bottom of the header*/
 #crans {
 	display: flex;
 	justify-content: flex-start;
 	width: 100%;
 	overflow: hidden;
+	position: absolute;
+	bottom:0;
 }
 
 .triangle-up {
@@ -537,7 +547,10 @@ textarea
 	margin-left: 0;
 	margin-right: 0;
 }
-
+#header-project{
+	position: relative;
+	height: 100vh;
+}
 #project_skills{
 	display: flex;
 	flex-direction: row;

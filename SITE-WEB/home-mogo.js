@@ -2,17 +2,21 @@
 //******************************************************Navigation bar on top
 
 function updateNavigation() {
+	var btnTop = $('#btnTop');
 	var scroll = $(window).scrollTop();
 	var win_height = $("header").height();
 	var $myNavBar = $(".navbar");
 	var $navElt = $(".navbar-left a");
 	var heightClient = win_height - scroll;
+
 	if (heightClient <= 0) {
 		$myNavBar.css({"background-color": "#FCB3B3"});
 		$navElt.css({"color": "white"});
+		btnTop.show();
 	} else {
 		$myNavBar.css({"background-color": "transparent"});
 		$navElt.css({"color": "#FCB3B3"});
+		btnTop.hide();
 	}
 }
 
@@ -248,6 +252,9 @@ $(document).ready(function() {
 	if (isCV()) {
 		createWave();
 		animateProgressBars();
+	}
+	if (isProjects()){
+		createWave();
 	}
 	if(screen.innerWidth >= 1200) {
 		if(isProjects()){

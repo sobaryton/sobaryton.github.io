@@ -28,11 +28,11 @@
 		height: 50px;
 	}
 	.triangle-up {
-		padding-top: 175px;
+
+		position: absolute;
+		bottom:20px;
 	}
-	#logo-sodev{
-		width: 115px;
-	}
+
 
 	/*Work on the first section with the intro*/
 	#cvIntroTxt
@@ -118,13 +118,8 @@
 	h1{
 		height: 70px;
 	}
-	#logo-sodev{
-		width: 115px;
-	}
 
-	.triangle-up {
-		padding-top: 155px;
-	}
+
 
 	/*Work on the first section with the intro*/
 	#cvIntroTxt
@@ -197,12 +192,8 @@
 	h1{
 		height: 90px;
 	}
-	.triangle-up {
-		padding-top: 117px;
-	}
-	#logo-sodev{
-		width: 155px;
-	}
+
+
 	/*Work on the first section with the intro*/
 	#cvIntroTxt
 	{
@@ -273,12 +264,8 @@
 	#titreCv {
 		padding-top: 100px;
 	}
-	#logo-sodev{
-		width: 205px;
-	}
-	.triangle-up {
-		 padding-top: 75px;
-	 }
+
+
 	/*Work on the second section with education, experience and skills*/
 	.etiquette{
 		margin-bottom: 70px;

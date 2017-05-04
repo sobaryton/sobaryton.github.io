@@ -343,10 +343,7 @@
 	{
 		position: fixed;
 	}
-	.navbar-nav
-	{
-		display: flex;
-	}
+
 	.navigation
 	{
 		display: flex;
@@ -355,9 +352,9 @@
 		width: 100%;
 		height: 100%;
 	}
-	#navbarbrand a
+	.navbarbrand a
 	{
-		font-size: 2em;
+		font-size: 43px;
 		color: #647277 !important;
 	}
 	.navbar-nav li
@@ -587,11 +584,6 @@
 	{
 		flex: 1;
 	}
-	.navbar-nav
-	{
-		flex: 4;
-		margin-left: 9%;
-	}
 	.navbar-nav li
 	{
 		font-size: 1.5em;
@@ -766,11 +758,7 @@
 		width: 100%;
 		height: 100%;
 	}
-	.navbar-nav
-	{
-		flex: 5;
-		margin-left: 0;
-	}
+
 	.navbar-nav li
 	{
 		font-size: 1.5em;
