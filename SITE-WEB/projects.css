@@ -33,7 +33,7 @@
 		width: 25%;
 	}
 	/*Work on all the sections */
-	.slide{
+	.parallax-slide{
 		width: 100%;
 	}
 	#slide1{
@@ -149,7 +149,7 @@
 	}
 
 	/*Work on all the sections */
-	.slide{
+	.parallax-slide{
 		width: 100%;
 		border-top: 2px dotted #FCB3B3;
 	}
@@ -253,7 +253,7 @@
 		width: 15%;
 	}
 	/*Work on all the sections */
-	.slide{
+	.parallax-slide{
 		width: 100%;
 		height: 600px;
 		border-top: 2px dotted #FCB3B3;
@@ -279,7 +279,6 @@
 	}
 	#logoCreation{
 		width: 200px;
-		height: 400px;
 		margin-left: 150px;
 	}
 	.img-round:before {
@@ -298,10 +297,7 @@
 		width: 130px;
 		height: 130px;
 	}
-	#img-logo3{
-		width: 130px;
-		height: 130px;
-	}
+
 
 	/*Work on the last section with the mini projects*/
 	.mini-project{
@@ -349,7 +345,7 @@
 	}
 
 	/*Work on all the sections */
-	.slide{
+	.parallax-slide{
 		width: 100%;
 		height: 700px;
 		border: none;
@@ -404,29 +400,31 @@
 	}
 	#logoCreation{
 		width: 200px;
-		height: 400px;
 		margin-left: 150px;
 	}
-	.img-round:before {
-		width: 130px;
-		height: 130px;
-	}
-	.img-round:after {
-		height:130px;
-		width: 130px;
-	}
-	#img-logo1{
-		width: 130px;
-		height: 130px;
+
+	#img-logo1, #img-logo2, .img-round:after, .img-round:before{
+		width: 200px;
+		height: 200px;
 	}
 	#img-logo2{
-		width: 130px;
-		height: 130px;
+		margin-top: 50px;
 	}
-	#img-logo3{
-		width: 130px;
-		height: 130px;
+	#lightbox3{
+		width:400px;
+		overflow: hidden;
 	}
+	#lightbox4{
+		width:500px;
+		overflow: hidden;
+	}
+	.item-logo img{
+		width: 300px;
+	}
+	.item-avatar{
+		width: 300px;
+	}
+	/*Work on the last section with the mini projects*/
 	.img-mini{
 		width: 200px;
 		height: 200px;

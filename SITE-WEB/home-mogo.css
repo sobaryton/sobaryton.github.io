@@ -553,7 +553,7 @@ textarea
 	padding-bottom: 20px;
 }
 /*Create the parallax effect with different background on the slides*/
-.slide{
+.parallax-slide{
 	width: 100%;
 }
 #project_intro p{
@@ -571,20 +571,44 @@ textarea
 	align-items: center;
 	flex-wrap: wrap;
 }
-
+.link{
+	color: #FCB3B3;
+	text-decoration: none;
+}
+/*Section of wordpress websites*/
+#carousel-wordpress{
+	width: 50%;
+}
+#carousel-wordpress .carousel{
+	position: relative;
+	height: 400px;
+}
+.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+	height: 400px !important;
+}
+#controls{
+	position: relative;
+}
+.WPcarousel-control{
+	position: absolute;
+	height: 400px;
+	background-color: transparent;
+	top:inherit;
+}
+.WPcarousel-control.left{
+	background-image: linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
+}
+.WPcarousel-control.right{
+	background-image: linear-gradient(to left,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
+}
+/*Create an effect on the logo: like a small ball with logos inside*/
 #logo-project{
 	background: white;
 	border-radius: 10%;
 	display: flex;
 	flex-direction: column;
 }
-.link{
-	color: #FCB3B3;
-	text-decoration: none;
-}
 
-
-/*Create an effect on the logo: like a small ball with logos inside*/
 #logoCreation{
 	display: inline-block;
 	-webkit-perspective: 1200px;
@@ -619,23 +643,6 @@ textarea
 }
 
 #img-logo1{
-	background: url('images/logos/StudNetwork-blue.png') center no-repeat;
-	display: inline-block;
-	margin: 0;
-	border-radius: 50%;
-	position: relative;
-	background-size: cover;
-}
-
-#img-logo2{
-	background: url('images/logo2.png') center no-repeat, white ;
-	display: inline-block;
-	margin: 0;
-	border-radius: 50%;
-	position: relative;
-	background-size: cover;
-}
-#img-logo3{
 	background: url('images/foxdev.jpg') center no-repeat ;
 	display: inline-block;
 	margin: 0;
@@ -644,6 +651,31 @@ textarea
 	background-size: cover;
 }
 
+#img-logo2{
+	background: url('images/smokegreypink.png') center no-repeat, white ;
+	display: inline-block;
+	margin: 0;
+	border-radius: 50%;
+	position: relative;
+	background-size: cover;
+}
+.item-avatar img, .item-logo img{
+	margin: auto;
+}
+.dia-avatars, .dia-logo{
+	width: 400px;
+}
+.btn-close{
+	z-index: 100;
+	position: absolute;
+	top:-40px;
+	font-size: 3em;
+	right: 0;
+	opacity: 1;
+	color: white;
+}
+
+/*Last section with the mini projects*/
 .img-mini{
 	width: 150px;
 	height: 150px;
