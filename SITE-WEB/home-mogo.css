@@ -410,9 +410,9 @@ textarea
 	display: flex;
 	justify-content: flex-start;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 	position: absolute;
-	bottom:0;
+	bottom:-1px;
 }
 
 .triangle-up {

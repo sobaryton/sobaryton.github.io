@@ -26,12 +26,9 @@
 	}
 	h1{
 		height: 50px;
+		margin-bottom: 30px;
 	}
-	.triangle-up {
 
-		position: absolute;
-		bottom:20px;
-	}
 
 
 	/*Work on the first section with the intro*/
@@ -117,6 +114,7 @@
 	}
 	h1{
 		height: 70px;
+		margin-bottom: 50px;
 	}
 
 
@@ -191,6 +189,7 @@
 	}
 	h1{
 		height: 90px;
+		margin-bottom: 50px;
 	}
 
 
@@ -259,7 +258,9 @@
 		height: 550px;
 	}
 	h1{
-		height: 140px;
+		height: 10vh;
+		margin-top: 20vh;
+		margin-bottom: 70px;
 	}
 	#titreCv {
 		padding-top: 100px;
