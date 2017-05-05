@@ -603,32 +603,7 @@ textarea
 	color: #FCB3B3;
 	text-decoration: none;
 }
-/*Section of wordpress websites*/
-#carousel-wordpress{
-	width: 50%;
-}
-#carousel-wordpress .carousel{
-	position: relative;
-	height: 400px;
-}
-.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
-	height: 400px !important;
-}
-#controls{
-	position: relative;
-}
-.WPcarousel-control{
-	position: absolute;
-	height: 400px;
-	background-color: transparent;
-	top:inherit;
-}
-.WPcarousel-control.left{
-	background-image: linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
-}
-.WPcarousel-control.right{
-	background-image: linear-gradient(to left,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
-}
+
 /*Create an effect on the logo: like a small ball with logos inside*/
 #logo-project{
 	background: white;
@@ -701,6 +676,29 @@ textarea
 	right: 0;
 	opacity: 1;
 	color: white;
+}
+/*Section of wordpress websites*/
+
+#carousel-wordpress .carousel{
+	position: relative;
+}
+
+#controls{
+	position: relative;
+}
+
+.WPcarousel-control{
+	position: absolute;
+	background-color: transparent;
+	top:inherit;
+}
+
+.WPcarousel-control.left{
+	background-image: linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
+}
+
+.WPcarousel-control.right{
+	background-image: linear-gradient(to left,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
 }
 
 /*Last section with the mini projects*/

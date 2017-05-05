@@ -356,7 +356,20 @@
 	{
 		position: fixed;
 	}
+	.navbar-nav{
+		position: absolute;
+		right: 0;
+		width: 80%;
+	}
 
+	#navig{
+		position: absolute;
+		right: 0;
+	}
+	.navbar-header{
+		position: absolute;
+		left: 20px;
+	}
 	.navigation
 	{
 		display: flex;
@@ -374,7 +387,7 @@
 	{
 		font-size: 1.5em;
 		height: 100%;
-		width: 110px;
+		width: 130px;
 		text-align: center;
 	}
 	.li-drop, .dropA{
@@ -595,6 +608,9 @@
 	.navbar
 	{
 		position: fixed;
+	}
+	.navbar-nav{
+		width: 90%;
 	}
 	.navbar-brand
 	{

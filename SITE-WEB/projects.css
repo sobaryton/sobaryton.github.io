@@ -75,7 +75,30 @@
 		width: 100px;
 		height: 100px;
 	}
+	/*Section of wordpress websites*/
+	#carousel-wordpress{
+		width: 100%;
+	}
 
+	#carousel-wordpress .carousel{
+		position: relative;
+		height: 220px;
+	}
+	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+		height: 220px !important;
+	}
+	#controls{
+		position: relative;
+	}
+	.WPcarousel-control{
+		position: absolute;
+		height: 220px;
+		background-color: transparent;
+		top:inherit;
+	}
+	.WPglyphicon{
+		padding: 0;
+	}
 	/*Work on the last section with the mini projects*/
 	.mini-project{
 		width: 310px;
@@ -190,6 +213,21 @@
 	.theProject{
 		justify-content: space-around;
 	}
+	/*Section of wordpress websites*/
+	#carousel-wordpress{
+		width: 90%;
+	}
+
+	#carousel-wordpress .carousel{
+		height: 400px;
+	}
+	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+		height: 400px !important;
+	}
+
+	.WPcarousel-control{
+		height: 400px;
+	}
 	/*Work on the last section with the mini projects*/
 	.mini-project{
 		width: auto;
@@ -261,6 +299,7 @@
 		padding-left: 20px;
 	}
 
+
 	/*Work on the fourth section with logos*/
 	#logo-project{
 		width: 500px;
@@ -289,8 +328,20 @@
 		width: 130px;
 		height: 130px;
 	}
+	/*Section of wordpress websites*/
+	#carousel-wordpress{
+		width: 100%;
+	}
+	#carousel-wordpress .carousel{
+		height: 400px;
+	}
+	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+		height: 400px !important;
+	}
 
-
+	.WPcarousel-control{
+		height: 400px;
+	}
 	/*Work on the last section with the mini projects*/
 	.mini-project{
 		width: 300px;
@@ -415,6 +466,20 @@
 	}
 	.item-avatar{
 		width: 300px;
+	}
+	/*Section of wordpress websites*/
+	#carousel-wordpress{
+		width: 50%;
+	}
+	#carousel-wordpress .carousel{
+		height: 400px;
+	}
+	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+		height: 400px !important;
+	}
+
+	.WPcarousel-control{
+		height: 400px;
 	}
 	/*Work on the last section with the mini projects*/
 	.img-mini{
