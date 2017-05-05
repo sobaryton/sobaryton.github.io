@@ -298,7 +298,10 @@
 		width: 300px;
 		padding-left: 20px;
 	}
-
+	.project_txt{
+		width: 50%;
+		justify-content: center;
+	}
 
 	/*Work on the fourth section with logos*/
 	#logo-project{
@@ -330,17 +333,17 @@
 	}
 	/*Section of wordpress websites*/
 	#carousel-wordpress{
-		width: 100%;
+		width: 50%;
 	}
 	#carousel-wordpress .carousel{
-		height: 400px;
+		height: 300px;
 	}
 	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
-		height: 400px !important;
+		height: 300px !important;
 	}
 
 	.WPcarousel-control{
-		height: 400px;
+		height: 300px;
 	}
 	/*Work on the last section with the mini projects*/
 	.mini-project{
@@ -402,6 +405,10 @@
 
 	.project_txt div{
 		width: 300px;
+	}
+
+	.project_txt{
+		width: 100%;
 	}
 
 	#slide2{
