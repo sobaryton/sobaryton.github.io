@@ -32,19 +32,33 @@
 		<div id="toptop"></div>
 		<div class="navbar">
 			<div class="container" id="hautDePage">
-				<a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".navigation"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-				</a>
-
+				<div class="navbar-header">
+					<a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".navigation"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+					</a>
+					<div class="navbarbrand">
+					<a class="navbar-brand" href="home-mogo.html">SoDev</a>
+					</div>
+				</div>
 				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 
 				<div class="collapse navbar-collapse navigation" id="navig">
 					<ul class="nav navbar-nav navbar-left ">
-						<li class="navbarbrand">
-							<a class="navbar-brand" href="home-mogo.html">SoDev</a>
-						</li>
+
 						<li class="active"><a href="home-mogo.html#toptop">Home</a></li>
-						<li><a href="home-mogo.html#skills">Skills</a></li>
-						<li><a href="home-mogo.html#work">Work</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Skills <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="li-drop"><a href="home-mogo.html#skills" class="dropA">Overview </a></li>
+								<li class="li-drop"><a href="cv.html" class="dropA">My CV </a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Work <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="li-drop"><a href="home-mogo.html#work" class="dropA">Overview </a></li>
+								<li class="li-drop"><a href="projects.html" class="dropA">Projects </a></li>
+							</ul>
+						</li>
 						<li><a href="home-mogo.html#contact">Contact</a></li>
 					</ul>
 				</div>

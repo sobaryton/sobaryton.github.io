@@ -3,6 +3,7 @@
 
 function updateNavigation() {
 	var btnTop = $('#btnTop');
+	var dropDownMenu = $('.dropdown-menu');
 	var scroll = $(window).scrollTop();
 	var win_height = $("header").height();
 	var $myNavBar = $(".navbar");
@@ -12,9 +13,11 @@ function updateNavigation() {
 	if (heightClient <= 0) {
 		$myNavBar.css({"background-color": "#FCB3B3"});
 		$navElt.css({"color": "white"});
+		dropDownMenu.css({"width": "100%"}, {"background-color": "#FCB3B3 !important"});
 		btnTop.show();
 	} else {
 		$myNavBar.css({"background-color": "transparent"});
+		dropDownMenu.css({"background-color": "#F3ECD9 !important"});
 		$navElt.css({"color": "#FCB3B3"});
 		btnTop.hide();
 	}

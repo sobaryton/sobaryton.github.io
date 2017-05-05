@@ -50,6 +50,8 @@
 	.container>.navbar-collapse
 	{
 		text-align: center;
+		margin: 0;
+		padding: 0;
 	}
 	.btn-navbar
 	{
@@ -64,23 +66,37 @@
 	.navbar-nav
 	{
 		display: inherit;
+		margin: auto;
 	}
-	#navbarbrand a
+
+	.navbar-header{
+		height: 40px;
+	}
+
+	.navbar-brand
+	{
+		font-size: 2em;
+		color: #FCB3B3;
+		text-align: center;
+		width: 100%;
+		border-bottom: 1px solid #FCB3B3;
+		height: 40px;
+	}
+	.navbarbrand a
 	{
 		font-size: 2.4em;
 		color: #FCB3B3;
-		padding: 0;
+		padding: 10px;
 		height: 40px;
+		text-align: center;
 	}
-	#navbarbrand a:hover
+	.navbarbrand a:hover
 	{
 		background-color: transparent !important;
 		color: white;
 	}
 	.navigation
 	{
-		height: 85vh;
-		width: 95%;
 		background-color: #647277;
 	}
 	.navigation ul li
@@ -98,14 +114,11 @@
 		color:  white!important;
 		background-color: #6E8A94 !important;
 	}
-	.navbar-brand
-	{
-		font-size: 2em;
-		color: #FCB3B3;
-		text-align: center;
-		width: 100%;
-		border-bottom: 1px solid #FCB3B3;
-		height: 40px;
+	.li-drop, .dropA{
+		height: 45px !important;
+	}
+	.dropA{
+		background-color: transparent !important;
 	}
 	#titre
 	{
@@ -364,6 +377,9 @@
 		width: 110px;
 		text-align: center;
 	}
+	.li-drop, .dropA{
+		height: 45px !important;
+	}
 	#learn
 	{
 		font-size: 1.5em;
@@ -588,8 +604,11 @@
 	{
 		font-size: 1.5em;
 		height: 100%;
-		width: 120px;
+		width: 130px;
 		text-align: center;
+	}
+	.li-drop, .dropA{
+		height: 45px !important;
 	}
 	#learn
 	{
@@ -764,6 +783,9 @@
 		font-size: 1.5em;
 		margin-right: 60px;
 		height: 100%;
+	}
+	.li-drop, .dropA{
+		height: 45px !important;
 	}
 	#titre
 	{

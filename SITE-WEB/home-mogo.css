@@ -76,6 +76,21 @@ h1
 {
 	text-align: center;
 }
+
+.dropdown-menu{
+	padding: 0;
+}
+
+.li-drop{
+	width: 100% !important;
+	height: 70px;
+}
+.dropA{
+	color: #F3ECD9 !important;
+	background-color: #FCB3B3 !important;
+	width: 100%;
+}
+
 #titre
 {
 	display: flex;
