@@ -190,26 +190,39 @@
 		padding: 20px;
 	}
 
-	.img-round:before {
-		width: 130px;
-		height: 130px;
-	}
-	.img-round:after {
-		height:130px;
-		width: 130px;
-	}
-	#img-logo1{
+	#img-logo1, #img-logo2, .img-round:after, .img-round:before{
 		width: 130px;
 		height: 130px;
 	}
 	#img-logo2{
-		width: 130px;
-		height: 130px;
+		margin-top: 50px;
 	}
-	#img-logo3{
-		width: 130px;
-		height: 130px;
+	#lightbox3{
+		width:500px;
+		overflow: hidden;
 	}
+	#lightbox4{
+		width:500px;
+		overflow: hidden;
+	}
+	.item-logo img{
+		width: 250px;
+	}
+	.item-avatar{
+		width: 300px;
+	}
+	.item-avatar img{
+		width: 300px;
+	}
+	.dia-avatars, .dia-logo{
+		width: 300px;
+	}
+	.btn-close{
+		color: black;
+	}
+
+
+
 	.theProject{
 		justify-content: space-around;
 	}
@@ -315,21 +328,36 @@
 		width: 200px;
 		margin-left: 150px;
 	}
-	.img-round:before {
-		width: 130px;
-		height: 130px;
-	}
-	.img-round:after {
-		height:130px;
-		width: 130px;
-	}
-	#img-logo1{
+
+	#img-logo1, #img-logo2, .img-round:after, .img-round:before{
 		width: 130px;
 		height: 130px;
 	}
 	#img-logo2{
-		width: 130px;
-		height: 130px;
+		margin-top: 50px;
+	}
+	#lightbox3{
+		width:500px;
+		overflow: hidden;
+	}
+	#lightbox4{
+		width:500px;
+		overflow: hidden;
+	}
+	.item-logo img{
+		width: 250px;
+	}
+	.item-avatar{
+		width: 300px;
+	}
+	.item-avatar img{
+		width: 300px;
+	}
+	.dia-avatars, .dia-logo{
+		width: 300px;
+	}
+	.btn-close{
+		color: black;
 	}
 	/*Section of wordpress websites*/
 	#carousel-wordpress{
@@ -461,7 +489,7 @@
 		margin-top: 50px;
 	}
 	#lightbox3{
-		width:400px;
+		width:500px;
 		overflow: hidden;
 	}
 	#lightbox4{
@@ -473,6 +501,12 @@
 	}
 	.item-avatar{
 		width: 300px;
+	}
+	.dia-avatars, .dia-logo{
+		width: 400px;
+	}
+	.btn-close{
+		color: white;
 	}
 	/*Section of wordpress websites*/
 	#carousel-wordpress{

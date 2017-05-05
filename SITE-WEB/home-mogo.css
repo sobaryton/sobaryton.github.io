@@ -665,9 +665,7 @@ textarea
 .item-avatar img, .item-logo img{
 	margin: auto;
 }
-.dia-avatars, .dia-logo{
-	width: 400px;
-}
+
 .btn-close{
 	z-index: 100;
 	position: absolute;
@@ -675,7 +673,6 @@ textarea
 	font-size: 3em;
 	right: 0;
 	opacity: 1;
-	color: white;
 }
 /*Section of wordpress websites*/
 
