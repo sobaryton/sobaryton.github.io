@@ -1,0 +1,101 @@
+@media (min-width: 1920px) {
+	.container-fluid
+	{
+		width: 1920px;
+	}
+	header {
+		height: 1000px;
+	}
+	h1{
+		font-size: 150px;
+		width: 1200px;
+	}
+	h2{
+		font-size: 72px;
+	}
+	h4{
+		font-size: 24pt;
+	}
+	h5{
+		font-size: 30pt;
+	}
+	h6{
+		font-size: 72px;
+	}
+	#navbar2{
+		width: 100%;
+	}
+	#navbar2 ul{
+		justify-content: center;
+	}
+	#navbar2 ul li{
+		width: 280px;
+	}
+	.navbar-header{
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+	}
+	#myNavbar{
+		display: flex;
+		justify-content: flex-start;
+	}
+	#rectangle{
+		margin-bottom: 50px;
+	}
+	#learn{
+		margin-bottom: 155px;
+	}
+	/*********************************First article : About us********************************************************/
+	#aboutUs p{
+		width: 1200px;
+	}
+	.recIMG{
+		width:380px;
+		height: 250px;
+	}
+
+	/*********************************Second article : Facts********************************************************/
+	.nbSquare{
+		width: 240px;
+		height:265px;
+		justify-content: center;
+	}
+	#facts p{
+		font-size: 14px;
+	}
+	/*********************************Third article : Services1********************************************************/
+	#service1{
+		margin-bottom: 120px;
+	}
+	.ser1Detail{
+		width:400px;
+	}
+	.recGrey{
+		width: 1200px;
+	}
+	/*********************************Ninth article : Work********************************************************/
+	#workGrid{
+		height: 780px;
+	}
+	#bloc1{
+		width: 50%;
+	}
+	#bloc2{
+		width: 50%;
+	}
+	.bloc{
+		width: 50%;
+		height: 390px;
+	}
+	.blocBig{
+		width:50%;
+		height:780px;
+	}
+
+	/*********************************Eleventh article : People********************************************************/
+	#peopleList{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
