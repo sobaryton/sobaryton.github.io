@@ -1,9 +1,9 @@
 // when we scroll, the navbar 1 is fixed on top, changes background color and the arrow to go on top appears.
 // the navbar2 is under the 1.
 var $nav1 = $('#navbar1');
+var btnTop = $('#btnTop');
 function checkScroll(){
 	var startY = $nav1.height() * 2; //The point where the navbar changes in px
-	var btnTop = $('#btnTop');
 	if($(window).scrollTop() > startY){
 		$nav1.addClass("scrolled");
 		btnTop.show();
@@ -13,32 +13,39 @@ function checkScroll(){
 	}
 }
 
-function updateNav1(){
+function updateNav1() {
 	var $work = $('#service2').offset().top;
 	var $about = $('#testimonials').offset().top;
-	var $contact= $('#blog').offset().top;
+	var $contact = $('#blog').offset().top;
 
 	var $introNav2 = $('#introNav2');
 	var $workNav2 = $('#workNav2');
 	var $aboutNav2 = $('#aboutNav2');
 	var $contactsNav2 = $('#contactsNav2');
 
-	if($(window).scrollTop() < $work){
+	if ($(window).scrollTop() < $work) {
 		$introNav2.addClass("is");
-		$workNav2.hasClass("is") ? $workNav2.removeClass("is"): null;
-	}else if ($(window).scrollTop() >= $work && $(window).scrollTop()<$about ){
+		$workNav2.hasClass("is") ? $workNav2.removeClass("is") : null;
+	} else if ($(window).scrollTop() >= $work && $(window).scrollTop() < $about) {
 		$introNav2.removeClass("is");
 		$workNav2.addClass("is");
-		$aboutNav2.hasClass("is") ? $aboutNav2.removeClass("is"): null;
-	}else if($(window).scrollTop() >= $about && $(window).scrollTop()<$contact){
+		$aboutNav2.hasClass("is") ? $aboutNav2.removeClass("is") : null;
+	} else if ($(window).scrollTop() >= $about && $(window).scrollTop() < $contact) {
 		$aboutNav2.addClass("is");
 		$workNav2.removeClass("is");
-		$contactsNav2.hasClass("is") ? $contactsNav2.removeClass("is"): null;
-	}else if($(window).scrollTop() >= $contact){
+		$contactsNav2.hasClass("is") ? $contactsNav2.removeClass("is") : null;
+	} else if ($(window).scrollTop() >= $contact) {
 		$aboutNav2.removeClass("is");
 		$contactsNav2.addClass("is");
 	}
+	btnTop.click(function () {
+		$workNav2.hasClass("is") ? $workNav2.removeClass("is") : null;
+		$contactsNav2.hasClass("is") ? $contactsNav2.removeClass("is") : null;
+		$aboutNav2.hasClass("is") ? $aboutNav2.removeClass("is") : null;
+		$introNav2.addClass("is");
+	});
 }
+
 
 if($nav1.length > 0){
 	$(window).on("scroll load resize", function(){
