@@ -426,17 +426,17 @@
 		width: 50%;
 	}
 
-	#slide2{
+	#slide3{
 		 background: url("images/createsodev.png") center 0 fixed;
 		 background-size: cover;
 	 }
 
-	#slide6{
+	#slide7{
 		background: url("images/pineapple.png") center 0 fixed;
 		background-size: contain;
 	}
 
-	#slide4 {
+	#slide5{
 		background: url("images/desk.jpg") center 0 fixed;
 		background-size: cover;
 	}
