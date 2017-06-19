@@ -788,7 +788,9 @@ header button{
 #blog2{
 	background-image: url("pictures/hommetablette.png");
 }
-
+#blog3{
+	background-image: url("pictures/ordicoffee.png");
+}
 .blogImg{
 	width: 380px;
 	height: 235px;
