@@ -129,3 +129,27 @@ $ser2Web.click(function(){
 	$chevronW.toggleClass('fa-chevron-up');
 });
 
+//On the work section, when we hover the thumbnail/picture, there is a sentence appearing
+var $textWork = $('.txtWorkThumb');
+$textWork.hide();
+$('#bloc11').hover(function(){
+	$('#txtWorkThumb11').fadeToggle("slow", "linear" );
+});
+$('#bloc12').hover(function(){
+	$('#txtWorkThumb12').fadeToggle("slow", "linear" );
+});
+$('#bloc13').hover(function(){
+	$('#txtWorkThumb13').fadeToggle("slow", "linear" );
+});
+$('#bloc14').hover(function(){
+	$('#txtWorkThumb14').fadeToggle("slow", "linear" );
+});
+$('#bloc21').hover(function(){
+	$('#txtWorkThumb21').fadeToggle("slow", "linear" );
+});
+$('#bloc22').hover(function(){
+	$('#txtWorkThumb22').fadeToggle("slow", "linear" );
+});
+$('#bloc23').hover(function(){
+	$('#txtWorkThumb23').fadeToggle("slow", "linear" );
+});

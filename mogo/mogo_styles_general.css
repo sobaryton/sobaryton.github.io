@@ -646,6 +646,21 @@ header button{
 #bloc23{
 	background-image: url("pictures/bloc23.png");
 }
+.workThumbnail{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+}
+.workThumbnail:hover{
+	background-image: repeating-linear-gradient(#f38181, #fce38a);
+	opacity:0.8;
+}
+.txtWorkThumb{
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
 /*********************************Tenth article : Testimonials********************************************************/
 #testimonials{
 	width: 100%;
