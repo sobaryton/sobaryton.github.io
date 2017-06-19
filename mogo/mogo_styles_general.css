@@ -853,6 +853,9 @@ header button{
 	margin-bottom: 20px;
 	margin-top: 15px;
 }
+#mapGoogle:hover{
+	text-decoration: none;
+}
 /*********************************Footer ********************************************************/
 footer{
 	background-color: #f8f8f8;
