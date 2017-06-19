@@ -618,10 +618,33 @@ header button{
 .bloc{
 	height: 390px;
 	background-color: #95e1d3;
+	background-size: cover;
 }
 .blocBig{
 	height:780px;
 	background-color: #999999;
+	background-size: cover;
+}
+#bloc11{
+	background-image: url("pictures/bloc11.png");
+}
+#bloc12{
+	background-image: url("pictures/bloc13.png");
+}
+#bloc13{
+	background-image: url("pictures/bloc12.png");
+}
+#bloc14{
+	background-image: url("pictures/bloc14.png");
+}
+#bloc21{
+	background-image: url("pictures/bloc21.png");
+}
+#bloc22{
+	background-image: url("pictures/bloc22.png");
+}
+#bloc23{
+	background-image: url("pictures/bloc23.png");
 }
 /*********************************Tenth article : Testimonials********************************************************/
 #testimonials{
