@@ -780,11 +780,18 @@ header button{
 }
 .blogIllustration{
 	position: relative;
+	background-size: cover;
 }
+#blog1{
+	background-image: url("pictures/fillebureau.png");
+}
+#blog2{
+	background-image: url("pictures/hommetablette.png");
+}
+
 .blogImg{
 	width: 380px;
 	height: 235px;
-	background-color: #999999;
 }
 .blogDateSquare{
 	width: 60px;
