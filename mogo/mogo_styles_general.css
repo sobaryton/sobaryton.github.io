@@ -480,6 +480,7 @@ header button{
 }
 .carousel-control.right, .carousel-control.left{
 	background-image: none;
+	z-index: 100;
 }
 
 .carousel-control{
