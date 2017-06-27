@@ -1,0 +1,10 @@
+/*******General style*******/
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+}
+h1,h2{
+	text-transform: uppercase;
+}
