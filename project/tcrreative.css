@@ -30,9 +30,8 @@ section{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
-	background: url("pictures/desktop-background-2.JPG");
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 #thumbnail{
 	background-color: rgba(0,0,0,0.7);
@@ -110,4 +109,6 @@ section input{
 	font-weight: lighter;
 	font-family: 'Open Sans', sans-serif;
 }
-
+#submit:hover{
+	background-color: darkslategrey;
+}

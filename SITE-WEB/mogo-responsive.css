@@ -172,6 +172,14 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 	}
+
+	/********************************Work on the section work****************************************/
+	.bloc{
+		width:100%;
+	}
+	.workProjects{
+		flex-direction: column;
+	}
 /********************************Work on the section skills****************************************/
 	.skillsSquare
 	{
@@ -234,42 +242,8 @@
 	{
 		width: 50%;
 	}
-/********************************Work on the section work****************************************/
-	.bloc11, .bloc22, .bloc1, .bloc2
-	{
-		height: 250px;
-	}
-	#sectionWork
-	{
-		height: 1000px;
-	}
-	#travel .work-thumb-overlay, #travel .work-thumb-container
-	{
-		background-color: #647277;
-	}
-	#avatar .work-thumb-overlay, #avatar .work-thumb-container, #flower .work-thumb-overlay, #flower .work-thumb-container
-	
-	{
-		background-image: repeating-linear-gradient(#647277, #bad1d1);
-	}
 
-	#BDay .work-thumb-overlay, #BDay .work-thumb-container, #ananas .work-thumb-overlay, #ananas .work-thumb-container
-	{
-		background-image: repeating-linear-gradient(#bad1d1,#FCB3B3);
-	}
-	#profilFR .work-thumb-overlay, #profilFR .work-thumb-container
-	{
-		background-color: #FCB3B3;
-	}
-	#sectionsWork
-	{
-		overflow: hidden;
-		background-image: repeating-linear-gradient(#647277, #bad1d1,#FCB3B3);
-	}
-	.work-thumb-content h3
-	{
-		height: 30px;
-	}
+
 
 
 /********************************Work on the section contact****************************************/
@@ -440,6 +414,11 @@
 	{
 		margin: 0;
 	}
+
+	/********************************Work on the section work****************************************/
+	.workProjects{
+		flex-direction: column;
+	}
 	/********************************Work on the section skills****************************************/
 	.colour1, .colour2, .skills p
 	{
@@ -485,36 +464,8 @@
 	{
 		width: 100%;
 	}
-	/********************************Work on the section work****************************************/
-	.bloc1, .bloc2
-	{
-		height: 180px;
-	}
-	
-	#travel .work-thumb-overlay, #travel .work-thumb-container, #avatar .work-thumb-overlay, #avatar .work-thumb-container, #flower .work-thumb-overlay, #flower .work-thumb-container
-	{
-		background-image: repeating-linear-gradient(#647277, #bad1d1);
-	}
 
-	#BDay .work-thumb-overlay, #BDay .work-thumb-container, #ananas .work-thumb-overlay, #ananas .work-thumb-container, #profilFR .work-thumb-overlay, #profilFR .work-thumb-container
-	{
-		background-image: repeating-linear-gradient(#bad1d1,#FCB3B3);
-	}
-	#sectionsWork
-	{
-		overflow: hidden;
-		background-image: repeating-linear-gradient(#647277, #bad1d1,#FCB3B3);
-	}
-	
-	.work-thumb-content h3
-	{
-		font-size: 1.5em;
-		height: 60px;
-	}  
-	article.project-thumb h3
-	{
-		height: 60px;
-	}
+
 
 	/********************************Work on the section contact****************************************/
 	#footer-social
@@ -667,13 +618,20 @@
 	{
 		margin: 0;
 	}
+
+	/********************************Work on the section work****************************************/
+	.workProjects{
+		flex-direction: row;
+	}
+	.bloc{
+		width: 40%;
+	}
 	/********************************Work on the section skills****************************************/
 	.colour1, .colour2
 	{
 		width: 20px;
 		height: 20px;
 		margin: 10px;
-
 	}
 
 	.animDev p
@@ -695,15 +653,8 @@
 	.squareList, .skills{
 		margin-top: 2%;
 	}
-	/********************************Work on the section work****************************************/
-	.bloc1, .bloc2
-	{
-		height: 300px;
-	}
-	.work-thumb-content h3
-	{
-		font-size: 1.5em;
-	}  
+
+
 
 	/********************************Work on the section contact****************************************/
 	form
@@ -764,9 +715,6 @@
 		color: black;
 		text-align: center;
 		font-size:3.2em;
-	}
-	#hautDePage
-	{
 	}
 	/*Work on the navigation bar*/
 	.btn-navbar
@@ -854,19 +802,25 @@
 	{
 		margin-top: 60px;
 	}
+
+	/********************************Work on the section work****************************************/
+	.workProjects{
+		flex-direction: row;
+	}
+	.bloc{
+		width: 30%;
+	}
 /********************************Work on the section skills****************************************/
 	.colour1, .colour2
 	{
 		width: 20px;
 		height: 20px;
 		margin: 15px;
-
 	}
 
 	.skillsSquare
 	{
 		height: 400px;
-
 	}
 
 	.skillsSquare
@@ -880,14 +834,12 @@
 	{
 		height: 50px;
 		margin-top: 10%;
-
 	}
 	.animDev p
 	{
 		width: 100%;
 		font-size: 1.5em;
 		margin-top: 10px;
-
 	}
 	#devSkills h3, #designskills h3, #humanSkills h3
 	{
@@ -896,7 +848,6 @@
 	}
 	.squares
 	{
-
 		justify-content: flex-start;
 	}
 	.squares p
@@ -913,22 +864,12 @@
 	.squareList, .skills{
 		margin-top: 4%;
 	}
-/********************************Work on the section work****************************************/
 
-	.bloc1, .bloc2
-	{
-		height: 300px;
-	}
-	.work-thumb-content h3
-	{
-		font-size: 1.5em;
-	}  
 
 /********************************Work on the footer****************************************/
 	#footer-social
 	{
 		text-align: center;
-
 	}
 
 

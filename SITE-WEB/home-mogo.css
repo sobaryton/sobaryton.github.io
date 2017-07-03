@@ -4,7 +4,7 @@
 }*/
 .container-fluid
 {
-	font-family: 'Roboto', 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	width: auto;
 }
 .row
@@ -17,7 +17,7 @@ section
 }
 h2
 {
-	font-family: Courier;
+	font-family: 'Jura',Courier,sans-serif;
 	font-style: oblique;
 }
 h4
@@ -33,6 +33,7 @@ h1
 {
 	color: white;
 	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
 }
 
 /*Work on the navigation bar*/
@@ -49,7 +50,7 @@ h1
 .navbar-brand
 {
 	color: #647277;
-	font-family: courier;
+	font-family: 'Jura',Courier,sans-serif;
 }
 .navbar-brand:hover
 {
@@ -59,7 +60,7 @@ h1
 {
 
 	color: #647277;
-	font-family: courier;
+	font-family: 'Jura',Courier,sans-serif;
 }
 .navbar-nav a:hover
 {
@@ -104,7 +105,7 @@ h1
 	border: 2px solid white;
 	background-color: transparent;
 	text-align: center;
-	font-family: courier;
+	font-family: 'Jura',Courier,sans-serif;
 }
 #learn:hover
 {
@@ -153,6 +154,77 @@ h1
 	color: white;
 }
 
+
+/********************************Work on the section work****************************************/
+#workDetails{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.workProjects{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#projectsH4{
+	margin-top: 70px;
+	margin-bottom: 0;
+	text-align: center;
+}
+.workProjects img{
+	width: 350px;
+}
+#work p
+{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.bloc{
+	width:30%;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin:15px;
+}
+.bloc h3{
+	text-decoration: none;
+	color: #647277;
+	font-family: 'Jura',Courier,sans-serif;
+	font-size: 1.7em;
+	text-align: center;
+}
+.workProjects a h3:hover,.workProjects a:focus, .workProjects a:hover{
+	color: #bad1d1!important;
+	text-decoration: none!important;
+}
+.btnAction
+{
+	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
+	width: 180px !important;
+	height: 50px !important;
+	background-color: #FFEEEE;
+	color: #FCB3B3;
+	border: 2px dotted #FCB3B3;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.7em;
+}
+.btnAction:hover
+{
+	color: white;
+	border: 2px solid white;
+	background-color: #FCB3B3;
+	text-decoration: none;
+}
+.btnAction:focus{
+	text-decoration: none;
+	color: #FCB3B3;
+}
 /********************************Work on the section skills****************************************/
 #skillsTitre
 {
@@ -167,17 +239,7 @@ h1
 {
 	text-align: center;
 }
-#cv a, #projects a
-{
-	text-decoration: none;
-	color: #FCB3B3;
-	font-size: 1.7em;
-}
-#cv a:hover, #projects a:hover
-{
-	text-decoration: none;
-	color: white;
-}
+
 .skillsSquare
 {
 	text-align: center;
@@ -240,107 +302,6 @@ h1
 }
 
 
-
-/********************************Work on the section work****************************************/
-#sectionsWork{
-	margin-top: 50px;
-}
-
-.carousel
-{
-	position: fixed;
-}
-
-.carousel-indicators{
-	bottom:5px;
-}
-
-.glyphicon{
-	padding-top: 20px;
-}
-
-.item img{
-	margin: auto;
-}
-
-#work h4, #work p
-{
-	text-align: center;
-	margin-bottom: 40px;
-}
-
-.work-thumb-container
-{
-	transition: top 0.35s;
-	position: absolute;
-	width: 100%;
-	overflow-x: hidden;
-}
-
-.work-thumb-overlay
-{
-	opacity: 0.9;
-	height: 100%;
-	width: 100%;
-	transition: top 0.35s, opacity 0.35s;
-	position: absolute;
-	overflow-x: hidden;
-}
-
-.work-thumb-content
-{
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	text-align: center;
-}
-
-.work-thumb-content h3
-{
-	color: #bad1d1;
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	height: 60px;
-	left: 0;
-	right: 0;
-	opacity: 0;
-	transition: bottom 0.5s, opacity 0.7s;
-	font-weight: bold;
-}
-
-#sectionsWork .row
-{
-	overflow: hidden;
-}
-article.project-thumb:hover img {
-  top: -10px;
-}
-
-article.project-thumb:hover .work-thumb-overlay {
-  bottom: 0;
-  opacity: 0;
-}
-
-article.project-thumb h3
-{
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  transition: bottom 0.5s, opacity 0.7s;
-}
-
-article.project-thumb:hover h3
-{
-	bottom: 0;
-	opacity: 1;
-	background-color: #bad1d1;
-	color: white;
-	width: 100%;
-}
-
-
 /********************************Work on the section contact****************************************/
 #contact
 {
@@ -356,7 +317,7 @@ article.project-thumb:hover h3
 form label, form input, form textarea
 {
 	color: black;
-	font-family: courier;
+	font-family: 'Jura',Courier,sans-serif;
 }
 form input:focus, form textarea:focus
 {
@@ -367,12 +328,13 @@ form input:focus, form textarea:focus
 {
 	
 	text-align: center;
-	font-family: courier;
+	font-family: 'Jura',Courier,sans-serif;
 	width: 110px;
 	height: 40px;
 	background-color: white;
 	color: #FCB3B3;
 	border: 2px dotted #FCB3B3;
+	font-weight: bold;
 }
 .envoi:hover
 {
@@ -469,6 +431,7 @@ textarea
 	font-size: 2em;
 	margin: 0;
 	line-height: 2.0;
+	font-family: 'Jura',Courier,sans-serif;
 }
 .arrowLeft
 {
@@ -531,18 +494,20 @@ textarea
 #CVButton{
 	text-align: center;
 	margin-bottom: 30px;
+	margin-top:30px;
 }
 
 #CV-download{
 	text-decoration: none;
 	font-size: 2em;
 	text-align: center;
-	font-family: courier;
+	font-family: 'Jura',Courier,sans-serif;
 	width: 300px;
 	height: 60px;
 	background-color: white;
 	color: #FCB3B3;
 	border: 2px dotted #FCB3B3;
+
 }
 
 #CV-download:hover

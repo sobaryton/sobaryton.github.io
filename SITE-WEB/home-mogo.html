@@ -8,9 +8,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Athiti|Jura" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="home-mogo.css">
 	<link rel="stylesheet" type="text/css" href="mogo-responsive.css">
 	<meta name="SoDev" content="Site front end developer" />
@@ -45,19 +43,20 @@
 				<ul class="nav navbar-nav navbar-left ">
 					<li class="active"><a href="#toptop">Home</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Skills <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li class="li-drop"><a href="#skills" class="dropA">Overview </a></li>
-							<li class="li-drop"><a href="cv.html" class="dropA">My CV </a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Work <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li class="li-drop"><a href="#work" class="dropA">Overview </a></li>
 							<li class="li-drop"><a href="projects.html" class="dropA">Projects </a></li>
 						</ul>
 					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Skills <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="li-drop"><a href="#skills" class="dropA">Overview </a></li>
+							<li class="li-drop"><a href="cv.html" class="dropA">My CV </a></li>
+						</ul>
+					</li>
+
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -123,12 +122,40 @@
 </div>
 <div class="container-fluid">
 	<section>
+		<div class="row" id="work">
+			<div class="row" id="workDetails">
+				<h2>Work</h2>
+				<p>Click here to have a look on all of my projects in details</p>
+				<a href="projects.html" class="btnAction">My Projects</a>
+				<h4 id="projectsH4">Here you will find the three latest projects I worked on.</h4>
+			</div>
+			<div id="sectionsWork">
+				<div class="workProjects">
+					<a href="../mogo/mogo.html"  class="bloc" id="profilFR">
+						<img src="images/mogo-home.png" alt class="work-thumb-container">
+						<h3>Mogo Website</h3>
+					</a>
+					<a href="https://codepen.io/sobary/" class="bloc" target="_blank">
+						<img src="images/codepen-home.png" alt class="work-thumb-container">
+						<h3>CodePen React projects</h3>
+					</a>
+					<a href="../SITE-WEBFR/maquette/index-travel.html" class="bloc" target="_blank">
+						<img src="images/travel-home.png" alt class="work-thumb-container">
+						<h3>Fusion travel</h3>
+					</a>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section>
 		<div class="row" id="skills">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="skillsTitre">
 				<h2>Skills</h2>
 				<p>Click here to have a look on my whole CV</p>
 				<div id="cv">
-					<a href="cv.html" class="envoi">My CV</a>
+					<a href="cv.html" class="btnAction">My CV</a>
 				</div>
 
 			</div>
@@ -420,136 +447,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class="row" id="work">
-			<div class="row">
-				<h2>Work</h2>
-				<h4>Here you will find all the projects I worked on.</h4>
-				<p>Click here to have a look on my projects in details</p>
-				<div id="projects">
-					<a href="projects.html" class="envoi">My Projects</a>
-				</div>
-			</div>
-			<div id="sectionsWork">
-				<div class="row" >
-					<a href="../SITE-WEBFR/maquette/index-travel.html" class="bloc11" target="_blank">
-						<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 bloc1 project-thumb" id="travel">
-							<img src="images/fusion.png" alt class="work-thumb-container">
-							<div class="work-thumb-overlay">
-							</div>
-							<div class="work-thumb-content">
-								<h3>Fusion travel</h3>
-							</div>
-						</article>
-					</a>
-					<a href="#lightbox" data-toggle="modal" class="bloc22" id="avatar">
-						<article class="col-xs-6 col-sm-3 col-md-3 col-lg-3 bloc2 project-thumb ">
-							<img src="images/avatar.png" alt class="work-thumb-container">
-							<div class="work-thumb-overlay">
-							</div>
-							<div class="work-thumb-content">
-								<h3>Avatars</h3>
-							</div>
-						</article>
-					</a>
-					<div class="modal fade and carousel slide" id="lightbox">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-body">
-									<ol class="carousel-indicators">
-										<li data-target="#lightbox" data-slide-to="0" class="active"></li>
-										<li data-target="#lightbox" data-slide-to="1"></li>
-										<li data-target="#lightbox" data-slide-to="2"></li>
-										<li data-target="#lightbox" data-slide-to="3"></li>
-										<li data-target="#lightbox" data-slide-to="4"></li>
-										<li data-target="#lightbox" data-slide-to="5"></li>
-									</ol>
-									<div class="carousel-inner">
-										<div class="item active">
-											<img src="images/capturesoso.png" alt="First slide">
-										</div>
-										<div class="item">
-											<img src="images/nico.png" alt="Second slide">
-										</div>
-										<div class="item">
-											<img src="images/adeline2.png" alt="Third slide">
-										</div>
-										<div class="item">
-											<img src="images/moirose.png" alt="Fourth slide">
-										</div>
-										<div class="item">
-											<img src="images/navijungle.png" alt="Fifth slide">
-										</div>
-										<div class="item">
-											<img src="images/pixhugo.jpg" alt="Sixth slide">
-										</div>
-									</div>
-								</div>
 
-								<!-- /.carousel-inner -->
-								<a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
-									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
-									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-
-
-
-					<a href="../SITE-WEBFR/html/fleur.html" class="bloc22" target="_blank">
-						<article class="col-xs-6 col-sm-3 col-md-3 col-lg-3 bloc2 project-thumb" id="flower">
-							<img src="images/fleur.png" alt class="work-thumb-container">
-							<div class="work-thumb-overlay">
-							</div>
-							<div class="work-thumb-content">
-								<h3>A CSS flower</h3>
-							</div>
-						</article>
-					</a>
-				</div>
-				<div class="row">
-					<a href="https://sobaryton.wordpress.com" class="bloc22" target="_blank">
-						<article class="col-xs-6 col-sm-3 col-md-3 col-lg-3 bloc2 project-thumb" id="BDay">
-							<img src="images/choux.png" alt class="work-thumb-container">
-							<div class="work-thumb-overlay">
-							</div>
-							<div class="work-thumb-content">
-								<h3>Wordpress Fourchette</h3>
-							</div>
-						</article>
-					</a>
-					<a href="../SITE-WEBFR/ananas/ananas-loading.html" target="_blank" class="bloc22">
-						<article class="col-xs-6 col-sm-3 col-md-3 col-lg-3 bloc2 project-thumb" id="ananas">
-							<img src="images/ananas.png" alt class="work-thumb-container">
-							<div class="work-thumb-overlay">
-							</div>
-							<div class="work-thumb-content">
-								<h3>Pineapple loading</h3>
-							</div>
-						</article>
-					</a>
-
-					<a href="../mogo/mogo.html"  class="bloc11" id="profilFR">
-						<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 bloc1 project-thumb ">
-							<img src="images/Capturemogo.PNG" alt class="work-thumb-container">
-							<div class="work-thumb-overlay">
-							</div>
-							<div class="work-thumb-content">
-								<h3>Mogo Website</h3>
-							</div>
-						</article>
-					</a>
-
-				</div>
-			</div>
-
-		</div>
-	</section>
 	<section>
 		<div class="row" id="contact">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -580,11 +478,8 @@
 					<a href="https://github.com/sobaryton" target="_blank">
 						<i class="fa fa-github fa-3x" aria-hidden="true" ></i>
 					</a>
-					<a href="https://twitter.com/SoleneDev" target="_blank">
-						<i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
-					</a>
-					<a href="http://facebook.com/solene.bary" target="_blank">
-						<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+					<a href="https://codepen.io/sobary/" target="_blank">
+						<i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
 					</a>
 				</div>
 
