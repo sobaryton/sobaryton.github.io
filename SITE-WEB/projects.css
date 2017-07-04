@@ -8,10 +8,7 @@
 /**************************************************************************************************************************/
 @media (max-width: 767px) {
 	/**For small creens of smartphones**/
-	.container-fluid, .container {
-		width: auto;
-		margin: auto;
-	}
+
 	section {
 		margin-bottom: 50px;
 	}
@@ -30,9 +27,6 @@
 	}
 
 	/*Work on all the sections */
-	.parallax-slide{
-		width: 100%;
-	}
 	#slide1{
 		border-top: none;
 	}
@@ -46,31 +40,29 @@
 		justify-content: center;
 		text-align: center;
 	}
+	.btnActionWork
+	{
+		width: 50%;
+		height: 100%;
+	}
+	.skillsWork{
+		width: 100%;
+	}
+
+	/*Section of the projects with the screens*/
+	.project{
+		width: 50%;
+	}
+	.modal-body{
+		flex-direction: column;
+	}
+	.project_txt p{
+		text-align: justify;
+	}
 	.project_txt ul{
 		text-align: left;
 	}
-	/*Work on the fourth section with logos*/
-
-	#logoCreation{
-		text-align: center;
-	}
-	.img-round:before {
-		width: 100px;
-		height: 100px;
-	}
-	.img-round:after {
-		height:100px;
-		width: 100px;
-	}
-	#img-logo1{
-		width: 100px;
-		height: 100px;
-	}
-	#img-logo2{
-		width: 100px;
-		height: 100px;
-	}
-	/*Section of wordpress websites*/
+	/*Section of carousels*/
 	#carousel-wordpress{
 		width: 100%;
 	}
@@ -93,26 +85,8 @@
 	.WPglyphicon{
 		padding: 0;
 	}
-	/*Work on the last section with the mini projects*/
-	.mini-project{
-		width: 310px;
-		margin-bottom: 70px;
-		text-align: center;
-	}
-
-	.mini-list{
-		text-align: left;
-	}
-
-	.mini-project div{
-		padding: 10px;
-	}
-	.mini-project-txt{
-		width: auto;
-		display: block;
-	}
-	.mini-project{
-		height: 400px;
+	.carousel-inner>.active img{
+		width: 50%;
 	}
 
 	/*Work on the footer*/
@@ -159,17 +133,15 @@
 		margin-bottom: 50px;
 	}
 
-
-	/*Work on all the sections */
-	.parallax-slide{
-		width: 100%;
-		border-top: 2px dotted #FCB3B3;
+	.skillsWork{
+		width: 50%;
 	}
+	/*Work on all the sections */
 	#slide1{
 		border-top: none;
 	}
 	.img-desktop{
-		width: 400px;
+		width: 300px;
 	}
 	.project_txt div{
 		width: 250px;
@@ -179,44 +151,33 @@
 		justify-content: flex-start;
 
 	}
+	.btnActionWork
+	{
+		width: 50%;
+		height: 100%;
+	}
 	/*Work on the fourth section with logos*/
-	#logo-project div{
-		padding: 20px;
+	.project{
+		width: 50%;
 	}
 
-	#img-logo1, #img-logo2, .img-round:after, .img-round:before{
-		width: 130px;
-		height: 130px;
-	}
-	#img-logo2{
-		margin-top: 50px;
-	}
-	#lightbox3{
-		overflow: hidden;
-	}
-	#lightbox4{
+	#lightbox{
 		overflow: hidden;
 	}
 	.item-logo img{
 		width: 250px;
 	}
-	.item-avatar{
+	.dia-logo{
 		width: 300px;
 	}
-	.item-avatar img{
-		width: 300px;
-	}
-	.dia-avatars, .dia-logo{
-		width: 300px;
-	}
-	.btn-close{
-		color: black;
-	}
-
 	.theProject{
 		justify-content: space-around;
 	}
-	/*Section of wordpress websites*/
+	/*Section of carousels*/
+	#modalLogos{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 	#carousel-wordpress{
 		width: 90%;
 	}
@@ -231,14 +192,9 @@
 	.WPcarousel-control{
 		height: 400px;
 	}
-	/*Work on the last section with the mini projects*/
-	.mini-project{
-		width: auto;
-		display: flex;
-		height: auto;
-		margin-bottom: 50px;
+	.carousel-inner>.active img{
+		width: 70%;
 	}
-
 
 	/*Work on the footer*/
 	#footer-social {
@@ -263,7 +219,6 @@
 	}
 
 	section {
-		height:100vh;
 		width: 100%;
 		margin-bottom: 0;
 	}
@@ -273,10 +228,6 @@
 	}
 
 	/******************Header**************/
-	.container {
-		height: 50px;
-		width: 970px;
-	}
 	header{
 		height: 100vh;
 	}
@@ -286,11 +237,7 @@
 	}
 
 	/*Work on all the sections */
-	.parallax-slide{
-		width: 100%;
-		height: 600px;
-		border-top: 2px dotted #FCB3B3;
-	}
+
 	#slide1{
 		border-top: none;
 	}
@@ -305,71 +252,41 @@
 		width: 50%;
 		justify-content: center;
 	}
+	.btnActionWork
+	{
+		width: 30%;
+		height: 100%;
+	}
+	.skillsWork{
+		width: 30%;
+	}
 
 	/*Work on the fourth section with logos*/
-	#logo-project{
-		width: 500px;
-		margin-left: -200px;
-	}
-	#logo-project div{
-		padding: 20px;
-	}
-	#logoCreation{
-		width: 200px;
-		margin-left: 150px;
+	#lightbox{
+		overflow: hidden;
 	}
 
-	#img-logo1, #img-logo2, .img-round:after, .img-round:before{
-		width: 130px;
-		height: 130px;
-	}
-	#img-logo2{
-		margin-top: 50px;
-	}
-	#lightbox3{
-		overflow: hidden;
-	}
-	#lightbox4{
-		overflow: hidden;
-	}
 	.item-logo img{
 		width: 250px;
 	}
-	.item-avatar{
+	.dia-logo{
 		width: 300px;
 	}
-	.item-avatar img{
-		width: 300px;
-	}
-	.dia-avatars, .dia-logo{
-		width: 300px;
-	}
-	.btn-close{
-		color: black;
-	}
-	/*Section of wordpress websites*/
+
+	/*Section of carousels*/
 	#carousel-wordpress{
 		width: 50%;
 	}
 	#carousel-wordpress .carousel{
-		height: 300px;
+		height: 400px;
 	}
 	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
-		height: 300px !important;
+		height: 400px;
 	}
 
 	.WPcarousel-control{
-		height: 300px;
-	}
-	/*Work on the last section with the mini projects*/
-	.mini-project{
-		width: 300px;
-		display: flex;
-		flex-direction: column;
 		height: 400px;
-		margin-bottom: 50px;
 	}
-
 	/*Work on the footer*/
 	#footer-social {
 		display: flex;
@@ -384,14 +301,6 @@
 /*************************************************************************************************************************************/
 
 @media (min-width: 1200px) {
-	/**For large screens**/
-	.container {
-		width: 1170px;
-	}
-
-	.container-fluid {
-		width: 1170px;
-	}
 
 	/*Work on the header*/
 	header {
@@ -407,13 +316,6 @@
 	}
 
 	/*Work on all the sections */
-	.parallax-slide{
-		width: 100%;
-		height: 700px;
-		border: none;
-		margin-bottom: 0;
-	}
-
 	.img-desktop{
 		width: 400px;
 	}
@@ -426,20 +328,6 @@
 		width: 50%;
 	}
 
-	#slide3{
-		 background: url("images/createsodev.png") center 0 fixed;
-		 background-size: cover;
-	 }
-
-	#slide7{
-		background: url("images/pineapple.png") center 0 fixed;
-		background-size: contain;
-	}
-
-	#slide5{
-		background: url("images/desk.jpg") center 0 fixed;
-		background-size: cover;
-	}
 
 	/*Work on the second section on sodev website*/
 	#dsk_sodev{
@@ -450,50 +338,20 @@
 	}
 
 	/*Work on the fourth section with logos*/
-	#logo-title{
-		color: white;
-	}
-	#logo_txt{
-		color: white;
-	}
-	#logo-project{
-		width: 500px;
-		margin-left: -200px;
-	}
-	#logo-project div{
-		padding: 20px;
-	}
-	#logoCreation{
-		width: 200px;
-		margin-left: 150px;
+
+	#lightbox{
+		overflow: hidden;
 	}
 
-	#img-logo1, #img-logo2, .img-round:after, .img-round:before{
-		width: 200px;
-		height: 200px;
-	}
-	#img-logo2{
-		margin-top: 50px;
-	}
-	#lightbox3{
-		overflow: hidden;
-	}
-	#lightbox4{
-		overflow: hidden;
-	}
 	.item-logo img{
 		width: 300px;
 	}
-	.item-avatar{
-		width: 300px;
-	}
-	.dia-avatars, .dia-logo{
+
+	.dia-logo{
 		width: 400px;
 	}
-	.btn-close{
-		color: white;
-	}
-	/*Section of wordpress websites*/
+
+	/*Section of carousels*/
 	#carousel-wordpress{
 		width: 50%;
 	}
@@ -507,10 +365,11 @@
 	.WPcarousel-control{
 		height: 400px;
 	}
-	/*Work on the last section with the mini projects*/
-	.img-mini{
-		width: 200px;
-		height: 200px;
+	.project{
+		width: 30%;
+	}
+	.modal-body{
+		flex-direction: row;
 	}
 	/*Work on the footer*/
 	#footer-social {

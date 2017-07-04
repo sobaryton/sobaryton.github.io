@@ -223,7 +223,7 @@ h1
 }
 .btnAction:focus{
 	text-decoration: none;
-	color: #FCB3B3;
+	color: white;
 }
 /********************************Work on the section skills****************************************/
 #skillsTitre
@@ -521,12 +521,7 @@ textarea
 /*********************************************************************************************************************************************************/
 /***********************************************************   Project Page general style   *******************************************************************/
 /*********************************************************************************************************************************************************/
-#container-projects
-{
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-}
+
 #header-project{
 	position: relative;
 	height: 100vh;
@@ -537,6 +532,15 @@ textarea
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-top: 90px;
+	margin-bottom: 50px;
+}
+#project_intro p{
+	text-align: center;
+}
+.skillsWork{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .project-list{
 	list-style: none;
@@ -545,102 +549,102 @@ textarea
 .project-list li{
 	padding-bottom: 20px;
 }
-/*Create the parallax effect with different background on the slides*/
-.parallax-slide{
-	width: 100%;
+#sectionsWork{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-#project_intro p{
-	text-align: center;
-}
-.project_txt{
+#slide2{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.theProject{
-	display: flex;
-	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
+.project{
+	height: auto;
+	margin-bottom: 30px;
+}
 .link{
+	position: relative;
 	color: #FCB3B3;
 	text-decoration: none;
-}
 
-/*Create an effect on the logo: like a small ball with logos inside*/
-#logo-project{
-	background: white;
-	border-radius: 10%;
+}
+/*Modal style*/
+.work-thumb-container{
+	width: 100%;
+}
+.thumb{
 	display: flex;
-	flex-direction: column;
-}
-
-#logoCreation{
-	display: inline-block;
-	-webkit-perspective: 1200px;
-	-moz-perspective: 1200px;
-	-ms-perspective: 1200px;
-	-o-perspective: 1200px;
-	perspective: 1200px;
-	-webkit-perspective-origin: 50% 50%;
-	-moz-perspective-origin: 50% 50%;
-	-ms-perspective-origin: 50% 50%;
-	-o-perspective-origin: 50% 50%;
-	perspective-origin: 50% 50%;
-}
-
-.img-round:before {
-	   content: "";
-	   position: absolute;
-	   top: 1%;
-	   left: 5%;
-	   border-radius: 50%;
-	   background: radial-gradient(circle at 35% 0px, #ffffff, rgba(255, 255, 255, 0) 30%);
-	   -webkit-filter: blur(5px);
-	   z-index: 2;
-   }
-.img-round:after {
-	content: "";
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
-	border-radius: 100%;
 	top: 0;
-	left: 0;
-	background: radial-gradient(circle at 50% 30%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 50%, white 100%);
+	width: 100%;
+	height: 100%;
+	font-size: 2em;
+	color:#1b6d85;
 }
+.work-thumb-container:hover{
+	opacity:0.4;
+}
+.modal-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.modal-body{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
-#img-logo1{
-	background: url('images/foxdev.jpg') center no-repeat ;
-	display: inline-block;
-	margin: 0;
-	border-radius: 50%;
-	position: relative;
-	background-size: cover;
 }
-
-#img-logo2{
-	background: url('images/smokegreypink.png') center no-repeat, white ;
-	display: inline-block;
-	margin: 0;
-	border-radius: 50%;
-	position: relative;
-	background-size: cover;
+.modal-body h3, .modal-title{
+	font-family: 'Jura',Courier,sans-serif;
 }
-.item-avatar img, .item-logo img{
+.modal-title{
+	font-size: 2.2em;
+	text-align: left;
+}
+.modal-footer{
+	display: flex;
+	justify-content: center;
+}
+.btnActionWork
+{
+	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
+	background-color: #FFEEEE;
+	color: #FCB3B3;
+	border: 2px dotted #FCB3B3;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.7em;
+}
+.btnActionWork:hover
+{
+	color: white;
+	border: 2px solid white;
+	background-color: #FCB3B3;
+	text-decoration: none;
+}
+.btnActionWork:focus{
+	text-decoration: none;
+	color: white;
+}
+/*Carousel for the logos and avatars*/
+.item-logo img{
 	margin: auto;
 }
-
-.btn-close{
-	z-index: 100;
-	position: absolute;
-	top:-40px;
-	font-size: 3em;
-	right: 0;
-	opacity: 1;
+.WPcarousel-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-/*Section of wordpress websites*/
-
 #carousel-wordpress .carousel{
 	position: relative;
 }
@@ -661,16 +665,4 @@ textarea
 
 .WPcarousel-control.right{
 	background-image: linear-gradient(to left,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
-}
-
-/*Last section with the mini projects*/
-.img-mini{
-	width: 150px;
-	height: 150px;
-}
-
-.mini-project-txt{
-	display: flex;
-	flex-direction: column;
-	width: 200px;
 }

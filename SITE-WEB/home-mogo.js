@@ -189,43 +189,6 @@ function animateProgressBars(){
 	}
 }
 
-
-
-//check if the progress bar is in view
-/*function check_if_in_view() {
-	var window_height = $window.height();
-	var window_top_position = $window.scrollTop();
-	var window_bottom_position = (window_top_position + window_height);
-
-	$.each($progress, function() {
-		var $element = $(this);
-		$progressbar = $($element.children());
-		var element_height = $progressbar.outerHeight();
-		var element_top_position = $progressbar.offset().top;
-		var element_bottom_position = (element_top_position + element_height);
-
-		//check to see if this current container is within viewport
-		if ((element_bottom_position >= window_top_position) &&
-			(element_top_position <= window_bottom_position)) {
-			$progressbar.addClass('in-view');
-		} else {
-			$progressbar.removeClass('in-view');
-		}
-	});
-}*/
-
-
-//*****************************************************************Management of the parallax effect in Project page
-function parallaxEffect (){
-	$('#slide1').parallax("center", 0, 0.1, true);
-	$('#slide2').parallax("center", 900, 0.1, true);
-	$('#slide3').parallax("center", 1900, 0.1, true);
-	$('#slide4').parallax("center", 2900, 0.1, true);
-	$('#slide5').parallax("center", 3900, 0.1, true);
-	$('#slide6').parallax("center", 4900, 0.1, true);
-}
-
-
 //**********************************************************************Check what the current page is
 
 function isHome() {
@@ -236,8 +199,9 @@ function isCV() {
 	var regex = /cv.html/i;
 	return regex.test(window.location.href);
 }
-function isProjects(){
-	var regex = /projects.html/i;
+
+function isWork(){
+	var regex = /work.html/i;
 	return regex.test(window.location.href);
 }
 
@@ -256,13 +220,8 @@ $(document).ready(function() {
 		createWave();
 		animateProgressBars();
 	}
-	if (isProjects()){
+	if (isWork()){
 		createWave();
-	}
-	if(screen.innerWidth >= 1200) {
-		if(isProjects()){
-			parallaxEffect();
-		}
 	}
 
 });
