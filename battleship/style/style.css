@@ -1,0 +1,228 @@
+body{
+	background-color: #D0E1F5;
+	font-family: 'Cabin', sans-serif;
+
+}
+.index{
+	display: flex;
+	flex-direction: row;
+}
+
+/**************Game List Elements***********************/
+.list, .hidden-list{
+	list-style: none;
+	background-color: #93B6E0;
+	padding: 0;
+	margin: 0;
+}
+.list-game{
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #93B6E0;
+	width: 22%;
+	list-style: none;
+}
+.header-list{
+	background-color: #1059AE;
+	border-bottom: 1px solid white;
+}
+.header-list h2{
+	color: white;
+	font-family: 'Pacifico', cursive;
+	font-weight: normal;
+}
+.btn-new{
+	border-radius: 5px;
+	height: 35px;
+	margin-bottom: 10px;
+	border: none;
+	background-color: white;
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.1em;
+}
+.btn-new:hover{
+	background-color: #FF5C5C;
+	color: white;
+}
+.game-item{
+	height: 100px;
+	margin: auto;
+	border-bottom: 1px solid white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: relative;
+}
+.current-battle{
+	background-color: #1059AE;
+}
+.btn-delete{
+	position: absolute;
+	top:5px;
+	right: 5px;
+	width: 27px;
+	height: 27px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+.btn-delete:hover{
+	color: #FF5C5C;
+}
+.btn-play{
+	border: none;
+	border-radius: 5px;
+	height: 30px;
+	width: 50px;
+	margin-top: 10px;
+	background-color: white;
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.1em;
+	color: #352222;
+}
+.btn-play:hover{
+	background-color: #FF5C5C;
+	color: white;
+}
+
+
+/******************Game Grid Elements**************************/
+
+
+/*First screen with the title*/
+.first-grid{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.first-grid h1{
+	color: #1059AE;
+	font-size: 4em;
+	font-weight:normal;
+	font-family: 'Pacifico', cursive;
+}
+.first-grid p{
+	color:#1059AE;
+}
+.first-grid .fa-anchor{
+	color: #1059AE;
+}
+/*Grid with all the buttons for the game*/
+.game-grid button{
+	height:50px;
+	width: 50px;
+	margin:auto;
+}
+.game-grid table .fa{
+	vertical-align: sub;
+}
+/*info on the game*/
+.game-grid h1{
+	color: #1059AE;
+	font-size: 2.3em;
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	margin:0;
+	font-weight: normal;
+}
+.game-info h2{
+	color: #1059AE;
+	font-size: 1.8em;
+	font-family: 'Pacifico', cursive;
+	margin: 0;
+	font-weight: normal;
+}
+.game-info h3{
+	font-size: 1em;
+	font-family: 'Pacifico', cursive;
+	margin: 0;
+	font-weight: normal;
+}
+.game-info div{
+	font-size: 1.2em;
+}
+.scores{
+	display: flex;
+}
+.scoreDetail{
+	display: flex;
+}
+.enemy{
+	color: #FF5C5C;
+}
+.player{
+	color:#1059AE;
+}
+/*state of the buttons during the game*/
+.cell{
+	border: 1px solid #D0E1F5;
+	background-color: white;
+}
+.cell:hover{
+	border: 1px solid #86BDFF;
+	background-color: #F3F8FF;
+}
+.myBoats{
+	border: 1px solid #1059AE;
+	background-color: white;
+	text-align: center;
+	padding:0;
+	color: #1059AE;
+	font-weight: bold;
+	line-height: 50px;
+}
+.hitP{
+	background-color: #1059AE;
+	text-align: center;
+	padding:0;
+	color: white;
+	font-weight: bold;
+	line-height: 50px;
+	border: 1px solid #1059AE;
+}
+.hitE{
+	background-color: #FF5C5C;
+	text-align: center;
+	padding:0;
+	color: white;
+	line-height: 50px;
+	border: 1px solid #FF5C5C;
+}
+.missP{
+	color: #1059AE;
+	font-weight:bold;
+	background-color: white;
+	text-align: center;
+	padding:0;
+	border: 1px solid #D0E1F5;
+}
+.missE{
+	color: #FF5C5C;
+	font-weight:bold;
+	background-color: white;
+	text-align: center;
+	padding:0;
+	border: 1px solid #D0E1F5;
+}
+.playerSunk{
+	border: #1059AE solid 1px;
+	color: white;
+	text-align: center;
+	padding:0;
+	background-color: #1059AE;
+}
+.enemySunk{
+	border: #FF5C5C solid 1px;
+	background-color: #FF5C5C;
+	color: white;
+	text-align: center;
+	padding:0;
+}
