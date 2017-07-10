@@ -503,11 +503,7 @@ textarea
 	text-align: center;
 	font-family: 'Jura',Courier,sans-serif;
 	width: 300px;
-	height: 60px;
-	background-color: white;
-	color: #FCB3B3;
-	border: 2px dotted #FCB3B3;
-
+	height: 70px;
 }
 
 #CV-download:hover
