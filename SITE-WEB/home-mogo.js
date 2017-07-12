@@ -189,6 +189,19 @@ function animateProgressBars(){
 	}
 }
 
+// in the work section, when you hover the screens there are labels appearing
+function hoverWork(){
+	var $paragraphs = $('.hoverProject');
+	var $projects = $('.project');
+	$paragraphs.hide();
+	$projects.hover(function(){
+		var $thisProject = $($(this).children()[0]);
+		$thisProject.slideToggle("slow");
+	});
+
+}
+
+
 //**********************************************************************Check what the current page is
 
 function isHome() {
@@ -222,6 +235,7 @@ $(document).ready(function() {
 	}
 	if (isWork()){
 		createWave();
+		hoverWork();
 	}
 
 });
