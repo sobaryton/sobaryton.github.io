@@ -228,7 +228,10 @@ $(document).ready(function() {
 	if (isHome()) {
 		initEmailJS();
 		updateStats();
-		hoverWork();
+
+		if(window.innerWidth > 1200) {
+			hoverWork();
+		}
 	}
 	if (isCV()) {
 		createWave();
@@ -236,7 +239,9 @@ $(document).ready(function() {
 	}
 	if (isWork()){
 		createWave();
-		hoverWork();
+		if(window.innerWidth > 1200) {
+			hoverWork();
+		}
 	}
 
 });
