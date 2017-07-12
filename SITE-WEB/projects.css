@@ -40,6 +40,12 @@
 		justify-content: center;
 		text-align: center;
 	}
+	.project_txt div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	.btnActionWork
 	{
 		width: 50%;
