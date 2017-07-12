@@ -228,6 +228,7 @@ $(document).ready(function() {
 	if (isHome()) {
 		initEmailJS();
 		updateStats();
+		hoverWork();
 	}
 	if (isCV()) {
 		createWave();
