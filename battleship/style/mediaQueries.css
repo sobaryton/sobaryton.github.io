@@ -7,6 +7,7 @@
 	{
 		width: auto;
 		margin: auto;
+		 overflow: scroll;
 	}
 	.index{
 		flex-direction: column;
@@ -17,9 +18,8 @@
 	.btn-navbar{
 		border-radius: 5px;
 		border: none;
-		background-color: #D9CACA;
-		box-shadow: 1px 1px 1px #524545;
-		color: #352222;
+		background-color: white;
+		color: #1059AE;
 	}
 	.hidden-list{
 		display: none;
@@ -34,16 +34,9 @@
 	.header-list h2{
 		width: 100%;
 	}
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
-	table td {
-		padding: 0;
-	}
 	.game-grid button {
 		width: 35px;
-		height: 35px;
+		height: 38px;
 	}
 	.first-grid h1{
 		text-align: center;
@@ -79,10 +72,22 @@
 		justify-content: center;
 		align-items: center;
 	}
-	table{
+	.wholeGrid{
 		padding-top:30px;
+		overflow: scroll;
+		min-width: 375px;
 	}
-
+	.cellsGrid{
+		margin: 0;
+		height: 38px;
+		width: 35px;
+	}
+	.game-grid .wholeGrid .fa{
+		vertical-align: text-bottom;
+	}
+	.rowGrid{
+		flex-wrap: nowrap;
+	}
 }
 /***********************************************************************************************************************************/
 /*************									SMARTPHONE SCREENS						********************************************/
@@ -163,11 +168,17 @@
 		justify-content: center;
 		align-items: center;
 	}
-	table{
+	.wholeGrid{
 		padding-top:30px;
 	}
-
-
+	.cellsGrid{
+		margin: 2px;
+		height: 50px;
+		width: 50px;
+	}
+	.game-grid .wholeGrid .fa{
+		vertical-align: middle;
+	}
 }
 
 
@@ -204,6 +215,10 @@
 		height: auto;
 		width:78%;
 	}
+	.game-grid button {
+		width: 50px;
+		height: 50px;
+	}
 	.grid{
 		display: flex;
 		flex-direction: column;
@@ -232,10 +247,14 @@
 	.game-grid h1{
 		width: 100%;
 	}
-	table{
+	.wholeGrid{
 		padding-top:30px;
 	}
-
+	.cellsGrid{
+		margin: 3px;
+		height: 50px;
+		width: 50px;
+	}
 }
 
 
@@ -277,6 +296,10 @@
 		width:78%;
 		margin: auto;
 	}
+	.game-grid button {
+		width: 55px;
+		height: 55px;
+	}
 	.grid{
 		display: flex;
 		flex-direction: column;
@@ -305,8 +328,10 @@
 		width: auto;
 		margin-bottom: 30px;
 	}
-	table{
-		padding-top:0;
+	.cellsGrid{
+		margin: 2px;
+		width: 55px;
+		height: 55px;
 	}
 
 }

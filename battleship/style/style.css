@@ -116,12 +116,20 @@ body{
 	color: #1059AE;
 }
 /*Grid with all the buttons for the game*/
+.rowGrid{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
 .game-grid button{
 	height:50px;
 	width: 50px;
 	margin:auto;
 }
-.game-grid table .fa{
+.game-grid .wholeGrid .fa{
 	vertical-align: sub;
 }
 /*info on the game*/
