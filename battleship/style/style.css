@@ -85,9 +85,8 @@ body{
 	font-family: 'Cabin', sans-serif;
 	font-size: 1.1em;
 	color: #1059AE;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
+	padding:0;
 
 }
 .btn-play:hover{
