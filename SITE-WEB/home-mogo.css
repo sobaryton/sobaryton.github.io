@@ -27,7 +27,7 @@ h4
 /*************************************Work on the header for all formats********************************/
 header
 {
-	background-image: repeating-linear-gradient(#647277, #6E8A94, #F3ECD9);
+	background-image: repeating-linear-gradient(#031D44, #C9DDFF);
 }
 h1
 {
@@ -49,28 +49,34 @@ h1
 }
 .navbar-brand
 {
-	color: #647277;
+	color: #031D44;
 	font-family: 'Jura',Courier,sans-serif;
 }
 .navbar-brand:hover
 {
-	color: white;
+	color: white !important;
 }
 .navbar-nav a
 {
-
-	color: #647277;
+	color:  white!important;
 	font-family: 'Jura',Courier,sans-serif;
 }
-.navbar-nav a:hover
+.nav>li>a:hover:hover, .nav>li>a:hover:focus,.nav .open>a, .nav .open>a:hover, .nav .open>a:focus
 {
-	color:  #FCB3B3!important;
-	background-color: #F3ECD9 !important;
+	color:  white!important;
+	background-color: #DE6C83 !important;
 
 }
+.nav>li>a:hover:visited
+{
+	color:  white!important;
+	background-color: #DE6C83 !important;
+
+}
+
 .btn-navbar
 {
-	color: #FCB3B3 !important;
+	color: #FFA1B5 !important;
 }
 
 .navbar-nav li
@@ -87,11 +93,15 @@ h1
 	height: 70px;
 }
 .dropA{
-	color: #F3ECD9 !important;
-	background-color: #FCB3B3 !important;
+	color: white !important;
+	background-color: #FFA1B5 !important;
 	width: 100%;
 }
-
+.dropA:hover{
+	color: white !important;
+	background-color: #DE6C83 !important;
+	width: 100%;
+}
 #titre
 {
 	display: flex;
@@ -109,28 +119,25 @@ h1
 }
 #learn:hover
 {
-	background-color: #FCB3B3;
+	background-color: #DE6C83;
 }
 
 #btnTop
 {
 	position: fixed;
-	color: #4a4a4a;
+	color: #031D44;
 	opacity: 0.7;
 	z-index: 2;
 }
-
+#btnTop:hover
+{
+	opacity: 1;
+}
 /********************************Work on the section Intro****************************************/
 #introTxt p, #introTxt h2
 {
 	text-align: center;
 	width: 80%;
-}
-
-#introTxt p a
-{
-	text-decoration: none;
-	color: #647277;
 }
 /********************************Work on the section numbers****************************************/
 #container-numbers
@@ -141,13 +148,13 @@ h1
 }
 #numbers
 {
-	background-color: #bad1d1;
+	background-color: #C9DDFF;
 	text-align: center;
 }
 #numbers a
 {
 	text-decoration: none;
-	color: #647277;
+	color: #031D44;
 }
 #numbers .fa
 {
@@ -192,13 +199,13 @@ h1
 }
 .bloc h3{
 	text-decoration: none;
-	color: #647277;
+	color: #031D44;
 	font-family: 'Jura',Courier,sans-serif;
 	font-size: 1.7em;
 	text-align: center;
 }
 .workProjects a h3:hover,.workProjects a:focus, .workProjects a:hover{
-	color: #bad1d1!important;
+	color: #C9DDFF!important;
 	text-decoration: none!important;
 }
 .btnAction
@@ -207,9 +214,9 @@ h1
 	font-family: 'Jura',Courier,sans-serif;
 	width: 180px !important;
 	height: 50px !important;
-	background-color: #FFEEEE;
-	color: #FCB3B3;
-	border: 2px dotted #FCB3B3;
+	background-color: transparent;
+	color: #DE6C83;
+	border: 2px solid #DE6C83;
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 1.7em;
@@ -218,7 +225,7 @@ h1
 {
 	color: white;
 	border: 2px solid white;
-	background-color: #FCB3B3;
+	background-color: #DE6C83;
 	text-decoration: none;
 }
 .btnAction:focus{
@@ -239,11 +246,13 @@ h1
 {
 	text-align: center;
 }
-
+#devSkills h3, #designSkills h3, #humanSkills h3{
+	font-family: 'Jura',Courier,sans-serif;
+}
 .skillsSquare
 {
 	text-align: center;
-	border: 2px solid #bad1d1;
+	border: 2px solid #C9DDFF;
 	border-radius: 5px;
 }
 
@@ -257,7 +266,7 @@ h1
 {
 	white-space:nowrap;
 	overflow:hidden;
-	font-family: "Courier";
+	font-family: Courier, sans-serif;
 
 }
 
@@ -274,7 +283,7 @@ h1
 {
 	animation: blink 1s infinite;
 	-webkit-animation: blink 1s infinite;
-	font-family: "Courier";
+	font-family: Courier, sans-serif;
 }
 @-webkit-keyframes blink {
 	to{opacity: .0;}
@@ -294,11 +303,11 @@ h1
 
 .colour1
 {
-	background-color: #647277;
+	background-color: #031D44;
 }
 .colour2
 {
-	background-color: #bad1d1;
+	background-color: #C9DDFF;
 }
 
 
@@ -306,7 +315,7 @@ h1
 #contact
 {
 	background-color: white;
-	border: 2px dotted #FCB3B3;
+	border: 2px dotted #FFA1B5;
 }
 #contact p
 {
@@ -316,31 +325,30 @@ h1
 }
 form label, form input, form textarea
 {
-	color: black;
+	color: #031D44;
 	font-family: 'Jura',Courier,sans-serif;
 }
 form input:focus, form textarea:focus
 {
-	box-shadow: 1px 1px 1px 1px #FCB3B3;
+	box-shadow: 1px 1px 1px 1px #FFA1B5;
 	outline-color: transparent;
 }
 .envoi
 {
-	
 	text-align: center;
 	font-family: 'Jura',Courier,sans-serif;
 	width: 110px;
 	height: 40px;
 	background-color: white;
-	color: #FCB3B3;
-	border: 2px dotted #FCB3B3;
+	color: #DE6C83;
+	border: 2px dotted #DE6C83;
 	font-weight: bold;
 }
 .envoi:hover
 {
 	color: white;
 	border: 2px solid white;
-	background-color: #FCB3B3;
+	background-color: #DE6C83;
 }
 textarea
 {
@@ -359,11 +367,11 @@ textarea
 
 #footer-social .fa
 {
-	color: black;
+	color: #031D44;
 }
 #footer-social a :hover
 {
-	color: #FCB3B3;
+	color: #DE6C83;
 }
 
 /*********************************************************************************************************************************************************/
@@ -402,7 +410,7 @@ textarea
 
 /*Work on the second section: education: making arrows*/
 .etiquetteBtn{
-	color: #647277;
+	color: #031D44;
 }
 .etiquetteBtn:hover, .etiquetteBtn:focus{
 	color: white;
@@ -422,7 +430,7 @@ textarea
 .etiquetteTxt
 {
 	text-align: center;
-	background-color: #bad1d1;
+	background-color: #C9DDFF;
 	width: 200px;
 	height: 60px;
 }
@@ -439,7 +447,7 @@ textarea
 	height: 0;
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent;
-	border-left: 30px solid #bad1d1;
+	border-left: 30px solid #C9DDFF;
 }
 .arrowRight
 {
@@ -447,12 +455,12 @@ textarea
 	height: 0;
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent;
-	border-right: 30px solid #bad1d1;
+	border-right: 30px solid #C9DDFF;
 }
 
 /*Work on the second section with experience, skills and education*/
 #cvEducation, #skillsCv, #experienceCv{
-	border: dotted 1px #bad1d1;
+	border: dotted 1px #C9DDFF;
 }
 
 .expDetails{
@@ -469,14 +477,13 @@ textarea
 }
 
 .dateCv, .dateExpCv{
-	color: #647277;
+	color: #031D44;
 	font-size: 2em;
 	font-weight: bold;
 }
 
 .progress{
 	border-radius: 25px;
-	width: 50%;
 }
 
 .progress-bar{
@@ -510,7 +517,7 @@ textarea
 {
 	color: white;
 	border: 2px solid white;
-	background-color: #FCB3B3;
+	background-color: #FFA1B5;
 }
 
 
@@ -569,7 +576,11 @@ textarea
 }
 .link{
 	position: relative;
-	color: #FCB3B3;
+	color: #FFA1B5;
+	text-decoration: none;
+}
+.link:hover{
+	color: #DE6C83;
 	text-decoration: none;
 }
 .hoverProject{
@@ -577,14 +588,13 @@ textarea
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	vertical-align: middle;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .workLabel{
-	background: #647277;
+	background: #031D44;
 	color: white;
 	display: flex;
 	justify-content: center;
@@ -609,7 +619,7 @@ textarea
 	width: 100%;
 	height: 100%;
 	font-size: 2em;
-	color:#1b6d85;
+	color:#C9DDFF;
 }
 .work-thumb-container:hover{
 	opacity:0.2;
@@ -637,13 +647,16 @@ textarea
 	display: flex;
 	justify-content: center;
 }
+.close{
+	font-size: 31px;
+}
 .btnActionWork
 {
 	text-align: center;
 	font-family: 'Jura',Courier,sans-serif;
-	background-color: #FFEEEE;
-	color: #FCB3B3;
-	border: 2px dotted #FCB3B3;
+	background-color: transparent;
+	color: #DE6C83;
+	border: 2px solid #DE6C83;
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 1.7em;
@@ -652,7 +665,7 @@ textarea
 {
 	color: white;
 	border: 2px solid white;
-	background-color: #FCB3B3;
+	background-color: #DE6C83;
 	text-decoration: none;
 }
 .btnActionWork:focus{
