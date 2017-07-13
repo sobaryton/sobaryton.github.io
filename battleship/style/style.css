@@ -84,7 +84,11 @@ body{
 	background-color: white;
 	font-family: 'Cabin', sans-serif;
 	font-size: 1.1em;
-	color: #352222;
+	color: #1059AE;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 .btn-play:hover{
 	background-color: #FF5C5C;
