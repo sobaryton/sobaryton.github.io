@@ -457,12 +457,18 @@ textarea
 	border-bottom: 30px solid transparent;
 	border-right: 30px solid #C9DDFF;
 }
-
+.badge{
+	background-color: #031D44 !important;
+}
 /*Work on the second section with experience, skills and education*/
 #cvEducation, #skillsCv, #experienceCv{
 	border: dotted 1px #C9DDFF;
 }
-
+.description{
+	font-family: 'Jura', Courier, sans-serif;
+	color: #031D44;
+	font-size: 2em;
+}
 .expDetails{
 	display: flex;
 }
@@ -477,9 +483,9 @@ textarea
 }
 
 .dateCv, .dateExpCv{
+	font-family: 'Jura', Courier, sans-serif;
 	color: #031D44;
 	font-size: 2em;
-	font-weight: bold;
 }
 
 .progress{
