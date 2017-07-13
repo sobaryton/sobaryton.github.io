@@ -68,7 +68,9 @@
 		text-align: center;
 		margin-bottom: 40px;
 	}
-
+	.progress{
+		width: 100%;
+	}
 	/*Work on the footer*/
 	#footer-social {
 		display: flex;
@@ -151,6 +153,9 @@
 		text-align: center ;
 		margin-bottom: 40px;
 	}
+	.progress{
+		width: 100%;
+	}
 	/*Work on the footer*/
 	#footer-social {
 		display: flex;
@@ -226,6 +231,9 @@
 		width: 150px;
 		text-align: left;
 	}
+	.progress{
+		width: 75%;
+	}
 	/*Work on the footer*/
 	#footer-social {
 		display: flex;
@@ -295,6 +303,9 @@
 	.dateCv
 	{
 		width: 200px;
+	}
+	.progress{
+		width: 75%;
 	}
 	/*Work on the footer*/
 	#footer-social {

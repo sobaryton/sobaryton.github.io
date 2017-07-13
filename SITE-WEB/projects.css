@@ -94,6 +94,10 @@
 	.carousel-inner>.active img{
 		width: 50%;
 	}
+	.modal-title{
+		text-align: center;
+		width: 100%;
+	}
 
 	/*Work on the footer*/
 	#footer-social {
@@ -200,6 +204,9 @@
 	}
 	.carousel-inner>.active img{
 		width: 70%;
+	}
+	.modal-title{
+		text-align: left;
 	}
 
 	/*Work on the footer*/

@@ -11,7 +11,7 @@
 	
 	header
 	{
-		background-image: repeating-linear-gradient(#647277, #6E8A94, #F3ECD9);
+		background-image: repeating-linear-gradient(#031D44, #C9DDFF);
 		height: 100vh;
 		width: auto;
 	}
@@ -27,8 +27,8 @@
 		font-size: 2.5em;
 		margin-bottom: 50px;
 		font-weight: bold;
-		color: black;
-		border-bottom: dotted 3px #FCB3B3;
+		color: #031D44;
+		border-bottom: dotted 3px #FFA1B5;
 		text-align: center;
 	}
 	section
@@ -44,7 +44,7 @@
 	{
 		position: fixed;
 		width: 100%;
-		background-color: #647277;
+		background-color: #031D44;
 		height: 40px;
 	}
 	.container>.navbar-collapse
@@ -76,16 +76,16 @@
 	.navbar-brand
 	{
 		font-size: 2em;
-		color: #FCB3B3;
+		color: #FFA1B5;
 		text-align: center;
 		width: 100%;
-		border-bottom: 1px solid #FCB3B3;
+		border-bottom: 1px solid #FFA1B5;
 		height: 40px;
 	}
 	.navbarbrand a
 	{
 		font-size: 2.4em;
-		color: #FCB3B3;
+		color: #FFA1B5;
 		padding: 10px;
 		height: 40px;
 		text-align: center;
@@ -97,7 +97,7 @@
 	}
 	.navigation
 	{
-		background-color: #647277;
+		background-color: #031D44;
 	}
 	.navigation ul li
 	{
@@ -107,12 +107,12 @@
 	.navbar-nav>li>a
 	{
 		line-height: 40px;
-		color: #FCB3B3;
+		color: #FFA1B5;
 	}
 	.navbar-nav a:hover
 	{
 		color:  white!important;
-		background-color: #6E8A94 !important;
+		background-color: #04395e !important;
 	}
 	.li-drop, .dropA{
 		height: 45px !important;
@@ -164,7 +164,7 @@
 	}
 	.num2
 	{
-		background-color: #6e8a94 ;
+		background-color: #C9DDFF ;
 	}
 	#numbers
 	{
@@ -192,7 +192,7 @@
 	{
 		text-align: center;
 		justify-content: center;
-		background-color: #bad1d1;
+		background-color: #04395e;
 		color: white;
 		height: 50px;
 		margin-top: 10%;
@@ -291,7 +291,7 @@
 		font-size: 2.5em;
 		margin-bottom: 50px;
 		font-weight: bold;
-		color: black;
+		color: #031D44;
 		border-bottom: none;
 		text-align: center;
 	}
@@ -355,7 +355,7 @@
 	.navbarbrand a
 	{
 		font-size: 43px;
-		color: #647277 !important;
+		color: #031D44 !important;
 	}
 	.navbar-nav li
 	{
@@ -525,7 +525,7 @@
 	{
 		margin-bottom: 50px;
 		font-weight: bold;
-		color: black;
+		color: #031D44;
 		text-align: center;
 		font-size: 3em;
 		border-bottom: none;
@@ -712,7 +712,7 @@
 	{
 		margin-bottom: 50px;
 		font-weight: bold;
-		color: black;
+		color: #031D44;
 		text-align: center;
 		font-size:3.2em;
 	}
