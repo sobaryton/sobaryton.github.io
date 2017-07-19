@@ -112,7 +112,7 @@
 				<p>Delivered by <a href="https://openclassrooms.com/">OpenClassRooms</a> </p>
 			</div>
 			<div class=" col-sm-3 col-md-3 col-lg-3 num2">
-				<h3>3  <i class="fa fa-desktop" aria-hidden="true"></i> </h3>
+				<h3>4  <i class="fa fa-desktop" aria-hidden="true"></i> </h3>
 				<h4>websites</h4>
 			</div>
 
@@ -131,7 +131,8 @@
 			</div>
 			<div id="sectionsWork">
 				<div class="workProjects">
-					<a href="../mogo/mogo.html"  class="bloc project" id="profilFR">
+					<!-- Trigger the modal with a button -->
+					<a href="#" data-toggle="modal" data-target="#myModalH1" data-backdrop="true" class="bloc project" id="profilFR">
 						<div class="hoverProject">
 							<p class="workLabel">PSD to website</p>
 							<p class="workLabel">Javascript/jQuery</p>
@@ -140,7 +141,45 @@
 						<img src="images/work/mogo-home.png" alt class="work-thumb-container">
 						<h3>Mogo Website</h3>
 					</a>
-					<a href="../battleship/index.html" class="bloc project" target="_blank">
+					<!-- Modal -->
+					<div id="myModalH1" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2 class="modal-title">Mogo Website</h2>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="project_txt" >
+										<div>
+											<h3>Details</h3>
+											<p>I integrated this <a class="link" href="../mogo/mogo.html">website</a>, from a PSD file, that you find it <a class="link" href="http://ninodezign.com/mogo-free-one-page-html5-css3-template/" target="_blank">here</a>. The illustrations are different, as I replaced them all with Illustrations, made with Adobe AI. The website is responsive. </p>
+										</div>
+										<div>
+											<h3>Technologies used</h3>
+											<ul>
+												<li>HTML5 / CSS3</li>
+												<li>Bootstrap & flexbox</li>
+												<li>Javascript</li>
+												<li>Jquery</li>
+												<li>Adobe Illustrator</li>
+												<li>Adobe Photoshop</li>
+											</ul>
+										</div>
+									</div>
+									<img src="images/work/mogo-home.png" class="img-desktop" id="dsk_mogo">
+								</div>
+								<div class="modal-footer">
+									<a href="../mogo/mogo.html" class="btnActionWork" target="_blank">The project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Trigger the modal with a button -->
+					<a href="#" data-toggle="modal" data-target="#myModalH2" data-backdrop="true" class="bloc project">
 						<div class="hoverProject">
 							<p class="workLabel">Game creation</p>
 							<p class="workLabel">React.js</p>
@@ -150,7 +189,43 @@
 						<img src="images/work/battleship-home.png" alt class="work-thumb-container">
 						<h3>Battleship game</h3>
 					</a>
-					<a href="https://codepen.io/sobary/" class="bloc project" target="_blank">
+					<!-- Modal -->
+					<div id="myModalH2" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2 class="modal-title">Battleship Game</h2>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="project_txt" >
+										<div>
+											<h3>Details</h3>
+											<p>This project was done with the help of my <a href="https://www.linkedin.com/in/severinnicolas/" class="link" target="_blank">mentor</a>. This game use React to render all the components of the page. The next step of the project will be to group the data using Redux. Please have a look and have a good game!</p>
+										</div>
+										<div>
+											<h3>Technologies used</h3>
+											<ul>
+												<li>Javascript, React.js</li>
+												<li>HTML5 / CSS3</li>
+												<li>API</li>
+											</ul>
+										</div>
+									</div>
+									<img src="images/work/battleship-home.png" class="img-desktop">
+								</div>
+								<div class="modal-footer">
+									<a href="../battleship/index.html" target="_blank" class="btnActionWork">The project</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Trigger the modal with a button -->
+					<a href="#" data-toggle="modal" data-target="#myModalH3" data-backdrop="true" class="bloc project">
 						<div class="hoverProject">
 							<p class="workLabel">CodePen Projects</p>
 							<p class="workLabel">React.js</p>
@@ -158,6 +233,41 @@
 						<img src="images/work/codepen-home.png" alt class="work-thumb-container">
 						<h3>CodePen React projects</h3>
 					</a>
+					<!-- Modal -->
+					<div id="myModalH3" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2 class="modal-title">CodePen Projects</h2>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="project_txt" >
+										<div>
+											<h3>Details</h3>
+											<p>I work on mini-projects in order to improve my React skills. You can find the React collection on my <a class="link" href="https://codepen.io/collection/npNdxW/" target="_blank">CodePen profile</a>. This includes a to-do list, a contact list and a timer.</p>
+										</div>
+										<div>
+											<h3>Technologies used</h3>
+											<ul>
+												<li>HTML5 / CSS3</li>
+												<li>Javascript, React.js</li>
+											</ul>
+										</div>
+									</div>
+									<img src="images/work/codepen-home.png" class="img-desktop">
+								</div>
+								<div class="modal-footer">
+									<a href="https://codepen.io/collection/npNdxW/" target="_blank" class="btnActionWork">The project</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
 				</div>
 			</div>
 

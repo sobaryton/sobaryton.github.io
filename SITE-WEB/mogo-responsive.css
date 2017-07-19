@@ -180,6 +180,13 @@
 	.workProjects{
 		flex-direction: column;
 	}
+	.modal-body{
+		flex-direction: column;
+	}
+	.modal-title{
+		text-align: center;
+		width: 100%;
+	}
 /********************************Work on the section skills****************************************/
 	.skillsSquare
 	{
@@ -418,6 +425,9 @@
 	/********************************Work on the section work****************************************/
 	.workProjects{
 		flex-direction: column;
+	}
+	.modal-title{
+		text-align: left;
 	}
 	/********************************Work on the section skills****************************************/
 	.colour1, .colour2, .skills p
@@ -809,6 +819,9 @@
 	}
 	.bloc{
 		width: 30%;
+	}
+	.modal-body{
+		flex-direction: row;
 	}
 /********************************Work on the section skills****************************************/
 	.colour1, .colour2
