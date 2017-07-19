@@ -205,7 +205,6 @@ h1
 	text-align: center;
 }
 .workProjects a h3:hover,.workProjects a:focus, .workProjects a:hover{
-	color: #C9DDFF!important;
 	text-decoration: none!important;
 }
 .btnAction
