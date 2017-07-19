@@ -118,6 +118,16 @@ body{
 .first-grid .fa-anchor{
 	color: #1059AE;
 }
+
+/*Wait grid*/
+.wait{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
 /*Grid with all the buttons for the game*/
 .rowGrid{
 	display: flex;
