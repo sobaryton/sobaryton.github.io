@@ -205,17 +205,17 @@ function hoverWork(){
 //**********************************************************************Check what the current page is
 
 function isHome() {
-	var regex = /index.html/i;
-	return regex.test(window.location.href);
+	var regex = /\/(index.html)?$/i;
+	return regex.test(window.location.pathname);
 }
 function isCV() {
 	var regex = /cv.html/i;
-	return regex.test(window.location.href);
+	return regex.test(window.location.pathname);
 }
 
 function isWork(){
 	var regex = /work.html/i;
-	return regex.test(window.location.href);
+	return regex.test(window.location.pathname);
 }
 
 //******************************************************************Finally load all functions at the right moment
