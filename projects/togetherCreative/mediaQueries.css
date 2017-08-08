@@ -1,0 +1,174 @@
+/***Style sheet for media queries****/
+@media (max-width: 767px) {
+	/** small smartphone**/
+	header img{
+		width: 40%;
+		height: 20px;
+	}
+	#blueRect{
+		margin-top: 10%;
+		background-image: repeating-linear-gradient(#12D7CC, #0477B2);
+	}
+
+	#thumbnail{
+		justify-content: flex-start;
+		align-items: center;
+		padding-top: 70px;
+	}
+	#connect{
+		width: 20%;
+	}
+	h1{
+		margin-top: 50px;
+		font-size: 2.2em;
+	}
+	h2{
+		margin-bottom: 100px;
+		font-size: 1.8em;
+	}
+	form{
+		width: 80%;
+	}
+	.inp{
+		margin-bottom: 40px;
+	}
+	.inp input::placeholder{
+		font-size: 1.8em;
+	}
+	#submit{
+		margin-top: 0;
+		width: 70px;
+		height: 70px;
+	}
+
+
+}
+@media (min-width: 768px) {
+	/**smartphone**/
+	header img{
+		width: 40%;
+	}
+	#blueRect{
+		margin-top: 10%;
+		height: 20px;
+	}
+	section{
+		height: 80vh;
+	}
+	#thumbnail{
+		justify-content: flex-start;
+		align-items: center;
+		padding-top: 70px;
+	}
+	#connect{
+		width: 20%;
+	}
+	h1{
+		margin-top: 50px;
+		font-size: 2.2em;
+	}
+	h2{
+		margin-bottom: 100px;
+		font-size: 1.8em;
+	}
+	form{
+		width: 80%;
+	}
+	.inp{
+		margin-bottom: 40px;
+	}
+	.inp input::placeholder{
+		font-size: 1.8em;
+	}
+	#submit{
+		margin-top: 0;
+		width: 70px;
+		height: 70px;
+	}
+
+
+}
+@media (min-width: 992px) {
+	/**tablet**/
+	header img{
+		width: 20%;
+	}
+	#blueRect{
+		margin-top: 23%;
+		height: 10px;
+	}
+	#thumbnail{
+		justify-content: flex-start;
+		align-items: center;
+		padding-top: 0;
+	}
+	#connect{
+		width: 10%;
+	}
+	section{
+		height:78vh;
+	}
+	h1{
+		margin-top: 50px;
+	}
+	h2{
+		margin-bottom: 100px;
+	}
+	form{
+		width: 40%;
+	}
+	.inp{
+		margin-bottom: 40px;
+	}
+	.inp input::placeholder{
+		font-size: 1.5em;
+	}
+	#submit{
+		margin-top: 0;
+		width: 50px;
+		height: 50px;
+	}
+
+}
+@media (min-width: 1200px) {
+	/**desktop**/
+	header img{
+		width: 20%;
+	}
+	#blueRect{
+		margin-top: 75px;
+		height: 10px;
+	}
+	section{
+		height: 90vh;
+	}
+	#connect{
+		width: 10%;
+	}
+	#thumbnail{
+		justify-content: center;
+		align-items: center;
+		height: inherit;
+	}
+	h1{
+		margin-top: 50px;
+	}
+	h2{
+		margin-bottom: 50px;
+	}
+	form{
+		width: 25%;
+	}
+	.inp{
+		margin-bottom: 20px;
+	}
+	.inp input::placeholder{
+		font-size: 1.5em;
+	}
+	#submit{
+		width: 50px;
+		height: 50px;
+	}
+
+
+}

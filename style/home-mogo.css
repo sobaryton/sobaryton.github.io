@@ -1,0 +1,709 @@
+/*body
+{
+	cursor: url("images/cursor3.png"), pointer;
+}*/
+.container-fluid
+{
+	font-family: 'Roboto', sans-serif;
+	width: auto;
+}
+.row
+{
+	margin: 0;
+}
+section
+{
+	margin-bottom: 40px;
+}
+h2
+{
+	font-family: 'Jura',Courier,sans-serif;
+	font-style: oblique;
+}
+h4
+{
+	font-size: 1.8em;
+}
+/*************************************Work on the header for all formats********************************/
+header
+{
+	background-image: repeating-linear-gradient(#031D44, #C9DDFF);
+}
+h1
+{
+	color: white;
+	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
+}
+
+/*Work on the navigation bar*/
+.navbar
+{
+	width: 100%;
+	z-index: 20;
+}
+.navbar-nav{
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar-brand
+{
+	color: #031D44;
+	font-family: 'Jura',Courier,sans-serif;
+}
+.navbar-brand:hover
+{
+	color: white !important;
+}
+.navbar-nav a
+{
+	color:  white!important;
+	font-family: 'Jura',Courier,sans-serif;
+}
+.nav>li>a:hover:hover, .nav>li>a:hover:focus,.nav .open>a, .nav .open>a:hover, .nav .open>a:focus
+{
+	color:  white!important;
+	background-color: #DE6C83 !important;
+
+}
+.nav>li>a:hover:visited
+{
+	color:  white!important;
+	background-color: #DE6C83 !important;
+
+}
+
+.btn-navbar
+{
+	color: #FFA1B5 !important;
+}
+
+.navbar-nav li
+{
+	text-align: center;
+}
+
+.dropdown-menu{
+	padding: 0;
+}
+
+.li-drop{
+	width: 100% !important;
+	height: 70px;
+}
+.dropA{
+	color: white !important;
+	background-color: #FFA1B5 !important;
+	width: 100%;
+}
+.dropA:hover{
+	color: white !important;
+	background-color: #DE6C83 !important;
+	width: 100%;
+}
+#titre
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#learn
+{
+	color: white;
+	border: 2px solid white;
+	background-color: transparent;
+	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
+}
+#learn:hover
+{
+	background-color: #DE6C83;
+}
+
+#btnTop
+{
+	position: fixed;
+	color: #031D44;
+	opacity: 0.7;
+	z-index: 2;
+}
+#btnTop:hover
+{
+	opacity: 1;
+}
+/********************************Work on the section Intro****************************************/
+#introTxt p, #introTxt h2
+{
+	text-align: center;
+	width: 80%;
+}
+/********************************Work on the section numbers****************************************/
+#container-numbers
+{
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+#numbers
+{
+	background-color: #C9DDFF;
+	text-align: center;
+}
+#numbers a
+{
+	text-decoration: none;
+	color: #031D44;
+}
+#numbers .fa
+{
+	color: white;
+}
+
+
+/********************************Work on the section work****************************************/
+#workDetails{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.workProjects{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#projectsH4{
+	margin-top: 70px;
+	margin-bottom: 0;
+	text-align: center;
+}
+.workProjects img{
+	width: 350px;
+}
+.workP
+{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.bloc{
+	width:30%;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin:15px;
+}
+.bloc h3{
+	text-decoration: none;
+	color: #031D44;
+	font-family: 'Jura',Courier,sans-serif;
+	font-size: 1.7em;
+	text-align: center;
+}
+.workProjects a h3:hover,.workProjects a:focus, .workProjects a:hover{
+	text-decoration: none!important;
+}
+.btnAction
+{
+	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
+	width: 180px !important;
+	height: 50px !important;
+	background-color: transparent;
+	color: #DE6C83;
+	border: 2px solid #DE6C83;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.7em;
+}
+.btnAction:hover
+{
+	color: white;
+	border: 2px solid white;
+	background-color: #DE6C83;
+	text-decoration: none;
+}
+.btnAction:focus{
+	text-decoration: none;
+	color: white;
+}
+/********************************Work on the section skills****************************************/
+#skillsTitre
+{
+	margin-bottom: 50px;
+}
+#cv
+{
+	display: flex;
+	justify-content: center;
+}
+#skillsTitre p, #cv, #projects
+{
+	text-align: center;
+}
+#devSkills h3, #designSkills h3, #humanSkills h3{
+	font-family: 'Jura',Courier,sans-serif;
+}
+.skillsSquare
+{
+	text-align: center;
+	border: 2px solid #C9DDFF;
+	border-radius: 5px;
+}
+
+.animDev
+{
+	text-align: center;
+	justify-content: center;
+}
+
+.animDev p
+{
+	white-space:nowrap;
+	overflow:hidden;
+	font-family: Courier, sans-serif;
+
+}
+
+/*Animation of the word "Development" in the development section*/
+@keyframes type{
+	from { width: 0; }
+}
+
+@-webkit-keyframes type{
+	from { width: 0; }
+}
+
+.animDev p span
+{
+	animation: blink 1s infinite;
+	-webkit-animation: blink 1s infinite;
+	font-family: Courier, sans-serif;
+}
+@-webkit-keyframes blink {
+	to{opacity: .0;}
+}
+@keyframes blink{
+	to{opacity: .0;}
+}
+
+
+.squares
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: baseline;
+
+}
+
+.colour1
+{
+	background-color: #031D44;
+}
+.colour2
+{
+	background-color: #C9DDFF;
+}
+
+
+/********************************Work on the section contact****************************************/
+#contact
+{
+	background-color: white;
+	border: 2px dotted #FFA1B5;
+}
+#contact p
+{
+	text-align: center;
+	margin-bottom: 70px;
+	font-size: 1.2em;
+}
+form label, form input, form textarea
+{
+	color: #031D44;
+	font-family: 'Jura',Courier,sans-serif;
+}
+form input:focus, form textarea:focus
+{
+	box-shadow: 1px 1px 1px 1px #FFA1B5;
+	outline-color: transparent;
+}
+.envoi
+{
+	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
+	width: 110px;
+	height: 40px;
+	background-color: white;
+	color: #DE6C83;
+	border: 2px dotted #DE6C83;
+	font-weight: bold;
+}
+.envoi:hover
+{
+	color: white;
+	border: 2px solid white;
+	background-color: #DE6C83;
+}
+textarea
+{
+	width: 70%;
+	height: 100px;
+}
+
+/********************************Work on the footer****************************************/
+#footer-social
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+#footer-social .fa
+{
+	color: #031D44;
+}
+#footer-social a :hover
+{
+	color: #DE6C83;
+}
+
+/*********************************************************************************************************************************************************/
+/***********************************************************   CV Page general style   *******************************************************************/
+/*********************************************************************************************************************************************************/
+
+
+/*Work on the header*/
+#titreCv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#header-CV{
+	position: relative;
+	height: 100vh;
+}
+/*Working on the triangles at bottom of the header*/
+#crans {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	overflow-x: hidden;
+	position: absolute;
+	bottom:0;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid white;
+}
+
+/*Work on the second section: education: making arrows*/
+.etiquetteBtn{
+	color: #031D44;
+}
+.etiquetteBtn:hover, .etiquetteBtn:focus{
+	color: white;
+	text-decoration: none;
+}
+
+.etiquettel{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.etiquetter{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.etiquetteTxt
+{
+	text-align: center;
+	background-color: #C9DDFF;
+	width: 200px;
+	height: 60px;
+}
+.etiquetteTxt h3
+{
+	font-size: 2em;
+	margin: 0;
+	line-height: 2.0;
+	font-family: 'Jura',Courier,sans-serif;
+}
+.arrowLeft
+{
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid #C9DDFF;
+}
+.arrowRight
+{
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-right: 30px solid #C9DDFF;
+}
+.badge{
+	background-color: #031D44 !important;
+}
+/*Work on the second section with experience, skills and education*/
+#cvEducation, #skillsCv, #experienceCv{
+	border: dotted 1px #C9DDFF;
+}
+.description{
+	font-family: 'Jura', Courier, sans-serif;
+	color: #031D44;
+	font-size: 2em;
+}
+.expDetails{
+	display: flex;
+}
+
+#cvEducation{
+	padding-left: 10px;
+}
+
+#cvSchools, #cvCompanies{
+	display: flex;
+	flex-direction: column;
+}
+
+.dateCv, .dateExpCv{
+	font-family: 'Jura', Courier, sans-serif;
+	color: #031D44;
+	font-size: 2em;
+}
+
+.progress{
+	border-radius: 25px;
+}
+
+.progress-bar{
+	width: 0;
+}
+
+/*Animation of the progress bars when you hover it*/
+.barhover{
+	transition: background 2000ms, width 2000ms;
+	-moz-transition: background 2000ms, width 2000ms;
+	-webkit-transition: background 2000ms, width 2000ms;
+}
+
+/*Button in order to download my CV*/
+#CVButton{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top:30px;
+}
+
+#CV-download{
+	text-decoration: none;
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
+	width: 300px;
+	height: 70px;
+}
+
+#CV-download:hover
+{
+	color: white;
+	border: 2px solid white;
+	background-color: #FFA1B5;
+}
+
+
+/*********************************************************************************************************************************************************/
+/***********************************************************   Project Page general style   *******************************************************************/
+/*********************************************************************************************************************************************************/
+
+#header-project{
+	position: relative;
+	height: 100vh;
+}
+#project_skills{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+#emphase{
+	font-weight: bold;
+	text-decoration: underline;
+}
+#project_intro p{
+	text-align: center;
+}
+.skillsWork{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.project-list{
+	list-style: none;
+	margin-top: 30px;
+}
+.project-list li{
+	padding-bottom: 20px;
+}
+#sectionsWork{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#slide2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.project{
+	height: auto;
+	margin-bottom: 30px;
+	position: relative;
+}
+.link{
+	position: relative;
+	color: #FFA1B5;
+	text-decoration: none;
+}
+.link:hover{
+	color: #DE6C83;
+	text-decoration: none;
+}
+.hoverProject{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.workLabel{
+	background: #031D44;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	opacity: 1;
+	width: 150px;
+	height: 35px;
+	font-weight: bold;
+}
+/*Modal style*/
+.work-thumb-container{
+	width: 100%;
+}
+.thumb{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 2em;
+	color:#C9DDFF;
+}
+.work-thumb-container:hover{
+	opacity:0.2;
+}
+.modal-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.modal-body{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.modal-body h3, .modal-title{
+	font-family: 'Jura',Courier,sans-serif;
+}
+.modal-title{
+	font-size: 2.2em;
+	text-align: left;
+}
+.modal-footer{
+	display: flex;
+	justify-content: center;
+}
+.close{
+	font-size: 31px;
+}
+.btnActionWork
+{
+	text-align: center;
+	font-family: 'Jura',Courier,sans-serif;
+	background-color: transparent;
+	color: #DE6C83;
+	border: 2px solid #DE6C83;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.7em;
+}
+.btnActionWork:hover
+{
+	color: white;
+	border: 2px solid white;
+	background-color: #DE6C83;
+	text-decoration: none;
+}
+.btnActionWork:focus{
+	text-decoration: none;
+	color: white;
+}
+/*Carousel for the logos and avatars*/
+.item-logo img{
+	margin: auto;
+}
+.WPcarousel-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#carousel-wordpress .carousel{
+	position: relative;
+}
+
+#controls{
+	position: relative;
+}
+
+.WPcarousel-control{
+	position: absolute;
+	background-color: transparent;
+	top:inherit;
+}
+
+.WPcarousel-control.left{
+	background-image: linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
+}
+
+.WPcarousel-control.right{
+	background-image: linear-gradient(to left,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
+}

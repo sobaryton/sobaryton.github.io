@@ -1,0 +1,628 @@
+/*Media queries*/
+/*Small screens like small smartphones*/
+@media (max-width: 767px) {
+	/*.container {
+		width: auto;
+	}*/
+	header{
+		height: 650px;
+	}
+	h1{
+		font-size: 50px;
+		width: auto;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 18px;
+	}
+	h5{
+		font-size: 26px;
+		text-align: center;
+	}
+	section{
+		margin:auto;
+	}
+	#container1{
+		flex-direction: column;
+	}
+	#navbar1{
+		position: fixed;
+		z-index: 5000;
+		width: 100%;
+		background-color: #f38181;
+	}
+	#myNavbar ul{
+		flex-direction: column;
+		align-items: center;
+	}
+	#navbar1 ul li{
+		width:100%;
+		text-align: center;
+	}
+	#navbar2 ul{
+		flex-direction: row;
+		padding: 0;
+		width: 100%;
+		margin: 0;
+	}
+	#navbar2 ul li{
+		padding: 6px;
+	}
+	#navbar2 ul li a{
+		font-size: 15px;
+	}
+	#sandwichBtn{
+		z-index: 1000;
+		padding:0;
+	}
+	.navbar-header{
+		z-index: 100;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.headerTitle{
+		margin-top: 50px;
+	}
+	.collapse.in{
+		margin: 0;
+		text-align: center;
+		background-color: #f38181;
+		width: 100%;
+	}
+	#rectangle{
+		margin-bottom: 50px;
+	}
+	#learn{
+		margin-bottom: 55px;
+	}
+	.nbNav{
+		font-size: 15px;
+	}
+	#btnTop{
+		left: 80%;
+	}
+	/*********************************First article : About us********************************************************/
+
+	.recIMG{
+		width:300px;
+		height: 170px;
+	}
+	.thumbnailA{
+		width:300px;
+		height: 170px;
+	}
+	/*********************************Second article : Facts********************************************************/
+	.nbSquare{
+		width: 60px;
+		height:120px;
+		justify-content: flex-start;
+	}
+	h6{
+		font-size: 32px;
+	}
+	#facts p{
+		font-size: 10px;
+	}
+	/*********************************Third article : Services1********************************************************/
+	#service1{
+		margin-bottom: 50px;
+	}
+	.ser1Bloc{
+		flex-wrap: wrap;
+	}
+	.ser1Detail{
+		width:300px;
+	}
+	/*********************************Fourth article : Features********************************************************/
+	#featurePhone{
+		width:30%;
+	}
+	#featureTablet{
+		width: 70%;
+	}
+	/*********************************Fifth article : Services2********************************************************/
+	#ser2IMG{
+		width:100%;
+	}
+	#ser2List {
+		width: 100%;
+	}
+	.ser2Table{
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 15px;
+	}
+	/*********************************Sixth article : Quote********************************************************/
+	.quoteTestimonial{
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 350px;
+	}
+	.quoteTxt{
+		width:90%;
+		margin-left: 10px;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	.quoteTxt .quoteItalic{
+		font-size: 12px;
+	}
+	.quoteImg{
+		width: 100px;
+		height: 100px;
+	}
+	.testimonialsImg{
+		margin-left: 0;
+	}
+	.carousel-control.right{
+		right: 20px;
+	}
+	.carousel-control{
+		bottom:auto;
+		top:50px;
+	}
+	.testiTxt{
+		text-align: center;
+		margin: 0;
+	}
+	/*********************************Seventh article : Our team********************************************************/
+	#ourTeam, #team{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.teamPicture{
+		width: 300px;
+		height: 400px;
+	}
+	/*********************************Ninth article : Work********************************************************/
+	#workGrid, .workBloc{
+		height: auto;
+	}
+	#bloc1, #bloc2{
+		width: 100%;
+		align-items: center;
+	}
+	.bloc{
+		width: 300px;
+		height: 340px;
+	}
+	.blocBig{
+		width:300px;
+	}
+	/*********************************Tenth article : Testimonials********************************************************/
+	.testimonialsImg {
+		width: 100px;
+		height: 100px;
+	}
+	/*********************************Eleventh article : People********************************************************/
+	#people{
+		height: auto;
+	}
+	#peopleList {
+		flex-direction: row;
+	}
+	.peopleDetail{
+		flex-direction: column;
+		width: 300px;
+		align-items: center;
+	}
+	.peopleTxt{
+		width: 300px;
+		text-align: center;
+	}
+	.peopleImg{
+		margin-right: 0;
+	}
+	#people .peopleDetail .rectRed{
+		margin: auto;
+	}
+	/*********************************Twelfth section: Blog ********************************************************/
+	#blogList{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.blogImg{
+		width: 290px;
+	}
+	.blogDateSquare{
+		left: -5px;
+	}
+	.blogArticle{
+		width: 300px;
+		margin: auto;
+	}
+	.separator{
+		width: auto;
+	}
+	.blogsTxt{
+		width: 150px;
+	}
+	#mediumArticle{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	/*********************************Footer ********************************************************/
+	#footerDetails{
+		flex-wrap: wrap;
+	}
+
+	#blogs, #mogoFooter, #instagram{
+		margin: 0;
+		width: 300px;
+	}
+
+}
+/*************************************************************************************************************************************************/
+/*************************************************************************************************************************************************/
+/*Small screens like large smatphones*/
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+	header{
+		height: 650px;
+	}
+	h1{
+		font-size: 80px;
+		width: 700px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	h5{
+		font-size: 26px;
+	}
+	#sandwichBtn{
+		display:none;
+	}
+	#container1{
+		flex-direction: row;
+		margin: 0;
+		width: 100%;
+	}
+	.navbar-header{
+		display: flex;
+		flex-direction: row;
+		flex:1;
+		justify-content: center;
+	}
+	#myNavbar{
+		display: flex;
+		justify-content: flex-start;
+		flex: 1;
+	}
+	#myNavbar ul{
+		width:100%;
+		justify-content: space-around;
+	}
+	#navbar1 ul li{
+		width:auto;
+	}
+	#navbar2 ul{
+		justify-content: space-around;
+	}
+	#navbar2{
+		width: 100%;
+	}
+	#rectangle{
+		margin-bottom: 50px;
+	}
+	#learn{
+		margin-bottom: 55px;
+	}
+	#btnTop{
+		left: 91%;
+	}
+
+	/*********************************First article : About us********************************************************/
+
+	.recIMG{
+		width:300px;
+		height: 170px;
+	}
+	.thumbnailA{
+		width:300px;
+		height: 170px;
+	}
+	/*********************************Second article : Facts********************************************************/
+	.nbSquare{
+		width: 140px;
+		height:180px;
+		justify-content: flex-start;
+	}
+	h6{
+		font-size: 72px;
+	}
+	#facts p{
+		font-size: 14px;
+	}
+	/*********************************Third article : Services1********************************************************/
+	#service1{
+		margin-bottom: 50px;
+	}
+	.ser1Bloc{
+		flex-wrap: wrap;
+	}
+	.ser1Detail{
+		width:300px;
+	}
+	/*********************************Sixth article : Quote********************************************************/
+	.testimonialsImg{
+		margin-left: 30px;
+	}
+	.carousel-control.right{
+		right: 0;
+	}
+	.quoteTestimonial {
+		height:350px;
+	}
+	.quoteTxt{
+		text-align: left;
+	}
+	.carousel-control{
+		bottom:0;
+		top:0;
+	}
+	.testiTxt{
+		text-align: left;
+		margin-left: 50px;
+	}
+	/*********************************Seventh article : Our team********************************************************/
+	#ourTeam, #team{
+		flex-wrap: wrap;
+
+	}
+	/*********************************Ninth article : Work********************************************************/
+	#workGrid{
+		height: auto;
+	}
+	#bloc1,#bloc2{
+		width: 100%;
+	}
+	.bloc{
+		width: 50%;
+		height: 390px;
+	}
+	.blocBig{
+		width:50%;
+		height:780px;
+	}
+	/*********************************Eleventh article : People********************************************************/
+	#people{
+		height: auto;
+	}
+	/*********************************Twelfth section: Blog ********************************************************/
+	#blogList{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#mediumArticle{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	/*********************************Footer ********************************************************/
+	#footerDetails{
+		flex-wrap: wrap;
+	}
+	#blogs{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/*************************************************************************************************************************************************/
+/*************************************************************************************************************************************************/
+
+/*Medium screens like tablets*/
+@media (min-width: 992px) {
+	.container{
+		width: 970px;
+	}
+	header{
+		height: 700px;
+	}
+	h1{
+		font-size: 100px;
+		width: 900px;
+	}
+	h2{
+		font-size: 50px;
+	}
+	h4{
+		font-size: 22px;
+	}
+	h5{
+		font-size: 28px;
+	}
+	#rectangle{
+		margin-bottom: 50px;
+	}
+	#learn{
+		margin-bottom: 55px;
+	}
+
+	/*********************************First article : About us********************************************************/
+
+	.recIMG{
+		width:330px;
+		height: 200px;
+	}
+	.thumbnailA{
+		width:330px;
+		height: 200px;
+	}
+	/*********************************Second article : Facts********************************************************/
+	.nbSquare{
+		width: 170px;
+		height:250px;
+		justify-content: center;
+	}
+	#facts p{
+		font-size: 14px;
+	}
+	/*********************************Third article : Services1********************************************************/
+	#service1{
+		margin-bottom: 100px;
+	}
+	.ser1Bloc{
+		flex-wrap: wrap;
+	}
+	.ser1Detail{
+		width:310px;
+	}
+	/*********************************Sixth article : Quote********************************************************/
+	.quoteTestimonial {
+		height:300px;
+	}
+	/*********************************Seventh article : Our team********************************************************/
+	#ourTeam, #team{
+		flex-wrap: wrap;
+	}
+	/*********************************Eleventh article : People********************************************************/
+	#peopleList{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#people{
+		height: 1000px;
+	}
+	/*********************************Twelfth section: Blog ********************************************************/
+	#blogList{
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#mediumArticle{
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	/*********************************Footer ********************************************************/
+	#footerDetails{
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-left: 20px;
+	}
+	#blogs{
+		margin-left: 25px;
+		margin-right: 75px;
+	}
+}
+
+/*************************************************************************************************************************************************/
+/*************************************************************************************************************************************************/
+
+/*Big screens like desktops*/
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+	header{
+		height: 1000px;
+	}
+	h1{
+		font-size: 150px;
+		width: 1000px;
+	}
+	h2{
+		font-size: 72px;
+	}
+	h4{
+		font-size: 24pt;
+	}
+	h5{
+		font-size: 30px;
+	}
+	#rectangle{
+		margin-bottom: 50px;
+	}
+	#learn{
+		margin-bottom: 155px;
+	}
+
+	/*********************************First article : About us********************************************************/
+
+	#rectIMG{
+		flex-wrap: nowrap;
+	}
+	.recIMG{
+		width:380px;
+		height: 250px;
+	}
+	.thumbnailA{
+		width:380px;
+		height: 250px;
+	}
+	/*********************************Second article : Facts********************************************************/
+	.nbSquare{
+		width: 210px;
+		height:265px;
+		justify-content: center;
+	}
+	h6{
+		font-size: 72px;
+	}
+	#facts p{
+		font-size: 14px;
+	}
+	/*********************************Third article : Services1********************************************************/
+	#service1{
+		margin-bottom: 120px;
+	}
+	.ser1Detail{
+		width:400px;
+	}
+	.ser1Bloc{
+		flex-wrap: nowrap;
+	}
+	/*********************************Sixth article : Quote********************************************************/
+	#quote {
+		width: 100%;
+		margin-top: 120px;
+		margin-bottom: 110px;
+	}
+	.quoteTestimonial {
+		height:300px;
+	}
+	/*********************************Seventh article : Our team********************************************************/
+	#ourTeam, #team{
+		flex-wrap: nowrap;
+	}
+	/*********************************Ninth article : Work********************************************************/
+	#workGrid{
+		height: 780px;
+	}
+	#bloc1{
+		width: 50%;
+	}
+	#bloc2{
+		width: 50%;
+	}
+	.bloc{
+		width: 50%;
+		height: 390px;
+	}
+	.blocBig{
+		width:50%;
+		height:780px;
+	}
+	/*********************************Eleventh article : People********************************************************/
+	#peopleList{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	/*********************************Twelfth section: Blog ********************************************************/
+	#blogList{
+		flex-wrap: nowrap;
+	}
+	/*********************************Footer ********************************************************/
+	#footerDetails{
+		justify-content: center;
+		padding-left: 0;
+	}
+}

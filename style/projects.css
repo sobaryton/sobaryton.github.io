@@ -1,0 +1,394 @@
+/*********************************************************************************************************************************************************/
+/***********************************************************  Projects Page in responsive   *******************************************************************/
+/*********************************************************************************************************************************************************/
+
+
+/**************************************************************************************************************************/
+/*************									SMALL SMARTPHONE SCREENS			    ***********************************/
+/**************************************************************************************************************************/
+@media (max-width: 767px) {
+	/**For small creens of smartphones**/
+
+	section {
+		margin-bottom: 50px;
+	}
+
+	/*Work on the header*/
+	.navbar
+	{
+		background-color: transparent;
+	}
+	header {
+		height: 100vh;
+	}
+	h1{
+		height: 50px;
+		margin-bottom: 30px;
+	}
+
+	/*Work on all the sections */
+	#slide1{
+		border-top: none;
+	}
+	.img-desktop{
+		width: 250px;
+	}
+	.theProject{
+		justify-content: center;
+	}
+	.project_txt{
+		justify-content: center;
+		text-align: center;
+	}
+	.project_txt div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.btnActionWork
+	{
+		width: 50%;
+		height: 100%;
+	}
+	.skillsWork{
+		width: 100%;
+	}
+
+	/*Section of the projects with the screens*/
+	.project{
+		width: 50%;
+	}
+	.modal-body{
+		flex-direction: column;
+	}
+	.project_txt p{
+		text-align: justify;
+	}
+	.project_txt ul{
+		text-align: left;
+	}
+	/*Section of carousels*/
+	#carousel-wordpress{
+		width: 100%;
+	}
+	#carousel-wordpress .carousel{
+		position: relative;
+		height: 220px;
+	}
+	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+		height: 220px !important;
+	}
+	#controls{
+		position: relative;
+	}
+	.WPcarousel-control{
+		position: absolute;
+		height: 220px;
+		background-color: transparent;
+		top:inherit;
+	}
+	.WPglyphicon{
+		padding: 0;
+	}
+	.carousel-inner>.active img{
+		width: 50%;
+	}
+	.modal-title{
+		text-align: center;
+		width: 100%;
+	}
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+
+
+}
+
+
+
+/***********************************************************************************************************************************/
+/*************									SMARTPHONE SCREENS						********************************************/
+/***********************************************************************************************************************************/
+
+@media (min-width: 768px) {
+	/**For small screens like smartphones **/
+
+
+	.btn-navbar {
+		display: none;
+	}
+
+
+
+	/******************Header and nav**************/
+	header {
+		height: 100vh;
+	}
+	#titreCv {
+		padding-top: 110px;
+	}
+	.container-fluid, .container {
+		width: auto;
+		margin: auto;
+	}
+	h1{
+		height: 70px;
+		margin-bottom: 50px;
+	}
+
+	.skillsWork{
+		width: 50%;
+	}
+	/*Work on all the sections */
+	#slide1{
+		border-top: none;
+	}
+	.img-desktop{
+		width: 300px;
+	}
+	.project_txt div{
+		width: 250px;
+		padding-left: 10px;
+	}
+	.project_txt{
+		justify-content: flex-start;
+
+	}
+	.btnActionWork
+	{
+		width: 50%;
+		height: 100%;
+	}
+	/*Work on the fourth section with logos*/
+	.project{
+		width: 50%;
+	}
+
+	#lightbox{
+		overflow: hidden;
+	}
+	.item-logo img{
+		width: 250px;
+	}
+	.dia-logo{
+		width: 300px;
+	}
+	.theProject{
+		justify-content: space-around;
+	}
+	/*Section of carousels*/
+	#modalLogos{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#carousel-wordpress{
+		width: 90%;
+	}
+
+	#carousel-wordpress .carousel{
+		height: 400px;
+	}
+	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+		height: 400px !important;
+	}
+
+	.WPcarousel-control{
+		height: 400px;
+	}
+	.carousel-inner>.active img{
+		width: 70%;
+	}
+	.modal-title{
+		text-align: left;
+	}
+
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		}
+
+}
+
+
+
+/****************************************************************************************************************************************/
+/*************									TABLETS SCREENS  						*************************************************/
+/****************************************************************************************************************************************/
+
+
+@media (min-width: 992px) {
+	/**For middle screens like tablets**/
+	.container-fluid {
+		width: 970px;
+	}
+
+	section {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.btn-navbar {
+		display: none;
+	}
+
+	/******************Header**************/
+	header{
+		height: 100vh;
+	}
+	h1{
+		height: 90px;
+		margin-bottom: 50px;
+	}
+
+	/*Work on all the sections */
+
+	#slide1{
+		border-top: none;
+	}
+	.img-desktop{
+		width: 400px;
+	}
+	.project_txt div{
+		width: 300px;
+		padding-left: 20px;
+	}
+	.project_txt{
+		width: 50%;
+		justify-content: center;
+	}
+	.btnActionWork
+	{
+		width: 30%;
+		height: 100%;
+	}
+	.skillsWork{
+		width: 30%;
+	}
+
+	/*Work on the fourth section with logos*/
+	#lightbox{
+		overflow: hidden;
+	}
+
+	.item-logo img{
+		width: 250px;
+	}
+	.dia-logo{
+		width: 300px;
+	}
+
+	/*Section of carousels*/
+	#carousel-wordpress{
+		width: 50%;
+	}
+	#carousel-wordpress .carousel{
+		height: 400px;
+	}
+	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+		height: 400px;
+	}
+
+	.WPcarousel-control{
+		height: 400px;
+	}
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+}
+/*************************************************************************************************************************************/
+/*************									DESKTOP SCREEN     						**********************************************/
+/*************************************************************************************************************************************/
+
+@media (min-width: 1200px) {
+
+	/*Work on the header*/
+	header {
+		height: 100vh;
+	}
+	h1{
+		height: 10vh;
+		margin-top: 20vh;
+		margin-bottom: 70px;
+	}
+	#titreCv {
+		padding-top: 100px;
+	}
+
+	/*Work on all the sections */
+	.img-desktop{
+		width: 400px;
+	}
+
+	.project_txt div{
+		width: 300px;
+	}
+
+	.project_txt{
+		width: 50%;
+	}
+
+
+	/*Work on the second section on sodev website*/
+	#dsk_sodev{
+		display: none;
+	}
+	#sodev_txt{
+		margin-left: 700px;
+	}
+
+	/*Work on the fourth section with logos*/
+
+	#lightbox{
+		overflow: hidden;
+	}
+
+	.item-logo img{
+		width: 300px;
+	}
+
+	.dia-logo{
+		width: 400px;
+	}
+
+	/*Section of carousels*/
+	#carousel-wordpress{
+		width: 50%;
+	}
+	#carousel-wordpress .carousel{
+		height: 400px;
+	}
+	.wordpressImg, #carousel-wordpress .WPcarousel-inner, .item-wordpress, .item-wordpress a{
+		height: 400px !important;
+	}
+
+	.WPcarousel-control{
+		height: 400px;
+	}
+	.project{
+		width: 30%;
+	}
+	.modal-body{
+		flex-direction: row;
+	}
+	/*Work on the footer*/
+	#footer-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+}

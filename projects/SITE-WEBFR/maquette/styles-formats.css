@@ -1,0 +1,991 @@
+@media (max-width: 767px)
+{/**Pour écrans petits type petits smartphone**/
+	.container-fluid
+	{
+		width: auto;
+	}
+	h1
+	{
+		font-size: 5em;
+	}
+	h2
+	{
+		font-size: 2.5em;
+	}
+	h3
+	{
+		font-size: 1.5em;
+	}
+	header
+	{
+		height: 500px;
+	}
+
+	/*Work on the navbar and navbar collapse*/
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-inverse
+	{
+		position: fixed;
+		float: left;
+		width: 100%;
+		border: none;
+		z-index: 5;
+		background-color: #12111D;
+	}
+
+	.navbar-nav a
+	{
+		font-size: 1.2em;
+	}
+	.navigation
+	{
+		width: 100%;
+
+	}
+	.container>.navbar-collapse
+	{
+		margin: 0;
+	}
+	.nav, .navigation
+	{
+		padding: 0;
+		margin: auto;
+	}
+	.navbar-nav li
+	{
+		width: 100%;
+	}
+	.navbar-nav
+	{
+		display: inherit;
+	}
+	.navbar-inverse .navbar-nav>li>a
+	{
+		color: white !important;
+	}
+	.btn-navbar
+	{
+		color:  #FBAD27 !important;
+	}
+
+	/*Work on the title of the header*/
+	#titre
+	{
+		height: 350px;
+	}
+	#titre h1
+	{
+		text-align: center;
+	}
+	#titre p
+	{
+		font-size: 1.2em;
+	}
+	#video
+	{
+		font-size: 1em;
+	}
+	.intro-video
+	{
+		font-size: 1.2em;
+	}
+	.bouton-orange
+	{
+		font-size: 1.2em;
+		height: 40px;
+		width: 150px;
+		color: white;
+	}
+	#btntop 
+	{
+	  display: none;
+	}
+
+
+	/**Partie 1 Welcome**/
+	#welcome_fusion
+	{
+		padding-top: 30px;
+	}
+	#welcome p
+	{
+		font-size: 1em;
+	}
+	
+	.planestar, #shadow
+	{
+		text-align: center;
+		margin-top: 20px;
+	}
+	/**Partie 2 Destination**/
+	.pays
+	{
+		height: 150px;
+		margin: auto;
+	}
+	#lespays, #pays-list
+	{
+		text-align: center;
+	}
+	.pays p
+	{
+		padding-top: 20px;
+	}
+	#pays-list
+	{
+		width: 100%;
+	}
+	#fleche1, #fleche3
+	{
+		line-height: 50px;
+	}
+	#places
+	{
+		background: none;
+	}
+	
+	/**Partie 3 Blog**/
+	#blog h2
+	{
+		padding-top: 40px;
+		
+	}
+	#blog h3
+	{
+		margin:10px;
+	}
+	
+	.blogtext
+	{
+		margin-bottom: 20px;
+		background:none;
+		
+	}
+	.para
+	{
+		font-size: 1.1em;
+		
+	}
+	#grossephoto
+	{
+		width: 100%;
+	}
+	.istambul
+	{
+		margin-top: 35px;
+		padding: 0;
+		text-align: center;
+	}
+	
+	.photo
+	{
+		width: 150px;
+
+	}
+	.bali1 p,.bali2 p, .istambul_text p
+	{
+		font-size: 0.75em;
+		
+	}
+	.china
+	{
+		margin-top: 35px;	
+	}
+	
+	
+	.bali1, .bali2
+	{
+		margin-top: 20px;
+		text-align: center;
+		align-items: center;
+	}
+	.villes
+	{
+		margin-left:0;
+		text-align: center;
+	}
+	#rio
+	{
+		margin-top: 10px;
+	}
+	.bouton-centre
+	{
+		margin-bottom: 30px;
+		margin-top: 60px;
+	}
+	/*Travail sur la 4eme section: temoignage*/
+	.temoignage-para
+	{
+		margin-bottom: 50px;
+		background:none;
+	}
+	.temoignage-para h2
+	{
+		margin-top: 50px;
+	}
+	.temoignage-text img
+	{
+		width: 100px;
+	}
+	.temoignage-text 
+	{
+		margin-left: 10px;
+		text-align: center;
+	}
+	.fa-quote-right, .fa-quote-left
+	{
+		font-size: 3em;
+	}
+	/*Travail sur la derniere section: discount*/
+	#discountrow h3
+	{
+		font-size: 1.8em;
+		margin-bottom: 0;
+		margin-top: 10px;
+		text-align: center;
+	}
+	#discount
+	{
+		margin-top: 50px;
+	}
+	#offer
+	{
+		font-size: 1.5em;
+		height: 50px;
+		width: 200px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	#boutonoffre
+	{
+		text-align: center;
+	}
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 0.9em
+	}
+	.contacter, .about, .adresse, .follow
+	{
+		padding: 5px;
+	}
+
+	
+}
+/*******************************************************ECRAN SMARTPHONE************************************************/
+
+@media (min-width: 768px)
+{/**Pour écrans petits type smartphone**/
+	.container-fluid
+	{
+		width: 750px;
+	}
+	h1
+	{
+		font-size: 3em;
+	}
+	h2
+	{
+		font-size: 1.8em;
+	}
+	h3
+	{
+		font-size: 1.1em;
+	}
+	header
+	{
+		height: 450px;
+	}
+	.navbar
+	{
+		font-size: 0.98em;
+	}
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-nav a
+	{
+		font-size: 0.98em;
+		color: white !important;
+	}
+	.navbar-nav li
+	{
+		width: 30%;
+		margin-bottom: 12px;
+		text-align: center;
+	}
+	.navbar-nav
+	{
+		width: 100%;
+		background-color: transparent;
+
+	}
+	.navbar-inverse
+	{
+
+		background-color: transparent;
+		border: none;
+	}
+	.navbar-fixed-top
+	{
+		background-color: #080A17;
+	}
+	#titre
+	{
+		height: 280px;
+	}
+	#titre p
+	{
+		font-size: 1.2em;
+	}
+	#video
+	{
+		font-size: 1em;
+	}
+	.intro-video
+	{
+		font-size: 1.2em;
+	}
+	.bouton-orange
+	{
+		font-size: 1.2em;
+		height: 40px;
+		width: 150px;
+		color: white;
+		
+	}
+	#btntop
+	{
+	  display: none;
+	}
+	.btn-navbar
+	{
+		display: none;
+	}
+	/**Partie 1 Welcome**/
+	#welcome_fusion
+	{
+		height: 200px;
+		padding-top: 30px;
+	}
+	#welcome p
+	{
+		font-size: 1em;
+	}
+	#welcome h3
+	{
+		font-size: 1.2em;
+	}
+
+	#colonnes
+	{
+		padding-top: 40px;
+
+	}
+	/**Partie 2 Destination**/
+	.pays
+	{
+		height: 200px;
+		margin: auto;
+	}
+	#lespays, #pays-list
+	{
+		text-align: center;
+	}
+	.pays p
+	{
+		padding-top: 20px;
+	}
+	#pays-list
+	{
+		width: 100%;
+	}
+	#fleche1, #fleche3
+	{
+		line-height: 50px;
+	}
+	#places
+	{
+		background: none;
+	}
+	
+	/**Partie 3 Blog**/
+	#blog h2
+	{
+		padding-top: 40px;
+		
+	}
+	#blog h3
+	{
+		margin:10px;
+	}
+	
+	.blogtext
+	{
+		margin-bottom: 50px;
+		background: url("images/Shape3.png") no-repeat top;
+	}
+	.para
+	{
+		font-size: 1.1em;
+		
+	}
+	#grossephoto
+	{
+		width: 90%;
+	}
+	.istambul
+	{
+		margin-top: 35px;
+		height: 200px;
+		padding: 0;
+		width: 300px;
+	}
+	.photo
+	{
+		width: 150px;
+	}
+	.bali1 p,.bali2 p, .istambul_text p
+	{
+		font-size: 0.75em;
+		margin-left: 10px;
+	}
+	.china
+	{
+		margin-top: 35px;	
+	}
+	
+	.bali1, .bali2
+	{
+		height: 220px;
+	}
+	.bali1
+	{
+		margin-right: -40px;
+	}
+
+	.villes
+	{
+		margin-left: 20px;
+	}
+	.bouton-centre
+	{
+		margin-bottom: 60px;
+		margin-top: 60px;
+	}
+	/*Travail sur la 4eme section: temoignage*/
+	.temoignage-para
+	{
+		margin-bottom: 50px;
+	}
+	.temoignage-para h2
+	{
+		margin-top: 50px;
+	}
+	.temoignage-text img
+	{
+		width: 135px;
+	}
+	.temoignage-text 
+	{
+		margin-left: 30px;
+		width: 560px;
+	}
+	/*Travail sur la derniere section: discount*/
+	#discountrow h3
+	{
+		font-size: 1.8em;
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+	#discount
+	{
+		margin-top: 50px;
+	}
+	#discount .container-fluid
+	{
+		height: 100px;
+	}
+	#offer
+	{
+		font-size: 1.5em;
+		height: 50px;
+		width: 200px;
+		
+	}
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 0.9em
+	}
+
+	
+}
+
+
+/***********************************************************ECRAN TABLETTES*********************************************/
+
+
+@media (min-width: 992px)
+{/**Pour écrans moyens type tablettes**/
+	.container-fluid
+	{
+		width: 970px;
+		
+	}
+	h1
+	{
+		font-size: 3.5em;
+	}
+	h2
+	{
+		font-size: 2em;
+	}
+	h3
+	{
+		font-size: 0.9em;
+	}
+	/**Header**/
+	header
+	{
+		height: 500px;
+	}
+	.navbar
+	{
+		font-size: 1em;
+	}
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-nav a
+	{
+		text-decoration: none;
+		color: white;
+		font-size: 1em;
+	}
+	#titre
+	{
+		height: 370px;
+	}
+	#titre p
+	{
+		font-size: 1.2em;
+	}
+	#video
+	{
+		font-size: 1em;
+	}
+	.intro-video
+	{
+		font-size: 1.2em;
+	}
+	.bouton-orange
+	{
+		font-size: 1.2em;
+		height: 40px;
+		width: 150px;
+		color: white;
+	}
+	#btntop
+	{
+		display: block;
+	}
+
+	/**Partie 1 Welcome**/
+	#welcome_fusion
+	{
+		height: 200px;
+		padding-top: 50px;
+	}
+	#welcome p
+	{
+		font-size: 1em;
+	}
+	#welcome h3
+	{
+		font-size: 1.2em;
+	}
+
+	#colonnes
+	{
+		padding-top: 50px;
+	}
+
+	/**Partie 2 Destination**/
+	.pays
+	{
+		height: 250px;
+		margin: auto;
+	}
+	#lespays, #pays-list
+	{
+		text-align: center;
+	}
+	.pays p
+	{
+		padding-top: 20px;
+	}
+	#pays-list
+	{
+		width: 100%;
+	}
+	#fleche1, #fleche3
+	{
+		line-height: 50px;
+	}
+	#places
+	{
+		background: none;
+	}
+
+	/**Partie 3 Blog**/
+	#blog h2
+	{
+		padding-top: 50px;
+	}
+	#blog h3
+	{
+		margin:10px;
+	}
+	.blogtext
+	{
+		margin-bottom: 50px;
+		background: url("images/Shape3.png") no-repeat top;
+	}
+	.para
+	{
+		font-size: 1em;
+	}
+	#grossephoto
+	{
+		width: 85%;
+	}
+	.istambul
+	{
+		margin-top: 35px;
+		height: 180px;
+		padding: 0;
+		width: 300px;
+	}
+	.photo
+	{
+		width: 200px;
+	}
+	.bali1 p,.bali2 p, .istambul_text p
+	{
+		font-size: 0.8em;
+		margin-left: 10px;
+	}
+	.china
+	{
+		margin-left: 130px;
+	}
+	
+	.bali1, .bali2
+	{
+		height: 280px;
+	}
+	.bali1
+	{
+		margin-right: -40px;
+	}
+	.bali2
+	{
+		margin-top: 65px;
+		margin-top: 65px;
+	}
+	.villes
+	{
+		margin-left: 25px;
+	}
+	.bouton-centre
+	{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	/*Travail sur la 4eme section: temoignage*/
+	.temoignage-para
+	{
+		margin-bottom: 50px;
+	}
+	.temoignage-para h2
+	{
+		margin-top: 50px;
+	}
+	.temoignage-text 
+	{
+		width: 650px;
+	}
+	/*Travail sur la derniere section: discount*/
+	#discountrow h3
+	{
+		font-size: 1.8em;
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+	#discount
+	{
+		margin-top: 50px;
+	}
+	#discount .container-fluid
+	{
+		height: 100px;
+	}
+	#offer
+	{
+		font-size: 1.5em;
+		height: 50px;
+		width: 200px;
+	}
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 50px;
+		height: 200px;
+	}
+	footer ul, footer address, .contacter p
+	{
+		font-size: 0.9em
+	}
+
+	
+}
+
+/******************************************************Ecrans ORDI***************************************/
+
+@media (min-width: 1200px) 
+{	/**Pour écrans larges**/
+	.container-fluid
+	{
+		width: 1170px;
+	}
+	h1
+	{
+		font-size: 5em;
+	}
+	h2
+	{
+		font-size: 3em;
+	}
+	h3
+	{
+		font-size: 1.5em;
+	}
+	/**Header**/
+	header
+	{
+		height: 600px;
+	}
+	.navbar
+	{
+		font-size: 1.1em;
+	}
+	.navbar-text
+	{
+		margin-top: 15px;
+	}
+	.navbar-nav a
+	{
+		text-decoration: none;
+		color: white;
+		font-size: 1.1em;
+	}
+	#titre
+	{
+		height: 450px;
+	}
+	#titre p
+	{
+		font-size: 1.5em;
+	}
+	#video
+	{
+		font-size: 1.2em;
+	}
+	.intro-video
+	{
+		font-size: 1.5em;
+	}
+	.bouton-orange
+	{
+		font-size: 1.8em;
+		height: 50px;
+		width: 240px;
+		color: white;
+		
+	}
+	#btntop
+	{
+		display: block;
+	}
+	/**Partie 1 Welcome**/
+	#welcome_fusion
+	{
+		height: 200px;
+		padding-top: 100px;
+	}
+	#welcome p
+	{
+		color: #757575;
+		font-size: 1.2em;
+	}
+	#welcome h3
+	{
+		font-size: 1.5em;
+		
+	}
+
+	#colonnes
+	{
+		padding-top: 140px;
+
+	}
+	/**Partie 2 Destination**/
+	.pays
+	{
+		width: 300px;
+		height: 300px;
+	}
+	.pays p
+	{
+		padding-top: 20px;
+	}
+	#fleche2, #fleche1
+	{
+		line-height: 650px;
+	}
+	#pays-list
+	{
+		height: 700px;
+		margin-bottom: 30px;
+		width: 80%;
+	}
+	
+	/**Partie 3 Blog**/
+	#blog h2
+	{
+		padding-top: 50px;
+		
+	}
+	#blog h3
+	{
+		font-size: 1.2em;
+		margin:10px;
+	}
+	
+	.blogtext
+	{
+		margin-bottom: 50px;
+		background: url("images/Shape3.png") no-repeat top;
+	}
+	.para
+	{
+		font-size: 1.5em;
+		
+	}
+	#grossephoto
+	{
+		width: 90%;
+	}
+	.istambul
+	{
+		margin-top: 45px;
+		height: 150px;
+		box-shadow: 15px 15px 10px #faf8f5;
+		padding: 0;
+		width: 350px;
+	}
+	.photo
+	{
+		width: 150px;
+	}
+	.bali1 p,.bali2 p, .istambul_text p
+	{
+		font-size: 0.8em;
+	}
+	.china
+	{
+		margin-top: 45px;
+		margin-left: 40px;
+		padding: 0;
+		
+	}
+	
+	.bali1, .bali2
+	{
+		height: 270px;
+		text-align: left;
+		box-shadow: 15px 15px 10px #faf8f5;
+	}
+	.bali1
+	{
+		margin-right: -40px;
+	}
+	.bali2
+	{
+		margin-top: 65px;
+	}
+	.villes
+	{
+		margin-left: 25px;
+	}
+	.bouton-centre
+	{
+		margin-bottom: 60px;
+		margin-top: 120px;
+		
+	}
+	/*Travail sur la 4eme section: temoignage*/
+	.temoignage-para
+	{
+		margin-bottom: 50px;
+	}
+	.temoignage-para h2
+	{
+		margin-top: 50px;
+	}
+	/*Travail sur la derniere section: discount*/
+	#discountrow h3
+	{
+		font-size: 2.2em;
+	}
+	#discount
+	{
+		margin-top: 80px;
+	}
+	#discount .container-fluid
+	{
+		height: 150px;
+	}
+	#offer
+	{
+		font-size: 1.7em;
+		height: 66px;
+		width: 220px;
+		
+	}
+	/*Travail sur le pied de page*/
+	footer
+	{
+		margin-top: 80px;
+		height: 335px;
+}
+	
+}
