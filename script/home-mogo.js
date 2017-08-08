@@ -205,7 +205,7 @@ function hoverWork(){
 //**********************************************************************Check what the current page is
 
 function isHome() {
-	var regex = /\/(index.html)?$/i;
+	var regex = /^(\/sobaryton.github.io)?(\/(index.html)?)?$/i;
 	return regex.test(window.location.pathname);
 }
 function isCV() {
