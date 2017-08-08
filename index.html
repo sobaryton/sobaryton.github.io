@@ -1,19 +1,639 @@
 <!DOCTYPE html>
 <html xmlns:og="http://ogp.me/ns#">
-<head>
-	<title>Mon Site</title>
-	<meta http-equiv="refresh" content="0; url=/SITE-WEB/home-mogo.html" />
+<head >
+	<title>SoDev</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Athiti|Jura" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style/home-mogo.css">
+	<link rel="stylesheet" type="text/css" href="./style/mogo-responsive.css">
+	<meta name="SoDev" content="Site front end developer" />
+	<link rel="icon" href="images/icone2.ico">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" value="SoDev">
+
 	<!-- Open Graph data -->
 	<meta property="og:title" content="SoDev"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:url" content="http://www.sodev.me"/>
-	<meta property="og:image"  content="https://www.sodev.me/SITE-WEB/home-mogo/images/logo-big.png"/>
-	<meta property="og:image:type" content="image/png" />
-	<meta property="og:image:width" content="400" />
-	<meta property="og:image:height" content="300" />
-	<meta property="og:description" name="description" content="Front end developer Website"/>
+	<meta property="og:image" content="images/logoNew2.png"/>
+	<meta property="og:description" content="Site front end developer"/>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-103143192-1', 'sodev.me');
+		ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
-	You will now be redirected.
+<header role="banner" >
+	<div id="toptop"></div>
+	<div class="navbar">
+		<div class="container" id="hautDePage">
+			<div class="navbar-header">
+				<a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".navigation"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				</a>
+				<div class="navbarbrand">
+					<a class="navbar-brand" href="index.html">SoDev</a>
+				</div>
+			</div>
+
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+
+			<div class="collapse navbar-collapse navigation" id="navig">
+				<ul class="nav navbar-nav navbar-left ">
+					<li class="active"><a href="#toptop">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Work <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="li-drop"><a href="#work" class="dropA">Overview </a></li>
+							<li class="li-drop"><a href="work.html" class="dropA">Work </a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Skills <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="li-drop"><a href="#skills" class="dropA">Overview </a></li>
+							<li class="li-drop"><a href="cv.html" class="dropA">My CV </a></li>
+						</ul>
+					</li>
+
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="titre">
+	<h1>Welcome to SoDev</h1>
+	<img src="images/logoNew2.png">
+	<a href="#intro"><button id="learn">Learn more</button></a>
+</div>
+</header>
+<div class="container-fluid">
+	<section>
+		<a href="#toptop" class="top"><i class="fa fa-arrow-circle-up fa-3x" id="btnTop"></i></a>
+		<div class="row" id="intro">
+			<div class="hidden-xs col-sm-4 col-md-4 col-lg-4" id="fox">
+				<img src="images/renard-anim5.gif">
+			</div>
+
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="introTxt">
+				<h2>Introduction</h2>
+				<p>
+					Solene Bary, 26 years old<br/>
+					Web-developer (front-end), junior - London<br/><br/>
+					Ex-food engineer in food industry, in January 2017 I decided to change my career path and my whole life to become front-end developer.
+					I developed my development skills with <a href="https://openclassrooms.com/" class="link">OpenClassRooms</a>, which is an e-learning platform recognised in France and UK.<br/>
+					I discovered the web development, especially the front end development and I enjoyed it quickly. Have a look and go to see my work in the <a href="#work" class="link">work</a> section to have an idea of my projects.<br/><br/>
+					New projects are welcomed, so don't hesitate to <a href="#contact" class="link">contact</a> me for a talk !
+				</p>
+			</div>
+			<div class="visible-xs col-xs-12" id="fox2">
+				<img src="images/renard-anim5.gif">
+			</div>
+
+		</div>
+	</section>
+</div>
+<div class="container" id="container-numbers">
+	<section >
+		<div class="row" id="numbers">
+			<div class=" col-sm-3 col-md-3 col-lg-3">
+				<h3><span id="hours"></span>  <i class="fa fa-clock-o" aria-hidden="true"></i> </h3>
+				<h4>hours of learning</h4>
+				<p><span id="weeks"></span> weeks</p>
+			</div>
+			<div class=" col-sm-3 col-md-3 col-lg-3 num2">
+				<h3><span id="coffee"></span>  <i class="fa fa-coffee" aria-hidden="true"></i> </h3>
+				<h4>cups of coffee</h4>
+			</div>
+			<div class=" col-sm-3 col-md-3 col-lg-3 ">
+				<h3>13  <i class="fa fa-certificate" aria-hidden="true"></i> </h3>
+				<h4>certificates</h4>
+				<p>Delivered by <a href="https://openclassrooms.com/">OpenClassRooms</a> </p>
+			</div>
+			<div class=" col-sm-3 col-md-3 col-lg-3 num2">
+				<h3>5  <i class="fa fa-desktop" aria-hidden="true"></i> </h3>
+				<h4>websites</h4>
+			</div>
+
+
+		</div>
+	</section>
+</div>
+<div class="container-fluid">
+	<section>
+		<div class="row" id="work">
+			<div class="row" id="workDetails">
+				<h2>Work</h2>
+				<p class="workP">Click here to have a look on all of my projects in details</p>
+				<a href="work.html" class="btnAction">My Work</a>
+				<h4 id="projectsH4">Here you will find the three latest projects I worked on.</h4>
+			</div>
+			<div id="sectionsWork">
+				<div class="workProjects">
+
+					<!-- Trigger the modal with a button -->
+					<a href="#" data-toggle="modal" data-target="#myModalH3" data-backdrop="true" class="bloc project">
+						<div class="hoverProject">
+							<p class="workLabel">Quiz creation</p>
+							<p class="workLabel">React.js</p>
+							<p class="workLabel">Adobe Illustrator</p>
+							<p class="workLabel">UI/UX</p>
+						</div>
+						<img src="images/work/quizReact-home.png" class="work-thumb-container">
+						<h3>Quiz</h3>
+					</a>
+					<!-- Modal -->
+					<div id="myModalH3" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2 class="modal-title">Quiz</h2>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="project_txt" >
+										<div>
+											<h3>Details</h3>
+											<p>This quiz use React to render all the components of the page. I decided to do a quiz about bakery, as I worked in this environment for the last three years. I have done the illustrations and the logo with Adobe Illustrator.</p>
+										</div>
+										<div>
+											<h3>Technologies used</h3>
+											<ul>
+												<li>Javascript, React.js</li>
+												<li>HTML5 / CSS3</li>
+												<li>Adobe Illustrator</li>
+											</ul>
+										</div>
+									</div>
+									<img src="images/work/quizReact-home.png" class="img-desktop">
+								</div>
+								<div class="modal-footer">
+									<a href="./projects/quiz-react/index.html" target="_blank" class="btnActionWork">The project</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Trigger the modal with a button -->
+					<a href="#" data-toggle="modal" data-target="#myModalH1" data-backdrop="true" class="bloc project" id="profilFR">
+						<div class="hoverProject">
+							<p class="workLabel">PSD to website</p>
+							<p class="workLabel">Javascript/jQuery</p>
+							<p class="workLabel">Ai/Ps</p>
+						</div>
+						<img src="images/work/mogo-home.png" alt class="work-thumb-container">
+						<h3>Mogo Website</h3>
+					</a>
+					<!-- Modal -->
+					<div id="myModalH1" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2 class="modal-title">Mogo Website</h2>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="project_txt" >
+										<div>
+											<h3>Details</h3>
+											<p>I integrated this <a class="link" href="./projects/mogo/mogo.html">website</a>, from a PSD file, that you find it <a class="link" href="http://ninodezign.com/mogo-free-one-page-html5-css3-template/" target="_blank">here</a>. The illustrations are different, as I replaced them all with Illustrations, made with Adobe AI. The website is responsive. </p>
+										</div>
+										<div>
+											<h3>Technologies used</h3>
+											<ul>
+												<li>HTML5 / CSS3</li>
+												<li>Bootstrap & flexbox</li>
+												<li>Javascript</li>
+												<li>Jquery</li>
+												<li>Adobe Illustrator</li>
+												<li>Adobe Photoshop</li>
+											</ul>
+										</div>
+									</div>
+									<img src="images/work/mogo-home.png" class="img-desktop" id="dsk_mogo">
+								</div>
+								<div class="modal-footer">
+									<a href="./projects/mogo/mogo.html" class="btnActionWork" target="_blank">The project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Trigger the modal with a button -->
+					<a href="#" data-toggle="modal" data-target="#myModalH2" data-backdrop="true" class="bloc project">
+						<div class="hoverProject">
+							<p class="workLabel">Game creation</p>
+							<p class="workLabel">React.js</p>
+							<p class="workLabel">UI/UX</p>
+							<p class="workLabel">Call API</p>
+						</div>
+						<img src="images/work/battleship-home.png" alt class="work-thumb-container">
+						<h3>Battleship game</h3>
+					</a>
+					<!-- Modal -->
+					<div id="myModalH2" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2 class="modal-title">Battleship Game</h2>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="project_txt" >
+										<div>
+											<h3>Details</h3>
+											<p>This project was done with the help of my <a href="https://www.linkedin.com/in/severinnicolas/" class="link" target="_blank">mentor</a>. This game use React to render all the components of the page. Please have a look and enjoy the game!</p>
+										</div>
+										<div>
+											<h3>Technologies used</h3>
+											<h5>Front-end (by myself)</h5>
+											<ul>
+												<li>Javascript, React.js</li>
+												<li>HTML5 / CSS3</li>
+												<li>API</li>
+											</ul>
+											<h5>Back-end (by my <a href="https://www.linkedin.com/in/severinnicolas/" class="link" target="_blank">mentor</a>)</h5>
+											<ul>
+												<li>Node.js</li>
+												<li>MongoDB</li>
+											</ul>
+										</div>
+									</div>
+									<img src="images/work/battleship-home.png" class="img-desktop">
+								</div>
+								<div class="modal-footer">
+									<a href="./projects/battleship/index.html" target="_blank" class="btnActionWork">The project</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section>
+		<div class="row" id="skills">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="skillsTitre">
+				<h2>Skills</h2>
+				<p>Click here to have a look on my whole CV</p>
+				<div id="cv">
+					<a href="cv.html" class="btnAction">My CV</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="row skillsSquare" id="devSkills">
+			<div class="row">
+				<h3>Front End Development</h3>
+			</div>
+			<div class="row">
+				<div class="visible-xs col-xs-6">
+					<p>HTML5 / CSS3</p>
+					<p>Bootstrap</p>
+					<p>Responsive designs</p>
+					<p>Javascript ES6/jQuery</p>
+					<p>React</p>
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-4 col-lg-4 animDev">
+					<p class="animDevDev"><strong>< Development ></strong> <span>|</span></p>
+				</div>
+				<div class="visible-xs col-xs-6">
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+						<div class="colour2"></div>
+					</div>
+				</div>
+				<div class="row hidden-xs">
+					<div class="hidden-xs col-sm-3 col-md-3 col-lg-3 skills">
+						<p>HTML5 / CSS3</p>
+						<p>Bootstrap</p>
+						<p>Responsive designs</p>
+						<p>Javascript ES6/jQuery</p>
+						<p>React</p>
+					</div>
+					<div class="hidden-xs col-sm-3 col-md-3 col-lg-3 squareList">
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+							<div class="colour2"></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="visible-xs col-xs-12 animDev">
+					<p class="animDevDev"><strong>< Development ></strong> <span>|</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="row skillsSquare" id="designSkills">
+			<div class="row">
+				<h3>Design</h3>
+			</div>
+			<div class="row">
+				<div class="visible-xs col-xs-6">
+					<p>Creative</p>
+					<p>Adobe Illustrator</p>
+					<p>Adobe Experience Design</p>
+					<p>Adobe Photoshop</p>
+					<p>UI / UX design</p>
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+					<img src="images/bureau.png" class="designImg">
+				</div>
+				<div class="visible-xs col-xs-6">
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+						<div class="colour2"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+						<div class="colour2"></div>
+						<div class="colour2"></div>
+					</div>
+				</div>
+				<div class="row hidden-xs">
+					<div class="hidden-xs col-sm-3 col-md-3 col-lg-3 skills">
+						<p>Creative</p>
+						<p>Adobe Illustrator</p>
+						<p>Adobe Experience Design</p>
+						<p>Adobe Photoshop</p>
+						<p>UI / UX design</p>
+					</div>
+					<div class="hidden-xs col-sm-3 col-md-3 col-lg-3 squareList">
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+							<div class="colour2"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+							<div class="colour2"></div>
+							<div class="colour2"></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="visible-xs col-xs-12 animDev">
+					<p id="animDevDes"><strong>< Design ></strong> <span>|</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="row skillsSquare" id="humanSkills">
+			<div class="row">
+				<h3>Human</h3>
+			</div>
+			<div class="row">
+				<div class="visible-xs col-xs-6">
+					<p>Self-motivated</p>
+					<p>Precise</p>
+					<p>Empathy</p>
+					<p>Work in a team</p>
+					<p>Curious</p>
+
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+					<img src="images/capturesoso.png" class="humanImg">
+				</div>
+				<div class="visible-xs col-xs-6">
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+					</div>
+					<div class="squares">
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour1"></div>
+						<div class="colour2"></div>
+					</div>
+				</div>
+				<div class="row hidden-xs">
+					<div class="hidden-xs col-sm-3 col-md-3 col-lg-3 skills">
+						<p>Self-motivated</p>
+						<p>Precise</p>
+						<p>Empathy</p>
+						<p>Work in a team</p>
+						<p>Curious</p>
+					</div>
+					<div class="hidden-xs col-sm-3 col-md-3 col-lg-3 squareList">
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+						</div>
+						<div class="squares">
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour1"></div>
+							<div class="colour2"></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="visible-xs col-xs-12 animDev">
+					<p id="animDevHum"><strong>< Human ></strong> <span>|</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="row" id="contact">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2>Contact</h2>
+				<p>If you have any question about my profile or about a project, don't hesitate to write me a message !</p>
+			</div>
+			<div class="row" id="contactform">
+				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+					<form id="form">
+						<label for="nom">Name *</label>
+						<input type="text" name="nom" id="nom" placeholder="Name" required> <br/>
+						<label for="mail">Email *</label>
+						<input type="email" name="mail" id="mail" placeholder="Email" required> <br/>
+						<label for="company">Company </label>
+						<input type="text" name="company" id="company" placeholder="Company"> <br/>
+						<label for="message">Leave me a comment </label><br/>
+						<textarea maxlength="500" name="message" id="message" placeholder="Your comment"></textarea><br/>
+						<input type="submit" name="envoi" value="Send" class="btnAction" id="envoiForm">
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-4" id="footer-social">
+					<a href="https://www.linkedin.com/in/solenebary" target="_blank">
+						<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+					</a>
+					<a href="http://viadeo.com/fr/profile/sol%C3%A8ne.bary" target="_blank">
+						<i class="fa fa-viadeo-square fa-3x" aria-hidden="true" ></i>
+					</a>
+					<a href="https://github.com/sobaryton" target="_blank">
+						<i class="fa fa-github fa-3x" aria-hidden="true" ></i>
+					</a>
+					<a href="https://codepen.io/sobary/" target="_blank">
+						<i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+</div>
+<script src="./script/jquery-3.2.0.min.js"></script>
+<script src="./script/bootstrap.min.js"></script>
+<script src="./script/home-mogo.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>
