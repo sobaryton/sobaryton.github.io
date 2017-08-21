@@ -187,6 +187,21 @@
 		text-align: center;
 		width: 100%;
 	}
+
+	/*For mogo project*/
+	.img-desktop, .mogo-illustrations .img-mogo, #dsk_mogo{
+		width: 250px;
+		height: 100%;
+	}
+	#project_txt_mogo{
+		flex-direction: row;
+		height: auto;
+		padding:20px;
+		justify-content: center;
+	}
+	#modal-body-mogo{
+		height: 400px;
+	}
 /********************************Work on the section skills****************************************/
 	.skillsSquare
 	{
@@ -429,6 +444,33 @@
 	.modal-title{
 		text-align: left;
 	}
+
+	/*For Mogo project*/
+	.img-desktop{
+		width: 300px;
+		height: 100%;
+	}
+	#txtMogo{
+		flex-direction: row;
+		width: 100%;
+		justify-content: center;
+		padding: 15px;
+	}
+
+	#modal-body-mogo{
+		height: 550px;
+	}
+
+	.img-mogo{
+		width: 300px;
+	}
+
+	#project_txt_mogo{
+		flex-direction: column;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
 	/********************************Work on the section skills****************************************/
 	.colour1, .colour2, .skills p
 	{
@@ -636,6 +678,20 @@
 	.bloc{
 		width: 40%;
 	}
+
+	/*For the Mogo project*/
+	.mogo-illustrations .img-mogo{
+		width: 500px;
+	}
+
+	#project_txt_mogo{
+		flex-direction: row;
+	}
+	#txtMogo{
+		flex-direction: column;
+		width: 50%;
+		padding: 0;
+	}
 	/********************************Work on the section skills****************************************/
 	.colour1, .colour2
 	{
@@ -822,6 +878,26 @@
 	}
 	.modal-body{
 		flex-direction: row;
+	}
+
+	/*Work on the mogo project section*/
+	.img-mogo{
+		width: 600px;
+	}
+
+	#project_txt_mogo{
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items:center;
+	}
+
+	#txtMogo{
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.mogo-illustrations{
+		width: 100%;
 	}
 /********************************Work on the section skills****************************************/
 	.colour1, .colour2

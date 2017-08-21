@@ -527,7 +527,7 @@ textarea
 
 
 /*********************************************************************************************************************************************************/
-/***********************************************************   Project Page general style   *******************************************************************/
+/***********************************************************   Work Page general style   *******************************************************************/
 /*********************************************************************************************************************************************************/
 
 #header-project{
@@ -587,6 +587,9 @@ textarea
 .link:hover{
 	color: #DE6C83;
 	text-decoration: none;
+}
+.link:focus, .link:visited{
+	outline: none;
 }
 .hoverProject{
 	position: absolute;
@@ -676,6 +679,50 @@ textarea
 .btnActionWork:focus{
 	text-decoration: none;
 	color: white;
+}
+/*Illustrations Mogo*/
+#modal-body-mogo{
+	overflow-y: scroll;
+}
+#mogo-modal{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#project_txt_mogo{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#txtMogo{
+	display: flex;
+}
+#illustrations{
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+}
+.mogo-illustrations{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.mogo-illustrations .fa{
+	color: #f38181;
+	margin: 10px;
+}
+
+.separator{
+	width: 75%;
+	height: 2px;
+	background-color: #f38181;
+	border-radius: 10px;
+	margin: 20px;
 }
 /*Carousel for the logos and avatars*/
 .item-logo img{

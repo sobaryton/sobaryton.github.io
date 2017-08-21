@@ -30,9 +30,11 @@
 	#slide1{
 		border-top: none;
 	}
-	.img-desktop{
+	.img-desktop, .img-mogo{
 		width: 250px;
+		height: 100%;
 	}
+
 	.theProject{
 		justify-content: center;
 	}
@@ -46,6 +48,13 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	#project_txt_mogo{
+		flex-direction: row;
+		height: auto;
+		padding:20px;
+	}
+
 	.btnActionWork
 	{
 		width: 50%;
@@ -62,6 +71,11 @@
 	.modal-body{
 		flex-direction: column;
 	}
+
+	#modal-body-mogo{
+		height: 400px;
+	}
+
 	.project_txt p{
 		text-align: justify;
 	}
@@ -152,20 +166,44 @@
 	}
 	.img-desktop{
 		width: 300px;
+		height: 100%;
 	}
 	.project_txt div{
 		width: 250px;
-		padding-left: 10px;
+		padding: 20px;
 	}
 	.project_txt{
 		justify-content: flex-start;
-
 	}
+
 	.btnActionWork
 	{
 		width: 50%;
 		height: 100%;
 	}
+
+	/*Work on the mogo project section*/
+	#txtMogo{
+		flex-direction: row;
+		width: 100%;
+		justify-content: center;
+	}
+
+	#modal-body-mogo{
+		height: 550px;
+	}
+
+	.img-mogo{
+		width: 300px;
+	}
+
+	#project_txt_mogo{
+		flex-direction: column;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+
 	/*Work on the fourth section with logos*/
 	.project{
 		width: 50%;
@@ -274,6 +312,18 @@
 		width: 30%;
 	}
 
+	/*Work on the mogo project section*/
+	.img-mogo{
+		width: 500px;
+	}
+
+	#project_txt_mogo{
+		flex-direction: row;
+	}
+	#txtMogo{
+		flex-direction: column;
+		width: 50%;
+	}
 	/*Work on the fourth section with logos*/
 	#lightbox{
 		overflow: hidden;
@@ -337,10 +387,30 @@
 		width: 300px;
 	}
 
+
 	.project_txt{
 		width: 50%;
 	}
 
+	/*Work on the mogo project section*/
+	.img-mogo{
+		width: 600px;
+	}
+
+	#project_txt_mogo{
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items:center;
+	}
+
+	#txtMogo{
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.mogo-illustrations{
+		width: 100%;
+	}
 
 	/*Work on the second section on sodev website*/
 	#dsk_sodev{
