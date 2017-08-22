@@ -218,6 +218,10 @@ function isWork(){
 	return regex.test(window.location.pathname);
 }
 
+function isBlog(){
+	var regex = /blog.html/i;
+	return regex.test(window.location.pathname);
+}
 //******************************************************************Finally load all functions at the right moment
 
 $(document).ready(function() {
@@ -243,7 +247,9 @@ $(document).ready(function() {
 			hoverWork();
 		}
 	}
-
+	if (isBlog()){
+		createWave();
+	}
 });
 
 $(window).scroll(function() {
