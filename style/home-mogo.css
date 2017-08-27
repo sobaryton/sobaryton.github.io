@@ -207,7 +207,7 @@ h1
 .workProjects a h3:hover,.workProjects a:focus, .workProjects a:hover{
 	text-decoration: none!important;
 }
-.btnAction
+.btnAction, .btnAction:visited
 {
 	text-align: center;
 	font-family: 'Jura',Courier,sans-serif;
@@ -216,7 +216,6 @@ h1
 	background-color: transparent;
 	color: #DE6C83;
 	border: 2px solid #DE6C83;
-	font-weight: bold;
 	text-decoration: none;
 	font-size: 1.7em;
 }
@@ -458,6 +457,7 @@ textarea
 }
 .badge{
 	background-color: #031D44 !important;
+	font-weight: normal;
 }
 /*Work on the second section with experience, skills and education*/
 #cvEducation, #skillsCv, #experienceCv{
@@ -755,14 +755,58 @@ textarea
 	background-image: linear-gradient(to left,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
 }
 /*********************************************************************************************************************************************************/
-/***********************************************************   BLOG Page general style   *******************************************************************/
+/***********************************************************   BLOG Page general style   *****************************************************************/
 /*********************************************************************************************************************************************************/
-
-
+#articlesList{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 100%;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+.articleBlog{
+	border: 2px dotted #f38181;
+	border-radius: 2%;
+	width: 90%;
+	padding: 20px;
+}
+.articleBlog h3{
+	font-family: 'Jura',Courier,sans-serif;
+	font-size: 2.3em;
+	margin-top:0;
+	margin-bottom: 20px;
+}
+.articleFooter{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+}
+.blogSummary{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: justify;
+	padding: 10px;
+	font-size: 1.2em;
+}
+.imgBlogDescription{
+	width: 30%;
+	height: 100%;
+	margin-right: 30px;
+}
 
 /*********************************************************************************************************************************************************/
-/***********************************************************   BLOG article Page general style   *******************************************************************/
+/***********************************************************   BLOG article Page general style   *********************************************************/
 /*********************************************************************************************************************************************************/
+#blog{
+	width: 80%;
+	margin: auto;
+}
 .blogHeader{
 	height: 300px;
 	display: flex;
@@ -792,9 +836,29 @@ textarea
 .blogIntroTxt{
 	font-style: italic;
 	text-align: justify;
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 .blogArticle{
 	font-size: 1.3em;
 	margin-bottom: 50px;
+}
+.step{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-bottom: 70px;
+}
+.stepArticle{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	text-align: justify;
+}
+.stepTitle{
+	font-weight: bold;
+	font-family: 'Jura',Courier,sans-serif;
+}
+.stepImg{
+	width: 100%;
 }

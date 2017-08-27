@@ -70,7 +70,8 @@
 </header>
 <div class="container-fluid">
 	<a href="#toptop" class="top"><i class="fa fa-arrow-circle-up fa-3x" id="btnTop"></i></a>
-	<section class="articleBlog">
+	<main id="articlesList">
+	<!--<section class="articleBlog">
 		<h3>Career change? Are you crazy or what?</h3>
 		<p>
 			<span class="badge">career</span>
@@ -89,38 +90,48 @@
 		</p>
 		<p>How do I plan my studies?</p>
 		<a href="./blogArticle/blog.A2.html">See article</a>
-	</section>
+	</section>-->
 	<section class="articleBlog">
 		<h3>My process step by step</h3>
-		<p>
-			<span class="badge">process</span>
-			<span class="badge">UX/UI</span>
-			<span class="badge">implementation</span>
-		</p>
-		<p>How do I process to build a website?</p>
-		<a href="./blogArticle/blog.A3.html">See article</a>
+
+		<div class="blogSummary">
+			<img src="images/blog/process.png" class="imgBlogDescription">
+			<p>
+				How do I process to build a website?<br/>
+				You decided to create your first website? Here are some tips to begin. You will have an overlook on my process. There are six different steps to go through.
+			</p>
+		</div>
+		<div class="articleFooter">
+			<p>
+				<span class="badge">process</span>
+				<span class="badge">UX/UI</span>
+				<span class="badge">implementation</span>
+			</p>
+			<a href="./blogArticle/blog.A3.html" class="btnAction">See article</a>
+		</div>
 	</section>
 
-
-	<!-- Work on the footer with the social links -->
-	<footer>
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="footer-social">
-			<a href="https://www.linkedin.com/in/solenebary" target="_blank">
-				<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-			</a>
-			<a href="http://gb.viadeo.com/fr/profile/sol%C3%A8ne.bary" target="_blank">
-				<i class="fa fa-viadeo-square fa-3x" aria-hidden="true" ></i>
-			</a>
-			<a href="https://github.com/sobaryton" target="_blank">
-				<i class="fa fa-github fa-3x" aria-hidden="true" ></i>
-			</a>
-			<a href="https://codepen.io/sobary/" target="_blank">
-				<i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
-			</a>
-		</div>
-	</footer>
-
+	</main>
 </div>
+<!-- Work on the footer with the social links -->
+<footer class="container-fluid">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="footer-social">
+		<a href="https://www.linkedin.com/in/solenebary" target="_blank">
+			<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+		</a>
+		<a href="http://gb.viadeo.com/fr/profile/sol%C3%A8ne.bary" target="_blank">
+			<i class="fa fa-viadeo-square fa-3x" aria-hidden="true" ></i>
+		</a>
+		<a href="https://github.com/sobaryton" target="_blank">
+			<i class="fa fa-github fa-3x" aria-hidden="true" ></i>
+		</a>
+		<a href="https://codepen.io/sobary/" target="_blank">
+			<i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+		</a>
+	</div>
+</footer>
+
+
 <script src="./script/jquery-3.2.0.min.js"></script>
 <script src="./script/bootstrap.min.js"></script>
 <script src="./script/home-mogo.js"></script>
