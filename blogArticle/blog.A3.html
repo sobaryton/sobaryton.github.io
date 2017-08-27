@@ -51,7 +51,7 @@
 
 			<div class="collapse navbar-collapse navigation" id="navig">
 				<ul class="nav navbar-nav navbar-left ">
-					<li class="active"><a href="#toptop">Home</a></li>
+					<li class="active"><a href="../index.html">Home</a></li>
 					<li><a href="../work.html">Work </a></li>
 					<li><a href="../cv.html">About me</a></li>
 					<li><a href="../blog.html">Blog</a></li>
@@ -60,8 +60,9 @@
 			</div>
 		</div>
 	</div>
-	<div id="titreBlog">
+	<div class="titreBlog">
 		<h1>My process step by step</h1>
+		<p><span class="articleDate">27/08/2017</span></p>
 	</div>
 	<!-- Work on the triangle waves -->
 	<div id="crans"></div>
@@ -175,8 +176,19 @@
 			</h3>
 			<div>
 				<p>
-					First of all, I add the project to a source control, which is Git. This is very usefull especially when you do a mistake and you want to come back
-					to a previous code.
+					For the style I will use CSS3. I create two different style pages: one for the general style and one for the media queries. Everything common to all devices screens such as the colors
+					of the components, the backgrounds or the borders, I will define it parts by parts in the general style sheet. Then I will define my media queries according
+					to four width breaking points:
+				</p>
+				<ul>
+					<li>under 767px - for small smartphones screens</li>
+					<li>from 768 to 991px - for bigger smartphones screens, or landscape oriented small smartphones</li>
+					<li>from 992 to 1199px - for tablet screens</li>
+					<li>from 1200px - for desktops</li>
+				</ul>
+				<p>Then everything linked to the size of the components or size is written in the media queries. I build part by part the general style first and then I will
+					define the style rules from the smallest to the biggest media query. At the same time I will try my code in different browsers (Google Chrome,
+					Opera, Mozilla, Safari...) and in the different formats and adjust it.
 				</p>
 			</div>
 		</div>
@@ -188,12 +200,13 @@
 			</h3>
 			<div>
 				<p>
-					First of all, I add the project to a source control, which is Git. This is very usefull especially when you do a mistake and you want to come back
-					to a previous code.
+					Now that there are the content and the style of the page, it is time to add some interactions.
 				</p>
 				<p>
-					Then accordingly to the plans I have done, I implement it with HTML5.
+					I will use either CSS3 or Javascript/jQuery. If the	interaction is on one element I implement it with CSS3, for example for the hover effects.
+					I implement more complex interactions with Javascript or jQuery, such as for the carousel effect, the menu appearance in small formats or for modal creation.
 				</p>
+				<p>The interactions can sometimes not being supported by browsers so this is important to test and debug the code in the browsers.</p>
 			</div>
 
 		</div>
@@ -212,16 +225,14 @@
 
 			<div>
 				<p>
-					First of all, I add the project to a source control, which is Git. This is very usefull especially when you do a mistake and you want to come back
-					to a previous code.
+					When everything is working in all formats in all browsers, I will review my code with my mentor in order to improve it. Then I will push the code in
+					production using Git. Finally I will check that everything is alright on different devices: my desktop, my tablet and my phone.
 				</p>
-				<p>
-					Then accordingly to the plans I have done, I implement it with HTML5.
-				</p>
+				<p>If there are some problems I fix it and make notes on the usability of the page, make some small changes in order to improve the user experience.</p>
 			</div>
 		</div>
 	</section>
-	<!--<section>
+	<section>
 		<div id="disqus_thread">
 			<a href="http://foo.com/bar.html#disqus_thread">Link</a>
 		</div>
@@ -244,7 +255,7 @@
 			})();
 		</script>
 		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	</section>-->
+	</section>
 </main>
 <!-- Work on the footer with the social links -->
 <footer class="container-fluid">

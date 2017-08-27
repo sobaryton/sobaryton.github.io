@@ -282,6 +282,10 @@
 	{
 		width: 100%;
 		text-align: center;
+		align-items: center;
+	}
+	form input, form textarea{
+		width: 100%;
 	}
 	form label, form input, form textarea
 	{
@@ -531,12 +535,16 @@
 	}
 	form
 	{
-		width: 80%;
+		width: 100%;
 		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+	form input{
+		width: 80%;
 	}
 	form label, form input, form textarea
 	{
-		margin-left: 100px;
 		margin-bottom: 20px;
 		margin-top: 10px;
 		font-size: 1.2em;
@@ -727,6 +735,11 @@
 	{
 		text-align: left;
 		height: 100%;
+		align-items: flex-start;
+		margin-left: 100px;
+	}
+	form input{
+		width: 60%;
 	}
 	#footer-social
  	{
@@ -956,6 +969,9 @@
 
 
 /********************************Work on the footer****************************************/
+	form input, form textarea{
+		width: 80%;
+	}
 	#footer-social
 	{
 		text-align: center;

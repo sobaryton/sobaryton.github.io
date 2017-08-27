@@ -218,6 +218,7 @@ h1
 	border: 2px solid #DE6C83;
 	text-decoration: none;
 	font-size: 1.7em;
+	line-height: 44px;
 }
 .btnAction:hover
 {
@@ -321,15 +322,28 @@ h1
 	margin-bottom: 70px;
 	font-size: 1.2em;
 }
+form{
+	display: flex;
+	flex-direction: column;
+}
+form input{
+	border: none;
+	border-bottom: 1px solid darkgrey;
+}
 form label, form input, form textarea
 {
 	color: #031D44;
 	font-family: 'Jura',Courier,sans-serif;
 }
-form input:focus, form textarea:focus
+form input:focus
 {
-	box-shadow: 1px 1px 1px 1px #FFA1B5;
+	border: none;
+	border-bottom: 1px solid #FFA1B5;
 	outline-color: transparent;
+}
+form textarea:focus{
+	outline: none;
+	border: 1px solid #FFA1B5;
 }
 .envoi
 {
@@ -794,6 +808,10 @@ textarea
 	padding: 10px;
 	font-size: 1.2em;
 }
+.dateBlog{
+	color: darkgrey;
+	font-size: 0.7em;
+}
 .imgBlogDescription{
 	width: 30%;
 	height: 100%;
@@ -811,15 +829,25 @@ textarea
 	height: 300px;
 	display: flex;
 }
-#titreBlog{
+.titreBlog{
 	text-align: center;
 	width: 80%;
 	margin: auto;
 }
-#titreBlog h1{
+.titreBlog h1{
 	margin-top: 50px;
 	height: auto;
 	margin-bottom: 0;
+}
+.titreBlog p{
+	margin: 20px;
+}
+.articleDate{
+	font-style: italic;
+	color: white;
+	font-family: 'Jura',Courier,sans-serif;
+	font-size: 1.2em;
+
 }
 .blogIntro{
 	display: flex;
