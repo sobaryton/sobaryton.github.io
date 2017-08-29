@@ -1,4 +1,13 @@
 
+//Side bar with social links
+var socialMenu = $('.fa-share-alt-square');
+var socialIcons = $('.bubbleSide a');
+socialMenu.click(function(e){
+	e.preventDefault();
+	socialIcons.toggleClass('menuShow');
+	socialIcons.toggleClass('menuHide');
+});
+
 //******************************************************Navigation bar on top
 
 function updateNavigation() {
@@ -15,11 +24,14 @@ function updateNavigation() {
 		$navElt.css({"color": "white"});
 		dropDownMenu.css({"width": "100%"}, {"background-color": "#FFA1B5 !important"});
 		btnTop.show();
+		socialMenu.show();
+
 	} else {
 		$myNavBar.css({"background-color": "transparent"});
 		dropDownMenu.css({"background-color": "#FFA1B5 !important"});
 		$navElt.css({"color": "white"});
 		btnTop.hide();
+		socialMenu.hide();
 	}
 }
 
@@ -200,6 +212,7 @@ function hoverWork(){
 	});
 
 }
+
 
 
 //**********************************************************************Check what the current page is

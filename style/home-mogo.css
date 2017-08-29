@@ -847,7 +847,44 @@ textarea
 	color: white;
 	font-family: 'Jura',Courier,sans-serif;
 	font-size: 1.2em;
+}
 
+/*Work on the social links in a bubble on the side of the page*/
+.bubbleSide{
+	display: flex;
+	flex-direction: column;
+}
+.bubbleSide i{
+	position: fixed;
+	color: #f38181;
+	opacity: 0.5;
+	z-index: 2;
+	left: 95%;
+}
+.bubbleSide i:hover{
+	 opacity: 1;
+	 cursor: pointer;
+ }
+.fa-share-alt-square{
+	top: 78%;
+}
+.menuHide{
+	display: none;
+}
+.menuShow{
+	display: block;
+}
+.bubbleSide .fa-codepen{
+	top:68%;
+}
+.bubbleSide .fa-github{
+	top:58%;
+}
+.bubbleSide .fa-viadeo-square{
+	top:48%;
+}
+.bubbleSide .fa-linkedin-square{
+	top:38%;
 }
 .blogIntro{
 	display: flex;
