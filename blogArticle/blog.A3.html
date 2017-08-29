@@ -90,9 +90,10 @@
 
 	<section class="blogIntro">
 		<div>
-			<h3>Why explaining it with words when we can just draw it? </h3>
-			<p> <span class="blogIntroTxt">You decided to create your first website? Here are some tips to begin. You will have an overlook on my
-				process. There are six different steps to go through.
+			<h3>Why explain it with words when I can just draw it?</h3>
+			<p> <span class="blogIntroTxt">Here you will have an overlook on my process.
+				Whether you decided to build your own website, or are just interested to see how it is done,
+				here are the six different steps I go through.
 			</span>
 			</p>
 		</div>
@@ -104,21 +105,23 @@
 			</h3>
 			<div>
 				<p>
-				Depending on the project I am doing, I start from:
-			</p>
+					Depending on the project I am doing, I start from:
+				</p>
 				<ul>
-					<li>a static Photoshop template</li>
-					<li>an Adobe Experience Design template</li>
-					<li>a drawn wireframe</li>
-					<li>scratch</li>
+					<li>a static Photoshop template: fixes tight constraints on the final UI render, which needs to be pixel-perfect for the given screen resolutions</li>
+					<li>an Adobe Experience Design template: focuses mainly on interactions; the UI side is more basic than the PSD template</li>
+					<li>a sketched wireframe: leaves room for designing the visual parts and the interactions myself</li>
 				</ul>
 				<p>
-					For the first case, I identify directly on the PSD the different components, such as the header, the footer, the articles... I rename the layers in order
-					to organise it as if it was my future code.
+					For the first case, I identify directly on the PSD the different components, such as the header,
+					the footer, the articles...
+					I rename the layers in order to organise it as if it was my future code.
 				</p>
 				<p>
-					In the other cases, I always identify the blocks of code. This is an important part of the process, as it help me to build the organisation of my code.
-					If I build the website with the framework <a class="link" href="https://facebook.github.io/react/" target="_blank">React</a>, this step is needed to see the future components and even states.
+					In the other cases, I always identify the blocks of code. This is an important part of the process,
+					as it helps me to build the organisation of my code.
+					If I build the website with the <a class="link" href="https://facebook.github.io/react/" target="_blank">React</a> framework,
+					this step highlights the future components and sometimes even some of the state's properties.
 				</p>
 			</div>
 		</div>
@@ -136,16 +139,18 @@
 			</h3>
 			<div>
 				<p>
-					Nowadays, everyone uses a mobile phone to check the news, or surfing on internet. That is why thinking the web-app with the mobile requirements is needed
-					to be user friendly.
+					Nowadays, everyone uses a mobile phone to check the news, or surfing on the internet
+					That is why the most user-friendly websites start by having the mobile requirements in head.
 				</p>
 				<p>
-					After identifying the code blocks that I will write, I draw on a paper how I want my app to appear on a mobile. This will help me to reorganise my blocks
-					and think about what features do I need to add. Indeed there are some components, which doesn't appear on a larger size like the sandwich button for the
-					menu on top of the screen. This needs to be included in the code way before.
+					After identifying the code blocks that I will write, I draw on a paper how I want my app to appear on mobile.
+					This helps me to reorganise my blocks and think about what features I need to add.
+					For instance, there are some components which do not appear on a larger screen, like the sandwich menu button
+					on top of the screen. This needs to be included in the code way before.
 				</p>
 				<p>
-					If I know that for the styling I will use a framework like <a class="link" href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, I will organise my code blocks in the right order and cut it in rows & columns.
+					If I know that for the styling I will use a framework like <a class="link" href="http://getbootstrap.com/" target="_blank">Bootstrap</a>,
+					that is the moment when I organise my code blocks in the right order and organise it in rows & columns.
 				</p>
 			</div>
 		</div>
@@ -157,26 +162,28 @@
 			</h3>
 			<div>
 				<p>
-					First of all, I add the project to a source control, which is <a class="link" href="https://git-scm.com/"target="_blank">Git</a>. This is very useful especially when you do a mistake and you want to come back
-					to a previous code. Then accordingly to the plans I have done, I implement it. My code environment is either Sublime Text or Webstorm.
+					First of all, I add the project to a source control, which at the moment is <a class="link" href="https://git-scm.com/"target="_blank">Git</a>.
+					This is very useful especially when you do a mistake and want to come back to a previous code.
+					Then accordingly to the plans I have done, I implement it. My code environment is either Sublime Text or Webstorm.
 				</p>
 				<ul>
 					<li>
 						<h4>HTML5 implementation</h4>
 						<p>
-							I use the correct HTML5 tags, which correspond to my plans. If I am using the Bootstrap framework, I build my code with rows and columns.
-							I check my work on different browsers and debug it if necessary.
+							I use the correct HTML5 tags, which match my plans. If I am using the Bootstrap framework, I build my code with rows and columns.
+							I check my works on different browsers and debug it if necessary.
 						</p>
 					</li>
 					<li>
 						<h4>React implementation</h4>
-						<p>First of all I import a React boilerplate and set-up my environment. The boilerplate that I use is the one created by
-							<a  class="link" href="https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html" target="_blank">Facebook</a>.
+						<p>First of all I import a React boilerplate and set-up my environment. The boilerplate I use is the one created by
+							<a class="link" href="https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html" target="_blank">Facebook</a>.
 							During my studies, I worked with another <a class="link" target="_blank" href="https://github.com/StephenGrider/ReduxSimpleStarter">boilerplate</a>.
-							The two boilerplates are efficient, but I prefer the one from Facebook as this is the quickest between them.
+							These two boilerplates are efficient, but I prefer the one from Facebook which is the fastest.
 						</p>
-						<p>Then I build my different components in separate Javascript files. After that I implement my code blocks with jsx and in ES6.</p>
-						<p>Finally, I import and export my components.</p>
+						<p>Then I build my different components in separate Javascript files.
+							I write the HTML-like code blocks using JSX and the rest in ES6.</p>
+						<p>Finally, I import and export my components to compose the view.</p>
 					</li>
 				</ul>
 			</div>
@@ -195,9 +202,10 @@
 			</h3>
 			<div>
 				<p>
-					For the style I will use CSS3. I create two different style pages: one for the general style and one for the media queries. Everything common to all devices screens such as the colors
-					of the components, the backgrounds or the borders, I define it parts by parts in the general style sheet. Then I write the media queries according
-					to four width breaking points:
+					I use CSS3 for styling. I create two different style pages: one for the general style and one for the media queries.
+					Everything common to all devices screens, such as the colors of the components, the backgrounds or the borders,
+					I define it parts by parts in the general style sheet.
+					Then in the other one I write the media queries according to four width breaking points:
 				</p>
 				<ul>
 					<li>under 767px - for small smartphones screens</li>
@@ -207,7 +215,7 @@
 				</ul>
 				<p>Everything linked to the size of the components is written in the media queries. I build part by part the general style first and then I
 					define the style rules from the smallest to the biggest media query. At the same time I try my code in different browsers (Google Chrome,
-					Opera, Mozilla, Safari...) and in the different screen formats and adjust it.
+					Opera, Mozilla, Safari...) and in the different screen formats using the developers tools they offer, and I make the necessary adjustments.
 				</p>
 			</div>
 		</div>
@@ -220,12 +228,17 @@
 			<div>
 				<p>
 					Now that the app has its content and its style, it is time to add some interactions.
+					This is all the actions a user can do on the page. Such as click on a button, fill a form,
+					hover an image, ... The action therefore often involves an animation.
 				</p>
 				<p>
-					For that, I use either CSS3 or Javascript/jQuery. If the interaction is on one element I implement it with CSS3, for example for the hover effects.
-					I implement more complex interactions with Javascript or jQuery, such as for the carousel effect, the menu appearance in small formats or for modal creation.
+					For that, I use either CSS3 or Javascript/jQuery.
+					If the interaction involves only one element, I try to implement it with CSS3, which render is more fluid than Javascript, for example for a hover effects.
+					For more complex interactions I use Javascript or jQuery, such as the carousel effect, the menu appearance in small formats or modal creation.
 				</p>
-				<p>The interactions can sometimes not being supported by browsers so this is important to test and debug the code in the browsers.</p>
+				<p>Some interactions can sometimes not be supported by browsers so it is important to test and debug the code in the actual browsers to find that out.
+					I also use <a class="link" href="https://caniuse.com/" target="_blank">caniuse.com</a> to check their support.
+				</p>
 			</div>
 
 		</div>
@@ -239,15 +252,16 @@
 		</div>
 		<div class="stepArticle">
 			<h3>
-				<span class="stepTitle">Step 6: Push the code on production</span>
+				<span class="stepTitle">Step 6: Push the code to production</span>
 			</h3>
 
 			<div>
 				<p>
-					When everything is working in all formats in all browsers, I review my code with my mentor in order to improve it. Then I push the code in
-					production using Git. Finally I check that everything is alright on different devices: my desktop, my tablet and my phone.
+					When everything is working in all formats for all browsers, I review my code with my mentor in order to improve it. Then I push it in
+					production using Git. Finally I check once more that everything works alright on different devices: my desktop, my tablet and my phone.
 				</p>
-				<p>If there are some problems I fix it and make notes on the usability of the page, make some small changes in order to improve the user experience.</p>
+				<p>If there are some problems I fix it and make notes on the usability of the page.
+					Or if I think of something, I make some small changes in order to improve the user experience.</p>
 			</div>
 		</div>
 	</section>
