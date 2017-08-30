@@ -32,7 +32,7 @@
 	}
 	.img-desktop, .img-mogo{
 		width: 250px;
-		height: 100%;
+		height: auto;
 	}
 
 	.theProject{
@@ -166,7 +166,7 @@
 	}
 	.img-desktop{
 		width: 300px;
-		height: 100%;
+		height: auto;
 	}
 	.project_txt div{
 		width: 250px;
@@ -294,6 +294,7 @@
 	}
 	.img-desktop{
 		width: 400px;
+		height: auto;
 	}
 	.project_txt div{
 		width: 300px;
@@ -381,6 +382,7 @@
 	/*Work on all the sections */
 	.img-desktop{
 		width: 400px;
+		height: auto;
 	}
 
 	.project_txt div{

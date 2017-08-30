@@ -183,6 +183,7 @@ h1
 }
 .workProjects img{
 	width: 350px;
+	height: auto;
 }
 .workP
 {
@@ -616,6 +617,7 @@ textarea
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	right: 0;
 }
 .workLabel{
 	background: #031D44;
