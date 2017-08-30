@@ -108,6 +108,7 @@ h1
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	height: 100%;
 }
 #learn
 {
@@ -397,6 +398,7 @@ textarea
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	height: 100%;
 }
 #header-CV{
 	position: relative;
@@ -773,50 +775,25 @@ textarea
 /*********************************************************************************************************************************************************/
 #articlesList{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	width: 100%;
-	margin-top:100px;
-	margin-bottom:100px;
 }
 .articleBlog{
 	border: 2px dotted #f38181;
 	border-radius: 2%;
-	width: 90%;
-	padding: 20px;
 }
 .articleBlog h3{
 	font-family: 'Jura',Courier,sans-serif;
-	font-size: 2.3em;
-	margin-top:0;
-	margin-bottom: 20px;
 }
 .articleFooter{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding-left: 10px;
+
 }
 .blogSummary{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	text-align: justify;
-	padding: 10px;
-	font-size: 1.2em;
 }
 .dateBlog{
 	color: darkgrey;
-	font-size: 0.7em;
 }
-.imgBlogDescription{
-	width: 30%;
-	height: 100%;
-	margin-right: 30px;
-}
+
 
 /*********************************************************************************************************************************************************/
 /***********************************************************   BLOG article Page general style   *********************************************************/

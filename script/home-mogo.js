@@ -14,7 +14,7 @@ function updateNavigation() {
 	var btnTop = $('#btnTop');
 	var dropDownMenu = $('.dropdown-menu');
 	var scroll = $(window).scrollTop();
-	var win_height = $("header").height();
+	var win_height = ($("header").height())/2;
 	var $myNavBar = $(".navbar");
 	var $navElt = $(".navbar-left a");
 	var heightClient = win_height - scroll;
