@@ -341,9 +341,6 @@
 	{
 		height: 100vh;
 	}
-	#titre{
-		padding-top: 7%;
-	}
 	.container
 	{
 		height: 50px;
@@ -610,10 +607,6 @@
 	header
 	{
 		height: 100vh;
-	}
-	#titre
-	{
-		padding-top: 7%;
 	}
 	.navigation
 	{
