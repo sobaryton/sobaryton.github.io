@@ -1,0 +1,315 @@
+/**************************************************************************************************************************/
+/*************									SMALL SMARTPHONE SCREENS			    ***********************************/
+/**************************************************************************************************************************/
+@media (max-width: 767px) {
+	/**For small creens of smartphones**/
+	.blogHeader{
+		display: block;
+	}
+	#blog{
+		width: 80%;
+		margin: auto;
+	}
+	.blogHeader{
+		height: 300px;
+	}
+	.titreBlog{
+		text-align: center;
+		width: 80%;
+		margin: auto;
+	}
+	.titreBlog h1{
+		margin-top: 50px;
+		height: auto;
+		margin-bottom: 0;
+	}
+	.titreBlog p{
+		margin: 20px;
+	}
+	.articleDate{
+		font-size: 1.2em;
+	}
+
+	/*Work on the social links in a bubble on the side of the page*/
+	.bubbleSide{
+		flex-direction: column;
+	}
+	.bubbleSide i{
+		left: 85%;
+	}
+	.blogIntro{
+		flex-direction: row;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.blogImg{
+		width:40%;
+		height:100%;
+		margin-left: 20px;
+	}
+	.blogIntroTxt{
+		font-style: italic;
+		text-align: justify;
+		font-size: 1.4em;
+	}
+	.blogArticle{
+		font-size: 1.3em;
+		margin-bottom: 50px;
+	}
+	.step{
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		margin-bottom: 70px;
+	}
+	.stepArticle{
+		width: 100%;
+		text-align: justify;
+		flex-direction: column;
+	}
+	.step1{
+		flex-direction: column;
+	}
+	.step2{
+		flex-direction: column-reverse;
+	}
+	.stepImg{
+		width: 100%;
+	}
+}
+
+
+/***********************************************************************************************************************************/
+/*************									SMARTPHONE SCREENS						********************************************/
+/***********************************************************************************************************************************/
+
+@media (min-width: 768px) {
+	/**For small screens like smartphones **/
+	#blog{
+		width: 80%;
+		margin: auto;
+	}
+	.blogHeader{
+		height: 300px;
+	}
+	.titreBlog{
+		text-align: center;
+		width: 80%;
+		margin: auto;
+	}
+	.titreBlog h1{
+		margin-top: 50px;
+		height: auto;
+		margin-bottom: 0;
+	}
+	.titreBlog p{
+		margin: 20px;
+	}
+	.articleDate{
+		font-size: 1.2em;
+	}
+
+	/*Work on the social links in a bubble on the side of the page*/
+	.bubbleSide{
+		flex-direction: column;
+	}
+	.bubbleSide i{
+		left: 92%;
+	}
+	.blogIntro{
+		flex-direction: row;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.blogImg{
+		width:40%;
+		height:100%;
+		margin-left: 20px;
+	}
+	.blogIntroTxt{
+		font-style: italic;
+		text-align: justify;
+		font-size: 1.4em;
+	}
+	.blogArticle{
+		font-size: 1.3em;
+		margin-bottom: 50px;
+	}
+	.step{
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 70px;
+	}
+	.stepArticle{
+		width: 100%;
+		text-align: justify;
+		flex-direction: column;
+	}
+	.step1{
+		flex-direction: column;
+	}
+	.step2{
+		flex-direction: column-reverse;
+	}
+	.stepImg{
+		width: 100%;
+	}
+}
+
+
+/****************************************************************************************************************************************/
+/*************									TABLETS SCREENS  						*************************************************/
+/****************************************************************************************************************************************/
+
+
+@media (min-width: 992px) {
+	/**For middle screens like tablets**/
+	#blog{
+		width: 80%;
+		margin: auto;
+	}
+	.blogHeader{
+		height: 300px;
+	}
+	.titreBlog{
+		text-align: center;
+		width: 80%;
+		margin: auto;
+	}
+	.titreBlog h1{
+		margin-top: 50px;
+		height: auto;
+		margin-bottom: 0;
+	}
+	.titreBlog p{
+		margin: 20px;
+	}
+	.articleDate{
+		font-size: 1.2em;
+	}
+
+	/*Work on the social links in a bubble on the side of the page*/
+	.bubbleSide{
+		flex-direction: column;
+	}
+	.bubbleSide i{
+		left: 93%;
+	}
+
+	.blogIntro{
+		flex-direction: row;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		text-align: justify;
+	}
+	.blogImg{
+		width:40%;
+		height:100%;
+		margin-left: 20px;
+	}
+	.blogIntroTxt{
+		font-style: italic;
+		text-align: justify;
+		font-size: 1.4em;
+	}
+	.blogArticle{
+		font-size: 1.3em;
+		margin-bottom: 50px;
+	}
+	.step{
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		margin-bottom: 70px;
+	}
+	.stepArticle{
+		flex-direction: column;
+		width: 60%;
+		text-align: justify;
+	}
+	.stepImg{
+		width: 100%;
+	}
+}
+
+
+/*************************************************************************************************************************************/
+/*************									DESKTOP SCREENS      						**********************************************/
+/*************************************************************************************************************************************/
+
+
+
+@media (min-width: 1200px) {
+	/**For large screens**/
+	#blog{
+		width: 80%;
+		margin: auto;
+	}
+	.blogHeader{
+		height: 300px;
+	}
+	.titreBlog{
+		text-align: center;
+		width: 80%;
+		margin: auto;
+	}
+	.titreBlog h1{
+		margin-top: 50px;
+		height: auto;
+		margin-bottom: 0;
+	}
+	.titreBlog p{
+		margin: 20px;
+	}
+	.articleDate{
+		font-size: 1.2em;
+	}
+
+	/*Work on the social links in a bubble on the side of the page*/
+	.bubbleSide{
+		flex-direction: column;
+	}
+	.bubbleSide i{
+		left: 95%;
+	}
+	.blogIntro{
+		flex-direction: row;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.blogImg{
+		width:40%;
+		height:100%;
+		margin-left: 20px;
+	}
+	.blogIntroTxt{
+		font-style: italic;
+		text-align: justify;
+		font-size: 1.4em;
+	}
+	.blogArticle{
+		font-size: 1.3em;
+		margin-bottom: 50px;
+	}
+	.step{
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		margin-bottom: 70px;
+	}
+	.stepArticle{
+		flex-direction: column;
+		width: 60%;
+		text-align: justify;
+	}
+	.stepImg{
+		width: 100%;
+	}
+}

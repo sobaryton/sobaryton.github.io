@@ -45,7 +45,7 @@
 		position: fixed;
 		width: 100%;
 		background-color: #031D44;
-		height: 40px;
+		height: 60px;
 	}
 	.container>.navbar-collapse
 	{
@@ -136,6 +136,9 @@
 	#btnTop
 	{
 		top: 85%;
+		left: 85%;
+	}
+	.bubbleSide i{
 		left: 85%;
 	}
 /********************************Work on the section Intro****************************************/
@@ -351,6 +354,7 @@
 		display: flex;
 		justify-content: center;
 		align-content: center;
+		height: 60px;
 	}
 	.navbar
 	{
@@ -403,7 +407,10 @@
 	#btnTop
 	{
 		top: 85%;
-		left: 95%;
+		left: 92%;
+	}
+	.bubbleSide i{
+		left: 92%;
 	}
 /*************************Section intro**********************/
 	#intro
@@ -643,6 +650,14 @@
 		margin-top: 50px;
 		margin-bottom: 20px;
 	}
+	#btnTop
+	{
+		top: 85%;
+		left: 93%;
+	}
+	.bubbleSide i{
+		left: 93%;
+	}
 	/*************************Section intro**********************/
 	#intro
 	{
@@ -842,7 +857,14 @@
 		font-size: 1.5em;
 		margin-top: 50px;
 	}
-
+	#btnTop
+	{
+		top: 85%;
+		left: 95%;
+	}
+	.bubbleSide i{
+		left: 95%;
+	}
 /********************************Work on the section Intro****************************************/
 	#intro
 	{

@@ -798,58 +798,40 @@ textarea
 /*********************************************************************************************************************************************************/
 /***********************************************************   BLOG article Page general style   *********************************************************/
 /*********************************************************************************************************************************************************/
-#blog{
-	width: 80%;
-	margin: auto;
-}
 .blogHeader{
-	height: 300px;
 	display: flex;
 }
 .titreBlog{
 	text-align: center;
-	width: 80%;
-	margin: auto;
-}
-.titreBlog h1{
-	margin-top: 50px;
-	height: auto;
-	margin-bottom: 0;
-}
-.titreBlog p{
-	margin: 20px;
 }
 .articleDate{
 	font-style: italic;
 	color: white;
 	font-family: 'Jura',Courier,sans-serif;
-	font-size: 1.2em;
 }
 
 /*Work on the social links in a bubble on the side of the page*/
 .bubbleSide{
 	display: flex;
-	flex-direction: column;
 }
 .bubbleSide i{
 	position: fixed;
 	color: #f38181;
 	opacity: 0.5;
 	z-index: 2;
-	left: 95%;
 }
 .bubbleSide i:hover{
 	 opacity: 1;
 	 cursor: pointer;
  }
-.fa-share-alt-square{
-	top: 78%;
-}
 .menuHide{
 	display: none;
 }
 .menuShow{
 	display: block;
+}
+.fa-share-alt-square{
+	top: 78%;
 }
 .bubbleSide .fa-codepen{
 	top:68%;
@@ -865,42 +847,20 @@ textarea
 }
 .blogIntro{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
 }
-.blogImg{
-	width:40%;
-	height:100%;
-	margin-left: 20px;
-}
+
 .blogIntroTxt{
 	font-style: italic;
-	text-align: justify;
-	font-size: 1.4em;
-}
-.blogArticle{
-	font-size: 1.3em;
-	margin-bottom: 50px;
+
 }
 .step{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
-	margin-bottom: 70px;
 }
 .stepArticle{
 	display: flex;
-	flex-direction: column;
-	width: 60%;
 	text-align: justify;
 }
 .stepTitle{
 	font-weight: bold;
 	font-family: 'Jura',Courier,sans-serif;
-}
-.stepImg{
-	width: 100%;
 }
