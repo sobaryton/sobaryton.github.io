@@ -61,6 +61,9 @@ h1
 	color:  white!important;
 	font-family: 'Jura',Courier,sans-serif;
 }
+.navbar-nav > li > a{
+	line-height: normal;
+}
 .nav>li>a:hover:hover, .nav>li>a:hover:focus,.nav .open>a, .nav .open>a:hover, .nav .open>a:focus
 {
 	color:  white!important;
@@ -84,24 +87,6 @@ h1
 	text-align: center;
 }
 
-.dropdown-menu{
-	padding: 0;
-}
-
-.li-drop{
-	width: 100% !important;
-	height: 70px;
-}
-.dropA{
-	color: white !important;
-	background-color: #FFA1B5 !important;
-	width: 100%;
-}
-.dropA:hover{
-	color: white !important;
-	background-color: #DE6C83 !important;
-	width: 100%;
-}
 #titre
 {
 	display: flex;
