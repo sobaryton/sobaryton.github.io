@@ -287,6 +287,8 @@
 		flex-direction: column;
 		width: 100%;
 		margin: auto;
+		align-items: center;
+		justify-content: center;
 	}
 	#blogHome img{
 		width: 100%;
