@@ -182,7 +182,6 @@ h1
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin:15px;
 }
 .bloc h3{
 	text-decoration: none;
@@ -296,7 +295,28 @@ h1
 	background-color: #C9DDFF;
 }
 
-
+/********************************Work on the section skills****************************************/
+#blogTitre{
+	display: flex;
+}
+#blogTitre a{
+	align-self: center;
+}
+#blogHome{
+	display: flex;
+	margin: auto;
+}
+.blogHomeDetails{
+	display: flex;
+}
+.blogHomeDetails h3{
+	font-family: 'Jura',Courier,sans-serif;
+	font-weight: bold;
+	margin-top: 0;
+}
+.blogHomeDetails p{
+	width: 100%;
+}
 /********************************Work on the section contact****************************************/
 #contact
 {

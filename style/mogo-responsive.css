@@ -179,9 +179,15 @@
 	/********************************Work on the section work****************************************/
 	.bloc{
 		width:100%;
+		margin: 0;
 	}
 	.workProjects{
 		flex-direction: column;
+	}
+	.workProjects img{
+		width: 100%;
+		height: 100%;
+		margin: auto;
 	}
 	.modal-body{
 		flex-direction: column;
@@ -268,9 +274,32 @@
 		width: 50%;
 	}
 
-
-
-
+/********************************Work on the section Blog****************************************/
+	#blogTitre{
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	#blogHome{
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+	}
+	#blogHome img{
+		width: 100%;
+		height: 100%;
+		margin-right: 30px;
+	}
+	.blogHomeDetails{
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 /********************************Work on the section contact****************************************/
 	#footer-social
 	{
@@ -361,6 +390,7 @@
 		position: absolute;
 		right: 0;
 		width: 80%;
+		height: 60px;
 	}
 
 	#navig{
@@ -390,9 +420,12 @@
 		height: 100%;
 		width: 130px;
 		text-align: center;
+		line-height: 60px;
 	}
-	.li-drop, .dropA{
-		height: 45px !important;
+	.navbar-nav>li>a{
+		padding: 0;
+		line-height: 60px;
+		vertical-align: middle;
 	}
 	#learn
 	{
@@ -446,6 +479,9 @@
 	}
 
 	/********************************Work on the section work****************************************/
+	.bloc{
+		margin:15px;
+	}
 	.workProjects{
 		flex-direction: column;
 	}
@@ -525,8 +561,33 @@
 		width: 100%;
 	}
 
-
-
+	/********************************Work on the section Blog****************************************/
+	#blogTitre{
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	#blogHome{
+		flex-direction: row;
+		width: 90%;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	#blogHome img{
+		width: 50%;
+		height: 100%;
+		margin-right: 30px;
+	}
+	.blogHomeDetails{
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
 	/********************************Work on the section contact****************************************/
 	#footer-social
 	{
@@ -736,8 +797,33 @@
 		margin-top: 2%;
 	}
 
-
-
+	/********************************Work on the section Blog****************************************/
+	#blogTitre{
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	#blogHome{
+		flex-direction: row;
+		width: 90%;
+		margin: auto;
+		justify-content: center;
+		align-items: inherit;
+	}
+	#blogHome img{
+		width: 50%;
+		height: 100%;
+		margin-right: 30px;
+	}
+	.blogHomeDetails{
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
 	/********************************Work on the section contact****************************************/
 	form
 	{
@@ -983,6 +1069,31 @@
 	}
 
 
+/********************************Work on the section Blog****************************************/
+	#blogTitre{
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	#blogHome{
+		flex-direction: row;
+		width: 90%;
+		margin: auto;
+	}
+	#blogHome img{
+		width: 50%;
+		height: 100%;
+		margin-right: 30px;
+	}
+	.blogHomeDetails{
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
 /********************************Work on the footer****************************************/
 	form input, form textarea{
 		width: 80%;
