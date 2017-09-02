@@ -186,7 +186,6 @@
 	}
 	.workProjects img{
 		width: 100%;
-		height: 100%;
 		margin: auto;
 	}
 	.modal-body{
@@ -200,12 +199,19 @@
 	/*For mogo project*/
 	.img-desktop, .mogo-illustrations .img-mogo, #dsk_mogo{
 		width: 250px;
-		height: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 	#project_txt_mogo{
 		flex-direction: row;
 		height: auto;
 		padding:20px;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	#txtMogo{
+		flex-direction: column;
+		width: 100%;
 		justify-content: center;
 	}
 	#modal-body-mogo{
@@ -493,7 +499,6 @@
 	/*For Mogo project*/
 	.img-desktop{
 		width: 300px;
-		height: 100%;
 	}
 	#txtMogo{
 		flex-direction: row;
