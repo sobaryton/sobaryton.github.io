@@ -717,6 +717,7 @@ textarea
 	position: absolute;
 	top: 0;
 	width: 100%;
+	left:0;
 }
 #project_txt_mogo{
 	width: 100%;
