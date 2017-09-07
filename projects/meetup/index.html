@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meetup Finder</title>
+  	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="mediaQueries.css">
+</head>
+<body onload="initMap()">
+	<header>
+		<h1><i class="fa fa-ticket" aria-hidden="true"></i>Meetups Finder</h1>
+	</header>
+	<div id="section">
+		<div>
+			<h2>You are looking for Meetups around <span id="eventPlace">you</span> about <span id="eventTopic">Javascript</span></h2>
+		</div>
+		<div class="searchBar">
+			<input type="text" name="searchTopic" id="searchTopic" placeholder="Topic" value="Javascript">
+			<input type="text" name="searchLocation" id="searchLocation" placeholder="Location" onFocus="initMap()" >
+			<button id="targetBtn"><i class="fa fa-crosshairs fa-2x" aria-hidden="true"></i></button>
+			<button id="searchBtn" class="searchBtn"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+		</div>
+		<div id="contenu">
+			<table class="tableEvent">
+				<tbody id="eventsNearMe">
+					
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<button id="allEventsBtn">Get all events</button>
+			<div id="fullTableEvents">
+				
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxRjLn69S9-Tbc_vTgxc0G0QLkFc9ingc&libraries=places"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="api-meetup.js"></script>
+</body>
+
+</html>

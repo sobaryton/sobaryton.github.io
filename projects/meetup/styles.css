@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+}
+
+header{
+	height: 150px;
+	background: -webkit-linear-gradient(left,#FCA5F1, #B5FFFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right,#FCA5F1, #B5FFFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,#FCA5F1, #B5FFFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,#FCA5F1, #B5FFFF); /* Standard syntax */
+    display: flex;
+}
+h1{
+	 font-family: 'Sedgwick Ave Display', cursive;
+	 color: white;
+ }
+h2{
+	text-align: center;
+}
+h2 span{
+	font-family: 'Sedgwick Ave Display', cursive;
+}
+button:focus, button:active{
+	outline: none;
+}
+#contenu, #section{
+	display: flex;
+	width: 100%;
+}
+.searchBar{
+	display: flex;
+}
+input, .searchBtn, #targetBtn{
+	-webkit-appearance:none;
+}
+input{
+	border: 1px solid #BDF5FD;
+	background-color: white;
+	border-right: none;
+}
+input[placeholder]{
+	font-style: italic;
+}
+input:focus, input:active{
+	outline: none;
+	border-bottom: 2px solid #BDF5FD;
+}
+#targetBtn{
+	border: 1px solid #BDF5FD;
+	background-color: white;
+	border-left: none;
+	border-right: none;
+	color: #BDF5FD;
+}
+#targetBtn:hover{
+	color: #DBCFF7;
+	cursor: pointer;
+}
+.searchBtn{
+	background-color: #BDF5FD;
+	border:none;
+}
+.searchBtn:hover{
+	background-color: #DBCFF7;
+	cursor: pointer;
+}
+.fa-search{
+	color: white;
+}
+
+table {
+    border-collapse: collapse;
+}
+td .eventLink{
+	text-decoration: none;
+	color: black;
+	display:inline-block;
+}
+.event:hover{
+	background-color: #B5FFFF;
+	cursor: pointer;
+}
+th, td{
+	border-bottom: 1px solid #DBCFF7;
+}
+th {
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.fa-bolt, .fa-arrow-right{
+	color:#FCA5F1;
+}
+.fa-map-marker{
+	color: #DFC9F7;
+}
+.fa-child{
+	color: #CFDEFA;
+}
+.fa-hand-spock-o{
+	color: #C3EDFC;
+}
+.fa-handshake-o{
+	color: #B5FFFF;
+}
+#allEventsBtn{
+	background-color: transparent;
+	border: 2px solid #FCA5F1;
+	color: #FCA5F1;
+	font-weight: bold;
+}
+#allEventsBtn:hover{
+	background-color: #FCA5F1;
+	border: 2px solid #FCA5F1;
+	color: white;
+	cursor: pointer;
+}
