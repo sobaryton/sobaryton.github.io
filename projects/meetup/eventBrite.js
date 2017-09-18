@@ -1,9 +1,10 @@
+const keyAPI ='75YPIL4GVE262BFEMT';
+const clientKey = '4UYLCWJMISHGVSS532QFMVY3JX7STRTCYMMEKAN2MKNMUDIZKV';
 let events=[];
 let coordinates=[];
 let xUser;
 let yUser;
 let topic = 'Javascript';
-const sigID = 222881367;
 const $events = $('#eventsNearMe');
 const $eventsTable = $('.tableEvent');
 const $searchBtn = $('#searchBtn');
@@ -22,103 +23,47 @@ navigator.geolocation.getCurrentPosition(function(position) {
 	yUser = position.coords.longitude;
 	coordinates.push(xUser);
 	coordinates.push(yUser);
-	getEventsMeetups(xUser,yUser,50);
+	//getEventsMeetups(xUser,yUser,50,10);
+	redirect();
+	//getAccessToken();
+	/*if (response.status === 'connected') {
+		let accessToken = response.authResponse.accessToken;
+		getAccessToken(accessToken);
+	}*/
 });
 
+function redirect() {
+	window.location = "https://www.eventbrite.com/oauth/authorize?response_type=token&client_id=QHNTYY226654IV6YAUID";
+}
+
 /*This function call the Meetup APi to get back a number of events in an area and will create an event for each meetup*/
-function getEventsMeetups(latitude,longitude,radius){
-
-	//we need a signature per request for the API
-	let sigApi='';
-	switch (topic){
-		case 'Front-end AND development':
-			sigApi='5a3c5907f8c8c2dbe81a64964f63c75e3f813490';
-			break;
-		case 'Javascript':
-			sigApi='197aeb33817460f55c54d0006a2ff06f4550ef2a';
-			break;
-		case 'Coding':
-			sigApi='cd0d91545537800b88757733c4e24e6b77d28d13';
-			break;
-		case 'React AND javascript':
-			sigApi='cc7e8de5ef26374313034252e26766d6041b36c5';
-			break;
-		case 'Vue AND javascript':
-			sigApi='dc772f771eabca2c97c54cd8056c279812129bea';
-			break;
-		case 'Angular':
-			sigApi='c786eb9b3f2a090e0c28d547bd737e3e0d394538';
-			break;
-		case 'Back-end AND development':
-			sigApi='294dc90d36e9cbe26194f65c4a4e7d5a427550b1';
-			break;
-		case 'C#':
-			sigApi='cb4f4a0b38cd03b0aedb058f5a01bf7888470f86';
-			break;
-		case 'C++':
-			sigApi='bd4b9a47e24ce318973293cbed618e33b900d8b4';
-			break;
-		case 'Java':
-			sigApi='9c0101c96932792ebe4a74d6eb44caf9b675227d';
-			break;
-		case 'PHP':
-			sigApi='f030896fbe43bf949f0fdf0fe8e5aefab00966ff';
-			break;
-		case 'Python':
-			sigApi='a1abe6d444179d2b7e97813e74d0f9b20f5c6cf8';
-			break;
-		case 'Ruby':
-			sigApi='ae85028b0e40bc390939ff8335f1c322d81fe81b';
-			break;
-	}
-
-
-	const meetupAPI = "https://api.meetup.com/2/open_events";
-	console.log(latitude, longitude);
-	const parameters = {
-		and_text: 'False',
-		format: 'json',
-		offset: events.length / 10,
-		limited_events: 'False',
-		desc: 'False',
-		status: 'upcoming',
-		lon: longitude,
-		lat: latitude,
-		radius: radius,
-		country:'gb',
-		text:topic,
-		page: 10,
-		order:'distance',
-		sig_id: sigID,
-		sig: sigApi
-
-	};
+function getAccessToken(){
+	const eventBriteAPI = "https://www.eventbrite.com/oauth/token/code=KTGNIWWBMCL2WL76UMHC&client_secret="+clientKey+"&client_id="+keyAPI+"&grant_type=authorization_code";
 
 	$.ajax({
-		url: meetupAPI,
-		type: "GET",
+		url: eventBriteAPI,
+		type: "POST",
 		crossDomain: true,
-		data: $.param(parameters),
-		dataType: "jsonp",
-		jsonpCallback: "parseAPIResponse"
+		jsonpCallback: "parseAPIResponse",
+		contentType: 'application/x-www-form-urlencoded'
 	});
 }
 //this function is called by the API
 function parseAPIResponse (data) {
-	if(data.results.length<=events.length && data.results.length!==10){
+	/*if(data.results.length<=events.length && data.results.length!==10){
 		$allEventsBtn.css({'display':'none'});
 	}else{
 		$allEventsBtn.css({'display':'block'});
 	}
-	const eventsAPI = createEvent(data.results, data.results.length);
-	const eventList = events.concat(eventsAPI);
-	events = eventList;
-	updateEvents(eventList, eventList.length);
+	createEvents(data.results, data.results.length);*/
+	console.log(data);
 }
 
-//This function creates an array of n events, which have an id, coordinates and tickets from the API answer.
-function createEvent(array, n){
-	let newListEvents=[];
+//This function creates an array of n events, which have an id, coordinates and tickets.
+function createEvents(array,n){
+	console.log('donnees recue par la fonction');
+	console.log(array);
+	events=[];
 	for(let i=0;i<n;i++){
 		let event={
 			id:array[i].id,
@@ -131,24 +76,20 @@ function createEvent(array, n){
 			fees: array[i].fee?array[i].fee.amount.toPrecision(3):'',
 			currency: array[i].fee?array[i].fee.currency:''
 		};
-		 newListEvents.push(event);
+		events.push(event);
 	}
-	return newListEvents;
-}
-
-//This function decides which fnction to call in order to display correctly the results
-function updateEvents(array,n){
-	console.log(array);
 
 	//For smartphones screens
 	if (window.innerWidth <= 767){
-		getEventsNearMeSmallScreens(array,n);
+		getEventsNearMeSmallScreens(events,n);
+		sortResults();
 	}
 	//For screens larger than 767px
 	if (window.innerWidth > 767){
-		getEventsNearMeLargeScreens(array,n);
+		getEventsNearMeLargeScreens(events,n);
+		sortResults();
 	}
-	sortResults();
+
 }
 
 //This function returns an array of the n nearest events from the user with the event id for screens smaller or equal to 767px
@@ -159,9 +100,9 @@ function getEventsNearMeSmallScreens(events,n) {
 	let element =  document.querySelector('thead');
 	let $tableHeader =  $('thead');
 	if (typeof(element) !== 'undefined' && element !== null)//thead exists need to be removed
-		{
-			$tableHeader.remove();
-		}
+	{
+		$tableHeader.remove();
+	}
 
 	//this will render the results on the page
 	for (let i = 0; i < n; i++) {
@@ -200,31 +141,28 @@ function getEventsNearMeSmallScreens(events,n) {
 		$rowE.append('<td>'+ url + '<div class="eventSMFormat">' + firstBloc + secondBloc+ '</div></a></td>');
 	}
 }
-
-
-
 //This function returns an array of the n nearest events from the user with the event id for screens larger than 767px
 function getEventsNearMeLargeScreens(events,n){
 
 	//if we resize the screen from small to big we check if there is already the thead. We create a thead only once
 	let element =  document.querySelector('thead');
 	if (typeof(element) === 'undefined' || element === null)//thead doesn't exist and need to be added
-		{
-			//this will generate the head of the table
-			$eventsTable.append('<thead></thead>');
-			const $thead = $('thead');
-			const $meetupNameThead = '<th><i class="fa fa-bolt" aria-hidden="true"></i> Meetup</th>';
-			const $meetupDistanceThead = '<th><i class="fa fa-map-marker" aria-hidden="true"></i> Distance</th>';
-			const $meetupGroupNameThead = '<th><i class="fa fa-child" aria-hidden="true"></i> By </th>';
-			const $meetupWhenThead = '<th><i class="fa fa-handshake-o" aria-hidden="true"></i> When</th>';
-			const $meetupFeesThead = '<th><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Fees</th>';
+	{
+		//this will generate the head of the table
+		$eventsTable.append('<thead></thead>');
+		const $thead = $('thead');
+		const $meetupNameThead = '<th><i class="fa fa-bolt" aria-hidden="true"></i> Meetup</th>';
+		const $meetupDistanceThead = '<th><i class="fa fa-map-marker" aria-hidden="true"></i> Distance</th>';
+		const $meetupGroupNameThead = '<th><i class="fa fa-child" aria-hidden="true"></i> By </th>';
+		const $meetupWhenThead = '<th><i class="fa fa-handshake-o" aria-hidden="true"></i> When</th>';
+		const $meetupFeesThead = '<th><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Fees</th>';
 
-			$thead.append($meetupNameThead);
-			$thead.append($meetupDistanceThead);
-			$thead.append($meetupGroupNameThead);
-			$thead.append($meetupWhenThead);
-			$thead.append($meetupFeesThead);
-		}
+		$thead.append($meetupNameThead);
+		$thead.append($meetupDistanceThead);
+		$thead.append($meetupGroupNameThead);
+		$thead.append($meetupWhenThead);
+		$thead.append($meetupFeesThead);
+	}
 
 
 	$( "tr" ).remove( ".event" );
@@ -295,16 +233,28 @@ function triggerSearch(e) {
 			$eventTopic.text(topic);
 		}
 		//this will render the 10 closest events from you on the page
-		getEventsMeetups(coordinates[0],coordinates[1],50);
+		getEventsMeetups(coordinates[0],coordinates[1],50,10);
 	}
 }
+
+
+$searchTopic.change(function() {
+	let newTopic='';
+	let topicInput = $searchTopic.val();
+	topicWords= topicInput.split(' ');
+	console.log(topicWords);
+	for(let i=0; i<topicWords.length-1;i++){
+		newTopic += topicWords[i]+' AND ';
+	}
+	topic= newTopic+topicWords[topicWords.length-1];
+});
 
 
 
 // This sample uses the Place Autocomplete widget requesting only a place
 // ID to allow the user to search for and locate a place. This is the Google API.
 // This example requires the Places library.
-function initMap() {
+/*function initMap() {
 	const input = document.getElementById('searchLocation');
 	let autocomplete = new google.maps.places.Autocomplete(
 		input,
@@ -335,30 +285,18 @@ function initMap() {
 	});
 	return coordinates;
 }
-
-//This function changes the format of the topic to be send to the API in the right format
-function updateTopic() {
-	let topicInput = $searchTopic.val();
-	topicWords= topicInput.split(' ');
-	let newTopic= topicWords.join(' AND ');
-	if(newTopic !== topic){
-		topic= newTopic;
-		events=[];
-	}
-
-}
+*/
 
 $searchBtn.click(function(){
-	//this will change the location in coordinates with the Google API and render the 10 nearest events on the page for the location you choose and for
+	//this will change the location in coordinates with the Google API and render the 20 nearest events on the page for the location you choose and for
 	//the topic you choose. If no topic, the default value will be Javascript
-	updateTopic();
 	let location = $searchLoc.val();
 	if(location){
 		initMap();
-		getEventsMeetups(coordinates[0],coordinates[1],50);
+		getEventsMeetups(coordinates[0],coordinates[1],50,10);
 		$eventPlace.text(location);
 	}else{
-		getEventsMeetups(xUser, yUser, 50);
+		getEventsMeetups(xUser, yUser, 50, 10);
 		$eventPlace.text('you');
 	}
 	if(topic.length===0){
@@ -382,11 +320,9 @@ $allEventsBtn.click(function(){
 		$eventTopic.text(topic);
 	}
 	console.log(events.length+10);
-	getEventsMeetups(coordinates[0],coordinates[1],50);
+	getEventsMeetups(coordinates[0],coordinates[1],50,events.length+10);
 
 });
-
-//This is the event when you click on the target button, it will get your location
 $targetBtn.click(function() {
 	$searchLoc.val('');
 	$eventPlace.text('you');
@@ -396,7 +332,7 @@ $targetBtn.click(function() {
 		$eventTopic.text(topic);
 	}
 	//this will render the 10 closest events from you on the page
-	getEventsMeetups(xUser,yUser,50);
+	getEventsMeetups(xUser,yUser,50,10);
 });
 
 //This function will change or not the style of the page when resizing the page depending on what is the size of the screen

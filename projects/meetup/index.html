@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Meetup Finder</title>
+	<title>Meetups Finder</title>
   	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -13,13 +13,37 @@
 	</header>
 	<div id="section">
 		<div>
-			<h2>You are looking for Meetups around <span id="eventPlace">you</span> about <span id="eventTopic">Javascript</span></h2>
+			<h2>You are looking for Events around <span id="eventPlace">you</span> about <span id="eventTopic">Javascript</span></h2>
 		</div>
 		<div class="searchBar">
-			<input type="text" name="searchTopic" id="searchTopic" placeholder="Topic" value="Javascript">
-			<input type="text" name="searchLocation" id="searchLocation" placeholder="Location" onFocus="initMap()" >
+			<label for="searchTopic"></label>
+			<select id="searchTopic" class="selectList">
+				<option name="topic" class="sortFilter" value="Coding">Coding</option>
+				<option name="topic" class="sortFilter" value="Front-end development">Front-end</option>
+				<option name="topic" class="sortFilter" value="Javascript" selected> Javascript</option>
+				<option name="topic" class="sortFilter" value="React javascript">React</option>
+				<option name="topic" class="sortFilter" value="Vue javascript">Vue.js</option>
+				<option name="topic" class="sortFilter" value="Angular">Angular</option>
+				<option name="topic" class="sortFilter" value="Back-end development">Back-end</option>
+				<option name="topic" class="sortFilter" value="C#">C#</option>
+				<option name="topic" class="sortFilter" value="C++">C++</option>
+				<option name="topic" class="sortFilter" value="Java">Java</option>
+				<option name="topic" class="sortFilter" value="PHP">PHP</option>
+				<option name="topic" class="sortFilter" value="Python">Python</option>
+				<option name="topic" class="sortFilter" value="Ruby">Ruby</option>
+			</select>
+			<input type="text" name="searchLocation" id="searchLocation" placeholder="Location" onFocus="initMap()">
 			<button id="targetBtn"><i class="fa fa-crosshairs fa-2x" aria-hidden="true"></i></button>
 			<button id="searchBtn" class="searchBtn"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+		</div>
+		<div id="sortSection">
+			<label for="sortList">Sort the results by</label>
+			<select id="sortList" class="selectList" onClick="sortResults()">
+				<option value="distance" id="distance" name="sort" class="sortFilter" selected>Distance</option>
+				<option value="date" id="date" name="sort" class="sortFilter">Date</option>
+				<option value="fees" id="fees" name="sort" class="sortFilter" >Fees</option>
+			</select>
+			<i class="fa fa-caret-down" aria-hidden="true"></i>
 		</div>
 		<div id="contenu">
 			<table class="tableEvent">
@@ -29,7 +53,7 @@
 			</table>
 		</div>
 		<div>
-			<button id="allEventsBtn">Get all events</button>
+			<button id="allEventsBtn">Get more events</button>
 			<div id="fullTableEvents">
 				
 			</div>
