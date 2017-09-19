@@ -113,8 +113,6 @@ function parseAPIResponse (data) {
 		$allEventsBtn.css({'display':'block'});
 	}
 
-
-
 	const eventsAPI = createEvent(data.results, data.results.length);
 	const eventList = events.concat(eventsAPI);
 	events = eventList;
@@ -359,6 +357,7 @@ $searchBtn.click(function(){
 	updateTopic();
 	let location = $searchLoc.val();
 	if(location){
+		events=[];
 		initMap();
 		getEventsMeetups(coordinates[0],coordinates[1],50);
 		$eventPlace.text(location);
@@ -392,7 +391,7 @@ $allEventsBtn.click(function(){
 });
 
 //This is the event when you click on the target button, it will get your location
-$targetBtn.click(function() {
+/*$targetBtn.click(function() {
 	$searchLoc.val('');
 	$eventPlace.text('London');
 	if (topic.length === 0) {
@@ -402,7 +401,7 @@ $targetBtn.click(function() {
 	}
 	//this will render the 10 closest events from you on the page
 	getEventsMeetups(xUser,yUser,50);
-});
+});*/
 
 //This function will change or not the style of the page when resizing the page depending on what is the size of the screen
 window.onresize = function() {
