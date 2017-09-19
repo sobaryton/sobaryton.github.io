@@ -1,7 +1,7 @@
 let events=[];
-let coordinates=[];
-let xUser;
-let yUser;
+let coordinates=[51.5818047,-0.23234880000000002];
+let xUser = 51.5818047;
+let yUser = -0.23234880000000002;
 let topic = 'Javascript';
 const sigID = 222881367;
 const $events = $('#eventsNearMe');
@@ -15,15 +15,18 @@ const $eventPlace = $('#eventPlace');
 const $eventTopic = $('#eventTopic');
 const $sortSelect = $('#sortList');
 
+window.onload(getEventsMeetups(xUser,yUser,50));
 
 //get the localisation of the user and call the function, which gets the 5th nearest events from me
-navigator.geolocation.getCurrentPosition(function(position) {
+//only working for HTTPS
+/*navigator.geolocation.getCurrentPosition(function(position) {
 	xUser = position.coords.latitude;
 	yUser = position.coords.longitude;
 	coordinates.push(xUser);
 	coordinates.push(yUser);
+	console.log(coordinates);
 	getEventsMeetups(xUser,yUser,50);
-});
+});*/
 
 /*This function call the Meetup APi to get back a number of events in an area and will create an event for each meetup*/
 function getEventsMeetups(latitude,longitude,radius){
@@ -72,7 +75,6 @@ function getEventsMeetups(latitude,longitude,radius){
 			break;
 	}
 
-
 	const meetupAPI = "https://api.meetup.com/2/open_events";
 	console.log(latitude, longitude);
 	const parameters = {
@@ -91,7 +93,6 @@ function getEventsMeetups(latitude,longitude,radius){
 		order:'distance',
 		sig_id: sigID,
 		sig: sigApi
-
 	};
 
 	$.ajax({
@@ -286,7 +287,7 @@ function triggerSearch(e) {
 		if (location) {
 			$eventPlace.text(location);
 		} else {
-			$eventPlace.text('you');
+			$eventPlace.text('London');
 		}
 		topic = $searchTopic.val();
 		if(topic.length===0){
@@ -359,7 +360,7 @@ $searchBtn.click(function(){
 		$eventPlace.text(location);
 	}else{
 		getEventsMeetups(xUser, yUser, 50);
-		$eventPlace.text('you');
+		$eventPlace.text('London');
 	}
 	if(topic.length===0){
 		$eventTopic.text('anything');
@@ -374,7 +375,7 @@ $allEventsBtn.click(function(){
 	if(location){
 		$eventPlace.text(location);
 	}else{
-		$eventPlace.text('you');
+		$eventPlace.text('London');
 	}
 	if(topic.length===0){
 		$eventTopic.text('anything');
@@ -389,7 +390,7 @@ $allEventsBtn.click(function(){
 //This is the event when you click on the target button, it will get your location
 $targetBtn.click(function() {
 	$searchLoc.val('');
-	$eventPlace.text('you');
+	$eventPlace.text('London');
 	if (topic.length === 0) {
 		$eventTopic.text('anything');
 	} else {
