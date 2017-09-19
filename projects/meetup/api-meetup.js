@@ -106,11 +106,20 @@ function getEventsMeetups(latitude,longitude,radius){
 }
 //this function is called by the API
 function parseAPIResponse (data) {
+	//if there are no events
+	if(typeof(data.results)==='undefined'){
+		const sentence = '<tr class="event">Sorry there are no Meetups for this place at this date ... <i class="fa fa-frown-o" aria-hidden="true"></i></tr>';
+		$('#contenu').append(sentence);
+	}
+
 	if(data.results.length<=events.length && data.results.length!==10){
 		$allEventsBtn.css({'display':'none'});
 	}else{
 		$allEventsBtn.css({'display':'block'});
 	}
+
+
+
 	const eventsAPI = createEvent(data.results, data.results.length);
 	const eventList = events.concat(eventsAPI);
 	events = eventList;
@@ -137,7 +146,7 @@ function createEvent(array, n){
 	return newListEvents;
 }
 
-//This function decides which fnction to call in order to display correctly the results
+//This function decides which function to call in order to display correctly the results
 function updateEvents(array,n){
 	console.log(array);
 
