@@ -75,7 +75,7 @@ function getEventsMeetups(latitude,longitude,radius){
 			break;
 	}
 
-	const meetupAPI = "https://api.meetup.com/2/open_events";
+	const meetupAPI = "https://api.meetup.com/find/upcoming_events";
 	console.log(latitude, longitude);
 	const parameters = {
 		and_text: 'False',
@@ -107,6 +107,7 @@ function getEventsMeetups(latitude,longitude,radius){
 //this function is called by the API
 function parseAPIResponse (data) {
 
+	console.log(data)
 	if(data.results.length<=events.length && data.results.length!==10){
 		$allEventsBtn.css({'display':'none'});
 	}else{
