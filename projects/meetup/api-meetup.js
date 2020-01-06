@@ -17,6 +17,25 @@ const $sortSelect = $('#sortList');
 
 window.onload(getEventsMeetups(xUser,yUser,50));
 
+let isAccessTokenInURL = false;
+let urlHash = window.location.hash;
+
+urlHash.indexOf('#access_token=') > -1? isAccessTokenInURL = true: isAccessTokenInURL = false;
+console.log('urlHash',urlHash);
+
+if(!isAccessTokenInURL){
+	//we dont have the token
+	// window.location = 'https://secure.meetup.com/oauth2/authorize?client_id=nnmbn5ekl0kqvqb3fvfjnj1h2g&response_type=token&redirect_uri=http://sodev.me/projects/meetup/index.html';
+}else{
+	//we have the token
+	const tokenPattern = /access_token=([a-z0-9]*)&/gm;
+	const urlRedirection = window.location.hash;
+	let tokenObj = tokenPattern.exec(urlRedirection);
+	let token = tokenObj[1];
+	console.log(tokenObj[1]);
+
+}
+
 //get the localisation of the user and call the function, which gets the 5th nearest events from me
 //only working for HTTPS
 /*navigator.geolocation.getCurrentPosition(function(position) {
@@ -90,9 +109,7 @@ function getEventsMeetups(latitude,longitude,radius){
 		country:'gb',
 		text:topic,
 		page: 10,
-		order:'distance',
-		sig_id: sigID,
-		sig: sigApi
+		order:'distance'
 	};
 
 	$.ajax({

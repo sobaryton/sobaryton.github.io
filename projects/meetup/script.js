@@ -21,6 +21,20 @@ navigator.geolocation.getCurrentPosition(function(position) {
   getEventsNearMe(t,5);
 });
 
+let isAccessTokenInURL = false;
+let urlHash = window.location.hash;
+
+urlHash.indexOf('#access_token=') > -1? isAccessTokenInURL = true: isAccessTokenInURL = false;
+console.log('urlHash',urlHash);
+
+if(!isAccessTokenInURL){
+	//we dont have the token
+	window.location = 'https://secure.meetup.com/oauth2/authorize?client_id=nnmbn5ekl0kqvqb3fvfjnj1h2g&response_type=token&redirect_uri=http://sodev.me/projects/meetup/index.html';
+}else{
+	//we have the token
+
+}
+
 //this generates randomly coordinates between -10 and 10
 function generateCoordinates(){
 	let coordinate = (Math.random() * 10);

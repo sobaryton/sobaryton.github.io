@@ -36,6 +36,27 @@ function redirect() {
 
 
 /*This function call the Meetup APi to get back a number of events in an area and will create an event for each meetup*/
+// function getAccessToken(){
+// 	const meetupAPI = "https://api.meetup.com/oauth/request/";
+// 	const parameters = {
+// 		key: keyAPI,
+// 		consumer_key: clientKey,
+// 		oauth_callback:'oob',
+// 		user: user
+// 		/*key: '76581a6f73323210786c5d7bb85a7d',
+// 		sign: 'true',*/
+// 	};
+
+// 	$.ajax({
+// 		url: meetupAPI,
+// 		type: "POST",
+// 		crossDomain: true,
+// 		data: $.param(parameters),
+// 		dataType: "jsonp",
+// 		jsonpCallback: "parseAPIResponse"
+// 	});
+// }
+
 function getAccessToken(){
 	const meetupAPI = "https://api.meetup.com/oauth/request/";
 	const parameters = {
@@ -56,6 +77,7 @@ function getAccessToken(){
 		jsonpCallback: "parseAPIResponse"
 	});
 }
+
 //this function is called by the API
 function parseAPIResponse (data) {
 	/*if(data.results.length<=events.length && data.results.length!==10){
