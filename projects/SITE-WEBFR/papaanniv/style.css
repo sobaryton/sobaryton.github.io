@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+}
+body .mainContainer {
+  width: 100vw;
+  height: 84vh;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+body .mainContainer.state0 {
+  background-image: url('./images/people-toasting-wine-glasses-3171837.jpg');
+  background-size: cover;
+}
+body .mainContainer.state1 {
+  background-image: url('./images/nounous.jpg');
+  background-size: cover;
+  background-position: center;
+}
+body .mainContainer.state2 {
+  background-image: url('./images/photography-of-people-having-fun-954623.jpg');
+  background-size: cover;
+}
+body .mainContainer.state3 {
+  background-image: url('./images/voiture.jpg');
+  background-size: cover;
+  background-position: center;
+}
+body .mainContainer.state4 {
+  background-image: url('./images/meninblack.jpg');
+  background-size: cover;
+}
+body .mainContainer.state5 {
+  background-image: url('./images/dodo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+body .mainContainer.state6 {
+  background-image: url('./images/vieux.jpeg');
+  background-size: cover;
+}
+body .mainContainer.state7 {
+  background-image: url('./images/birthday-cake-in-men-s-hands-6203.jpg');
+  background-size: cover;
+}
+body .mainContainer.state8 {
+  background-image: url('./images/clown.jpeg');
+  background-size: cover;
+}
+body .container {
+  background: rgba(250, 250, 250, 0.85);
+  padding: 30px;
+}
+body .container .sentence {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+body .container .sentence.active {
+  width: 450px;
+  height: 150px;
+  visibility: visible;
+  opacity: 1;
+}
+body .container .sentence.active p, body .container .sentence.active div {
+  opacity: 1;
+  margin-left: 0;
+  transition: 1s ease all;
+}
+body .container .sentence.hidden {
+  width: 100%;
+  visibility: none;
+  opacity: 0;
+  height: 0;
+}
+body .container .sentence.hidden p, body .container .sentence.hidden div {
+  opacity: 0;
+  margin-left: -50px;
+  transition: 1s ease all;
+  pointer-events: none;
+}
+body .container button {
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  padding: 15px;
+  width: 100%;
+  background: rgba(255, 195, 113, 0.3);
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  outline: none;
+}
+body .container button:before, body .container button:after {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  content: "";
+  background: linear-gradient(to right, #FF5F6D, #FFC371);
+  transition: 0.8s all ease;
+}
+body .container button:before {
+  bottom: 0;
+}
+body .container button:after {
+  top: 0;
+}
+body .container button:hover {
+  background: rgba(255, 195, 113, 0.4);
+}
+body .container button:hover::before {
+  width: 100%;
+}
