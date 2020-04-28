@@ -71,6 +71,17 @@
 	.modal-body{
 		flex-direction: column;
 	}
+	.imageWrap{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.imageWrap .img-desktop{
+		margin: 10px 0;
+	}
 
 	#modal-body-mogo{
 		height: 400px;
@@ -296,6 +307,13 @@
 		width: 400px;
 		height: auto;
 	}
+	.imageWrap{
+		width: 400px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 	.project_txt div{
 		width: 300px;
 		padding-left: 20px;
@@ -385,6 +403,18 @@
 		height: auto;
 	}
 
+	.imageWrap{
+		width: 400px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.imageWrap .img-desktop{
+		margin: 10px 0;
+	}
+
 	.project_txt div{
 		width: 300px;
 	}
@@ -455,6 +485,9 @@
 	}
 	.modal-body{
 		flex-direction: row;
+		align-items: flex-start;
+		overflow-y: scroll;
+		max-height: 430px;
 	}
 	/*Work on the footer*/
 	#footer-social {

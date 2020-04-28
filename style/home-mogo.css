@@ -194,20 +194,20 @@ h1
 	text-align: center;
 }
 .workProjects a h3:hover,.workProjects a:focus, .workProjects a:hover{
-	text-decoration: none!important;
+	text-decoration: none;
 }
 .btnAction, .btnAction:visited
 {
 	text-align: center;
 	font-family: 'Jura',Courier,sans-serif;
-	width: 180px !important;
-	height: 50px !important;
+	width: 180px;
+	height: 50px;
 	background-color: transparent;
 	color: #DE6C83;
 	border: 2px solid #DE6C83;
 	text-decoration: none;
 	font-size: 1.7em;
-	line-height: 44px;
+	padding: 5px 10px;
 }
 .btnAction:hover
 {
@@ -218,7 +218,6 @@ h1
 }
 .btnAction:focus{
 	text-decoration: none;
-	color: white;
 }
 
 /********************************Work on the section skills****************************************/
@@ -668,7 +667,7 @@ textarea
 .modal-body{
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-start;
 
 }
 .modal-body h3, .modal-title{
@@ -695,6 +694,7 @@ textarea
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 1.7em;
+	padding: 5px 10px;
 }
 .btnActionWork:hover
 {
@@ -705,7 +705,6 @@ textarea
 }
 .btnActionWork:focus{
 	text-decoration: none;
-	color: white;
 }
 /*Illustrations Mogo*/
 #modal-body-mogo{
