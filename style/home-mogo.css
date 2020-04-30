@@ -120,9 +120,14 @@ h1
 	opacity: 1;
 }
 /********************************Work on the section Intro****************************************/
+#intro{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 #introTxt p, #introTxt h2
 {
-	text-align: center;
+	text-align: justify;
 	width: 80%;
 }
 /********************************Work on the section numbers****************************************/
@@ -668,10 +673,17 @@ textarea
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
-
+	overflow-y: auto;
+  max-height: 400px;
+}
+.modal-body .project_txt{
+	padding-right: 20px;
 }
 .modal-body h3, .modal-title{
 	font-family: 'Jura',Courier,sans-serif;
+}
+.modal-body .imageWrap img{
+	margin: 10px 0;
 }
 .modal-title{
 	font-size: 2.2em;

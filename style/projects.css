@@ -486,7 +486,7 @@
 	.modal-body{
 		flex-direction: row;
 		align-items: flex-start;
-		overflow-y: scroll;
+		overflow-y: auto;
 		max-height: 430px;
 	}
 	/*Work on the footer*/

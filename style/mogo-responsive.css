@@ -146,6 +146,7 @@
 	{
 		margin-top: 20px;
 		margin-bottom: 70px;
+		flex-direction: column;
 	}
 	#fox2 
 	{
@@ -190,6 +191,8 @@
 	}
 	.modal-body{
 		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
 	}
 	.modal-title{
 		text-align: center;
@@ -350,6 +353,7 @@
 	h1
 	{
 		font-size: 3em;
+		margin-bottom: 90px;
 	}
 	h2
 	{
@@ -454,15 +458,19 @@
 	{
 		margin-top: 20px;
 		margin-bottom: 70px;
+		flex-direction: row;
 	}
 	#fox
 	{
 		height: 100%;
 		text-align: center;
+		display: flex;
+    justify-content: center;
+    align-items: center;
 	}
 	#fox img
 	{
-		margin-top: 50%;
+		width: 70%;
 	}
 	#introTxt p, #introTxt h2
 	{
@@ -728,10 +736,13 @@
 	{
 		height: 100%;
 		text-align: center;
+		display: flex;
+    justify-content: center;
+    align-items: center;
 	}
 	#fox img
 	{
-		margin-top: 30%;
+		width: 80%;
 	}
 	#introTxt p, #introTxt h2
 	{
@@ -958,14 +969,12 @@
 	}
 	#fox img
 	{
-
-		margin-top: 20px;
-
+		width: 80%;
 	}
 	#introTxt p, #introTxt h2
 	{
-		text-align: center;
-		width: 80%;
+		text-align: justify;
+		width: 90%;
 	}
 
 /********************************Work on the section numbers****************************************/
@@ -998,6 +1007,8 @@
 	}
 	.modal-body{
 		flex-direction: row;
+		justify-content: space-around;
+    align-items: flex-start;
 	}
 
 	/*Work on the mogo project section*/
