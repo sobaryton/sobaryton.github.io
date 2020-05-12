@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#">
+<head >
+	<title>SoDev</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Athiti|Jura" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style/home-mogo.css">
+	<link rel="stylesheet" type="text/css" href="../style/mogo-responsive.css">
+	<link rel="stylesheet" type="text/css" href="../style/blogArticle.css">
+	<meta name="SoDev" content="Site front end developer" />
+	<link rel="icon" href="../images/icone2.ico">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" value="SoDev">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="SoDev"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://sodev.me"/>
+	<meta property="og:image" content="images/logoNew2.png"/>
+	<meta property="og:description" content="Front end developer website"/>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-103143192-1', 'sodev.me');
+		ga('send', 'pageview');
+
+	</script>
+</head>
+<body>
+<header role="banner" class="blogHeader" >
+	<div id="toptop"></div>
+	<div class="navbar">
+		<div class="container" id="hautDePage">
+			<div class="navbar-header">
+				<a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".navigation"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				</a>
+				<div class="navbarbrand">
+					<a class="navbar-brand" href="../index.html">SoDev</a>
+				</div>
+			</div>
+
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+
+			<div class="collapse navbar-collapse navigation" id="navig">
+				<ul class="nav navbar-nav navbar-left ">
+					<li class="active"><a href="../index.html">Home</a></li>
+					<li><a href="../work.html">Work </a></li>
+					<li><a href="../cv.html">About me</a></li>
+					<li><a href="../blog.html">Blog</a></li>
+					<li><a href="../index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="titreBlog">
+		<h1>FizzBuzz with TDD</h1>
+		<p><span class="articleDate">12/05/2020</span></p>
+	</div>
+	<!-- Work on the triangle waves -->
+	<div id="crans"></div>
+</header>
+<main id="blog">
+	<div id="sideBar">
+		<!-- Work on the social links -->
+		<div class="bubbleSide">
+			<a href="https://www.linkedin.com/in/solenebary" target="_blank" class="menuHide">
+				<i class="fa fa-linkedin-square fa-3x " aria-hidden="true"></i>
+			</a>
+			<a href="http://gb.viadeo.com/fr/profile/sol%C3%A8ne.bary" target="_blank" class="menuHide">
+				<i class="fa fa-viadeo-square fa-3x" aria-hidden="true" ></i>
+			</a>
+			<a href="https://github.com/sobaryton" target="_blank" class="menuHide">
+				<i class="fa fa-github fa-3x" aria-hidden="true" ></i>
+			</a>
+			<a href="https://codepen.io/sobary/" target="_blank" class="menuHide">
+				<i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+			</a>
+			<i class="fa fa-share-alt-square fa-3x" aria-hidden="true"></i>
+		</div>
+		<a href="#toptop" class="top"><i class="fa fa-arrow-circle-up fa-3x" id="btnTop"></i></a>
+	</div>
+
+	<section class="blogIntro">
+		<div>
+			<h3>What is TDD?</h3>
+			<p> 
+        <span class="blogIntroTxt">
+          TDD stands for Test Driven Development. Let's see how to apply this method for the FizzBuzz exercise.
+        </span>
+      </p>
+		</div>
+	</section>
+	<section class="articleCol step1">
+		<div>
+			<h3>
+				<span class="stepTitle ">TDD definition</span>
+			</h3>
+			<div>
+				<p>
+					Basically when you begin to write a functionality, you have some steps before diving into coding:
+				</p>
+				<ul>
+					<li>Identify the need</li>
+					<li>Define the need with words and try to put on paper how the functionality should answer the issue</li>
+          <li>Create a file for tests and set up your environment</li>
+          <li>Write the test</li>
+          <li>Run the test and it should fail as the functionality is not yet implemented</li>
+          <li>Implement the functionality until the test passes</li>
+          <li>Refactor the code</li>
+				</ul>
+				<p>
+					Why do we do this way and not the other way? 
+        </p>
+        <p>
+          It is to ensure that all the requirements from the stakeholders are met and be sure that the functionality that we will write answer this. If you do it on the other way, you will write a test that meets what you coded.
+        </p>
+        <p>
+					<span class="highlight">REMEMBER</span>, what you implemented is what you think the feature should do. You should always ask the stakeholders to make sure of what they want.
+				</p>
+			</div>
+		</div>
+		<div>
+			<img src="../images/blog/A3/whiteBoard.png" class="stepImg">
+		</div>
+	</section>
+	<section class="step step2">
+		<div>
+			<h3>
+				<span class="stepTitle">In practice with Mocha and Chai</span>
+			</h3>
+			<div>
+				<p>
+          Context: you want to implement a functionality that is returning:
+        </p>
+        <ul>
+          <li>“Fizz” if the number can be divided by 3</li>
+          <li>“Buzz” if the number can be divided by 5</li>
+          <li>“FizzBuzz” if the number can be divided by 3 and by 5</li>
+          <li>the number if not</li>
+        </ul>
+				<p>
+          Let's write the shell of the test:
+				</p>
+				<p class='code'>
+          <pre><code>
+describe(‘FizzBuzz functionality’){
+  it(‘should return Fizz if the number can be divided by 3 ’, () => {});
+  it(‘should return Buzz if the number can be divided by 5 ’, () => {});
+  it(‘should return FizzBuzz if the number can be divided by 3 and by 5 ’, () => {});
+  it(‘should return number if the number can’t be divided by 3 or 5 ’, () => {});
+}          
+          </pre></code>
+        </p>
+        <p>
+          We will focus first on the multiple of 5 only for an example. Let’s write that with the terminology of Chai.js: expect:
+        </p>
+        <p class='code'>
+          <pre><code>
+describe("FizzBuzz functionality", () => {
+  it("should return Buzz if the number can be divided by 5", () => {
+    expect(fizzbuzz(5)).to.equal("Buzz");
+    expect(fizzbuzz(10)).to.equal("Buzz");
+    expect(fizzbuzz(20)).to.equal("Buzz");
+  });
+});
+
+//This returns an error
+  
+FizzBuzz functionality
+  1) should return Buzz if the number can be divided by 5
+
+
+0 passing (25ms)
+1 failing
+
+1) FizzBuzz functionality
+      should return Buzz if the number can be divided by 5:
+    TypeError: fizzbuzz is not a function
+    at Context.<anonymous> (test\fizzbuzz.test.js:7:12)
+    at processImmediate (internal/timers.js:456:21)            
+          </code></pre>
+        </p>
+        <p>
+          If you run the test file, this will fail, as we never implemented the functionality.The next step is to write the actual code.
+        </p>
+        <p class='code'>
+          <pre><code>
+exports.fizzbuzz = (n) => {
+  if(n%5 === 0){
+    return('Buzz')
+  }
+  return n;
+};            
+          </code></pre>
+        </p>
+        <p>
+          This will work and pass the test. And then we repeat this process until we get all the tests for all the cases:
+        </p>
+        <p class='code'>
+          <pre><code>
+describe("FizzBuzz functionality", () => {
+  it("should return Buzz if the number can be divided by 5", () => {
+    expect(fizzbuzz(5)).to.equal("Buzz");
+    expect(fizzbuzz(10)).to.equal("Buzz");
+    expect(fizzbuzz(20)).to.equal("Buzz");
+  });
+  it("should return Fizz if the number can be divided by 3", () => {
+    expect(fizzbuzz(3)).to.equal("Fizz");
+    expect(fizzbuzz(9)).to.equal("Fizz");
+    expect(fizzbuzz(18)).to.equal("Fizz");
+  });
+  it("should return FizzBuzz if the number can be divided by 3 and by 5", () => {
+    expect(fizzbuzz(15)).to.equal("FizzBuzz");
+    expect(fizzbuzz(30)).to.equal("FizzBuzz");
+  });
+  it("should return number if the number can’t be divided by 3 or 5", () => {
+    expect(fizzbuzz(7)).to.equal(7);
+    expect(fizzbuzz(11)).to.equal(11);
+    expect(fizzbuzz(17)).to.equal(17);
+  });
+});            
+          </code></pre>
+        </p>
+        <p>
+          And just as before we adapt the code for it to pass the tests, even if for now, it is not the best solution. We just want a functionality that passes the tests. We got that:
+        </p>
+        <p class='code'>
+          <pre><code>
+exports.fizzbuzz = (n) => {
+  if(n%3 === 0 && n%5 === 0){
+    return('FizzBuzz');
+  } else if(n%3 === 0){
+    return('Fizz');
+  } else if(n%5 === 0){
+    return('Buzz');
+  } else {
+    return n;
+  }
+};            
+          </code></pre>
+        </p>
+        <p>
+          Now it is time to refactor our code. This means find a solution that passes the tests and that is clean, nice and reusable:
+        </p>
+        <p class='code'>
+          <pre><code>
+exports.fizzbuzz = (n) => {
+  let answer = "";
+  n%3 === 0 ? answer += "Fizz" : null;
+  n%5 === 0 ? answer += "Buzz" : null;  
+  return answer.length > 0 ? answer : n;
+};            
+          </code></pre>
+        </p>
+			</div>
+		</div>
+	</section>
+	<section class="step step2">
+		<div class="stepArticle">
+			<h3>
+				<span class="stepTitle">What's next?</span>
+			</h3>
+			<div>
+        <p>
+          Maybe you think, ok now my code is passing the tests. Then, let's clean and discard the test files.
+        </p>
+        <p>
+          <span class="highlight">STOP</span>          
+        </p>
+        <p>
+          Once you've got your tests, keep them and when you or another dev is working on it, these tests will be very important. They will tell us if the new bit of code is breaking a feature!
+        </p>
+        <p>
+          Finally tests are important as they describe the behaviour of our application. This is therefore a source of information for the developers.
+        </p>
+			</div>
+		</div>
+		<div class="imgBlog">
+			<img src="../images/blog/A3/coding-computer-data-depth-of-field-577585.jpg" class="stepImg">
+		</div>
+  </section>
+  <section class="step step1">
+		<div>
+			<h3>
+				<span class="stepTitle">Cool features</span>
+			</h3>
+			<div>
+        <p>
+          <span class="highlight">it.only()</span>
+        </p>
+        <p>
+          One little trick I learnt was that you can run one test at the time, if you write it.only() at the beginning instead of it(). This can be very useful to debug. But don’t forget to run all the tests after that to see if you didn't break another test.
+        </p>
+        <p class='code'>
+          <pre><code>
+it.only('should return a status of 200', async () => {
+  const res = await chai.request
+    .get(`/`);
+  expect(res.status).to.equal(200);
+});                    
+          </code></pre>
+        </p>
+        <p>
+          <span class="highlight">xit()</span>
+        </p>
+        <p>
+          If you think about one test you will need to implement, but for some reasons you can’t right now, you can still write it and instead of it(), write xit(). 
+        </p>
+        <p class='code'>
+          <pre><code>
+xit('should return a status of 200', () => {
+  //Your test here
+});                             
+          </code></pre>
+        </p>
+        <p>
+          <span class="highlight">before-after</span> and <span class="highlight">beforeEach-afterEach</span>
+        </p>
+        <p>
+          If we need to do some steps before or after the set of tests, we can use them inside the describe. This can be be useful for example if you need to connect your app to a database. Then we can do before the test and then run the test.
+        </p>
+        <p class="code">
+          <pre><code>
+after(() => {
+  mongoose.disconnect(() => {
+    mongoose.models = {};
+    mongoose.modelSchemas = {};
+    mongoose.connection.close();
+  });
+});
+
+describe('GET information', () => {
+  let agent;
+  
+  beforeEach(async () => {
+    agent = chai.request.agent(app);
+    const res = await agent
+      .get(`/user`);
+  });
+
+  describe('New info object structure', () => {
+    it('should be an object', async () => {
+      const res = await agent
+        .get(`/info`);
+      expect(res.body).to.be.an('object');
+    });
+  });
+});
+          </code></pre>
+        </p>
+        <p>
+          <span class="highlight">async/await</span>
+        </p>
+        <p>
+          In the case we have to do some API calls for example we can use the pair async/await in the test:
+        </p>
+        <p class='code'>
+          <pre><code>
+it('should return successful status 200', async () => {
+  const res = await agent
+    .get(`/`);
+  expect(res.status).to.equal(200);
+});                                 
+          </code></pre>
+        </p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div id="disqus_thread">
+			<a href="http://foo.com/bar.html#disqus_thread">Link</a>
+		</div>
+		<script>
+
+			/**
+			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+			var disqus_config = function () {
+				this.page.url = 'http://sodev.me/blogArticle/blog.A3.html';  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = 'sodevBlog_A3'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+
+			(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = 'https://http-sodev-me.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	</section>
+</main>
+
+<script src="../script/jquery-3.2.0.min.js"></script>
+<script src="../script/bootstrap.min.js"></script>
+<script id="dsq-count-scr" src="//http-sodev-me.disqus.com/count.js" async></script>
+<script src="../script/home-mogo.js"></script>
+</body>
+</html>
