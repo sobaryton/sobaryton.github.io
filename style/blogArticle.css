@@ -81,6 +81,11 @@
 	.imgBlog{
 		width: 100%;
 	}
+	pre {
+		padding: 0.5rem;
+		margin: 1rem 0;
+		width: 100%;
+	}
 }
 
 
@@ -165,6 +170,11 @@
 	.imgBlog{
 		width: 75%;
 	}
+	pre {
+		padding: 0.5rem;
+		margin: 1rem 0;
+		width: 100%;
+	}
 }
 
 
@@ -246,6 +256,11 @@
 		width: 40%;
 		margin-left: 2rem;
 	}
+	pre {
+		padding: 1rem;
+		margin: 2rem 0;
+		width: 90%;
+	}
 }
 
 
@@ -326,6 +341,11 @@
 		width: 40%;
 		margin-left: 2rem;
 	}
+	pre {
+		padding: 1rem;
+		margin: 2rem 0;
+		width: 80%;
+	}
 }
 
 pre, code {
@@ -336,9 +356,6 @@ pre {
 	tab-size: 4;
 	background: #333;
 	color: #fff;
-	padding: 1rem;
-	margin: 2rem 0;
-	width: 80%;
 }
 pre > code {
   display: block;
