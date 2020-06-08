@@ -220,6 +220,20 @@
 	#modal-body-mogo{
 		height: 400px;
 	}
+
+	/********************************Work on the section CodePen****************************************/
+	.codePenItem{
+		align-items: center;
+		flex-direction: column;
+	}
+	.codePenProject{
+		width: 100%;
+	}
+	.codePenDesc{
+		width: 100%;
+		padding: 1rem 0;
+	}
+
 /********************************Work on the section skills****************************************/
 	.skillsSquare
 	{
@@ -529,6 +543,20 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	/********************************Work on the section CodePen****************************************/
+	.codePenItem{
+		align-items: center;
+		flex-direction: column;
+	}
+	.codePenProject{
+		width: 100%;
+	}
+	.codePenDesc{
+		width: 100%;
+		padding: 1rem 0;
+	}
+
 	/********************************Work on the section skills****************************************/
 	.colour1, .colour2, .skills p
 	{
@@ -786,6 +814,23 @@
 		width: 50%;
 		padding: 0;
 	}
+
+	/********************************Work on the section CodePen****************************************/
+	.codePenItem{
+		align-items: flex-start;
+		flex-direction: row;
+	}
+	.codePenItem:nth-child(even){
+		flex-direction: row-reverse;
+	}
+	.codePenProject{
+		width: 75%;
+	}
+	.codePenDesc{
+		width: 25%;
+		padding: 0 2.5rem;
+	}
+
 	/********************************Work on the section skills****************************************/
 	.colour1, .colour2
 	{
@@ -1030,6 +1075,23 @@
 	.mogo-illustrations{
 		width: 100%;
 	}
+
+/********************************Work on the section CodePen****************************************/
+.codePenItem{
+	align-items: flex-start;
+	flex-direction: row;
+}
+.codePenItem:nth-child(even){
+	flex-direction: row-reverse;
+}
+.codePenProject{
+	width: 75%;
+}
+.codePenDesc{
+	width: 25%;
+	padding: 0 2.5rem;
+}
+
 /********************************Work on the section skills****************************************/
 	.colour1, .colour2
 	{

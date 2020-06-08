@@ -2,6 +2,10 @@
 {
 	cursor: url("images/cursor3.png"), pointer;
 }*/
+body p{
+	font-size: 1.5rem;
+}
+
 .container-fluid
 {
 	font-family: 'Roboto', sans-serif;
@@ -22,7 +26,7 @@ h2
 }
 h4
 {
-	font-size: 1.8em;
+	font-size: 1.8rem;
 }
 /*************************************Work on the header for all formats********************************/
 header
@@ -195,7 +199,7 @@ h1
 	text-decoration: none;
 	color: #031D44;
 	font-family: 'Jura',Courier,sans-serif;
-	font-size: 1.7em;
+	font-size: 2.1rem;
 	text-align: center;
 }
 .workProjects a h3:hover,.workProjects a:focus, .workProjects a:hover{
@@ -211,7 +215,7 @@ h1
 	color: #DE6C83;
 	border: 2px solid #DE6C83;
 	text-decoration: none;
-	font-size: 1.7em;
+	font-size: 2.1rem;
 	padding: 5px 10px;
 }
 .btnAction:hover
@@ -223,6 +227,35 @@ h1
 }
 .btnAction:focus{
 	text-decoration: none;
+}
+
+/********************************Work on the CodePen section****************************************/
+#codePenDetails{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#sectionsCP{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.codePenItem{
+	width: 98%;
+	margin: 2.5rem 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: row;
+}
+.codePenDesc{
+	margin: 1rem;
+	font-size: 2rem;
+	
 }
 
 /********************************Work on the section skills****************************************/
@@ -335,7 +368,7 @@ h1
 {
 	text-align: center;
 	margin-bottom: 70px;
-	font-size: 1.2em;
+	font-size: 1.5rem;
 }
 form{
 	display: flex;
@@ -464,7 +497,7 @@ textarea
 }
 .etiquetteTxt h3
 {
-	font-size: 2em;
+	font-size: 2rem;
 	margin: 0;
 	line-height: 2.0;
 	font-family: 'Jura',Courier,sans-serif;
@@ -496,7 +529,7 @@ textarea
 .description{
 	font-family: 'Jura', Courier, sans-serif;
 	color: #031D44;
-	font-size: 2em;
+	font-size: 2rem;
 }
 .expDetails{
 	display: flex;
@@ -514,7 +547,7 @@ textarea
 .dateCv, .dateExpCv{
 	font-family: 'Jura', Courier, sans-serif;
 	color: #031D44;
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 .progress{
@@ -541,7 +574,7 @@ textarea
 
 #CV-download{
 	text-decoration: none;
-	font-size: 2em;
+	font-size: 2rem;
 	text-align: center;
 	font-family: 'Jura',Courier,sans-serif;
 	width: 300px;
@@ -657,7 +690,7 @@ textarea
 	top: 0;
 	width: 100%;
 	height: 100%;
-	font-size: 2em;
+	font-size: 2rem;
 	color:#C9DDFF;
 }
 .work-thumb-container:hover{
@@ -686,7 +719,7 @@ textarea
 	margin: 10px 0;
 }
 .modal-title{
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	text-align: left;
 }
 .modal-footer{
@@ -705,7 +738,7 @@ textarea
 	border: 2px solid #DE6C83;
 	font-weight: bold;
 	text-decoration: none;
-	font-size: 1.7em;
+	font-size: 2.5rem;
 	padding: 5px 10px;
 }
 .btnActionWork:hover
