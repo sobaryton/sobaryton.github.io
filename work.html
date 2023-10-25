@@ -96,17 +96,16 @@
 				<div class="skillsWork">
 					<h3><i class="fa fa-desktop" aria-hidden="true"></i>  Web-development</h3>
 					<ul class="project-list">
-						<li><i class="fa fa-code" aria-hidden="true"></i>  HTML 5 & CSS 3 / SCSS / Bootstrap, Flexbox, Grid</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  Moustache</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  Javascript, TypeScript, jQuery</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  React, Redux, React hooks, Chart.js</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  Node.js, Express, Feathers</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  MongoDB, GraphQL</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  Tests: Mocha, Chai, Cypress, Jest, react-testing library...</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  HTML 5 & CSS 3 / SCSS / Bootstrap, MaterialUI</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  NPM, Yarn, Gulp, WebPack, NX, Next.js</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  Git, BitBucket, Jira, Notion</li>
 						<li><i class="fa fa-code" aria-hidden="true"></i>  Responsive Websites & cross browser compliant</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  Javascript ES6 & jQuery</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  React.js</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  Node.js with Express</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  Tests: Mocha, Chai...</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  MongoDB</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  NPM, Yarn, Gulp</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  Git, BitBucket, Jira</li>
-						<li><i class="fa fa-code" aria-hidden="true"></i>  Accessibility (tested with Jaws)</li>
+						<li><i class="fa fa-code" aria-hidden="true"></i>  Accessibility (tested with Jaws and in Storybook)</li>
 					</ul>
 				</div>
 				<div class="skillsWork">
@@ -123,7 +122,6 @@
 				<div class="skillsWork">
 					<h3><i class="fa fa-cogs" aria-hidden="true"></i>  In progress</h3>
 					<ul class="project-list">
-						<li><i class="fa fa-cog" aria-hidden="true"></i>  Practice Redux, building more complex applications with React</li>
 						<li><i class="fa fa-cog" aria-hidden="true"></i>  Vue.js</li>
 						<li><i class="fa fa-cog" aria-hidden="true"></i>  mySQL</li>
 					</ul>
@@ -132,6 +130,64 @@
 		</div>
 	</section>
 	<section id="slide2">
+		<div class="project">
+			<div class="hoverProject">
+				<p class="workLabel">TypeScript</p>
+				<p class="workLabel">React, React hooks</p>
+				<p class="workLabel">JSS</p>
+			</div>
+			<!-- Trigger the modal with a button-->
+			<a href="#" data-toggle="modal" data-target="#myModalW17" data-backdrop="true" id="link17" class="link">
+				<img src="images/work/Babylist.png" class="work-thumb-container">
+			</a>
+
+			<!-- Modal-->
+			<div id="myModalW17" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2 class="modal-title">BabyList</h2>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div class="project_txt" >
+								<div>
+									<h3>Details</h3>
+									<p>
+										This project has been split between me and my partner <a href="https://www.linkedin.com/in/severinnicolas/" class="link" target="_blank" rel="noopener">Nicolas Severin</a>, an experienced backend developer. I was in charge of building the front-end app in modern React.
+									</p>
+									<p>
+										Because we were expecting we needed a website for our family and friends from France in order for them to send us gifts. The website is mainly in French. We organised our work on Trello and BitBucket, with a system of Pull Requests. 
+									</p>
+									<p>
+										Find on the right some screenshots of the application and find below the link to the project.
+									</p>									
+								</div>
+								<div>
+									<h3>Technologies used</h3>
+									<ul>
+										<li>TypeScript and React - on <a href="https://github.com/sobaryton/BabyList" target="_blank" class='link' rel="noopener">Github</a></li>
+										<li>JSS for the styling</li>
+										<li>React hooks and Redux</li>
+									</ul>
+								</div>
+							</div>
+							<div class="imageWrap">
+								<img src="images/Babylist-modal.png" class="img-desktop">
+								<img src="images/Babylist-home.png" class="img-desktop">
+								<img src="images/Babylist-detail.png" class="img-desktop">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<a href="https://baby-list.sodev.me" target="_blank" class="btnActionWork" rel="noopener">The project</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 		<div class="project">
 			<div class="hoverProject">
 				<p class="workLabel">Node, Express</p>
@@ -690,23 +746,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="project">
+		<!-- <div class="project">
 			<div class="hoverProject">
 				<p class="workLabel">Logos & Avatars</p>
 				<p class="workLabel">Adobe Illustrator</p>
 				<p class="workLabel">Adobe Photoshop</p>
 			</div>
 			<!-- Trigger the modal with a button -->
-			<a href="#" data-toggle="modal" data-target="#myModalW5" data-backdrop="true" id="link5" class="link">
+			<!-- <a href="#" data-toggle="modal" data-target="#myModalW5" data-backdrop="true" id="link5" class="link">
 				<img src="images/work/logos-home.png" class="work-thumb-container">
-			</a>
+			</a> -->
 
 			<!-- Modal -->
-			<div id="myModalW5" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
+			<!-- <div id="myModalW5" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg"> -->
 
 					<!-- Modal content-->
-					<div class="modal-content">
+					<!-- <div class="modal-content">
 						<div class="modal-header">
 							<h2 class="modal-title">Logos and Avatars</h2>
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -773,10 +829,10 @@
 											<img src="images/renard-anim5.gif" alt="Fourteenth slide">
 										</div>
 									</div>
-								</div>
+								</div> -->
 
 								<!-- /.carousel-inner -->
-								<div id="controls">
+								<!-- <div id="controls">
 									<a class="left carousel-control WPcarousel-control" href="#lightbox" role="button" data-slide="prev">
 										<span class="glyphicon glyphicon-chevron-left WPglyphicon" aria-hidden="true"></span>
 									</a>
@@ -790,23 +846,23 @@
 
 				</div>
 			</div>
-		</div>
-		<div class="project">
+		</div> --> 
+		<!-- <div class="project">
 			<div class="hoverProject">
 				<p class="workLabel">Wordpress</p>
 				<p class="workLabel">HTML5/CSS3</p>
-			</div>
+			</div> -->
 			<!-- Trigger the modal with a button -->
-			<a href="#" data-toggle="modal" data-target="#myModalW6" data-backdrop="true" id="link6" class="link">
+			<!-- <a href="#" data-toggle="modal" data-target="#myModalW6" data-backdrop="true" id="link6" class="link">
 				<img src="images/work/catavalanche-home.png" class="work-thumb-container">
-			</a>
+			</a> -->
 
 			<!-- Modal -->
-			<div id="myModalW6" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
+			<!-- <div id="myModalW6" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg"> -->
 
 					<!-- Modal content-->
-					<div class="modal-content">
+					<!-- <div class="modal-content">
 						<div class="modal-header">
 							<h2 class="modal-title">WordPress: CatAvalanche website</h2>
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -831,27 +887,27 @@
 						<div class="modal-footer">
 							<a href="https://catavalanchesite.wordpress.com/" target="_blank" rel="noopener" class="btnActionWork">The project</a>
 						</div>
-					</div>
+					</div> -->
 
-				</div>
+				<!-- </div>
 			</div>
-		</div>
-		<div class="project">
+		</div> -->
+		<!-- <div class="project">
 			<div class="hoverProject">
 				<p class="workLabel">Wordpress</p>
 				<p class="workLabel">HTML5/CSS3</p>
-			</div>
+			</div> -->
 			<!-- Trigger the modal with a button -->
-			<a href="#" data-toggle="modal" data-target="#myModalW7" data-backdrop="true" id="link7" class="link">
+			<!-- <a href="#" data-toggle="modal" data-target="#myModalW7" data-backdrop="true" id="link7" class="link">
 				<img src="images/work/fourchette-home.png" class="work-thumb-container">
-			</a>
+			</a> -->
 
 			<!-- Modal -->
-			<div id="myModalW7" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
+			<!-- <div id="myModalW7" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg"> -->
 
 					<!-- Modal content-->
-					<div class="modal-content">
+					<!-- <div class="modal-content">
 						<div class="modal-header">
 							<h2 class="modal-title">WordPress: Fourchette website</h2>
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -876,27 +932,27 @@
 						<div class="modal-footer">
 							<a href="https://sobaryton.wordpress.com/" target="_blank" class="btnActionWork" rel="noopener">The project</a>
 						</div>
-					</div>
+					</div> -->
 
-				</div>
+				<!-- </div>
 			</div>
-		</div>
-		<div class="project">
+		</div> -->
+		<!-- <div class="project">
 			<div class="hoverProject">
 				<p class="workLabel">CSS Animation</p>
 				<p class="workLabel">HTML5/CSS3</p>
-			</div>
+			</div> -->
 			<!-- Trigger the modal with a button -->
-			<a href="#" data-toggle="modal" data-target="#myModalW8" data-backdrop="true" id="link8" class="link">
+			<!-- <a href="#" data-toggle="modal" data-target="#myModalW8" data-backdrop="true" id="link8" class="link">
 				<img src="images/work/fleur-home.png" class="work-thumb-container">
-			</a>
+			</a> -->
 
 			<!-- Modal -->
-			<div id="myModalW8" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
+			<!-- <div id="myModalW8" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg"> -->
 
 					<!-- Modal content-->
-					<div class="modal-content">
+					<!-- <div class="modal-content">
 						<div class="modal-header">
 							<h2 class="modal-title">CSS Flower animation</h2>
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -923,24 +979,24 @@
 
 				</div>
 			</div>
-		</div>
+		</div> -->
 		
-		<div class="project">
+		<!-- <div class="project">
 			<div class="hoverProject">
 				<p class="workLabel">Birthday Card</p>
 				<p class="workLabel">Javascript/jQuery</p>
-			</div>
+			</div> -->
 			<!-- Trigger the modal with a button -->
-			<a href="#" data-toggle="modal" data-target="#myModalW10" data-backdrop="true" id="link10" class="link">
+			<!-- <a href="#" data-toggle="modal" data-target="#myModalW10" data-backdrop="true" id="link10" class="link">
 				<img src="images/work/anniv-home.png" class="work-thumb-container">
-			</a>
+			</a> -->
 
 			<!-- Modal -->
-			<div id="myModalW10" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
+			<!-- <div id="myModalW10" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg"> -->
 
 					<!-- Modal content-->
-					<div class="modal-content">
+					<!-- <div class="modal-content">
 						<div class="modal-header">
 							<h2 class="modal-title">Birthday Card</h2>
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -967,7 +1023,7 @@
 						</div>
 					</div>
 
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
