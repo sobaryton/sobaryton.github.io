@@ -218,6 +218,7 @@
 	/*Work on the fourth section with logos*/
 	.project{
 		width: 50%;
+		margin: 0.5rem;
 	}
 
 	#lightbox{
@@ -482,6 +483,7 @@
 	}
 	.project{
 		width: 30%;
+		margin: 0.5rem;
 	}
 	.modal-body{
 		flex-direction: row;
